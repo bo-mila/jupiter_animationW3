@@ -1,0 +1,5 @@
+//mixin for background of section
+@mixin bg-section ($color) {
+  background-color: $color;
+  position: relative;
+}
