@@ -13,11 +13,24 @@
       <header class="header">
         <div class="container header__container">
           <div class="header__content">
-            <label class="header__hamburger-menu hamburger-menu">
-              <input type="checkbox" class="hamburger-menu__input">
-              <div class="hamburger-menu__bars"></div>
-            </label>
-            <img src="" alt="" class="header__logo">
+            <div class="header__left">
+              <label class="header__hamburger-menu hamburger-menu">
+                <input type="checkbox" class="hamburger-menu__input">
+                <div class="hamburger-menu__img">
+                  <svg class="hamburger-menu__icon" alt="Перейти на меню сайта">
+                    <use xlink:href="img/icons/sprite.svg#hamburger"></use>
+                  </svg>
+                </div>
+              </label>
+              <img src="./img/content/logo.png" alt="Логотип сайта" class="header__logo">
+            </div>
+            <div class="header__right">
+              <div class="header__language language">
+                <a href="" class="language__ukr">ukr</a>
+                <a href="" class="language__eng">eng</a>
+                <a href="" class="language__ru">ru</a>
+              </div>
+            </div>
           </div>
         </div>
       </header>
