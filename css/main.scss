@@ -1,17 +1,20 @@
 $black: #000;
 $white: #fff;
 
+$z-header: 20;
+
 @import "./_misc/normalize.scss";
 @import "./_misc/media.scss";
 @import "./_misc/fonts.scss";
 @import "./_misc/layout.scss";
 @import "./_misc/mixins.scss";
 
+@import "./blocks/header.scss";
+@import "./blocks/hamburger-menu.scss";
+@import "./blocks/hamburger-menu-icon.scss";
+@import "./blocks/language.scss";
 // @import "blocks/*.scss";
-// @import "./blocks/header.scss";
-// @import "./blocks/nav.scss";
 // @import "./blocks/phones.scss";
-// @import "./blocks/hamburger-menu.scss";
 // @import "./blocks/hamburger.scss";
 // @import "./blocks/fixed-menu.scss";
 // @import "./blocks/first.scss";
