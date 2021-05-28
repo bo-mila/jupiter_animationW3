@@ -3,7 +3,8 @@
   height: rem(31px);
   fill: transparent;
   stroke: $black;
-}
-.first {
-  background-color: cyan;
+  @include desctop {
+    width: rem(28px);
+    height: rem(28px);
+  }
 }
