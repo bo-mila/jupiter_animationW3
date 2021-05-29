@@ -1484,10 +1484,15 @@ address {
   align-items: flex-start; }
   .feature__right span {
     letter-spacing: 3.4375rem; }
-    @media screen and (max-width: 1200px) {
-      .feature__right span {
-        letter-spacing: 1.875rem;
-        line-height: 2.2; } }
+    .feature__right span l {
+      cursor: pointer;
+      -webkit-transition: .6s;
+      -o-transition: .6s;
+      transition: .6s; }
+      @media screen and (max-width: 1200px) {
+        .feature__right span l {
+          letter-spacing: 1.875rem;
+          line-height: 2.2; } }
 
 .display {
   font-family: 'Roboto', Helvetica, sans-serif;

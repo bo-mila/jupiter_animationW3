@@ -40,9 +40,22 @@
   align-items: flex-start;
   & span {
     letter-spacing: rem(55px);
-    @include desctop {
-      letter-spacing: rem(30px);
-      line-height: 2.2;
+    
+    & l {
+      cursor: pointer;
+      transition: .6s;
+      @include desctop {
+        letter-spacing: rem(30px);
+        line-height: 2.2;
+      }
+      // transform: scale(1);
+      // &:hover {
+      //   font-size: rem(40px);
+      //   transform: scale(1.4);
+      //   & ~ {
+      //     transform: scale(1.1);
+      //   }
+      // }
     }
   }
 }
