@@ -1,0 +1,69 @@
+.portfolio {
+  background-image: url("../../img/bg/bg-mask.png");
+  // background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  color: $black;
+  border: 1px solid black;
+}
+.portfolio__content {
+  display: flex;
+  position: relative;
+  height: 100%;
+  justify-content: center;
+  width: 100%;
+}
+.portfolio__display {
+  display: flex;
+  position: absolute;
+  bottom: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+  & .display__list {
+    display: flex;
+    align-items: center;
+  }
+  & .display__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: rem(40px);
+    @include desctop {
+      margin-right: rem(20px);
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    // &::after {
+    //   transition: scale .6s;
+    // }
+    &--on {
+      // & .display__but {
+      //   transform: scale(0);
+      //   opacity: 0;
+      // }
+      &::before {
+        opacity: 1;
+      }
+      // &::after {
+      //   transform:translate(-50%,-50%) scale(1);
+      //   opacity: 1;
+      //   transition: scale .6s;
+      // }
+      // &:hover {
+      //   // &::before {
+      //   //   opacity: 1;
+      //   // }
+      //   &::after {
+      //     transform:translate(-50%,-50%) scale(1.2);
+      //     // opacity: 1;
+      //     // transition: scale .6s;
+      //   }
+      // }
+      
+    }
+  }
+}

@@ -6,9 +6,9 @@
   line-height: 1.6;
   letter-spacing: rem(10px);
   text-transform: uppercase;
-  @include tablets {
-    font-size: rem(14px);
-    letter-spacing: rem(3px);
+  @include desctop {
+    font-size: rem(16px);
+    letter-spacing: rem(5px);
   }
 }
 .slider-first__buttons {
