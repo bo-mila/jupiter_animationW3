@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jupiter</title>
-  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
   <div class="wrapper">
@@ -13,24 +13,126 @@
       <header class="header">
         <div class="container header__container">
           <div class="header__content">
-            <label class="header__hamburger-menu hamburger-menu">
-              <input type="checkbox" class="hamburger-menu__input">
-              <div class="hamburger-menu__bars"></div>
-            </label>
-            <img src="" alt="" class="header__logo">
+            <div class="header__left">
+              <label class="header__hamburger-menu hamburger-menu">
+                <input type="checkbox" class="hamburger-menu__input">
+                <div class="hamburger-menu__img">
+                  <svg class="hamburger-menu__icon" alt="Перейти на меню сайта">
+                    <use xlink:href="img/icons/sprite.svg#hamb"></use>
+                  </svg>
+                </div>
+              </label>
+              <img src="./img/content/logo.png" alt="Логотип сайта" class="header__logo">
+            </div>
+            <div class="header__right">
+              <ul class="header__language language">
+                <li class="language__item">
+                  <a href="" class="language__ukr">ukr</a>
+                </li>
+                <li class="language__item">
+                  <a href="" class="language__eng">eng</a>
+                </li>
+                <li class="language__item">
+                  <a href="" class="language__ru">ru</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </header>
-      <section id="sectionFirst" class="section first active">
+      <section id="sectionFirst" class="section first">
+        <div class="first__bounces" aria-label="Бегающие шарики на фоне">
+          <div class="bounce bounce-blur bounce-blur-1"></div>
+          <div class="bounce bounce-blur bounce-blur-2"></div>
+          <div class="bounce bounce-blur bounce-blur-3"></div>
+          <div class="bounce bounce-img bounce-img-1"></div>
+          <div class="bounce bounce-img bounce-img-2"></div>
+          <div class="bounce bounce-img bounce-img-3"></div>
+          <div class="bounce bounce-img bounce-img-4"></div>
+          <div class="bounce bounce-img bounce-img-5"></div>
+        </div>
+        <div class="first__slider-first slider-first">
+          <div class="slider-first__container">
+            <ul class="slider-first__list">
+              <li class="slider-first__item">
+                <div class="slide-first">подать заявку</div>
+              </li>
+              <li class="slider-first__item">
+                <div class="slide-first">подать заявку</div>
+              </li>
+              <li class="slider-first__item">
+                <div class="slide-first">подать заявку</div>
+              </li>
+              <li class="slider-first__item">
+                <div class="slide-first">подать заявку</div>
+              </li>
+              <li class="slider-first__item">
+                <div class="slide-first">подать заявку</div>
+              </li>
+              <li class="slider-first__item">
+                <div class="slide-first">подать заявку</div>
+              </li>
+            </ul>
+          </div>
+          <div class="slider-first__buttons">
+            <button class="slider-first__button slider-first__button--prev">
+              <svg class="arrow-icon" alt="Пролистать слайдер назад">
+                <use xlink:href="img/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+            <button class="slider-first__button slider-first__button--next">
+              <svg class="arrow-icon" alt="Пролистать слайдер вперед">
+                <use xlink:href="img/icons/sprite.svg#arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
         <div class="first__container container">
           <div class="first__content">
-            <div class="first__column">
-
+            <div class="first__display display">
+              <ul class="display__list">
+                <li class="display__item display__item--active">
+                  <button href="" class="display__but">01</button>
+                </li>
+                <li class="display__item">
+                  <button href="" class="display__but">02</button>
+                </li>
+                <li class="display__item">
+                  <button href="" class="display__but">03</button>
+                </li>
+                <li class="display__item">
+                  <button href="" class="display__but">04</button>
+                </li>
+                <li class="display__item">
+                  <button href="" class="display__but">05</button>
+                </li>
+                <li class="display__item">
+                  <button href="" class="display__but">06</button>
+                </li>
+              </ul>
             </div>
-            <div class="first__column">
-              
+            <div class="first__title title">
+              <h1><span>Jupiter</span> production</h1>
+            </div>
+            <div class="first__desc">
+              <p>Помогаем бизнесу вырасти <br>за счёт Digital-инструментов</p>
+            </div>
+            <div class="first__feature feature">
+              <div class="feature__left">
+                <div>creating thinking care about big brands</div>
+              </div>
+              <div class="feature__right">
+                <span><l>C</l><l>r</l><l>e</l><l>a</l><l>t</l><l>i</l><l>v</l><l>e</l></span>
+                <span><l>d</l><l>i</l><l>g</l><l>i</l><l>t</l><l>a</l><l>l</l></span>
+                <span><l>w</l><l>e</l><l>b</l><l>s</l><l>i</l><l>t</l><l>e</l></span>
+              </div>
             </div>
           </div>
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <filter id="blur">
+              <feGaussianBlur stDeviation="6"></feGaussianBlur>
+            </filter>
+          </svg>
         </div>
       </section>
       <section id="sectionPortfolio" class="section portfolio">
@@ -73,7 +175,7 @@
         </footer>
       </section>
     </div>
-    <ul class="fixed-menu">
+    <!-- <ul class="fixed-menu">
       <li class="fixed-menu__item"><a class="fixed-menu__link scrollToFirst" href="#"></a></li>
       <li class="fixed-menu__item"><a class="fixed-menu__link scrollToWhy" href="#"></a></li>
       <li class="fixed-menu__item"><a class="fixed-menu__link scrollToChocco" href="#"></a></li>
@@ -83,8 +185,8 @@
       <li class="fixed-menu__item"><a class="fixed-menu__link scrollToHow-work" href="#"></a></li>
       <li class="fixed-menu__item"><a class="fixed-menu__link scrollToOrder" href="#"></a></li>
       <li class="fixed-menu__item"><a class="fixed-menu__link scrollToContacts" href="#"></a></li>
-    </ul>
-    <div class="hamburger">
+    </ul> -->
+    <!-- <div class="hamburger">
       <div class="hamburger__container container">
         <div class="hamburger__content">
           <nav class="hamburger__nav">
@@ -114,8 +216,8 @@
           </nav>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
-  <script src="./main.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>

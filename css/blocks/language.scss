@@ -1,0 +1,29 @@
+.language {
+  @include roboto(normal);
+  font-style: normal;
+  font-weight: normal;
+  font-size: rem(18px);
+  text-transform: uppercase;
+  line-height: 1;
+  color: currentColor;
+
+  display: flex;
+  align-items: center;
+}
+.language__item {
+  display: flex;
+  text-align: center;
+  &::after {
+    content: "|";
+    display: block;
+    color: currentColor;
+  }
+  &:last-child {
+    &::after {
+      display: none;
+    }
+  }
+  & a {
+    cursor: pointer;
+  }
+}

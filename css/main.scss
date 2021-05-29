@@ -1,33 +1,62 @@
 $black: #000;
 $white: #fff;
+$lilac: #b994fd;
+// $lilac: #9a62ff;
+// $lilac: #a37de8;
+$turquoise: #61cfe7;
+$bounce-yellow: #f8e48E;
+$bounce-turquoise: #90d0ef;
+$bounce-lilac: #9681CB;
+
+
+$z-header: 50;
+$z-bg-static-bounce: 0;
+$z-move-bounce-blur-1: 1;
+$z-move-bounce-blur-2: 2;
+$z-move-bounce-blur-3: 3;
+$z-move-bounce-img-1: 4;
+$z-move-bounce-img-2: 5;
+$z-move-bounce-img-3: 6;
+$z-move-bounce-img-4: 7;
+$z-move-bounce-img-5: 8;
+$z-first-container: 20;
+$z-display: 40;
+$z-slider-first: 3;
+$z-slider-first-buttons: 21;
+
+
 
 @import "./_misc/normalize.scss";
 @import "./_misc/media.scss";
 @import "./_misc/fonts.scss";
 @import "./_misc/layout.scss";
 @import "./_misc/mixins.scss";
+@import "./_misc/animate.scss";
+
+@import "./blocks/header.scss";
+@import "./blocks/hamburger-menu.scss";
+@import "./blocks/hamburger-menu-icon.scss";
+@import "./blocks/language.scss";
+@import "./blocks/first.scss";
+@import "./blocks/bounce.scss";
+@import "./blocks/feature.scss";
+@import "./blocks/display.scss";
+@import "./blocks/slider-first.scss";
+@import "./blocks/arrow-icon.scss";
 
 // @import "blocks/*.scss";
-// @import "./blocks/header.scss";
-// @import "./blocks/nav.scss";
 // @import "./blocks/phones.scss";
-// @import "./blocks/hamburger-menu.scss";
 // @import "./blocks/hamburger.scss";
 // @import "./blocks/fixed-menu.scss";
-// @import "./blocks/first.scss";
 // @import "./blocks/title.scss";
 // @import "./blocks/btn.scss";
-// @import "./blocks/features.scss";
-// @import "./blocks/feature.scss";
 // @import "./blocks/why.scss";
 // @import "./blocks/why-desc.scss";
 // @import "./blocks/chocco.scss";
-// @import "./blocks/arrow-icon.scss";
 // @import "./blocks/slider.scss";
 // @import "./blocks/slide.scss";
 // @import "./blocks/contain.scss";
 // @import "./blocks/boun-icon.scss";
-// @import "./blocks/contain-icon.scss";
 // @import "./blocks/close-icon.scss";
 // @import "./blocks/team.scss";
 // @import "./blocks/menu.scss";
@@ -43,7 +72,6 @@ $white: #fff;
 // @import "./blocks/contacts.scss";
 // @import "./blocks/map.scss";
 // @import "./blocks/footer.scss";
-// @import "./blocks/address.scss";
 // @import "./blocks/phone.scss";
 // @import "./blocks/network.scss";
 // @import "./blocks/vk.scss";

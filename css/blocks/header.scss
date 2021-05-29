@@ -3,8 +3,7 @@
   z-index: $z-header;
   left: 0;
   width: 100%;
-  color: $white;
-  top: rem(24px);
+  color: $black;
 }
 .header__container {
   display: flex;
@@ -18,14 +17,23 @@
   justify-content: space-between;
   align-items: center;
 }
-.header__logo {
-  margin-right: rem(20px);
-}
-.header__nav {
+.header__left {
+  display: flex;
   flex: 1;
-  margin-right: rem(20px);
-  @include tablets {
-    display: none;
+}
+.header__hamburger-menu {
+  margin-right: rem(36px);
+}
+.header__logo {
+  width: rem(212px);
+  height: rem(212px);
+  @include desctop {
+    width: rem(180px);
+    height: rem(180px);
   }
-  
+}
+.header__right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
 }

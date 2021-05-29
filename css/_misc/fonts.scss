@@ -2,7 +2,8 @@
 
 @mixin roboto($weight: normal) {
 	font-family: 'Roboto', Helvetica, sans-serif;
-
+  font-style: normal;
+	line-height: 1;
 	@if $weight == normal {
 		font-weight: 400;
 	}

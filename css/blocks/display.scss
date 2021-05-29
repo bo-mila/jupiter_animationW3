@@ -1,0 +1,95 @@
+.display {
+  @include roboto(normal);
+  font-style: normal;
+  font-size: rem(48px);
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $black;
+  z-index: $z-display;
+}
+.display__item {
+  width: rem(56px);
+  height: rem(56px);
+  margin-bottom: rem(10px);
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    width: rem(6px);
+    height: rem(6px);
+    display: block;
+    border-radius: 50%;
+    background-color: $black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: opacity .6s;
+    
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: rem(32px);
+    height: rem(32px);
+    display: block;
+    border-radius: 50%;
+    border: 1px solid $black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    opacity: 1;
+    transition: .6s;
+    @include desctop {
+      width: rem(26px);
+      height: rem(26px);
+    }
+  }
+  &:hover {
+    &::before {
+      opacity: 1;
+    }
+    &::after {
+      transform: translate(-50%,-50%) scale(1.2);
+    }
+  }
+  &--active {
+    & .display__but {
+      transform: scale(1);
+      opacity: 1;
+    }
+    &:hover {
+      &::before {
+        opacity: 0;
+      }
+    }
+    
+    &::after {
+      transform:translate(-50%,-50%) scale(0);
+      opacity: 0;
+      transition: scale .6s, opacity .6s;
+    }
+  }
+  
+  @include desctop {
+    width: rem(40px);
+    height: rem(40px);
+    font-size: rem(30px);
+    margin-bottom: rem(5px);
+  }
+
+  
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+}
+.display__but {
+  display: block;
+  margin: 0 auto;
+  transition: scale .6s, opacity .6s;
+  transform: scale(0);
+  opacity: 0;
+}

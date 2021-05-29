@@ -1,0 +1,10 @@
+.hamburger-menu__icon {
+  width: rem(31px);
+  height: rem(31px);
+  fill: transparent;
+  stroke: $black;
+  @include desctop {
+    width: rem(28px);
+    height: rem(28px);
+  }
+}
