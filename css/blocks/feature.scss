@@ -1,9 +1,6 @@
 .feature {
   display: flex;
-  padding-bottom: rem(45px);
-  @include desctop {
-    padding-bottom: rem(25px);
-  }
+  
 }
 .feature__left {
   @include roboto(normal);
@@ -44,7 +41,9 @@
   & span {
     letter-spacing: rem(55px);
     @include desctop {
-      letter-spacing: rem(35px);
+      letter-spacing: rem(30px);
+      line-height: 2.2;
     }
   }
 }
+

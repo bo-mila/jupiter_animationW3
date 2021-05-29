@@ -1,59 +1,120 @@
 .first {
   // background-color: $white;
   background-image: url("../../img/bg/bg-mask.png");
+  // background-size: cover;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
   border: 1px solid blaCK;
-  // &::before {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   width: rem(1562px);
-  //   height: rem(1562px);
-  //   background-color: $lilac;
-  //   filter: blur(rem(150px));
-  //   border-radius: 50%;
-  //   top: -76%;
-  //   left: -52%;
-  //   // top: -124%;
-  //   // left: -75%;
-  //   z-index: $z-bg-static-bounce;
-  //   @include desctop {
-  //     transform: scale(.7);
-  //   }
-  // }
-  // &::after {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   width: rem(1062px);
-  //   height: rem(1062px);
-  //   background-color: $turquoise;
-  //   filter: blur(rem(150px));
-  //   border-radius: 50%;
-  //   top: -18%;
-  //   right: -19%;
-  //   // top: -58%;
-  //   // right: -59%;
-  //   z-index: $z-bg-static-bounce;
-  //   @include desctop {
-  //     transform: scale(.7);
-  //   }
-  // }
+//   &::before {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     width: rem(1562px);
+//     height: rem(1562px);
+//     // width: 160vw;
+//     // height: 120vh;
+//     background-color: $lilac;
+//     filter: blur(rem(150px));
+//     border-radius: 50%;
+//     top: -76%;
+//     left: -52%;
+//     // top: -124%;
+//     // left: -75%;
+//     z-index: $z-bg-static-bounce;
+//     @include desctop {
+//       transform: scale(.7);
+//     }
+//   }
+//   &::after {
+//     content: "";
+//     display: block;
+//     position: absolute;
+//     // width: 168vw;
+//     // height: 140vh;
+//     width: rem(1062px);
+//     height: rem(1062px);
+//     background-color: $turquoise;
+//     filter: blur(rem(150px));
+//     border-radius: 50%;
+//     top: -18%;
+//     right: -19%;
+//     // top: -58%;
+//     // right: -59%;
+//     z-index: $z-bg-static-bounce;
+//     @include desctop {
+//       transform: scale(.7);
+//     }
+//   }
 }
 .first__bounces {
   position: absolute;
   width: 100%;
   height: 100%;
+  background: inherit;
+}
+.first__slider-first {
+  position: absolute;
+  right: 0;
+  top: 60%;
+  height: 17%;
+  width: 40%;
+  background: inherit;
+  background-position: 92% 79%;
+  background-size: 100vw 100vh;
+  cursor: pointer;
+  &::before {
+    content: "";
+    // display: block;
+    // width: 100%;
+    // height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+
+    // background-image: url("../../img/bg/bg-mask.png");
+    // background-size: 100vh 100vw;
+    // background-position: 100% 100%;
+    // backdrop-filter: blur(88px) brightness(120%);
+    // -webkit-backdrop-filter: blur(85px) brightness(115%);
+    //   backdrop-filter: blur(40px) brightness(115%);
+
+    // background: linear-gradient(154.49deg, rgba(255, 255, 255, 0.4) -14.99%, rgba(255, 255, 255, 0) 150.94%);
+    
+    // opacity: .8;
+    // background: inherit;
+    // background-attachment: fixed;
+    // -webkit-filter: blur(5px);
+    // -moz-filter: blur(5px);
+    // -o-filter: blur(5px);
+    // -ms-filter: blur(5px);
+    transition: .5s;
+    filter: blur(40px);
+    
+    z-index: $z-slider-first;
+
+    // &:hover {
+    //   opacity: 1;
+    // filter: blur(0px);
+
+
+    // }
+  }
+  &:hover {
+    &::before {
+      filter: blur(10px);
+    }
+  }
 
 }
 .first__container {
   height: 100%;
   display: flex;
-  z-index: $z-first-container;
 }
 .first__display {
   position: absolute;
@@ -63,12 +124,15 @@
 }
 .first__content {
   display: flex;
-  // align-items: center;
+  z-index: $z-first-container;
   flex-direction: column;
   height: 100%;
   justify-content: flex-end;
   width: 60%;
- 
+  padding-bottom: rem(45px);
+  @include desctop {
+    padding-bottom: rem(35px);
+  }
 }
 .first__title {
   @include roboto(bold);
@@ -102,10 +166,10 @@
   line-height: 1.8;
   width: 70%;
   padding-left: 14%;
-  margin-bottom: rem(196px);
+  margin-bottom: 10%;
   @include desctop {
     font-size: rem(18px);
-    margin-bottom: rem(40px);
+    // margin-bottom: rem(100px);
     line-height: 1.2;
 
   }

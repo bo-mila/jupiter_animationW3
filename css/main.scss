@@ -21,6 +21,8 @@ $z-move-bounce-img-4: 7;
 $z-move-bounce-img-5: 8;
 $z-first-container: 20;
 $z-display: 40;
+$z-slider-first: 3;
+$z-slider-first-buttons: 21;
 
 
 
@@ -29,6 +31,7 @@ $z-display: 40;
 @import "./_misc/fonts.scss";
 @import "./_misc/layout.scss";
 @import "./_misc/mixins.scss";
+@import "./_misc/animate.scss";
 
 @import "./blocks/header.scss";
 @import "./blocks/hamburger-menu.scss";
@@ -38,6 +41,8 @@ $z-display: 40;
 @import "./blocks/bounce.scss";
 @import "./blocks/feature.scss";
 @import "./blocks/display.scss";
+@import "./blocks/slider-first.scss";
+@import "./blocks/arrow-icon.scss";
 
 // @import "blocks/*.scss";
 // @import "./blocks/phones.scss";
@@ -45,11 +50,9 @@ $z-display: 40;
 // @import "./blocks/fixed-menu.scss";
 // @import "./blocks/title.scss";
 // @import "./blocks/btn.scss";
-// @import "./blocks/features.scss";
 // @import "./blocks/why.scss";
 // @import "./blocks/why-desc.scss";
 // @import "./blocks/chocco.scss";
-// @import "./blocks/arrow-icon.scss";
 // @import "./blocks/slider.scss";
 // @import "./blocks/slide.scss";
 // @import "./blocks/contain.scss";

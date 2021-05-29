@@ -1,4 +1,12 @@
 .arrow-icon {
-  width: rem(29px);
-  height: rem(14px);
+  width: rem(20px);
+  height: rem(20px);
+  // stroke: 1px;
+  fill: $black;
+  transform: scale(1);
+  transition: .6s;
+  @include desctop {
+    width: rem(12px);
+    height: rem(12px);
+  }
 }
