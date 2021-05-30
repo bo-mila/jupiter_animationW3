@@ -1,13 +1,7 @@
 .portfolio {
-  background-image: url("../../img/bg/bg-mask.png");
-  // background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   position: relative;
   overflow: hidden;
   color: $black;
-  border: 1px solid black;
 }
 .portfolio__content {
   display: flex;
@@ -19,9 +13,12 @@
 .portfolio__display {
   display: flex;
   position: absolute;
-  bottom: 17%;
+  bottom: 7%;
   left: 50%;
   transform: translateX(-50%);
+  @include desctop {
+    bottom: 10%;
+  }
   & .display__list {
     display: flex;
     align-items: center;

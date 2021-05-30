@@ -25,7 +25,9 @@ $z-slider-first: 3;
 $z-slider-first-buttons: 3;
 $z-slide-container: 20;
 $z-services-content: 25;
-
+$z-slider: 10;
+$z-slider-back-mask: 15;
+$z-slider-list: 20;
 
 @import "./_misc/normalize.scss";
 @import "./libs/w3.css";
@@ -51,6 +53,7 @@ $z-services-content: 25;
 @import "./blocks/slide-first.scss";
 @import "./blocks/swiper.scss";
 @import "./blocks/services.scss";
+@import "./blocks/why.scss";
 
 // @import "blocks/*.scss";
 // @import "./blocks/hamburger.scss";
@@ -60,7 +63,6 @@ $z-services-content: 25;
 // @import "./blocks/contain.scss";
 // @import "./blocks/boun-icon.scss";
 // @import "./blocks/close-icon.scss";
-// @import "./blocks/team.scss";
 // @import "./blocks/menu.scss";
 // @import "./blocks/reviews.scss";
 // @import "./blocks/review.scss";
