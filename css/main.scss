@@ -22,11 +22,12 @@ $z-move-bounce-img-5: 8;
 $z-first-container: 20;
 $z-display: 40;
 $z-slider-first: 3;
-$z-slider-first-buttons: 21;
+$z-slider-first-buttons: 3;
 
 
 
 @import "./_misc/normalize.scss";
+@import "./libs/w3.css";
 @import "./_misc/media.scss";
 @import "./_misc/fonts.scss";
 @import "./_misc/layout.scss";
@@ -43,18 +44,18 @@ $z-slider-first-buttons: 21;
 @import "./blocks/display.scss";
 @import "./blocks/slider-first.scss";
 @import "./blocks/arrow-icon.scss";
+@import "./blocks/portfolio.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/slide.scss";
+@import "./blocks/slide-first.scss";
 
 // @import "blocks/*.scss";
-// @import "./blocks/phones.scss";
 // @import "./blocks/hamburger.scss";
 // @import "./blocks/fixed-menu.scss";
 // @import "./blocks/title.scss";
 // @import "./blocks/btn.scss";
 // @import "./blocks/why.scss";
 // @import "./blocks/why-desc.scss";
-// @import "./blocks/chocco.scss";
-// @import "./blocks/slider.scss";
-// @import "./blocks/slide.scss";
 // @import "./blocks/contain.scss";
 // @import "./blocks/boun-icon.scss";
 // @import "./blocks/close-icon.scss";
