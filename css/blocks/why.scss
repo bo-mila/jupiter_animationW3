@@ -3,9 +3,16 @@
   overflow: hidden;
   color: $black;
   border: 1px solid black;
-  padding-top: rem(150px);
+  padding-top: rem(50px);
+  min-height: rem(625px);
+  @include roboto(black);
+  font-size: rem(100px);
+  text-transform: uppercase;
   @include desctop {
-    padding-top: rem(70px);
+    padding-top: rem(40px);
+    min-height: rem(425px);
+    font-size: rem(80px);
+
   }
   
 }
@@ -22,35 +29,47 @@
   align-items: center;
   width: 100%;
   position: relative;
+  overflow: hidden;
+}
+.why__list {
+  width: 400%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+}
+.why__item {
+  display: flex;
+  position: relative;
+  width: 25%;
+  height: 100%;
+  flex-direction: column;
+  text-align: center;
+  
 }
 .why__title {
+  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
+  width: 100%;
+  // height: 100%;
   transform: translate(-50%,-50%);
   text-transform: uppercase;
   text-align: center;
   white-space: initial;
+  background: url("../../img/bg/bg-mask.png");
+  background-size: cover;
+  // background-attachmenn: fixed;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
   @include roboto(black);
   font-size: rem(120px);
   @include desctop {
     font-size: rem(80px);
     
   }
-  &--top {
-    color: transparent;
-    -webkit-text-stroke: 2px yellow;
-  }
-  &--button {
-    color: yellow;
-    animation: animateLetterBlac 4s ease-in-out inherit;
-
-   
-  }
-}
-@keyframes animateLetterBac {
-  0% {
-    clip-path: initial;
-  }
-
 }

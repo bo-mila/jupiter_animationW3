@@ -3,9 +3,9 @@
   overflow: hidden;
   color: $black;
   border: 1px solid black;
-  padding-top: rem(150px);
+  padding-top: rem(50px);
   @include desctop {
-    padding-top: rem(70px);
+    padding-top: rem(40px);
   }
 }
 .services__container {
@@ -27,7 +27,7 @@
   @include roboto(bold);
   font-size: rem(72px);
   text-transform: uppercase;
-  margin-bottom: rem(108px);
+  margin-bottom: rem(68px);
   @include desctop {
     font-size: rem(50px);
     margin-bottom: rem(42px);
@@ -36,7 +36,7 @@
 .services__list {
   display: flex;
   justify-content: center;
-
+  margin-bottom: rem(30px);
   // align-items: center;
   width: 100%;
   background: inherit;
@@ -114,6 +114,7 @@
   transition: all .6s;
   color: $black;
   text-transform: uppercase;
+  border: 1px solid $black;
   @include roboto(bold);
   font-size: rem(36px);
   @include desctop {
@@ -129,6 +130,8 @@
   }
   &:hover {
     color: $white;
+    border: 1px solid transparent;
+
     &::before {
       width: 100%;
       opacity: 1;

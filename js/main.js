@@ -197,40 +197,34 @@ sliderLeft.addEventListener("mouseleave", function (e) {
 
 
 
-// var swiperBack = new Swiper(".mySwiperBack", {
-//   effect: "slide",
-//   grabCursor: true,
-//   centeredSlides: true,
-//   slidesPerView: "auto",
-//   // coverflowEffect: {
-//   //   rotate: 50,
-//   //   stretch: 0,
-//   //   depth: 100,
-//   //   modifier: 1,
-//   //   slideShadows: true,
-//   // },
-//   loop: true,
-//   // autoplay: {
-//   //   speed: 2000,
-//   //   delay: 700,
-//   //   disableOnInteraction: false,
-//   // },
-//   speed: 2000,
-//   sumulateTouch: false,
-//   pagination: {
-//     el: ".swiper-pag",
-//     clickable: true,
-//   },
-//   // mousewheel: {
-//   //   sensitivity: 1,
-//   // },
-//   preloadImages: false,
-//   lazy: {
-//     loadOnTransitionStart: false,
-//     loadPrevNext: true,
-//   },
-//   watchSlidesProgress: false,
-//   watchSlidesVisibility: false,
-// });
-// swiper.controller.control = swiperBack;
-// // swiperBack.controller.control = swiper;
+var swiperBack = new Swiper(".mySwiperWhy", {
+  effect: "slide",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  // coverflowEffect: {
+  //   rotate: 50,
+  //   stretch: 0,
+  //   depth: 100,
+  //   modifier: 1,
+  //   slideShadows: true,
+  // },
+  loop: true,
+  autoplay: {
+    speed: 1000,
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  speed: 1000,
+  sumulateTouch: false,
+  // mousewheel: {
+  //   sensitivity: 1,
+  // },
+  preloadImages: false,
+  lazy: {
+    loadOnTransitionStart: false,
+    loadPrevNext: true,
+  },
+  watchSlidesProgress: false,
+  watchSlidesVisibility: false,
+});
