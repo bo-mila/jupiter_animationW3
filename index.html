@@ -5,7 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jupiter</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/main.css">
+
 </head>
 <body>
   <div class="wrapper">
@@ -89,25 +91,25 @@
         </div>
         <div class="first__container container">
           <div class="first__content">
-            <div class="first__display display">
-              <ul class="display__list">
-                <li class="display__item display__item--active fdisp fdisp1">
-                  <button href="" class="display__but">01</button>
+            <div class="first__display fdisplay">
+              <ul class="fdisplay__list">
+                <li class="fdisplay__item fdisplay__item--active fdisp1">
+                  <button href="" class="fdisplay__but">01</button>
                 </li>
-                <li class="display__item fdisp fdisp2">
-                  <button href="" class="display__but">02</button>
+                <li class="fdisplay__item fdisp2">
+                  <button href="" class="fdisplay__but">02</button>
                 </li>
-                <li class="display__item fdisp fdisp3">
-                  <button href="" class="display__but">03</button>
+                <li class="fdisplay__item fdisp3">
+                  <button href="" class="fdisplay__but">03</button>
                 </li>
-                <li class="display__item fdisp fdisp4">
-                  <button href="" class="display__but">04</button>
+                <li class="fdisplay__item fdisp4">
+                  <button href="" class="fdisplay__but">04</button>
                 </li>
-                <li class="display__item fdisp fdisp5">
-                  <button href="" class="display__but">05</button>
+                <li class="fdisplay__item fdisp5">
+                  <button href="" class="fdisplay__but">05</button>
                 </li>
-                <li class="display__item fdisp fdisp6">
-                  <button href="" class="display__but">06</button>
+                <li class="fdisplay__item fdisp6">
+                  <button href="" class="fdisplay__but">06</button>
                 </li>
               </ul>
             </div>
@@ -136,10 +138,12 @@
         </div>
       </section>
       <section id="sectionPortfolio" class="section portfolio">
+        <div class="slider__left"></div>
+        <div class="slider__right"></div>
         <div class="portfolio__content">
-          <div class="portfolio__slider slider">
-            <ul class="slider__list">
-              <li class="slider__item slide w3-animate-left">
+          <div class="portfolio__slider slider swiper-container mySwiper">
+            <ul class="slider__list swiper-wrapper">
+              <li class="slider__item slide swiper-slide">
                 <div class="slide__container container">
                   <h3 class="slide__title">ZYDEX UA</h3>
                   <div class="slide__description">
@@ -147,84 +151,84 @@
                   </div>
                   <div class="slide__img">
                     <img src="./img/content/portfolio-zydex.png" alt="Пример из портфолио - сайт ZYDEX.UA" class="slide__pic">
+                    <!-- <div class="swiper-lazy-preloader"></div> -->
                   </div>
                 </div>
               </li>
-              <li class="slider__item slide w3-animate-left">
+              <li class="slider__item slide swiper-slide">
                 <div class="slide__container container">
                   <h3 class="slide__title">carbag</h3>
                   <div class="slide__description">
                     <p>Landing page</p>
                   </div>
                   <div class="slide__img">
-                    <img src="./img/content/portfolio-carbag.png" alt="Пример из портфолио - сайт Carbag" class="slide__pic">
+                    <img data-src="./img/content/portfolio-carbag.png" alt="Пример из портфолио - сайт Carbag" class="slide__pic swiper-lazy">
+                    <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
               </li>
-              <li class="slider__item slide">
+              <li class="slider__item slide swiper-slide">
                 <div class="slide__container container">
                   <h3 class="slide__title">SushiDoma</h3>
                   <div class="slide__description">
                     <p>Интенет-магазин</p>
                   </div>
                   <div class="slide__img">
-                    <img src="./img/content/portfolio-sushidoma.png" alt="Пример из портфолио - сайт SushiDoma" class="slide__pic">
+                    <img data-src="./img/content/portfolio-sushidoma.png" alt="Пример из портфолио - сайт SushiDoma" class="slide__pic swiper-lazy">
+                    <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
               </li>
-              <li class="slider__item slide">
+              <li class="slider__item slide swiper-slide">
                 <div class="slide__container container">
                   <h3 class="slide__title">VV Home</h3>
                   <div class="slide__description">
                     <p>Веб-сайт</p>
                   </div>
                   <div class="slide__img">
-                    <img src="./img/content/portfolio-vvhome.png" alt="Пример из портфолио - сайт VV Home" class="slide__pic">
+                    <img data-src="./img/content/portfolio-vvhome.png" alt="Пример из портфолио - сайт VV Home" class="slide__pic swiper-lazy">
+                    <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
               </li>
-              <li class="slider__item slide">
+              <li class="slider__item slide swiper-slide">
                 <div class="slide__container container">
                   <h3 class="slide__title">Dekolte</h3>
                   <div class="slide__description">
                     <p>Интернет-магазин</p>
                   </div>
                   <div class="slide__img">
-                    <img src="./img/content/portfolio-dekolte.png" alt="Пример из портфолио - сайт Dekolte" class="slide__pic">
+                    <img data-src="./img/content/portfolio-dekolte.png" alt="Пример из портфолио - сайт Dekolte" class="slide__pic swiper-lazy">
+                    <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
               </li>
-              <li class="slider__item slide">
+              <li class="slider__item slide swiper-slide">
                 <div class="slide__container container">
                   <h3 class="slide__title">SIDERAL</h3>
                   <div class="slide__description">
                     <p>Интернет-портал</p>
                   </div>
                   <div class="slide__img">
-                    <img src="./img/content/portfolio-sideral.png" alt="Пример из портфолио - сайт SIDERAL" class="slide__pic">
+                    <img data-src="./img/content/portfolio-sideral.png" alt="Пример из портфолио - сайт SIDERAL" class="slide__pic swiper-lazy">
+                    <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
               </li>
             </ul>
             <div class="portfolio__display display">
-              <ul class="display__list">
-                <li class="display__item  display__item--on w3-button w3-display-left" onclick="plusDivs(-1)">
-                  <button href="" class="display__but">01</button>
+              <ul class="display__list swiper-pag">
+                <li class="display__item  display__item--active" alt="Переход на слайд">
                 </li>
-                <li class="display__item w3-button demo" onclick="currentDiv(1)">
-                  <button href="" class="display__but">02</button>
+                <li class="display__item"alt="Переход на слайд">
                 </li>
-                <li class="display__item w3-button demo" onclick="currentDiv(2)">
-                  <button href="" class="display__but">03</button>
+                <li class="display__item"alt="Переход на слайд">
                 </li>
-                <li class="display__item w3-button demo" onclick="currentDiv(3)">
-                  <button href="" class="display__but">04</button>
+                <li class="display__item"alt="Переход на слайд">
                 </li>
-                <li class="display__item">
-                  <button href="" class="display__but">05</button>
+                <li class="display__item"alt="Переход на слайд">
                 </li>
-                <li class="display__item w3-button w3-display-right" onclick="plusDivs(+1)">
-                  <button href="" class="display__but">06</button>
+                <li class="display__item"alt="Переход на слайд">
                 </li>
               </ul>
             </div>
@@ -308,6 +312,7 @@
       </div>
     </div> -->
   </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

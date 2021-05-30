@@ -123,6 +123,107 @@
   top: 50%;
   transform: translateY(-65%);
 }
+.fdisplay {
+  @include roboto(normal);
+  font-style: normal;
+  font-size: rem(48px);
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $black;
+  z-index: $z-display;
+}
+.fdisplay__list {
+  & .fdisplay__item {
+    background-color: transparent;
+    width: rem(56px);
+    height: rem(56px);
+    margin-bottom: rem(10px);
+    position: relative;
+    cursor: pointer;
+    opacity: 1;
+    &::before {
+      content: "";
+      position: absolute;
+      width: rem(6px);
+      height: rem(6px);
+      display: block;
+      border-radius: 50%;
+      background-color: $black;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      opacity: 0;
+      transition: opacity .6s;
+      transition: scale .6s;
+      
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: rem(32px);
+      height: rem(32px);
+      display: block;
+      border-radius: 50%;
+      border: 1px solid $black;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%) scale(1);
+      opacity: 1;
+      transition: .6s;
+      @include desctop {
+        width: rem(26px);
+        height: rem(26px);
+      }
+    }
+    &:hover {
+      &::before {
+        opacity: 1;
+      }
+      &::after {
+        transform: translate(-50%,-50%) scale(1.2);
+        // transition: scale .6s;
+  
+      }
+    }
+    &--active {
+      & .fdisplay__but {
+        transform: scale(1);
+        opacity: 1;
+      }
+      &::after {
+        transform:translate(-50%,-50%) scale(0);
+        opacity: 0;
+        transition: scale .6s, opacity .6s;
+      }
+      &:hover {
+        &::before {
+          opacity: 0;
+        }
+        &::after {
+          transform:translate(-50%,-50%) scale(0);
+          opacity: 0;
+          transition: scale .6s, opacity .6s;
+        }
+      }
+    }
+    @include desctop {
+      width: rem(40px);
+      height: rem(40px);
+      font-size: rem(30px);
+      margin-bottom: rem(5px);
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  .fdisplay__but {
+    display: block;
+    margin: 0 auto;
+    transition: scale .6s, opacity .6s;
+    transform: scale(0);
+    opacity: 0;
+  }
+}
 .first__content {
   display: flex;
   z-index: $z-first-container;

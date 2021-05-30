@@ -23,6 +23,7 @@ $z-first-container: 20;
 $z-display: 40;
 $z-slider-first: 3;
 $z-slider-first-buttons: 3;
+$z-slide-container: 20;
 
 
 
@@ -48,13 +49,13 @@ $z-slider-first-buttons: 3;
 @import "./blocks/slider.scss";
 @import "./blocks/slide.scss";
 @import "./blocks/slide-first.scss";
+@import "./blocks/swiper.scss";
 
 // @import "blocks/*.scss";
 // @import "./blocks/hamburger.scss";
 // @import "./blocks/fixed-menu.scss";
 // @import "./blocks/title.scss";
 // @import "./blocks/btn.scss";
-// @import "./blocks/why.scss";
 // @import "./blocks/why-desc.scss";
 // @import "./blocks/contain.scss";
 // @import "./blocks/boun-icon.scss";
