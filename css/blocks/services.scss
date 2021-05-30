@@ -1,0 +1,157 @@
+.services {
+  position: relative;
+  overflow: hidden;
+  color: $black;
+  border: 1px solid black;
+  padding-top: rem(150px);
+  @include desctop {
+    padding-top: rem(70px);
+  }
+}
+.services__container {
+  height: 100%;
+  display: flex;
+  background: inherit;
+}
+.services__content {
+  display: flex;
+  z-index: $z-services-content;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: inherit
+}
+.services__title {
+  @include roboto(bold);
+  font-size: rem(72px);
+  text-transform: uppercase;
+  margin-bottom: rem(108px);
+  @include desctop {
+    font-size: rem(50px);
+    margin-bottom: rem(42px);
+  }
+}
+.services__list {
+  display: flex;
+  justify-content: center;
+
+  // align-items: center;
+  width: 100%;
+  background: inherit;
+}
+.services__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  background: inherit;
+  margin-right: rem(10px);
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.services__ref {
+  padding: rem(68px) rem(51px) rem(60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0.6;
+  background: linear-gradient(154.49deg, rgba(255, 255, 255, 0.4) -14.99%, rgba(255, 255, 255, 0) 150.94%);
+  backdrop-filter: blur(40px);
+  width: 100%;
+  height: 100%;
+  @include desctop {
+    padding: 10% 5% 14%;
+  }
+}
+.services__name {
+  @include roboto(bold);
+  font-size: rem(24px);
+  text-transform: uppercase;
+  margin-bottom: rem(65px);
+  @include desctop {
+    font-size: rem(16px);
+    margin-bottom: rem(20px);
+  }
+}
+.services__pic {
+  display: block;
+  width: rem(106px);
+  height: rem(106px);
+  margin-bottom: rem(65px);
+  @include desctop {
+    margin-bottom: rem(40px);
+  }
+}
+.services__icon {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.services__desc {
+  @include roboto(normal);
+  font-size: rem(18px);
+  text-align: left;
+  line-height: 1.6;
+  @include desctop {
+    font-size: rem(16px);
+  }
+}
+.services__but {
+  position: relative;
+  padding: rem(29px) rem(52px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .6s;
+  color: $black;
+  text-transform: uppercase;
+  @include roboto(bold);
+  font-size: rem(36px);
+  @include desctop {
+    font-size: 26px;
+  & span {
+    position: relative;
+    z-index: 10;
+    display: block;
+    transition: .4s;
+  }
+  // overflow: hidden;
+  
+  }
+  &:hover {
+    color: $white;
+    &::before {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: url("../../img/bg/bg-mask.png");
+    background-size: cover;
+    // transform-origin: -10% left;
+    transform-origin: -10% left;
+    transition: .6s;
+    opacity: 0;
+  }
+  
+}
+// .but-mask {
+//   display: block;
+//   position: absolute;
+//   width: 105%;
+//   height: 120%;
+//   left: 0;
+//   top: 0;
+//   opacity: 0;
+//   transition: .6s;
+// }

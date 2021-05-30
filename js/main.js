@@ -184,7 +184,9 @@ const sliderLeft = document.querySelector(".slider__left");
 sliderLeft.addEventListener("mouseenter", function (e) {
   swiper.params.autoplay.disableOnInteraction = false;
   swiper.params.autoplay.delay = 700;
+  swiper.params.autoplay.reverseDirection = 0;
   swiper.autoplay.start();
+
 });
 sliderLeft.addEventListener("mouseleave", function (e) {
   swiper.autoplay.stop();
