@@ -8,27 +8,88 @@
 
 const firstSliderButPrev = document.querySelector(".slider-first__button--prev");
 const firstSliderButNext = document.querySelector(".slider-first__button--next");
-let fDisp = document.getElementsByClassName("fdisp");
-
+let fDisp = document.getElementsByClassName("fdisplay__item");
 var slideIndex = 1;
 showDivs(slideIndex);
 
 
 
+
+
+
 firstSliderButPrev.addEventListener("click", () => {
-  plusDivs(-1);
+  if (slideIndex==1)
+  {showDivs(7)} else
+  showDivs(slideIndex-1);
 });
 firstSliderButNext.addEventListener("click", () => {
-  plusDivs(+1);
+  
+  if (slideIndex==6) {showDivs(1);} else {showDivs(slideIndex+1);}
 });
 
 
 
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
 
+function showDivs(n) {
+
+  let i;
+  let x = document.getElementsByClassName("slider-first__item");
+  switch (n) {
+    case (n > x.length): {
+      slideIndex = 1; 
+      n = 1;
+      break;
+    }
+    case (7): {
+      slideIndex = x.length; 
+      n = x.length;
+      break;
+    }
+    case (0): {
+      slideIndex = 1; 
+      n = 1;
+      break;
+    }
+    case (1): {
+      slideIndex = n;
+      break;
+    }
+    case (2): {
+      // n = n;
+      slideIndex = n;
+      break;
+    }
+    case (3): {
+      // n = n;
+      slideIndex = n;
+      break;
+    }
+    case (4): {
+      // n = n;
+      slideIndex = n;
+      break;
+    }
+    case (5): {
+      // n = n;
+      slideIndex = n;
+      break;
+    }
+    case (6): {
+      // n = n;
+      slideIndex = n;
+      break;
+    }
+  }
+  for (i = 0; i < x.length; i++) {
+    fDisp[i].classList.remove("fdisplay__item--active");
+    x[i].style.display = "none";
+    
+    
+  }
+ fDisp[n-1].classList.add("fdisplay__item--active");
+  x[slideIndex-1].style.display = "flex";
+}
 
 
 
@@ -63,21 +124,71 @@ fDisp6.addEventListener("click", function(e) {
 
 
 
-function showDivs(n) {
-  let i;
-  let x = document.getElementsByClassName("slider-first__item");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    fDisp[i].classList.remove("display__item--active");
-    x[i].style.display = "none";
-    
-    
-  }
-  console.log(n, x[n-1]);
- fDisp[n-1].classList.add("display__item--active");
-  x[n-1].style.display = "flex";
-}
 
 
 
+
+
+
+var swiper = new Swiper(".mySwiper", {
+  effect: "slide",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  // coverflowEffect: {
+  //   rotate: 50,
+  //   stretch: 0,
+  //   depth: 100,
+  //   modifier: 1,
+  //   slideShadows: true,
+  // },
+  loop: true,
+  // autoplay: {
+  //   speed: 2000,
+  //   delay: 700,
+  //   disableOnInteraction: false,
+  // },
+  speed: 2000,
+  sumulateTouch: false,
+  pagination: {
+    el: ".swiper-pag",
+    clickable: true,
+  },
+  // mousewheel: {
+  //   sensitivity: 1,
+  // },
+  preloadImages: false,
+  lazy: {
+    loadOnTransitionStart: false,
+    loadPrevNext: true,
+  },
+  watchSlidesProgress: false,
+  watchSlidesVisibility: false,
+});
+
+
+/// остановка автопрокрутки при наведении на слайд
+const sliderRight = document.querySelector(".slider__right");
+sliderRight.addEventListener("mouseenter", function (e) {
+  swiper.params.autoplay.disableOnInteraction = false;
+  swiper.params.autoplay.delay = 700;
+  swiper.params.autoplay.reverseDirection = 1;
+  swiper.autoplay.start();
+});
+sliderRight.addEventListener("mouseleave", function (e) {
+  swiper.autoplay.stop();
+})
+
+
+const sliderLeft = document.querySelector(".slider__left");
+sliderLeft.addEventListener("mouseenter", function (e) {
+  swiper.params.autoplay.disableOnInteraction = false;
+  swiper.params.autoplay.delay = 700;
+  swiper.autoplay.start();
+});
+sliderLeft.addEventListener("mouseleave", function (e) {
+  swiper.autoplay.stop();
+})
+
+
+////   

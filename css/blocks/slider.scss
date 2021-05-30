@@ -7,9 +7,9 @@
   width: 100%;
   position: relative;
 }
-.slider__list {
+.slider__list, .swiper-wrapper {
   position: absolute;
-  transition: all ease .6s;
+  transition: all linear .7s;
   // left: 0;
   // top: 50%;
   // transform: translateY(-50%);
@@ -20,6 +20,8 @@
   display: flex;
   // justify-content: center;
   // align-items: flex-start;
+  transition-duration: .7s;
+
 }
 .slider__item {
   position: relative;

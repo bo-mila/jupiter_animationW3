@@ -40,30 +40,6 @@
     // &::after {
     //   transition: scale .6s;
     // }
-    &--on {
-      // & .display__but {
-      //   transform: scale(0);
-      //   opacity: 0;
-      // }
-      &::before {
-        opacity: 1;
-      }
-      // &::after {
-      //   transform:translate(-50%,-50%) scale(1);
-      //   opacity: 1;
-      //   transition: scale .6s;
-      // }
-      // &:hover {
-      //   // &::before {
-      //   //   opacity: 1;
-      //   // }
-      //   &::after {
-      //     transform:translate(-50%,-50%) scale(1.2);
-      //     // opacity: 1;
-      //     // transition: scale .6s;
-      //   }
-      // }
-      
-    }
+    
   }
 }
