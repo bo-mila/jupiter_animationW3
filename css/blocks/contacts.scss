@@ -2,3 +2,68 @@
   // @include bg-section(bg-contacts);
   position: relative;
 }
+.contacts__slider { //section
+  position: relative;
+  @include roboto(bold);
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+.contacts__rol {     // scroll
+  width: 100%;
+  display: flex;
+  // position: relative;
+  // letter-spacing: rem(5px);
+  & div {
+    background-color: $white;
+    color: $white;
+    font-size: rem(64px);
+    white-space: nowrap;
+    text-transform: uppercase;
+    animation: animate 40s linear infinite;
+    animation-delay: -40s;
+    letter-spacing: rem(15px);
+
+    &:nth-child(2) {
+      animation: animate2 40s linear infinite;
+      animation-delay: -20s;
+    }
+    & span {
+      -webkit-text-stroke: 2px $black;
+
+    }
+    // line-height: 1.2;
+  }
+}
+@keyframes animate {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes animate2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+// .contacts__rol span {
+//   display: block;
+//   position: relative;
+// }
+// .contacts__rol span:after {
+//   content: "data-text1";
+//   display: block;
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%,-50%);
+//   width: 100%;
+//   height: 100%;
+//   color: $black;
+// }

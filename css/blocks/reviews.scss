@@ -1,120 +1,79 @@
 .reviews {
-  background-color: $white;
+  display: flex;
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 5%;
-    right: 3%;
-    display: block;
-    background-image: url("../../img/icons/barry-bef-reviews.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: $z-bef-af-section;
-    width: rem(150px);
-    height: rem(86px);
-    @include tablets {
-      width: rem(113px);
-      height: rem(79px);
-      right: -5%;
-    }
-    @include phones {
-      top: 2%;
-    }
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    bottom: -24%;
-    left: 0%;
-    display: block;
-    background-image: url("../../img/bg/bg-image-reviews.png");
-    background-position: left 0% bottom -40%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    z-index: $z-bef-af-section;
-    width: rem(102px);
-    height: rem(321px);
-    @include tablets {
-      bottom: -9%;
-      width: rem(76px);
-      height: rem(317px);
-    }
-  }
-  
+  width: 100%;
+  color: $black;
+  flex-direction: column;
+  align-items: center;
   
 }
 .reviews__container {
-  height: 100%;
+  width: 85%;
   display: flex;
-}
-.reviews__content {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  z-index: $z-content;
-}
-.reviews__title {
-  margin-bottom: rem(44px);
-  z-index: $z-title-reviews;
-  @include phones {
-    margin-bottom: rem(10px);
-  }
-}
-.reviews__list {
-  display: flex;
-  margin-bottom: rem(22px);
-  @include tablets {
-    width: 95%;
-  }
 }
 .reviews__item {
-  width: 100%;
-  display: none;
-
-  &--active {
-    display: flex;
-    @include tablets {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-  }
-}
-.reviews__list-btns {
+  width: calc(100%/3);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.reviews__item-btn {
-  width: rem(66px);
-  height: rem(66px);
-  border-radius: 50%;
+.reviews__avatar {
+  max-width: rem(514px);
+  max-height: rem(550px);
+  // width: 100%;;
   overflow: hidden;
-  border: 5px solid transparent;
-  margin-right: rem(5px);
-  box-sizing: content-box;
-  cursor: pointer;
-  &:last-child {
-    margin-right: 0;
+  margin-bottom: rem(47px);
+  position: relative;
+  @include desctop {
+    margin-bottom: rem(25px);
   }
-
-  &--active {
-    border-color: $green;
-  }
-  @include tablets {
-    width: rem(58px);
-    height: rem(58px);
-  }
-  @include phones {
-    width: rem(53px);
-    height: rem(53px);
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-color: white;
+    border-radius: 50%;
+    border-width: 20px;
+    filter: blur(40px);
   }
 }
-.reviews__img-btn {
+.reviews__photo {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center center;
+
+}
+.reviews__icon {
+  filter: blur(rem(40px));
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: rem(90px);
+  height: rem(110px);
+  border-radius: 50%;
+  border-color: yellow;
+  border-width: 40px;
+  // fill: yellow;
+  // stroke:  blur(40px);
+  // stroke-width: rem(30px);
+  // z-index: 50;
+}
+.reviews__desc {
+  width: 85%;
+  @include roboto(normal);
+  font-size: rem(21px);
+  line-height: 1.2;
+  @include desctop {
+    font-size: rem(16px);
+  }
 }

@@ -2,10 +2,11 @@
   position: relative;
   overflow: hidden;
   color: $black;
-  border: 1px solid black;
-  padding-top: rem(50px);
+  min-height: rem(920px);
+  // border: 1px solid black;
+  padding-top: rem(20px);
   @include desctop {
-    padding-top: rem(40px);
+    padding-top: rem(20px);
   }
 }
 .services__container {
@@ -27,10 +28,10 @@
   @include roboto(bold);
   font-size: rem(72px);
   text-transform: uppercase;
-  margin-bottom: rem(68px);
+  margin-bottom: rem(48px);
   @include desctop {
     font-size: rem(50px);
-    margin-bottom: rem(42px);
+    margin-bottom: rem(22px);
   }
 }
 .services__list {
@@ -45,7 +46,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 29%;
   background: inherit;
   margin-right: rem(10px);
   transform: scale(1);
@@ -113,29 +114,20 @@
   align-items: center;
   transition: all .6s;
   color: $black;
+  // color: $white;
   text-transform: uppercase;
   border: 1px solid $black;
+  cursor: pointer;
   @include roboto(bold);
   font-size: rem(36px);
   @include desctop {
     font-size: 26px;
+  }
   & span {
     position: relative;
-    z-index: 10;
-    display: block;
-    transition: .4s;
-  }
-  // overflow: hidden;
-  
-  }
-  &:hover {
-    color: $white;
-    border: 1px solid transparent;
-
-    &::before {
-      width: 100%;
-      opacity: 1;
-    }
+    z-index: 15;
+    display: flex;
+    transition: .7s;
   }
   &::before {
     content: "";
@@ -150,6 +142,20 @@
     transform-origin: -10% left;
     transition: .6s;
     opacity: 0;
+    z-index: 10;
+
+  }
+  &:hover {
+    & span {
+      color: $white;
+      // color: red;
+    }
+    border: 1px solid white;
+
+    &::before {
+      width: 100%;
+      opacity: .9;
+    }
   }
   
 }

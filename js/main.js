@@ -197,7 +197,7 @@ sliderLeft.addEventListener("mouseleave", function (e) {
 
 
 
-var swiperBack = new Swiper(".mySwiperWhy", {
+var swiperWhy = new Swiper(".mySwiperWhy", {
   effect: "slide",
   grabCursor: true,
   centeredSlides: true,
