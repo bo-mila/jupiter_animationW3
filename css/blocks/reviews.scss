@@ -5,7 +5,13 @@
   color: $black;
   flex-direction: column;
   align-items: center;
-  
+  &--active {
+    & .reviews__avatar {
+      transition: .8s;
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
 }
 .reviews__container {
   width: 85%;
@@ -25,6 +31,10 @@
   overflow: hidden;
   margin-bottom: rem(47px);
   position: relative;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: .6s;
+  transition: opacity .4s;
   @include desctop {
     margin-bottom: rem(25px);
   }
@@ -50,23 +60,6 @@
   height: 100%;
   object-fit: cover;
 
-}
-.reviews__icon {
-  filter: blur(rem(40px));
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  width: rem(90px);
-  height: rem(110px);
-  border-radius: 50%;
-  border-color: yellow;
-  border-width: 40px;
-  // fill: yellow;
-  // stroke:  blur(40px);
-  // stroke-width: rem(30px);
-  // z-index: 50;
 }
 .reviews__desc {
   width: 85%;

@@ -2,6 +2,7 @@
   position: absolute;
   z-index: $z-header;
   left: 0;
+  top: rem(20px);
   width: 100%;
   color: $black;
 }
@@ -26,10 +27,10 @@
 }
 .header__logo {
   width: rem(212px);
-  height: rem(212px);
+  height: rem(61px);
   @include desctop {
     width: rem(180px);
-    height: rem(180px);
+    height: rem(50px);
   }
 }
 .header__right {

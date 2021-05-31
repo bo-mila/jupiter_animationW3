@@ -228,3 +228,10 @@ var swiperWhy = new Swiper(".mySwiperWhy", {
   watchSlidesProgress: false,
   watchSlidesVisibility: false,
 });
+
+
+
+const reviews = document.querySelector(".reviews");
+reviews.addEventListener("mousemove", function (e) {
+  reviews.classList.add("reviews--active");
+})

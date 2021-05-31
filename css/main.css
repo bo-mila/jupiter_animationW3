@@ -764,6 +764,7 @@ address {
   position: absolute;
   z-index: 50;
   left: 0;
+  top: 1.25rem;
   width: 100%;
   color: #000; }
 
@@ -805,11 +806,11 @@ address {
 
 .header__logo {
   width: 13.25rem;
-  height: 13.25rem; }
+  height: 3.8125rem; }
   @media screen and (max-width: 1200px) {
     .header__logo {
       width: 11.25rem;
-      height: 11.25rem; } }
+      height: 3.125rem; } }
 
 .header__right {
   display: -webkit-box;
@@ -2154,7 +2155,8 @@ address {
   transform: scale(1);
   -webkit-transition: .6s;
   -o-transition: .6s;
-  transition: .6s; }
+  transition: .6s;
+  cursor: pointer; }
   .services__item:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -2406,6 +2408,14 @@ address {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .reviews--active .reviews__avatar {
+    -webkit-transition: .8s;
+    -o-transition: .8s;
+    transition: .8s;
+    -webkit-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    transform: translateY(0%);
+    opacity: 1; }
 
 .reviews__container {
   width: 85%;
@@ -2434,7 +2444,17 @@ address {
   max-height: 34.375rem;
   overflow: hidden;
   margin-bottom: 2.9375rem;
-  position: relative; }
+  position: relative;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+  opacity: 0;
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s;
+  -webkit-transition: opacity .4s;
+  -o-transition: opacity .4s;
+  transition: opacity .4s; }
   @media screen and (max-width: 1200px) {
     .reviews__avatar {
       margin-bottom: 1.5625rem; } }
@@ -2462,22 +2482,6 @@ address {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover; }
-
-.reviews__icon {
-  -webkit-filter: blur(2.5rem);
-  filter: blur(2.5rem);
-  position: absolute;
-  display: block;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 5.625rem;
-  height: 6.875rem;
-  border-radius: 50%;
-  border-color: yellow;
-  border-width: 40px; }
 
 .reviews__desc {
   width: 85%;
@@ -2519,14 +2523,43 @@ address {
     animation: animate 40s linear infinite;
     -webkit-animation-delay: -40s;
     animation-delay: -40s;
-    letter-spacing: 0.9375rem; }
+    letter-spacing: 0.9375rem;
+    -webkit-text-stroke: 1px #000; }
     .contacts__rol div:nth-child(2) {
       -webkit-animation: animate2 40s linear infinite;
       animation: animate2 40s linear infinite;
       -webkit-animation-delay: -20s;
       animation-delay: -20s; }
-    .contacts__rol div span {
-      -webkit-text-stroke: 2px #000; }
+    .contacts__rol div .s1, .contacts__rol div .s2, .contacts__rol div .s3, .contacts__rol div .s4, .contacts__rol div .s5, .contacts__rol div .s6 {
+      cursor: pointer;
+      position: relative; }
+      .contacts__rol div .s1::after, .contacts__rol div .s2::after, .contacts__rol div .s3::after, .contacts__rol div .s4::after, .contacts__rol div .s5::after, .contacts__rol div .s6::after {
+        -webkit-text-stroke: 1px transparent;
+        position: absolute;
+        color: transparent;
+        top: -1px;
+        left: -0.25rem;
+        background: url("../../img/bg/bg-mask.png");
+        background-size: cover;
+        -webkit-background-clip: text;
+        opacity: 0;
+        -webkit-transition: opacity .6s;
+        -o-transition: opacity .6s;
+        transition: opacity .6s; }
+      .contacts__rol div .s1:hover::after, .contacts__rol div .s2:hover::after, .contacts__rol div .s3:hover::after, .contacts__rol div .s4:hover::after, .contacts__rol div .s5:hover::after, .contacts__rol div .s6:hover::after {
+        opacity: 1; }
+    .contacts__rol div .s1::after {
+      content: attr(data-text1); }
+    .contacts__rol div .s2::after {
+      content: attr(data-text2); }
+    .contacts__rol div .s3::after {
+      content: attr(data-text3); }
+    .contacts__rol div .s4::after {
+      content: attr(data-text4); }
+    .contacts__rol div .s5::after {
+      content: attr(data-text5); }
+    .contacts__rol div .s6::after {
+      content: attr(data-text6); }
 
 @-webkit-keyframes animate {
   0% {

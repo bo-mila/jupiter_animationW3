@@ -51,6 +51,7 @@
   margin-right: rem(10px);
   transform: scale(1);
   transition: .6s;
+  cursor: pointer;
   &:hover {
     transform: scale(1.1);
   }
