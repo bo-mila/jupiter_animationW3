@@ -2,19 +2,13 @@
   position: relative;
   overflow: hidden;
   color: $black;
-  // border: 1px solid black;
-  // padding-top: rem(50px);
-  min-height: rem(1450px);
+  min-height: rem(900px);
   @include roboto(black);
   font-size: rem(70px);
   text-transform: uppercase;
   @include desctop {
-    // padding-top: rem(40px);
-    // min-height: rem(425px);
     font-size: rem(50px);
-
   }
-  
 }
 .why__container {
   height: 100%;
@@ -31,15 +25,12 @@
   position: relative;
   overflow: hidden;
   flex-direction: column;
-  // padding-top: rem(70px);
 }
 .why__slider {
-  // margin-bottom: rem(60px);
   position: relative;
   width: 100%;
-  min-height: rem(334px);
+  min-height: rem(264px);
   @include desctop {
-    // margin-bottom: rem(30px);
   }
 }
 .why__list {
@@ -50,7 +41,6 @@
   height: 100%;
   display: flex;
   align-items: center;
-
 }
 .why__item {
   display: flex;
@@ -59,7 +49,6 @@
   height: 100%;
   flex-direction: column;
   text-align: center;
-  
 }
 .why__title {
   display: flex;
@@ -74,13 +63,11 @@
   white-space: initial;
   background: url("../../img/bg/bg-mask.png");
   background-size: cover;
-  // background-attachmenn: fixed;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   @include roboto(black);
   font-size: rem(80px);
   @include desctop {
     font-size: rem(50px);
-    
   }
 }

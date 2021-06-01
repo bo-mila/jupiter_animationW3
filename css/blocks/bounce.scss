@@ -4,7 +4,6 @@
   border-radius: 50%;
   overflow: hidden;
   &-blur {
-    
     &-1 {
       background-color: $bounce-turquoise;
       filter: blur(rem(20px));
@@ -35,10 +34,8 @@
       left: 40%;
       z-index: $z-move-bounce-blur-3;
       @include keyframesBounBlur3(19%,58%);
-
     }
   }
-
   &-img {
     &::after {
       content: "";
@@ -47,9 +44,7 @@
       width: 100%;
       height: 100%;
       background-image: url("./../../img/bg/bg-mask.png");
-
     }
-    
     &-1 {
       width: rem(42px);
       height: rem(42px);
@@ -57,7 +52,6 @@
       left: 95%;
       z-index: $z-move-bounce-img-1;
       @include keyframesBounImg1(95%,5%);
-
       &::after {
         background-position-x: 10%;
         background-position-y: 82%;
@@ -70,7 +64,6 @@
       left: 70%;
       z-index: $z-move-bounce-img-2;
       @include keyframesBounImg2(70%,90%);
-
       &::after {
         background-position: 37% 73%;
         background-size: 242% 405%;
@@ -84,8 +77,6 @@
       left: 55%;
       z-index: $z-move-bounce-img-3;
       @include keyframesBounImg3(55%,40%);
-      
-
       &::after {
         background-position: 24% 73%;
         background-size: 198% 219%;
@@ -99,7 +90,6 @@
       left: 65%;
       z-index: $z-move-bounce-img-4;
       @include keyframesBounImg4(65%,55%);
-
       &::after {
         background-position: 51% 37%;
         background-size: 324% 193%;
@@ -113,7 +103,6 @@
       left: 25%;
       z-index: $z-move-bounce-img-5;
       @include keyframesBounImg5(25%,85%);
-
       &::after {
         background-size: 130% 122%;
         transform: rotate(-179deg);

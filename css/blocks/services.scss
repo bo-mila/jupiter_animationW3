@@ -2,11 +2,11 @@
   position: relative;
   overflow: hidden;
   color: $black;
-  min-height: rem(920px);
-  // border: 1px solid black;
+  min-height: rem(868px);
   padding-top: rem(20px);
   @include desctop {
-    padding-top: rem(20px);
+    padding-top: rem(10px);
+  min-height: rem(800px);
   }
 }
 .services__container {
@@ -28,17 +28,16 @@
   @include roboto(bold);
   font-size: rem(72px);
   text-transform: uppercase;
-  margin-bottom: rem(48px);
+  margin-bottom: rem(68px);
   @include desctop {
     font-size: rem(50px);
-    margin-bottom: rem(22px);
+    margin-bottom: rem(32px);
   }
 }
 .services__list {
   display: flex;
   justify-content: center;
-  margin-bottom: rem(30px);
-  // align-items: center;
+  margin-bottom: rem(40px);
   width: 100%;
   background: inherit;
 }
@@ -115,7 +114,6 @@
   align-items: center;
   transition: all .6s;
   color: $black;
-  // color: $white;
   text-transform: uppercase;
   border: 1px solid $black;
   cursor: pointer;
@@ -139,34 +137,19 @@
     height: 100%;
     background: url("../../img/bg/bg-mask.png");
     background-size: cover;
-    // transform-origin: -10% left;
     transform-origin: -10% left;
     transition: .6s;
     opacity: 0;
     z-index: 10;
-
   }
   &:hover {
     & span {
       color: $white;
-      // color: red;
     }
     border: 1px solid white;
-
     &::before {
       width: 100%;
       opacity: .9;
     }
   }
-  
 }
-// .but-mask {
-//   display: block;
-//   position: absolute;
-//   width: 105%;
-//   height: 120%;
-//   left: 0;
-//   top: 0;
-//   opacity: 0;
-//   transition: .6s;
-// }
