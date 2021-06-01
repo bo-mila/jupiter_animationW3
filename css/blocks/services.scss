@@ -2,11 +2,12 @@
   position: relative;
   overflow: hidden;
   color: $black;
-  // min-height: rem(868px);
+  min-height: rem(868px);
   padding-top: rem(20px);
+  padding-bottom: rem(70px);
   @include desctop {
     padding-top: rem(10px);
-  // min-height: rem(800px);
+  min-height: rem(800px);
   }
 }
 .services__container {
@@ -19,7 +20,7 @@
   z-index: $z-services-content;
   flex-direction: column;
   height: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
   background: inherit
@@ -37,7 +38,6 @@
 .services__list {
   display: flex;
   justify-content: center;
-  margin-bottom: rem(40px);
   width: 100%;
   background: inherit;
 }
@@ -63,7 +63,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  opacity: 0.6;
+  opacity: 0.8;
   background: linear-gradient(154.49deg, rgba(255, 255, 255, 0.4) -14.99%, rgba(255, 255, 255, 0) 150.94%);
   backdrop-filter: blur(40px);
   width: 100%;
@@ -83,9 +83,6 @@
   }
 }
 .services__pic {
-  display: block;
-  width: rem(106px);
-  height: rem(106px);
   margin-bottom: rem(65px);
   @include desctop {
     margin-bottom: rem(40px);
@@ -93,9 +90,9 @@
 }
 .services__icon {
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  width: rem(106px);
+  height: rem(106px);
+  fill: $black;
 }
 .services__desc {
   @include roboto(normal);
