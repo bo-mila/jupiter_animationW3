@@ -6,6 +6,8 @@
   position: relative;
   overflow: hidden;
   color: $black;
+  min-height: 1080px;
+  height: 100vh;
 }
 .first__bounces {
   position: absolute;

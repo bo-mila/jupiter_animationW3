@@ -1,12 +1,34 @@
 .contacts {
   position: relative;
+  overflow: hidden;
+  padding-top: rem(90px);
+  padding-bottom: rem(80px);
+  @include desctop {
+    padding-bottom: rem(40px);
+  }
+  &._active {
+    & .footer__logo {
+      left: 50%;
+    }
+    & .footer__nav {
+      &:before{
+        transform: translate(0,0);
+      }
+      &:after {
+        transform: translate(0,0);
+      }
+    }
+    & .network__list {
+      left: 50%;
+    }
+  }
 }
 .contacts__slider { //section
   position: relative;
   @include roboto(bold);
   width: 100%;
-  height: 100%;
   overflow: hidden;
+  margin-bottom: rem(90px);
 }
 .contacts__rol {     // scroll
   width: 100%;
