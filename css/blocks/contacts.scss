@@ -1,7 +1,7 @@
 .contacts {
   position: relative;
   overflow: hidden;
-  padding-top: rem(90px);
+  padding-top: rem(120px);
   padding-bottom: rem(80px);
   @include desctop {
     padding-bottom: rem(40px);
@@ -28,7 +28,7 @@
   @include roboto(bold);
   width: 100%;
   overflow: hidden;
-  margin-bottom: rem(90px);
+  margin-bottom: rem(120px);
 }
 .contacts__rol {     // scroll
   width: 100%;

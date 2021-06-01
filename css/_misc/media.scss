@@ -1,8 +1,14 @@
 @function rem($px) {
   @return $px / 16px + 0rem;
 }
+
+@mixin fulldesctop {
+  @media screen and (max-width: 1800px) {
+    @content;
+  }
+}
 @mixin desctop {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1200px) { //1100
     @content;
   }
 }

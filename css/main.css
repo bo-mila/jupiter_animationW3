@@ -391,9 +391,6 @@ html, body {
   -ms-flex-pack: center;
   justify-content: center;
   width: 100%; }
-  @media screen and (max-width: 1200px) {
-    .section {
-      min-height: 998px; } }
 
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
@@ -1936,12 +1933,15 @@ address {
   width: 100%;
   font-size: 11.25rem;
   background: url("../../img/bg/bg-mask.png");
-  background-size: cover;
-  background-repeat: repeat;
+  background-size: 126% 100%;
+  background-position-y: 6%;
+  background-position-x: -9%;
+  background-repeat: no-repeat;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-align: center; }
+  text-align: center;
+  opacity: .6; }
   @media screen and (max-width: 1200px) {
     .slider__back-mask {
       font-size: 10rem;
@@ -2081,12 +2081,10 @@ address {
   position: relative;
   overflow: hidden;
   color: #000;
-  min-height: 54.25rem;
   padding-top: 1.25rem; }
   @media screen and (max-width: 1200px) {
     .services {
-      padding-top: 0.625rem;
-      min-height: 50rem; } }
+      padding-top: 0.625rem; } }
 
 .services__container {
   height: 100%;
@@ -2296,8 +2294,6 @@ address {
   position: relative;
   overflow: hidden;
   color: #000;
-  min-height: 1080px;
-  min-height: 56.25rem;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-style: normal;
   line-height: 1;
@@ -2447,7 +2443,7 @@ address {
       transition: all .8s ease 1.6s; }
 
 .reviews__container {
-  width: 85%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2466,15 +2462,16 @@ address {
   flex-direction: column;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  position: relative;
+  cursor: pointer; }
 
 .reviews__avatar {
   position: relative;
-  max-width: 32.125rem;
-  max-height: 34.375rem;
+  width: 23.375rem;
+  height: 21.875rem;
   overflow: hidden;
   margin-bottom: 2.9375rem;
-  position: relative;
   -webkit-transform: translate(0, 120%);
   -ms-transform: translate(0, 120%);
   transform: translate(0, 120%);
@@ -2488,6 +2485,14 @@ address {
   @media screen and (max-width: 1200px) {
     .reviews__avatar {
       margin-bottom: 1.5625rem; } }
+  .reviews__avatar:hover .reviews__icon {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+  .reviews__avatar:hover .icon--vector {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
 
 .reviews__photo {
   display: block;
@@ -2496,14 +2501,68 @@ address {
   -o-object-fit: cover;
   object-fit: cover; }
 
+.reviews__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: blur(7px);
+  filter: blur(7px);
+  z-index: 10;
+  -webkit-transition: .6s;
+  -o-transition: .6s;
+  transition: .6s; }
+  .reviews__icon--left {
+    background-image: url("../../img/content/why-photo-left.png");
+    -webkit-clip-path: circle(130px at center);
+    clip-path: circle(130px at center); }
+  .reviews__icon--center {
+    background-image: url("../../img/content/why-photo-centre.png");
+    -webkit-clip-path: polygon(50% 10%, 15% 88%, 85% 88%);
+    clip-path: polygon(50% 10%, 15% 88%, 85% 88%); }
+  .reviews__icon--right {
+    background-image: url("../../img/content/why-photo-right.png");
+    -webkit-clip-path: inset(29% 55% 13% 32%);
+    clip-path: inset(29% 55% 13% 32%); }
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 12; }
+  .icon--ellipse {
+    background-image: url("../../img/content/why-photo-left.png");
+    -webkit-clip-path: circle(78px at center);
+    clip-path: circle(78px at center); }
+  .icon--triangle {
+    background-image: url("../../img/content/why-photo-centre.png");
+    -webkit-clip-path: polygon(50% 37%, 32% 76%, 68% 76%);
+    clip-path: polygon(50% 37%, 32% 76%, 68% 76%); }
+  .icon--vector {
+    -webkit-transition: .6s;
+    -o-transition: .6s;
+    transition: .6s;
+    background-image: url("../../img/content/why-photo-right.png");
+    -webkit-filter: blur(7px);
+    filter: blur(7px);
+    -webkit-clip-path: inset(9% 35% 26% 52%);
+    clip-path: inset(9% 35% 26% 52%); }
+
 .reviews__desc {
   width: 85%;
   font-family: 'Roboto', Helvetica, sans-serif;
   font-style: normal;
   line-height: 1;
   font-weight: 400;
-  font-size: 1.3125rem;
-  line-height: 1.2;
+  font-size: 1.25rem;
+  line-height: 1.4;
   opacity: 0;
   -webkit-transform: translate(0, -120%);
   -ms-transform: translate(0, -120%);
@@ -2518,7 +2577,7 @@ address {
 .contacts {
   position: relative;
   overflow: hidden;
-  padding-top: 5.625rem;
+  padding-top: 7.5rem;
   padding-bottom: 5rem; }
   @media screen and (max-width: 1200px) {
     .contacts {
@@ -2544,7 +2603,7 @@ address {
   font-weight: 700;
   width: 100%;
   overflow: hidden;
-  margin-bottom: 5.625rem; }
+  margin-bottom: 7.5rem; }
 
 .contacts__rol {
   width: 100%;
@@ -2731,9 +2790,9 @@ address {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: .4s 2s;
-  -o-transition: .4s 2s;
-  transition: .4s 2s;
+  -webkit-transition: .4s 1.8s;
+  -o-transition: .4s 1.8s;
+  transition: .4s 1.8s;
   width: 17rem; }
   @media screen and (max-width: 1200px) {
     .footer__logo {
@@ -2821,7 +2880,7 @@ address {
   flex-wrap: wrap; }
 
 .nav__item {
-  line-height: 2; }
+  line-height: 2.2; }
 
 .nav__ref {
   cursor: pointer;
@@ -2862,9 +2921,9 @@ address {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  -webkit-transition: .4s 2s;
-  -o-transition: .4s 2s;
-  transition: .4s 2s;
+  -webkit-transition: .4s 1.8s;
+  -o-transition: .4s 1.8s;
+  transition: .4s 1.8s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

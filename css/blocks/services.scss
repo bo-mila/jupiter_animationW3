@@ -2,11 +2,11 @@
   position: relative;
   overflow: hidden;
   color: $black;
-  min-height: rem(868px);
+  // min-height: rem(868px);
   padding-top: rem(20px);
   @include desctop {
     padding-top: rem(10px);
-  min-height: rem(800px);
+  // min-height: rem(800px);
   }
 }
 .services__container {

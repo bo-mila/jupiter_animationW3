@@ -25,11 +25,14 @@
   width: 100%;
   font-size: rem(180px);
   background: url("../../img/bg/bg-mask.png");
-  background-size: cover;
-  background-repeat: repeat;
+  background-size: 126% 100%;
+  background-position-y: 6%;
+  background-position-x: -9%;
+  background-repeat: no-repeat;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
+  opacity: .6;
   @include desctop {
     font-size: rem(160px);
     width: 95%;

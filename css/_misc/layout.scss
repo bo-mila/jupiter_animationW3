@@ -74,9 +74,9 @@ html, body {
   justify-content: center;
   // overflow: hidden;
   width: 100%;
-  @include desctop {
-    min-height: 998px;
-  }
+  // @include desctop {
+  //   min-height: 998px;
+  // }
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;

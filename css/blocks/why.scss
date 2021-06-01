@@ -2,8 +2,8 @@
   position: relative;
   overflow: hidden;
   color: $black;
-  min-height: 1080px;
-  min-height: rem(900px);
+  // min-height: 1080px;
+  // min-height: rem(900px);
   @include roboto(black);
   font-size: rem(70px);
   text-transform: uppercase;
