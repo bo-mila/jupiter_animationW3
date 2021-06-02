@@ -82,6 +82,16 @@
         background-size: 198% 219%;
         transform: rotate(185deg);
       }
+      &.animRun {
+        transform: rotate(-60deg);
+        // animation-duration: 20s;
+        // left: -30%;
+        // transition: .6s ease-out;
+
+        &::after {
+        // transform: rotate(90deg);
+        }
+      }
     }
     &-4 {
       width: rem(266px);
