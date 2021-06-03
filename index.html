@@ -11,47 +11,47 @@
 </head>
 <body>
   <div class="wrapper">
-    <div class="maincontent">
-      <header class="header">
-        <div class="container header__container">
-          <div class="header__content">
-            <div class="header__left">
-              <label class="header__hamburger-menu hamburger-menu">
-                <input type="checkbox" class="hamburger-menu__input">
-                <div class="hamburger-menu__img">
-                  <svg class="hamburger-menu__icon" alt="Перейти на меню сайта">
-                    <use xlink:href="img/icons/sprite.svg#hamb"></use>
-                  </svg>
-                </div>
-              </label>
-              <img src="./img/content/logo.png" alt="Логотип сайта" class="header__logo">
-            </div>
-            <div class="header__right">
-              <ul class="header__language language">
-                <li class="language__item">
-                  <a href="" class="language__ukr">ukr</a>
-                </li>
-                <li class="language__item">
-                  <a href="" class="language__eng">eng</a>
-                </li>
-                <li class="language__item">
-                  <a href="" class="language__ru">ru</a>
-                </li>
-              </ul>
-            </div>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__content">
+          <div class="header__left">
+            <label class="header__hamburger-menu hamburger-menu">
+              <input type="checkbox" class="hamburger-menu__input">
+              <div class="hamburger-menu__img">
+                <svg class="hamburger-menu__icon" alt="Перейти на меню сайта">
+                  <use xlink:href="img/icons/sprite.svg#hamb"></use>
+                </svg>
+              </div>
+            </label>
+            <img src="./img/content/logo.png" alt="Логотип сайта" class="header__logo">
+          </div>
+          <div class="header__right">
+            <ul class="header__language language">
+              <li class="language__item">
+                <a href="" class="language__ukr">ukr</a>
+              </li>
+              <li class="language__item">
+                <a href="" class="language__eng">eng</a>
+              </li>
+              <li class="language__item">
+                <a href="" class="language__ru">ru</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
+    <main class="maincontent">
       <section id="sectionFirst" class="section first">
-        <div class="first__bounces" aria-label="Бегающие шарики на фоне">
-          <div class="bounce bounce-blur bounce-blur-1"></div>
-          <div class="bounce bounce-blur bounce-blur-2"></div>
-          <div class="bounce bounce-blur bounce-blur-3"></div>
-          <div class="bounce bounce-img bounce-img-1"></div>
-          <div class="bounce bounce-img bounce-img-2"></div>
-          <div class="bounce bounce-img bounce-img-3"></div>
-          <div class="bounce bounce-img bounce-img-4"></div>
-          <div class="bounce bounce-img bounce-img-5"></div>
+        <div class="first__bounces parallax" data-speed="2" aria-label="Бегающие шарики на фоне">
+          <div class="bounce bounce-blur bounce-blur-1" data-speed="20"></div>
+          <div class="bounce bounce-blur bounce-blur-2" data-speed="6"></div>
+          <div class="bounce bounce-blur bounce-blur-3" data-speed="13"></div>
+          <div class="bounce bounce-img bounce-img-1" data-speed="18"></div>
+          <div class="bounce bounce-img bounce-img-2" data-speed="12"></div>
+          <div class="bounce bounce-img bounce-img-3" data-speed="18"></div>
+          <div class="bounce bounce-img bounce-img-4"  data-speed="2"></div>
+          <div class="bounce bounce-img bounce-img-5" data-speed="4"></div>
         </div>
         <div class="first__slider-first slider-first">
           <div class="slider-first__container">
@@ -130,11 +130,11 @@
               </div>
             </div>
           </div>
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
             <filter id="blur">
               <feGaussianBlur stDeviation="6"></feGaussianBlur>
             </filter>
-          </svg>
+          </svg> -->
         </div>
       </section>
       <section id="sectionPortfolio" class="section portfolio">

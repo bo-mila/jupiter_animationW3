@@ -1,20 +1,28 @@
 .first {
+  
+  position: relative;
+  overflow: hidden;
+  color: $black;
+  min-height: 100vh;
+}
+.parallax {
   background-image: url("../../img/bg/bg-mask.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  position: relative;
-  overflow: hidden;
-  color: $black;
-  min-height: 1080px;
-  height: 100vh;
-}
-.first__bounces {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  background: inherit;
+  width: 110%;
+  height: 110%;
+  top: -5%;
+  left: -5%;
+  // background: inherit;
 }
+// .bounce {
+//   width: 100%;
+//   height: 100%;
+//   top: 0;
+//   left: 0;
+// }
 .first__slider-first {
   position: absolute;
   right: 0;
@@ -46,6 +54,7 @@
 .first__container {
   height: 100%;
   display: flex;
+  z-index: 10;
 }
 .first__display {
   position: absolute;

@@ -21,13 +21,14 @@ $z-move-bounce-img-4: 7;
 $z-move-bounce-img-5: 8;
 $z-first-container: 20;
 $z-display: 40;
-$z-slider-first: 3;
-$z-slider-first-buttons: 3;
+$z-slider-first: 23;
+$z-slider-first-buttons: 25;
 $z-slide-container: 20;
 $z-services-content: 25;
 $z-slider: 10;
 $z-slider-back-mask: 15;
 $z-slider-list: 20;
+$z-hamburger: 200;
 
 @import "./_misc/normalize.scss";
 @import "./libs/w3.css";
@@ -59,9 +60,9 @@ $z-slider-list: 20;
 @import "./blocks/footer.scss";
 @import "./blocks/nav.scss";
 @import "./blocks/network.scss";
+@import "./blocks/hamburger.scss";
 
 // @import "blocks/*.scss";
-// @import "./blocks/hamburger.scss";
 // @import "./blocks/fixed-menu.scss";
 // @import "./blocks/title.scss";
 // @import "./blocks/btn.scss";
