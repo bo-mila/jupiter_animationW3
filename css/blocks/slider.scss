@@ -1,9 +1,9 @@
 .slider {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   overflow: hidden;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   position: relative;
   background-color: white;
 }
@@ -13,7 +13,7 @@
   left: 0;
   top: 0;
   height: 100%;
-  width: 600%;
+  // width: 600vw;
   display: flex;
   transition-duration: .7s;
   background: transparent;

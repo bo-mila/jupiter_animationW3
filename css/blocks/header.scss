@@ -3,11 +3,11 @@
   z-index: $z-header;
   left: 0;
   // top: rem(20px);
-  top: 5%;
+  top: 2vh;
   width: 100%;
   color: $black;
   @include desctop {
-    top: 4%;
+    top: 2%;
   }
   @include note {
     top: 3%;

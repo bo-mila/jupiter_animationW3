@@ -5,6 +5,8 @@
   position: relative;
   overflow: hidden;
   color: $black;
+  // min-height: 1080px;
+  // height: 100vh;
   min-height: 100vh;
 }
 .parallax {
@@ -67,7 +69,7 @@
 .first__display {
   position: absolute;
   left: 0;
-  top: 38%;
+  top: 40%;
   transform: translateY(-65%);
   @include desctop {
     top: 35%;
@@ -76,7 +78,7 @@
     top: 38%;
   }
   @include tablets {
-    top: 36%;
+    top: 38%;
   }
 }
 .fdisplay {
@@ -94,10 +96,10 @@
 .fdisplay__list {
   & .fdisplay__item {
     background-color: transparent;
-    width: rem(56px);
-    height: rem(56px);
+    width: rem(53px);
+    height: rem(53px);
     // margin-bottom: rem(10px);
-    margin-bottom: 7%;
+    margin-bottom: 4%;
     position: relative;
     cursor: pointer;
     opacity: 1;
@@ -136,15 +138,15 @@
       }
     }
     @include desctop {
-      margin-bottom: 6%;
-      width: rem(40px);
-      height: rem(40px);
+      margin-bottom: 0%;
+      width: rem(35px);
+      height: rem(35px);
       font-size: rem(30px);
     }
     @include note {
-      margin-bottom: 16%;
-      width: rem(30px);
-      height: rem(30px);
+      margin-bottom: 12%;
+      width: rem(28px);
+      height: rem(28px);
       font-size: rem(26px);
     }
     @include tablets {
@@ -200,10 +202,11 @@
   flex-direction: column;
   height: 100%;
   justify-content: flex-end;
-  width: 60%;
-  padding-bottom: 3%;
+  width: 57%;
+  padding-bottom: 2vh;
+  line-height: 1;
   @include desctop {
-    padding-bottom: 2%;
+    padding-bottom: 1%;
   }
 }
 .first__title {
@@ -234,6 +237,7 @@
     }
     @include desctop {
       font-size: rem(62px);
+
     }
     @include note {
       font-size: rem(48px);
@@ -243,7 +247,7 @@
     }
   }
   @include desctop {
-    margin-bottom: 5%;
+    margin-bottom: 2vh;
   }
   @include note {
     margin-bottom: 4%;
@@ -256,18 +260,20 @@
   line-height: 1.8;
   width: 70%;
   padding-left: 17%;
-  margin-bottom: 14%;
+  margin-bottom: 10vh;
   @include desctop {
-    margin-bottom: 12%;
+    margin-bottom: 8vh;
     line-height: 1.6;
     font-size: rem(20px);
   }
   @include note {
     font-size: rem(16px);
+    margin-bottom: 10vh;
+
   }
   @include tablets {
     font-size: rem(16px);
     width: 96%;
-    margin-bottom: 14%;
+    margin-bottom: 12%;
   }
 }

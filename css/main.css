@@ -368,14 +368,14 @@ html, body {
 .container {
   margin: 0 auto;
   position: relative;
-  max-width: 1700px;
-  width: 93%;
+  max-width: 1780px;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
   @media screen and (max-width: 1320px) {
     .container {
-      max-width: 95%; } }
+      max-width: 1220px; } }
 
 .section {
   position: relative;
@@ -762,12 +762,12 @@ address {
   position: absolute;
   z-index: 50;
   left: 0;
-  top: 5%;
+  top: 2vh;
   width: 100%;
   color: #000; }
   @media screen and (max-width: 1320px) {
     .header {
-      top: 4%; } }
+      top: 2%; } }
   @media screen and (max-width: 1024px) {
     .header {
       top: 3%; } }
@@ -983,7 +983,7 @@ address {
 .first__display {
   position: absolute;
   left: 0;
-  top: 38%;
+  top: 40%;
   -webkit-transform: translateY(-65%);
   -ms-transform: translateY(-65%);
   transform: translateY(-65%); }
@@ -995,7 +995,7 @@ address {
       top: 38%; } }
   @media screen and (max-width: 768px) {
     .first__display {
-      top: 36%; } }
+      top: 38%; } }
 
 .fdisplay {
   font-family: 'Roboto', Helvetica, sans-serif;
@@ -1014,9 +1014,9 @@ address {
 
 .fdisplay__list .fdisplay__item {
   background-color: transparent;
-  width: 3.5rem;
-  height: 3.5rem;
-  margin-bottom: 7%;
+  width: 3.3125rem;
+  height: 3.3125rem;
+  margin-bottom: 4%;
   position: relative;
   cursor: pointer;
   opacity: 1; }
@@ -1063,15 +1063,15 @@ address {
         height: 1.625rem; } }
   @media screen and (max-width: 1320px) {
     .fdisplay__list .fdisplay__item {
-      margin-bottom: 6%;
-      width: 2.5rem;
-      height: 2.5rem;
+      margin-bottom: 0%;
+      width: 2.1875rem;
+      height: 2.1875rem;
       font-size: 1.875rem; } }
   @media screen and (max-width: 1024px) {
     .fdisplay__list .fdisplay__item {
-      margin-bottom: 16%;
-      width: 1.875rem;
-      height: 1.875rem;
+      margin-bottom: 12%;
+      width: 1.75rem;
+      height: 1.75rem;
       font-size: 1.625rem; } }
   @media screen and (max-width: 768px) {
     .fdisplay__list .fdisplay__item {
@@ -1135,11 +1135,12 @@ address {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  width: 60%;
-  padding-bottom: 3%; }
+  width: 57%;
+  padding-bottom: 2vh;
+  line-height: 1; }
   @media screen and (max-width: 1320px) {
     .first__content {
-      padding-bottom: 2%; } }
+      padding-bottom: 1%; } }
 
 .first__title {
   padding-left: 17%;
@@ -1187,7 +1188,7 @@ address {
         font-size: 2.375rem; } }
   @media screen and (max-width: 1320px) {
     .first__title {
-      margin-bottom: 5%; } }
+      margin-bottom: 2vh; } }
   @media screen and (max-width: 1024px) {
     .first__title {
       margin-bottom: 4%; } }
@@ -1202,20 +1203,21 @@ address {
   line-height: 1.8;
   width: 70%;
   padding-left: 17%;
-  margin-bottom: 14%; }
+  margin-bottom: 10vh; }
   @media screen and (max-width: 1320px) {
     .first__desc {
-      margin-bottom: 12%;
+      margin-bottom: 8vh;
       line-height: 1.6;
       font-size: 1.25rem; } }
   @media screen and (max-width: 1024px) {
     .first__desc {
-      font-size: 1rem; } }
+      font-size: 1rem;
+      margin-bottom: 10vh; } }
   @media screen and (max-width: 768px) {
     .first__desc {
       font-size: 1rem;
       width: 96%;
-      margin-bottom: 14%; } }
+      margin-bottom: 12%; } }
 
 .bounce {
   position: absolute;
@@ -1736,7 +1738,6 @@ address {
   position: relative;
   overflow: hidden;
   color: #000;
-  min-height: 1080px;
   height: 100vh; }
 
 .portfolio__content {
@@ -1748,7 +1749,7 @@ address {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  width: 100%; }
+  width: 100vw; }
 
 .portfolio__display {
   display: -webkit-box;
@@ -1786,16 +1787,9 @@ address {
       margin-right: 0; }
 
 .slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
   overflow: hidden;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   position: relative;
   background-color: white; }
 
@@ -1807,7 +1801,6 @@ address {
   left: 0;
   top: 0;
   height: 100%;
-  width: 600%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1818,7 +1811,7 @@ address {
 
 .slide {
   position: relative;
-  width: calc(100%/6);
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
