@@ -9,16 +9,27 @@
   display: flex;
   margin-right: rem(102px);
   & div {
-    height: 74%;
+    height: 100%;
     display: flex;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    transform-origin: 50% 60%;
+    transform-origin: 50% 46%;
     position: absolute;
     white-space: normal;
+    @include desctop {
+      height: 114%;
+      transform-origin: 50% 43%;
+    }
   }
   @include desctop {
     margin-right: rem(80px);
+  }
+  @include note {
+    font-size: rem(10px);
+  }
+  @include tablets {
+    font-size: rem(8px);
+    margin-right: rem(38px);
   }
 }
 .feature__right {
@@ -30,14 +41,25 @@
   flex-direction: column;
   align-items: flex-start;
   & span {
-    letter-spacing: rem(55px);
+    line-height: 2.8;
+    letter-spacing: rem(62px);
+
     & l {
       cursor: pointer;
       transition: .6s;
-      @include desctop {
-        letter-spacing: rem(30px);
-        line-height: 2.2;
-      }
+    }
+    @include desctop {
+      line-height: 2.6;
+      letter-spacing: rem(52px);
+      font-size: rem(16px);
+    }
+    @include note {
+      font-size: rem(14px);
+      letter-spacing: rem(36px);
+    }
+    @include tablets {
+      font-size: rem(12px);
+      letter-spacing: rem(26px);
     }
   }
 }

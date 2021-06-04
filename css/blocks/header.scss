@@ -2,9 +2,19 @@
   position: absolute;
   z-index: $z-header;
   left: 0;
-  top: rem(20px);
+  // top: rem(20px);
+  top: 5%;
   width: 100%;
   color: $black;
+  @include desctop {
+    top: 4%;
+  }
+  @include note {
+    top: 3%;
+  }
+  @include tablets {
+    top: 2%;
+  }
 }
 .header__container {
   display: flex;
@@ -24,13 +34,24 @@
 }
 .header__hamburger-menu {
   margin-right: rem(36px);
+  @include note {
+    margin-right: rem(20px);
+  }
 }
 .header__logo {
   width: rem(212px);
   height: rem(61px);
   @include desctop {
-    width: rem(180px);
-    height: rem(50px);
+    width: rem(170px);
+    height: rem(45px);
+  }
+  @include note {
+    width: rem(150px);
+    height: rem(40px);
+  }
+  @include tablets {
+    width: rem(120px);
+    height: rem(36px);
   }
 }
 .header__right {

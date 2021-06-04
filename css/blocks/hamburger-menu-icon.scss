@@ -7,4 +7,8 @@
     width: rem(28px);
     height: rem(28px);
   }
+  @include note {
+    width: rem(24px);
+    height: rem(24px);
+  }
 }

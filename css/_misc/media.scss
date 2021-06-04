@@ -8,7 +8,12 @@
   }
 }
 @mixin desctop {
-  @media screen and (max-width: 1200px) { //1100
+  @media screen and (max-width: 1320px) { //1100
+    @content;
+  }
+}
+@mixin note {
+  @media screen and (max-width: 1024px) { //1100
     @content;
   }
 }

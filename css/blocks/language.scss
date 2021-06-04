@@ -8,6 +8,12 @@
   color: currentColor;
   display: flex;
   align-items: center;
+  @include note {
+    font-size: rem(16px);
+  }
+  @include note {
+    font-size: rem(14px);
+  }
 }
 .language__item {
   display: flex;

@@ -3,37 +3,75 @@
   display: block;
   border-radius: 50%;
   overflow: hidden;
+  box-shadow: 0 25px 45px rgba(0,0,0,0.05);
+
   &-blur {
     &-1 {
       background-color: $bounce-turquoise;
       filter: blur(rem(20px));
       width: rem(170px);
       height: rem(170px);
-      bottom: -10%;
-      left: 25%;
+      bottom: -17%;
+      left: 20%;
       z-index: $z-move-bounce-blur-1;
       // @include keyframesBounBlur1(25%,-10%);
+      @include desctop {
+        filter: blur(rem(13px));
+        width: rem(120px);
+        height: rem(120px);
+        bottom: -5%;
+        left: 20%;
+      }
+      @include tablets {
+        width: rem(80px);
+        height: rem(80px);
+      }
     }
     &-2 {
       background-color: $bounce-yellow;
       filter: blur(rem(60px));
       width: rem(360px);
       height: rem(360px);
-      bottom: 58%;
-      left: 19%;
+      bottom: 46%;
+      left: 27%;
       z-index: $z-move-bounce-blur-2;
       // @include keyframesBounBlur2(19%,58%);
-
+      @include desctop {
+        filter: blur(rem(20px));
+        width: rem(200px);
+        height: rem(200px);
+        bottom: 48%;
+        left: 34%;
+        opacity: .4;
+      }
+      @include tablets {
+        width: rem(160px);
+        height: rem(160px);
+        bottom: 48%;
+      }
     }
     &-3 {
       background-color: $bounce-lilac;
-      filter: blur(rem(50px));
-      width: rem(430px);
-      height: rem(430px);
-      bottom: 5%;
-      left: 40%;
+      filter: blur(rem(40px));
+      width: rem(230px);
+      height: rem(230px);
+      bottom: 10%;
+      left: 52%;
       z-index: $z-move-bounce-blur-3;
       // @include keyframesBounBlur3(19%,58%);
+      @include desctop {
+        filter: blur(rem(30px));
+        width: rem(160px);
+        height: rem(160px);
+        bottom: 10%;
+        left: 52%;
+      }
+      @include tablets {
+        width: rem(100px);
+        height: rem(100px);
+        // bottom: 10%;
+        // left: 52%;
+      }
     }
   }
   &-img {
@@ -48,20 +86,31 @@
     &-1 {
       width: rem(42px);
       height: rem(42px);
-      bottom: 5%;
-      left: 95%;
+      bottom: 8%;
+      left: 88%;
       z-index: $z-move-bounce-img-1;
       // @include keyframesBounImg1(95%,5%);
       &::after {
-        background-position-x: 10%;
-        background-position-y: 82%;
+        background-position: 37% 73%;
+        background-size: 242% 405%;
+        -webkit-transform: rotate(185deg);
+        -ms-transform: rotate(185deg);
+        transform: rotate(34deg);
+        // background-position-x: 10%;
+        // background-position-y: 82%;
+      }
+      @include desctop {
+        width: rem(22px);
+        height: rem(22px);
+        bottom: 13%;
+        left: 89%;
       }
     }
     &-2 {
       width: rem(67px);
       height: rem(67px);
-      bottom: 90%;
-      left: 70%;
+      bottom: 84%;
+      left: 79%;
       z-index: $z-move-bounce-img-2;
       // @include keyframesBounImg2(70%,90%);
       &::after {
@@ -69,12 +118,25 @@
         background-size: 242% 405%;
         transform: rotate(185deg);
       }
+      @include desctop {
+        width: rem(42px);
+        height: rem(42px);
+        bottom: 88%;
+        left: 82%;
+      }
+      @include note {
+        width: rem(32px);
+        height: rem(32px);
+      }
+      @include tablets {
+        left: 78%;
+      }
     }
     &-3 {
       width: rem(120px);
       height: rem(120px);
-      bottom: 40%;
-      left: 55%;
+      bottom: 36%;
+      left: 60%;
       z-index: $z-move-bounce-img-3;
       // @include keyframesBounImg3(55%,40%);
       &::after {
@@ -92,12 +154,22 @@
         // // transform: rotate(90deg);
         // }
       }
+      @include desctop {
+        bottom: 34%;
+        left: 56%;
+        width: rem(90px);
+        height: rem(90px);
+      }
+      @include tablets {
+        width: rem(60px);
+        height: rem(60px);
+      }
     }
     &-4 {
       width: rem(266px);
       height: rem(266px);
-      bottom: 55%;
-      left: 65%;
+      bottom: 51%;
+      left: 68%;
       z-index: $z-move-bounce-img-4;
       // @include keyframesBounImg4(65%,55%);
       &::after {
@@ -105,23 +177,48 @@
         background-size: 324% 193%;
         transform: rotate(4deg);
       }
+      @include desctop {
+        width: rem(170px);
+        height: rem(170px);
+        bottom: 51%;
+        left: 68%;
+      }
+      @include tablets {
+        width: rem(100px);
+        height: rem(100px);
+        bottom: 53%;
+        left: 72%;
+      }
     }
     &-5 {
       width: rem(594px);
       height: rem(594px);
-      bottom: 85%;
-      left: 25%;
+      bottom: 78%;
+      left: 30%;
+      opacity: .8;
       z-index: $z-move-bounce-img-5;
       // @include keyframesBounImg5(25%,85%);
       &::after {
         background-size: 130% 122%;
-        transform: rotate(-179deg);
+        transform: rotate(160deg);
         background-position-x: 59%;
         background-position-y: 114%;
+      }
+      @include desctop {
+        width: rem(394px);
+        height: rem(394px);
+        bottom: 84%;
+        left: 37%;
+      }
+      @include tablets {
+        width: rem(264px);
+        height: rem(264px);
+        bottom: 82%;
+        left: 32%;
       }
     }
   }
   @include desctop {
-    transform: scale(.7);
+    // transform: scale(.7);
   }
 }
