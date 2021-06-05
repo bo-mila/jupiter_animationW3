@@ -8,6 +8,7 @@
   position: relative;
   display: flex;
   margin-right: rem(102px);
+  
   & div {
     height: 86%;
     display: flex;
@@ -26,9 +27,25 @@
       transform-origin: 50% 42%;
     }
   }
-  
+  &--hamburger {
+    margin-right: rem(202px);
+    & div {
+      transform-origin: 50% 55%;
+    }
+    @include desctop {
+      & div {
+        transform-origin: 50% 41%;
+      }
+    }
+    @include tablets {
+      & div {
+        transform-origin: 50% 43%;
+      }
+    }
+  }
   @include note {
     font-size: rem(10px);
+    margin-right: rem(80px);
   }
   @include tablets {
     font-size: rem(8px);

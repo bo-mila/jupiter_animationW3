@@ -1,31 +1,38 @@
 .hamburger {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  // height: 100vh;
+  left: 100%;
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
   overflow: hidden;
   z-index: $z-hamburger;
-  display: none;
+  display: flex;
   background-color: $white;
+  border-left: rem(5px) solid $black;
+  
+  transition: left .8s ease;
+  &--visible {
+    visibility: visible;
+    transition: left .8s ease;
+    left: 0;
+  }
 }
 .hamburger__container {
   height: 100%;
   display: flex;
   margin: 0 auto;
   flex-direction: column;
-  width: 90%;
+  // width: 90%;
   align-items: center;
-  position: relative;
 }
 .hamburger__content {
   width: 100%;
-  // height: 100vh;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
   position: relative;
 }
 .hamburger__nav {
@@ -33,5 +40,6 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  height: 100%;
+  flex-direction: column;
+  // height: 100%;
 }

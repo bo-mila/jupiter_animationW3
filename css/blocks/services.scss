@@ -75,7 +75,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 28%;
+  width: 26%;
   background: inherit;
   margin-right: rem(20px);
   transform: scale(1);
@@ -92,7 +92,7 @@
     margin-right: 0;
   }
   @include desctop {
-    width: 27%;
+    width: 25%;
 
   }
   @include note {
@@ -107,7 +107,7 @@
   }
 }
 .services__ref {
-  padding: rem(60px) rem(38px) rem(54px);
+  padding: rem(60px) rem(18px) rem(54px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,7 +124,7 @@
   border-bottom: 0px solid rgba(255,255,255,0.1);
 
   @include desctop {
-    padding: 20% 8% 24%;
+    padding: 20% 5% 24%;
   }
   @include note {
     padding: 10% 5% 14%;

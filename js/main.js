@@ -354,3 +354,75 @@ window.onload = function () {
 
 
 }
+
+
+
+const hamburgerMenuInput = document.querySelector(".hamburger-menu__input");
+const hamburger = document.querySelector(".hamburger");
+const maincontent = document.querySelector(".maincontent");
+
+
+
+
+const menuLinks = document.querySelectorAll("[data-scrollId");
+if (menuLinks.length > 0) {
+  menuLinks.forEach(menuLink => {
+    menuLink.addEventListener("click", clickOnLink);
+  });
+  function clickOnLink(e) {
+    // window.removeEventListener('scroll', noScroll);
+    // hamburger.classList.remove("hamburger--visible");
+    hamburgerMenuInput.click();
+    const menuLink = e.target;
+    
+    if (menuLink.dataset.scrollid && document.querySelector(menuLink.dataset.scrollid)) {
+      const scrollToSection = document.querySelector(menuLink.dataset.scrollid);
+      const scrollToSectionValue = scrollToSection.getBoundingClientRect().top + pageYOffset;
+      window.scrollTo({
+        top: scrollToSectionValue,
+        behavior: "smooth"
+      });
+      e.preventDefault();
+    }
+  }
+}
+
+
+
+
+
+hamburgerMenuInput.addEventListener("click", function(e) {
+  // e.preventDefault();
+  if (hamburgerMenuInput.checked == true) {
+    // hamburger.style.display = "flex";
+    // maincontent.style.overflow = "hidden";
+    hamburger.classList.add("hamburger--visible");
+    // headerNav.style.display = "none";
+    window.addEventListener('scroll', noScroll); 
+  } else {
+    hamburger.classList.remove("hamburger--visible");
+    // maincontent.style.overflowY = "visible";
+
+    // hamburger.style.display = "none";
+    // headerNav.style.display = "flex";
+    window.removeEventListener('scroll', noScroll);
+  }
+});
+// hamburger.addEventListener('click', function (e) {
+//   let elem = e.target;
+//   if (elem.getAttribute("data-scrollid")) {
+//       maincontent.style.overflowY = "visible";
+
+//       hamburgerMenuInput.click();
+//       hamburger.classList.remove("hamburger--visible");
+
+//   }
+// });
+
+
+// console.log(maincontent.style.overflow);
+
+
+function noScroll() {
+    window.scrollTo(0, 0);
+  }

@@ -153,7 +153,7 @@
   
   &--left {
     background-image: url("../../img/content/why-photo-left.png");
-    clip-path: circle(130px at center);
+    clip-path: circle(140px at center);
     @include desctop {
       clip-path: circle(110px at center);
     }
