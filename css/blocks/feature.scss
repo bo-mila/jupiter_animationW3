@@ -17,17 +17,16 @@
     position: absolute;
     white-space: normal;
     @include desctop {
-      height: 114%;
-      transform-origin: 50% 43%;
+      height: 115%;
+      transform-origin: 50% 41%;
+      margin-right: rem(80px);
     }
-    @include desctop {
-      height: 106%;
-      transform-origin: 50% 45%;
+    @include tablets {
+      height: 105%;
+      transform-origin: 50% 42%;
     }
   }
-  @include desctop {
-    margin-right: rem(80px);
-  }
+  
   @include note {
     font-size: rem(10px);
   }

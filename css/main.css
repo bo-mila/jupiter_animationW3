@@ -1522,19 +1522,17 @@ address {
     white-space: normal; }
     @media screen and (max-width: 1320px) {
       .feature__left div {
-        height: 114%;
-        -webkit-transform-origin: 50% 43%;
-        -ms-transform-origin: 50% 43%;
-        transform-origin: 50% 43%; } }
-    @media screen and (max-width: 1320px) {
+        height: 115%;
+        -webkit-transform-origin: 50% 41%;
+        -ms-transform-origin: 50% 41%;
+        transform-origin: 50% 41%;
+        margin-right: 5rem; } }
+    @media screen and (max-width: 768px) {
       .feature__left div {
-        height: 106%;
-        -webkit-transform-origin: 50% 45%;
-        -ms-transform-origin: 50% 45%;
-        transform-origin: 50% 45%; } }
-  @media screen and (max-width: 1320px) {
-    .feature__left {
-      margin-right: 5rem; } }
+        height: 105%;
+        -webkit-transform-origin: 50% 42%;
+        -ms-transform-origin: 50% 42%;
+        transform-origin: 50% 42%; } }
   @media screen and (max-width: 1024px) {
     .feature__left {
       font-size: 0.625rem; } }
@@ -2108,8 +2106,9 @@ address {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  padding-left: 1.25rem; }
+  align-items: center; }
+  .slide-first p {
+    margin-right: 1rem; }
 
 .swiper-slide {
   background: transparent; }
@@ -3302,3 +3301,8 @@ address {
   -ms-flex-align: center;
   align-items: center;
   height: 100%; }
+
+.arrow-down__icon {
+  width: 0.875rem;
+  height: 0.625rem;
+  fill: #000; }
