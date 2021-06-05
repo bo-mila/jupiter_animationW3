@@ -6,9 +6,15 @@
   &--footer {
     & .network__list {
       width: 70%;
+      @include tablets {
+        width: 80%;
+      }
     }
     & .network__item {
       width: 50%;
+      @include tablets {
+        width: 25%;
+      }
     }
   }
 }
@@ -31,6 +37,9 @@
       transform: rotate(360deg) scale(1.3);
     }
   }
+  @include note {
+    line-height: 4;
+  }
 }
 .network__icon {
   width: rem(44px);
@@ -39,5 +48,12 @@
   // transition: 1s;
   transform: rotate(0deg) scale(1);
   // transition: 0s, .4s;
-  
+  @include note {
+    width: rem(34px);
+    height: rem(34px);
+  }
+  @include tablets {
+    width: rem(30px);
+    height: rem(30px);
+  }
 }

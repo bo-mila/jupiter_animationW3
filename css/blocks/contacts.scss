@@ -29,6 +29,7 @@
   width: 100%;
   overflow: hidden;
   margin-bottom: rem(120px);
+ 
 }
 .contacts__rol {     // scroll
   width: 100%;
@@ -54,6 +55,9 @@
     animation: animate 40s linear infinite;
     animation-delay: -40s;
     letter-spacing: rem(15px);
+    @include tablets {
+      font-size: rem(44px);
+    }
     &:nth-child(2) {
       animation: animate2 40s linear infinite;
       animation-delay: -20s;

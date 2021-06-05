@@ -2,12 +2,25 @@
   position: relative;
   overflow: hidden;
   color: $black;
-  min-height: rem(868px);
+  min-height: rem(1044px);
   padding-top: rem(20px);
   // padding-bottom: rem(50px);
+  // border: 1px solid black;
   @include desctop {
-    padding-top: rem(10px);
+    padding-top: rem(40px);
   min-height: rem(800px);
+  }
+  @include note {
+    padding-top: rem(58px);
+    min-height: rem(400px);
+    padding-bottom: rem(10px);
+
+  }
+  @include tablets {
+    padding-top: rem(8px);
+    min-height: auto;
+    padding-bottom: rem(4px);
+
   }
 }
 .services__container {
@@ -31,54 +44,93 @@
   text-transform: uppercase;
   margin-bottom: rem(68px);
   @include desctop {
-    font-size: rem(50px);
-    margin-bottom: rem(32px);
+    font-size: rem(66px);
+    margin-bottom: rem(52px);
+  }
+  @include note {
+    font-size: rem(48px);
+    margin-bottom: rem(20px);
   }
 }
 .services__list {
   display: flex;
-  justify-content: center;
-  width: 100%;
+  width: 92%;
   background: inherit;
-  margin-bottom: rem(46px);
+  justify-content: space-around;
+
+  // margin-bottom: rem(66px);
+  margin-bottom: 11%;
+  @include desctop {
+    width: 94%;
+  }
+  @include note {
+    margin-bottom: rem(60px);
+  }
+  @include tablets {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .services__item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 25%;
+  width: 28%;
   background: inherit;
-  margin-right: rem(40px);
+  margin-right: rem(20px);
   transform: scale(1);
-  transition: .6s;
+  transition: .8s;
   cursor: pointer;
+  backdrop-filter: blur(26px);
+
   &:hover {
     transform: scale(1.1);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(30px);
 
   }
   &:last-child {
     margin-right: 0;
   }
+  @include desctop {
+    width: 27%;
+
+  }
+  @include note {
+    width: 30%;
+    margin-right: rem(5px);
+
+  }
+  @include tablets {
+    width: 60%;
+    margin-right: 0;
+    margin-bottom: rem(20px);
+  }
 }
 .services__ref {
-  padding: rem(68px) rem(51px) rem(40px);
+  padding: rem(60px) rem(38px) rem(54px);
   display: flex;
   flex-direction: column;
   align-items: center;
   // opacity: 0.8;
-  background: linear-gradient(154.49deg, rgba(255, 255, 255, 0.1) -14.99%, rgba(255, 255, 255, 0) 150.94%);
-  backdrop-filter: blur(10px);
+  background: linear-gradient(154.49deg, rgba(255, 255, 255, 0.4) -14.99%, rgba(255, 255, 255, 0) 150.94%);
+  // background: linear-gradient(154.49deg, rgba(122, 102, 102, 0.1) -14.99%, rgba(255, 255, 255, 0) 150.94%);
+  backdrop-filter: blur(18px);
   width: 100%;
   height: 100%;
 
-  box-shadow: 0 25px 45px rgba(0,0,0,0.05);
+  box-shadow: 0 25px 45px rgba(0,0,0,0.07);
   border: 1px solid rgba(255,255,255,0.25);
-  border-right: 1px solid rgba(255,255,255,0.1);
-  // border-bottom: 1px solid rgba(255,255,255,0.1);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 0px solid rgba(255,255,255,0.1);
 
   @include desctop {
+    padding: 20% 8% 24%;
+  }
+  @include note {
     padding: 10% 5% 14%;
+  }
+  @include tablets {
+    padding: 8% 5% 14%;
   }
 }
 .services__name {
@@ -87,6 +139,10 @@
   text-transform: uppercase;
   margin-bottom: rem(65px);
   @include desctop {
+    font-size: rem(20px);
+    margin-bottom: rem(40px);
+  }
+  @include note {
     font-size: rem(16px);
     margin-bottom: rem(20px);
   }
@@ -94,7 +150,10 @@
 .services__pic {
   margin-bottom: rem(65px);
   @include desctop {
-    margin-bottom: rem(40px);
+    margin-bottom: rem(50px);
+  }
+  @include note {
+    margin-bottom: rem(15px);
   }
 }
 .services__icon {
@@ -102,6 +161,10 @@
   width: rem(106px);
   height: rem(106px);
   fill: $black;
+  @include note {
+    width: rem(66px);
+    height: rem(66px);
+  }
 }
 .services__desc {
   @include roboto(normal);
@@ -110,6 +173,9 @@
   line-height: 1.6;
   @include desctop {
     font-size: rem(16px);
+  }
+  @include note {
+    font-size: rem(14px);
   }
 }
 .services__but {
@@ -126,7 +192,12 @@
   @include roboto(bold);
   font-size: rem(36px);
   @include desctop {
-    font-size: 26px;
+    font-size: 24px;
+    padding: rem(26px) rem(48px);
+  }
+  @include note {
+    font-size: 20px;
+    padding: rem(18px) rem(36px);
   }
   & span {
     position: relative;

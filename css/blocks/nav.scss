@@ -9,15 +9,30 @@
   @include desctop {
     font-size: rem(16px);
   }
+  @include tablets {
+    font-size: rem(14px);
+  }
   
   &--footer {
-    padding: rem(52px) 0px rem(65px);
+    padding: rem(72px) 0px rem(75px);
     & .nav__list {
       width: 50%;
+      @include tablets {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
     }
     & .nav__item {
       width: 50%;
       text-align: left;
+      @include tablets {
+        width: 30%;
+        text-align: center;
+      }
+    }
+    @include tablets {
+      padding: 10% 0;
     }
   }
 }
@@ -28,7 +43,7 @@
   flex-wrap: wrap;
 }
 .nav__item {
-  line-height: 2.2;
+  line-height: 2.6;
 }
 .nav__ref {
   cursor: pointer;

@@ -13,11 +13,17 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  @include tablets {
+    flex-direction: column;
+  }
 }
 .footer__left {
-  width: 28%;
+  width: 44%;
   flex-shrink: 1;
   position: relative;
+  @include tablets {
+    width: 100%;
+  }
 }
 .footer__logo {
   position: absolute;
@@ -29,9 +35,13 @@
   @include desctop {
     width: rem(200px);
   }
+  @include note {
+    width: rem(150px);
+  }
 }
 .footer__nav {
   position: relative;
+  width: 100%;
   &:before {
     content: "";
     position: absolute;
@@ -56,7 +66,10 @@
   }
 }
 .footer__network {
-  width: 22%;
+  width: 42%;
   flex-shrink: 1;
   position: relative;
+  @include tablets {
+    width: 100%;
+  }
 }

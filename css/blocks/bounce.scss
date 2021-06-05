@@ -164,6 +164,29 @@
         width: rem(60px);
         height: rem(60px);
       }
+      &--services {
+        width: rem(212px);
+        height: rem(212px);
+        bottom: 61%;
+        left: 75%;
+        background: linear-gradient(180deg, rgba(91, 36, 122, 0.5) 0%, rgba(27, 206, 223, 0.5) 100%);
+        &::after {
+          display: none;
+        }
+        @include desctop {
+          width: rem(140px);
+          height: rem(140px);
+          bottom: 44%;
+          left: 85%;
+        }
+        @include note {
+          width: rem(100px);
+          height: rem(100px);
+          bottom: 44%;
+          left: 90%;
+        }
+      }
+      
     }
     &-4 {
       width: rem(266px);
@@ -188,6 +211,28 @@
         height: rem(100px);
         bottom: 53%;
         left: 72%;
+      }
+      &--services {
+        width: rem(348px);
+        height: rem(348px);
+        left: 64%;
+        top: 60%;
+        background: linear-gradient(180deg, rgba(91, 36, 122, 0.5) 0%, rgba(27, 206, 223, 0.5) 100%);
+        &::after {
+          display: none;
+        }
+        @include desctop {
+          width: rem(220px);
+          height: rem(220px);
+          bottom: 26%;
+          left: 68%;
+        }
+        @include note {
+          width: rem(140px);
+          height: rem(140px);
+          bottom: 26%;
+          left: 68%;
+        }
       }
     }
     &-5 {
@@ -216,9 +261,28 @@
         bottom: 82%;
         left: 32%;
       }
+      &--services {
+        width: rem(560px);
+        height: rem(560px);
+        left: 12%;
+        top: 20%;
+        background: linear-gradient(0deg, rgba(91, 36, 122, 0.5) 0%, rgba(27, 206, 223, 0.5) 100%);
+        &::after {
+          display: none;
+        }
+        @include desctop {
+          width: rem(324px);
+          height: rem(324px);
+          bottom: 58%;
+          left: 17%;
+        }
+        @include note {
+          width: rem(244px);
+          height: rem(244px);
+          bottom: 58%;
+          left: 17%;
+        }
+      }
     }
-  }
-  @include desctop {
-    // transform: scale(.7);
   }
 }

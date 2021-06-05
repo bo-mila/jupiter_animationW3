@@ -6,6 +6,7 @@
   flex-direction: column;
   align-items: center;
   text-transform: none;
+  min-height: rem(886px);
   &._active {
     // & .reviews__avatar--av3 {
     //   transition: all .8s ease 0s;
@@ -49,11 +50,34 @@
       }
     }
   }
+  @include desctop {
+    min-height: rem(600px);
+  }
+  @include note {
+    min-height: rem(500px);
+  }
 }
 .reviews__container {
-  width: 100%;
+  width: 92%;
+  // display: flex;
+  // justify-content: center;
+  @include desctop {
+    width: 88%;
+  }
+  @include note {
+    width: 96%;
+  }
+  @include note {
+    width: 93%;
+  }
+}
+.reviews__list {
   display: flex;
   justify-content: center;
+  width: 100%;
+  @include tablets {
+    flex-direction: column;
+  }
 }
 .reviews__item {
   width: calc(100%/3);
@@ -62,15 +86,19 @@
   align-items: center;
   position: relative;
   cursor: pointer;
+  @include tablets {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+  }
 }
 .reviews__avatar {
   position: relative;
   // width: 400px;
   // height: rem(350px);
   width: rem(374px);
-  height: rem(350px);
-  // width: 100%;
-  // height: 51%;
+  height: rem(453px);
+  min-width: 100%;
   overflow: hidden;
   margin-bottom: rem(47px);
   transform: translate(0,120%);
@@ -79,9 +107,19 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.5); 
   z-index: 5;
   @include desctop {
-    // width: rem(339px);
-    // height: rem(300px);
-    margin-bottom: rem(25px);
+    width: rem(309px);
+    height: rem(300px);
+    margin-bottom: rem(35px);
+  }
+  @include note {
+    width: rem(220px);
+    height: rem(240px);
+    margin-bottom: rem(20px);
+  }
+  @include tablets {
+    min-width: 10%;
+    max-height: rem(300px);
+    margin-right: 5%;
   }
   &:hover {
     & .reviews__icon {
@@ -109,19 +147,26 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  filter: blur(7px);
+  filter: brightness(1.1) blur(7px);;
   z-index: 10;
   transition: .6s;
   
   &--left {
     background-image: url("../../img/content/why-photo-left.png");
     clip-path: circle(130px at center);
+    @include desctop {
+      clip-path: circle(110px at center);
+    }
+    @include note {
+      clip-path: circle(90px at center);
+    }
+    @include tablets {
+      clip-path: circle(60px at center);
+    }
   }
   &--center {
     background-image: url("../../img/content/why-photo-centre.png");
     clip-path: polygon(50% 10%, 15% 88%, 85% 88%);
-    // clip-path: circle(130px at center);
-
   }
   &--right {
     background-image: url("../../img/content/why-photo-right.png");
@@ -141,6 +186,15 @@
   &--ellipse {
     background-image: url("../../img/content/why-photo-left.png");
     clip-path: circle(78px at center);
+    @include desctop {
+      clip-path: circle(62px at center);
+    }
+    @include note {
+      clip-path: circle(48px at center);
+    }
+    @include tablets {
+      clip-path: circle(32px at center);
+    }
   }
   &--triangle {
     background-image: url("../../img/content/why-photo-centre.png");
@@ -149,17 +203,32 @@
   &--vector {
     transition: .6s;
     background-image: url("../../img/content/why-photo-right.png");
-    filter: blur(7px);
+    filter: brightness(1.1) blur(7px);;
     clip-path: inset(9% 35% 26% 52%);
   }
 }
 .reviews__desc {
-  width: 85%;
+  width: 84%;
   @include roboto(normal);
-  font-size: rem(20px);
+  font-size: rem(21px);
   line-height: 1.6;
   @include desctop {
+    font-size: rem(18px);
+    width: 90%;
+
+  }
+  @include note {
     font-size: rem(16px);
+    width: 90%;
+    line-height: 1.4;
+
+  }
+  @include tablets {
+    padding-top: 5%;
+    font-size: rem(16px);
+    width: 88%;
+    line-height: 1.4;
+
   }
   opacity: 0;
   transform: translate(0,-120%);
