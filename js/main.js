@@ -170,7 +170,7 @@ const sliderRight = document.querySelector(".slider__right");
 sliderRight.addEventListener("mouseenter", function (e) {
   swiper.params.autoplay.disableOnInteraction = false;
   swiper.params.autoplay.delay = 700;
-  swiper.params.autoplay.reverseDirection = 1;
+  swiper.params.autoplay.reverseDirection = 0;
   swiper.autoplay.start();
 });
 sliderRight.addEventListener("mouseleave", function (e) {
@@ -182,7 +182,7 @@ const sliderLeft = document.querySelector(".slider__left");
 sliderLeft.addEventListener("mouseenter", function (e) {
   swiper.params.autoplay.disableOnInteraction = false;
   swiper.params.autoplay.delay = 700;
-  swiper.params.autoplay.reverseDirection = 0;
+  swiper.params.autoplay.reverseDirection = 1;
   swiper.autoplay.start();
 
 });
@@ -192,6 +192,31 @@ sliderLeft.addEventListener("mouseleave", function (e) {
 
 
 ////   
+
+
+// const sliderRight = document.querySelector(".slider__right-mobile");
+// sliderRight.addEventListener("mouseenter", function (e) {
+//   swiper.params.autoplay.disableOnInteraction = false;
+//   swiper.params.autoplay.delay = 700;
+//   swiper.params.autoplay.reverseDirection = 0;
+//   swiper.autoplay.start();
+// });
+// sliderRight.addEventListener("mouseleave", function (e) {
+//   swiper.autoplay.stop();
+// })
+
+
+// const sliderLeft = document.querySelector(".slider__left-mobile");
+// sliderLeft.addEventListener("mouseenter", function (e) {
+//   swiper.params.autoplay.disableOnInteraction = false;
+//   swiper.params.autoplay.delay = 700;
+//   swiper.params.autoplay.reverseDirection = 1;
+//   swiper.autoplay.start();
+
+// });
+// sliderLeft.addEventListener("mouseleave", function (e) {
+//   swiper.autoplay.stop();
+// })
 
 
 

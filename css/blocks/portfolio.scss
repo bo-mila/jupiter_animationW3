@@ -2,9 +2,8 @@
   position: relative;
   overflow: hidden;
   color: $black;
-  // width: 100vw;
-  // min-height: 1080px;
   height: 100vh;
+  // height: rem(1080px);
 }
 .portfolio__content {
   display: flex;
@@ -16,17 +15,27 @@
 .portfolio__display {
   display: flex;
   position: absolute;
-  bottom: 1%;
+  bottom: 0%;
+  // bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
   @include desctop {
     bottom: 2%;
   }
   @include note {
-    bottom: 3%;
+    bottom: 1%;
+    @include heightnote {
+      bottom: 7%;
+    }
   }
   @include tablets {
-    bottom: 2%;
+    bottom: 1%;
+    @include heighttablets {
+      bottom: 7%;
+    }
+  }
+  @include phones {
+    bottom: 10%;
   }
   & .display__list {
     display: flex;

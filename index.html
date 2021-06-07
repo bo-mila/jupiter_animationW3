@@ -5,9 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jupiter</title>
-  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> -->
   <link rel="stylesheet" href="./css/main.css">
-
+  <link rel="shortcut icon" href="./img/icons/favicon.ico">
 </head>
 <body>
   <div class="wrapper">
@@ -44,14 +43,14 @@
     <main class="maincontent">
       <section id="sectionFirst" class="section first">
         <div class="first__bounces parallax" data-speed="2" aria-label="Бегающие шарики на фоне">
-          <div class="bounce bounce-blur bounce-blur-1" data-speed="20"></div>
-          <div class="bounce bounce-blur bounce-blur-2" data-speed="6"></div>
-          <div class="bounce bounce-blur bounce-blur-3" data-speed="9"></div>
-          <div class="bounce bounce-img bounce-img-1" data-speed="12"></div>
-          <div class="bounce bounce-img bounce-img-2" data-speed="10"></div>
-          <div class="bounce bounce-img bounce-img-3" data-speed="10"></div>
-          <div class="bounce bounce-img bounce-img-4"  data-speed="2"></div>
-          <div class="bounce bounce-img bounce-img-5" data-speed="4"></div>
+          <div class="bounce bounce-blur bounce-blur-1" data-speed="20" aria-label="Шарик-блюр 1"></div>
+          <div class="bounce bounce-blur bounce-blur-2" data-speed="6" aria-label="Шарик-блюр 2"></div>
+          <div class="bounce bounce-blur bounce-blur-3" data-speed="9" aria-label="Шарик-блюр 3"></div>
+          <div class="bounce bounce-img bounce-img-1" data-speed="12" aria-label="Шарик-картинка 1"></div>
+          <div class="bounce bounce-img bounce-img-2" data-speed="10" aria-label="Шарик-картинка 2"></div>
+          <div class="bounce bounce-img bounce-img-3" data-speed="10" aria-label="Шарик-картинка 3"></div>
+          <div class="bounce bounce-img bounce-img-4"  data-speed="2" aria-label="Шарик-картинка 4"></div>
+          <div class="bounce bounce-img bounce-img-5" data-speed="4" aria-label="Шарик-картинка 5"></div>
         </div>
         <div class="first__slider-first slider-first">
           <div class="slider-first__container">
@@ -59,7 +58,7 @@
               <li class="slider-first__item">
                 <div class="slide-first">
                   <p>подать заявку</p>
-                  <svg class="arrow-down__icon">
+                  <svg class="arrow-down__icon" alt="Стрелка вниз">
                     <use xlink:href="img/icons/sprite.svg#arrow-down"></use>
                   </svg>
                 </div>
@@ -67,7 +66,7 @@
               <li class="slider-first__item">
                 <div class="slide-first">
                   <p>подать заявку 2</p>
-                  <svg class="arrow-down__icon">
+                  <svg class="arrow-down__icon" alt="Стрелка вниз">
                     <use xlink:href="img/icons/sprite.svg#arrow-down"></use>
                   </svg>
                 </div>
@@ -75,7 +74,7 @@
               <li class="slider-first__item">
                 <div class="slide-first">
                   <p>подать заявку 3</p>
-                  <svg class="arrow-down__icon">
+                  <svg class="arrow-down__icon" alt="Стрелка вниз">
                     <use xlink:href="img/icons/sprite.svg#arrow-down"></use>
                   </svg>
                 </div>
@@ -83,7 +82,7 @@
               <li class="slider-first__item">
                 <div class="slide-first">
                   <p>подать заявку 4</p>
-                  <svg class="arrow-down__icon">
+                  <svg class="arrow-down__icon" alt="Стрелка вниз">
                     <use xlink:href="img/icons/sprite.svg#arrow-down"></use>
                   </svg>
                 </div>
@@ -91,7 +90,7 @@
               <li class="slider-first__item">
                 <div class="slide-first">
                   <p>подать заявку 5</p>
-                  <svg class="arrow-down__icon">
+                  <svg class="arrow-down__icon" alt="Стрелка вниз">
                     <use xlink:href="img/icons/sprite.svg#arrow-down"></use>
                   </svg>
                 </div>
@@ -99,7 +98,7 @@
               <li class="slider-first__item">
                 <div class="slide-first">
                   <p>подать заявку 6</p>
-                  <svg class="arrow-down__icon">
+                  <svg class="arrow-down__icon" alt="Стрелка вниз">
                     <use xlink:href="img/icons/sprite.svg#arrow-down"></use>
                   </svg>
                 </div>
@@ -160,22 +159,17 @@
               </div>
             </div>
           </div>
-          <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <filter id="blur">
-              <feGaussianBlur stDeviation="6"></feGaussianBlur>
-            </filter>
-          </svg> -->
         </div>
       </section>
       <section id="sectionPortfolio" class="section portfolio">
         <div class="slider__left"></div>
         <div class="slider__right"></div>
         <div class="portfolio__content">
-          <div dir="rtl" class="portfolio__slider slider swiper-container mySwiper">
+          <div class="portfolio__slider slider swiper-container mySwiper">
             <ul class="slider__list swiper-wrapper">
               <li class="slider__item slide swiper-slide">
                 <div class="slider__back-mask">
-                  <span>o</span><span>i</span><span>l</span><span>o</span><span>f</span><span>t</span><span>r</span><span>o</span><span>p</span>
+                  <span>p</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
                 </div>
                 <div class="slide__container container">
                   <h3 class="slide__title">ZYDEX UA</h3>
@@ -183,13 +177,16 @@
                     <p>Корпоративный сайт</p>
                   </div>
                   <div class="slide__img">
-                    <img src="./img/content/portfolio-zydex.png" alt="Пример из портфолио - сайт ZYDEX.UA" class="slide__pic">
+                    <img data-srcset="./img/content/zydex_480px.jpg 480w, ./img/content/zydex_768px.jpg 768w, ./img/content/zydex.jpg 1024w" 
+                      data-src="./img/content/zydex.jpg" 
+                      alt="Пример из портфолио - сайт ZYDEX.UA" class="slide__pic swiper-lazy">
+                      <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
               </li>
               <li class="slider__item slide swiper-slide">
                 <div class="slider__back-mask">
-                  <span>e</span><span>v</span><span>i</span><span>t</span><span>a</span><span>r</span><span>c</span>
+                  <span>c</span><span>r</span><span>a</span><span>t</span><span>i</span><span>v</span><span>e</span>
                 </div>
                 <div class="slide__container container">
                   <h3 class="slide__title">carbag</h3>
@@ -197,14 +194,16 @@
                     <p>Landing page</p>
                   </div>
                   <div class="slide__img">
-                    <img data-src="./img/content/portfolio-carbag.png" alt="Пример из портфолио - сайт Carbag" class="slide__pic swiper-lazy">
+                    <img data-srcset=" ./img/content/carbag_480px.jpg 480w, ./img/content/carbag_768px.jpg 768w, ./img/content/carbag_1024px.jpg 1024w"
+                      data-src="./img/content/carbag.jpg"
+                      alt="Пример из портфолио - сайт Carbag" class="slide__pic swiper-lazy">
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
               </li>
               <li class="slider__item slide swiper-slide">
                 <div class="slider__back-mask">
-                  <span>l</span><span>a</span><span>t</span><span>i</span><span>g</span><span>i</span><span>d</span>
+                  <span>d</span><span>i</span><span>g</span><span>i</span><span>t</span><span>a</span><span>l</span>
                 </div>
                 <div class="slide__container container">
                   <h3 class="slide__title">SushiDoma</h3>
@@ -212,14 +211,16 @@
                     <p>Интенет-магазин</p>
                   </div>
                   <div class="slide__img">
-                    <img data-src="./img/content/portfolio-sushidoma.png" alt="Пример из портфолио - сайт SushiDoma" class="slide__pic swiper-lazy">
+                    <img data-srcset="./img/content/sushidoma_480px.jpg 480w, ./img/content/sushidoma_768px.jpg 768w, ./img/content/sushidoma_1024px.jpg 1024w"
+                      data-src="./img/content/sushidoma.jpg"
+                      alt="Пример из портфолио - сайт SushiDoma" class="slide__pic swiper-lazy">
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
               </li>
               <li class="slider__item slide swiper-slide">
                 <div class="slider__back-mask">
-                  <span>e</span><span>t</span><span>i</span><span>s</span><span>-</span><span>b</span><span>e</span><span>w</span>
+                  <span>w</span><span>e</span><span>b</span><span>-</span><span>s</span><span>i</span><span>t</span><span>e</span>
                 </div>
                 <div class="slide__container container">
                   <h3 class="slide__title">VV Home</h3>
@@ -227,14 +228,16 @@
                     <p>Веб-сайт</p>
                   </div>
                   <div class="slide__img">
-                    <img data-src="./img/content/portfolio-vvhome.png" alt="Пример из портфолио - сайт VV Home" class="slide__pic swiper-lazy">
+                    <img data-srcset="./img/content/vvhome_480px.jpg 480w, ./img/content/vvhome_768px.jpg 768w, ./img/content/vvhome_1024px.jpg 1024w"
+                      data-src="./img/content/vvhome.jpg"
+                      alt="Пример из портфолио - сайт VV Home" class="slide__pic swiper-lazy">
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
               </li>
               <li class="slider__item slide swiper-slide">
                 <div class="slider__back-mask">
-                  <span>g</span><span>n</span><span>i</span><span>t</span><span>e</span><span>k</span><span>r</span><span>a</span><span>m</span>
+                  <span>m</span><span>a</span><span>r</span><span>k</span><span>e</span><span>t</span><span>i</span><span>n</span><span>g</span>
                 </div>
                 <div class="slide__container container">
                   <h3 class="slide__title">Dekolte</h3>
@@ -242,14 +245,16 @@
                     <p>Интернет-магазин</p>
                   </div>
                   <div class="slide__img">
-                    <img data-src="./img/content/portfolio-dekolte.png" alt="Пример из портфолио - сайт Dekolte" class="slide__pic swiper-lazy">
+                    <img data-srcset="./img/content/dekolte_480px.jpg 480w, ./img/content/dekolte_768px.jpg 768w, ./img/content/dekolte_1024px.jpg 1024w"
+                      data-src="./img/content/dekolte.jpg"
+                      alt="Пример из портфолио - сайт Dekolte" class="slide__pic swiper-lazy">
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
               </li>
               <li class="slider__item slide swiper-slide">
                 <div class="slider__back-mask">
-                  <span>n</span><span>r</span><span>e</span><span>d</span><span>o</span><span>m</span>
+                  <span>m</span><span>o</span><span>d</span><span>e</span><span>r</span><span>n</span>
                 </div>
                 <div class="slide__container container">
                   <h3 class="slide__title">SIDERAL</h3>
@@ -257,7 +262,9 @@
                     <p>Интернет-портал</p>
                   </div>
                   <div class="slide__img">
-                    <img data-src="./img/content/portfolio-sideral.png" alt="Пример из портфолио - сайт SIDERAL" class="slide__pic swiper-lazy">
+                    <img data-srcset="./img/content/sideral_480px.jpg 480w, ./img/content/sideral_768px.jpg 768w, ./img/content/sideral_1024px.jpg 1024w"
+                    data-src="./img/content/sideral.jpg"
+                    alt="Пример из портфолио - сайт SIDERAL" class="slide__pic swiper-lazy">
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
@@ -265,17 +272,17 @@
             </ul>
             <div class="portfolio__display display">
               <ul class="display__list swiper-pag">
-                <li class="display__item  display__item--active" alt="Переход на слайд">
+                <li class="display__item  display__item--active" aria-label="Переход на слайд">
                 </li>
-                <li class="display__item"alt="Переход на слайд">
+                <li class="display__item" aria-label="Переход на слайд">
                 </li>
-                <li class="display__item"alt="Переход на слайд">
+                <li class="display__item" aria-label="Переход на слайд">
                 </li>
-                <li class="display__item"alt="Переход на слайд">
+                <li class="display__item" aria-label="Переход на слайд">
                 </li>
-                <li class="display__item"alt="Переход на слайд">
+                <li class="display__item" aria-label="Переход на слайд">
                 </li>
-                <li class="display__item"alt="Переход на слайд">
+                <li class="display__item" aria-label="Переход на слайд">
                 </li>
               </ul>
             </div>
@@ -284,9 +291,9 @@
       </section>
       <section id="sectionServices" class="section services">
         <div class="first__bounces parallax-services" aria-label="Бегающие шарики на фоне">
-          <div class="bounce bounce--services bounce-img bounce-img-3 bounce-img-3--services" data-speed="16"></div>
-          <div class="bounce bounce--services bounce-img bounce-img-4 bounce-img-4--services" data-speed="7"></div>
-          <div class="bounce bounce--services bounce-img bounce-img-5 bounce-img-5--services" data-speed="5"></div>
+          <div class="bounce bounce--services bounce-img bounce-img-3 bounce-img-3--services" data-speed="11" aria-label="Шарик-градиент 1"></div>
+          <div class="bounce bounce--services bounce-img bounce-img-4 bounce-img-4--services" data-speed="7" aria-label="Шарик-градиент 2"></div>
+          <div class="bounce bounce--services bounce-img bounce-img-5 bounce-img-5--services" data-speed="5" aria-label="Шарик-градиент 3"></div>
         </div>
         <div class="container services__container">
           <div class="services__content">
@@ -347,7 +354,7 @@
                 </a>
               </li>
             </ul>
-            <a src="#" alt="Ссылка ведет на сраницу заказа" class="services__but">
+            <a src="#" aria-label="Ссылка ведет на сраницу заказа" class="services__but">
               <span>хочу все</span>
             </a>
           </div>
@@ -362,13 +369,13 @@
                   <h2 class="why__title why__container-slider">почему мы?</h2>
                 </li>
                 <li class="why__item swiper-slide">
-                  <h2 class="why__title why__container-slider">ориентированы на результат</h2>
+                  <h2 class="why__title why__container-slider">ориентированы<br>на результат</h2>
                 </li>
                 <li class="why__item swiper-slide">
-                  <h2 class="why__title why__container-slider">Командная  работа над проектом</h2>
+                  <h2 class="why__title why__container-slider">Командная<br>работа<br>над проектом</h2>
                 </li>
                 <li class="why__item swiper-slide">
-                  <h2 class="why__title why__container-slider">экономим ваше время и деньги</h2>
+                  <h2 class="why__title why__container-slider">экономим ваше<br>время и деньги</h2>
                 </li>
               </ul>
             </div>
@@ -380,7 +387,9 @@
           <ul class="reviews__list">
             <li class="reviews__item">
               <div class="reviews__avatar reviews__avatar--av1">
-                <img src="./img/content/why-photo-left.png" alt="Фотография человека" class="reviews__photo">
+                <img srcset="./img/content/promotion_768px.jpg 768w, ./img/content/promotion_1024px.jpg 1024w, ./img/content/promotion_1300px.jpg 1320w"
+                src="./img/content/promotion.jpg"  
+                alt="Фотография продвижение" class="reviews__photo">
                 <div class="reviews__icon reviews__icon--left"></div>
                 <div class="icon icon--ellipse"></div> 
               </div>
@@ -390,7 +399,9 @@
             </li>
             <li class="reviews__item">
               <div class="reviews__avatar reviews__avatar--av2">
-                <img src="./img/content/why-photo-centre.png" alt="Фотография человека" class="reviews__photo">
+                <img srcset="./img/content/team_768px.jpg 768w, ./img/content/team_1024px.jpg 1024w, ./img/content/team_1320px.jpg 1320w"
+                src="./img/content/team.jpg"
+                alt="Фотография команды" class="reviews__photo">
                 <div class="reviews__icon reviews__icon--center"></div>
                 <div class="icon icon--triangle"></div>
               </div>
@@ -400,7 +411,9 @@
             </li>
             <li class="reviews__item">
               <div class="reviews__avatar reviews__avatar--av3">
-                <img src="./img/content/why-photo-right.png" alt="Фотография человека" class="reviews__photo">
+                <img srcset="./img/content/plan_768px.jpg 768w, ./img/content/plan_1024px.jpg 1024w, ./img/content/plan_1320px.jpg 1320w"
+                src="./img/content/plan.jpg"
+                alt="Фотография план исполнения" class="reviews__photo">
                 <div class="reviews__icon reviews__icon--right"></div>
                 <div class="icon icon--vector icon--vector"></div>
               </div>
@@ -526,7 +539,7 @@
                 </li>
               </ul>
             </nav>
-            <div class="bounce bounce-img bounce-img-1 bounce-img-1--hamburger"></div>
+            <div class="bounce bounce-img bounce-img-1 bounce-img-1--hamburger" aria-label="Шарик-градиент"></div>
           </div>
         </div>
       </section>

@@ -13,6 +13,9 @@
   }
   @include note {
     font-size: rem(14px);
+    @include heightnote {
+      font-size: rem(24px);
+    }
   }
 }
 .language__item {

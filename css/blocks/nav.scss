@@ -12,15 +12,26 @@
   @include tablets {
     font-size: rem(14px);
   }
-  
   &--footer {
     padding: rem(28px) 0px rem(75px);
+    @include note {
+      padding: rem(20px) 0px rem(55px);
+      @include heightnote {
+        font-size: rem(20px);
+        padding: rem(18px) rem(25px) rem(55px);
+      }
+    }
     & .nav__list {
       width: 50%;
       @include tablets {
         width: 100%;
         display: flex;
         justify-content: space-between;
+      }
+      @include note {
+        @include heightnote {
+          width: 70%;
+        }
       }
     }
     & .nav__item {
@@ -39,7 +50,11 @@
       }
     }
     @include tablets {
-      padding: 10% 0;
+      padding: rem(8px) 0px rem(35px);
+      font-size: rem(20px);
+    }
+    @include tablets {
+      font-size: rem(16px);
     }
   }
   &--hamburger {
@@ -48,35 +63,13 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-
     }
     & .nav__item {
       display: flex;
-      // justify-content: flex-start;
-
       margin-bottom: 3%;
       &:last-child {
         margin-bottom: 0;
       }
-      
-      // &:hover {
-      //   & .nav__ref {
-      //     display: flex;
-      //     position: absolute;
-      //     top: 50%;
-      //     left: 50%;
-      //     width: 100%;
-      //     justify-content: center;
-      //     transform: translate(-50%,-50%);
-      //     text-transform: uppercase;
-      //     text-align: center;
-      //     white-space: initial;
-      //     background: url("../../img/bg/bg-mask.png");
-      //     background-size: cover;
-      //     background-clip: text;
-      //     -webkit-text-fill-color: transparent;
-      //   }
-      // }
     }
     & .nav__ref {
       @include roboto(black);
@@ -110,21 +103,31 @@
       }
       &::after {
         content: attr(data-text-hamb);
-        -webkit-text-stroke: 1px transparent;
+        -webkit-text-stroke: 3px transparent;
         position: absolute;
         color: transparent;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        // top: -1px;
-        // left: rem(-4px);
-        background: url("../../img/bg/bg-mask.png");
+        background: url("../../img/bg/jupiter.png");
         background-size: cover;
         background-position: 0% 52%;
         -webkit-background-clip: text;
         opacity: 0;
         transition: opacity .6s;
+        @include desctop {
+          background-image: url("../../img/bg/jupiter_1300px.png");
+        }
+        @include note {
+          background-image: url("../../img/bg/jupiter_1024px.png");
+        }
+        @include tablets {
+          background-image: url("../../img/bg/jupiter_768px.png");
+        }
+        @include phones {
+          background-image: url("../../img/bg/jupiter_480px.png");
+        }
       }
       &:hover {
         &::before {
@@ -151,5 +154,4 @@
   display: inline-flex;
   height: 100%;
   transition: .4s;
-  
 }

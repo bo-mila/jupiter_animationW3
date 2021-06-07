@@ -7,9 +7,11 @@
   letter-spacing: rem(10px);
   text-transform: uppercase;
   z-index: $z-slider-first;
-  opacity: .8;
-  backdrop-filter: blur(4px);
-  background: linear-gradient(154.49deg, rgba(255, 255, 255, 0.1) -14.99%, rgba(255, 255, 255, 0) 150.94%);
+  // opacity: .8;
+  backdrop-filter: blur(3px);
+  background: linear-gradient(154.49deg, rgba(255, 255, 255, 0.3) -14.99%, rgba(255, 255, 255, 0) 150.94%);
+  
+  // background: linear-gradient(154.49deg, rgba(255, 255, 255, 0.1) -14.99%, rgba(255, 255, 255, 0) 150.94%);
   box-shadow: 0 25px 45px rgba(0,0,0,0.05);
   transition: .6s;
   &:hover {
@@ -19,6 +21,11 @@
   @include desctop {
     font-size: rem(16px);
     letter-spacing: rem(5px);
+  }
+  @include note {
+    @include heightnote {
+      font-size: rem(26px);
+    }
   }
   @include tablets {
     font-size: rem(14px);
@@ -34,6 +41,14 @@
   align-items: center;
   z-index: $z-slider-first-buttons;
   cursor: pointer;
+  @include note {
+    @include heightnote {
+      width: rem(55px);
+      flex-direction: column;
+      transform: translateX(-100%);
+      height: 100%;
+    }
+  }
 }
 .slider-first__button {
   display: flex;
@@ -44,26 +59,60 @@
   height: rem(54px);
   background-color: transparent;
   transition: opacity .6s;
+  &:hover {
+    background-color: $black;
+    & .arrow-icon {
+      fill: $white;
+    }
+  }
   &--prev {
-    transform-origin: center;
-    transform: rotate(180deg);
-    transition: 0;
+    & .arrow-icon {
+      transform-origin: center;
+      transform: rotate(180deg);
+      transition: 0;
+      &:hover {
+        transform: scale(1.1) rotate(180deg);
+
+      }
+      @include note {
+        @include heightnote {
+          transform: rotate(-90deg);
+          &:hover {
+            transform: rotate(-90deg);
+          }
+        }
+      }
+     
+    }
+  }
+  &--next {
+    & .arrow-icon {
+      @include note {
+        @include heightnote {
+          transform: rotate(90deg);
+          &:hover {
+          transform: rotate(90deg);
+          }
+        }
+      }
+
+    }
   }
   @include desctop {
     width: rem(40px);
     height: rem(40px);
   }
+  @include note {
+    @include heightnote {
+      width: 100%;
+      height: 50%;
+    }
+  }
   @include tablets {
     width: rem(30px);
     height: rem(30px);
   }
-  &:hover {
-    background-color: $black;
-    & .arrow-icon {
-      fill: $white;
-      transform: scale(1.1);
-    }
-  }
+  
 }
 .slider-first__container {
   display: flex;

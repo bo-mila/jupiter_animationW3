@@ -43,6 +43,12 @@
       width: rem(26px);
       height: rem(26px);
     }
+    @include note {
+      @include heightnote {
+        width: rem(36px);
+        height: rem(36px);
+      }
+    }
   }
   &:hover {
     &::before {
@@ -56,6 +62,12 @@
     width: rem(40px);
     height: rem(40px);
     font-size: rem(30px);
+  }
+  @include note {
+    @include heightnote {
+      width: rem(50px);
+      height: rem(50px);
+    }
   }
   &.swiper-pagination-bullet-active  {
     &::before {

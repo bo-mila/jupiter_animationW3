@@ -5,12 +5,24 @@
   position: relative;
   overflow: hidden;
   color: $black;
-  // min-height: 1080px;
-  // height: 100vh;
-  min-height: 100vh;
+  // min-height: 100vh;
+  height: rem(1080px);
+  @include desctop {
+    height: 100vh;
+  }
+  @include note {
+    @include heightnote {
+      justify-content: flex-end;
+    }
+  }
+  @include tablets {
+    @include heighttablets {
+      justify-content: flex-end;
+    }
+  }
 }
 .parallax {
-  background-image: url("../../img/bg/bg-mask.png");
+  background-image: url("../../img/bg/jupiter.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -19,41 +31,50 @@
   height: 110%;
   top: -5%;
   left: -5%;
-  // background: inherit;
+  @include desctop {
+    background-image: url("../../img/bg/jupiter_1300px.png");
+  }
+  @include note {
+    background-image: url("../../img/bg/jupiter_1024px.png");
+  }
+  @include tablets {
+    background-image: url("../../img/bg/jupiter_768px.png");
+  }
+  @include phones {
+    background-image: url("../../img/bg/jupiter_480px.png");
+  }
 }
-// .bounce {
-//   width: 100%;
-//   height: 100%;
-//   top: 0;
-//   left: 0;
-// }
 .first__slider-first {
   position: absolute;
   right: 0;
   top: 60%;
-  height: 19%;
-  width: 38%;
-  // background: inherit;
-  // background-position: 92% 79%;
-  // background-size: 100vw 100vh;
+  // height: 19%;
+  // width: 38%;
+  height: 17%;
+  width: 45%;
   cursor: pointer;
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   background: inherit;
-  //   transition: .5s;
-  //   filter: blur(40px);
-  //   z-index: $z-slider-first;
-  // }
+  
+  @include note {
+    @include heightnote {
+      top: 62%;
+      width: 58%;
+      height: 12%;
+    }
+  }
   @include tablets {
     top: 55%;
     height: 19%;
     width: 38%;
+    @include heighttablets {
+      top: 62%;
+      width: 58%;
+      height: 12%;
+    }
+  }
+  @include phones {
+    top: 64%;
+    width: 68%;
+    height: 12%;
   }
   &:hover {
     &::before {
@@ -69,16 +90,21 @@
 .first__display {
   position: absolute;
   left: 0;
-  top: 40%;
+  // top: 40%;
+  top: 50%;
   transform: translateY(-65%);
   @include desctop {
-    top: 35%;
+    top: 55%;
   }
   @include note {
     top: 38%;
+    @include heightnote {
+      top: 18%;
+      display: none;
+    }
   }
   @include tablets {
-    top: 38%;
+    top: 44%;
   }
 }
 .fdisplay {
@@ -98,8 +124,8 @@
     background-color: transparent;
     width: rem(53px);
     height: rem(53px);
-    // margin-bottom: rem(10px);
-    margin-bottom: 4%;
+    // margin-bottom: 4%;
+    margin-bottom: 34%;
     position: relative;
     cursor: pointer;
     opacity: 1;
@@ -138,7 +164,7 @@
       }
     }
     @include desctop {
-      margin-bottom: 0%;
+      margin-bottom: 15%;
       width: rem(35px);
       height: rem(35px);
       font-size: rem(30px);
@@ -203,10 +229,28 @@
   height: 100%;
   justify-content: flex-end;
   width: 57%;
-  padding-bottom: 2vh;
+  // padding-bottom: 2vh;
+  padding-bottom: 4vh;
   line-height: 1;
   @include desctop {
     padding-bottom: 1%;
+  }
+  @include note {
+    @include heightnote {
+      width: 72%;
+      padding-bottom: 6%;
+
+    }
+  }
+  @include tablets {
+    @include heighttablets {
+      width: 72%;
+      padding-bottom: 6%;
+
+    }
+  }
+  @include phones {
+    width: 90%;
   }
 }
 .first__title {
@@ -237,13 +281,18 @@
     }
     @include desctop {
       font-size: rem(62px);
-
     }
     @include note {
       font-size: rem(48px);
+      @include heightnote {
+        font-size: rem(62px);
+      }
     }
     @include tablets {
       font-size: rem(38px);
+      @include heighttablets {
+        font-size: rem(42px);
+      }
     }
   }
   @include desctop {
@@ -251,6 +300,9 @@
   }
   @include note {
     margin-bottom: 4%;
+    @include heightnote {
+      margin-bottom: 5%;
+    }
   }
 }
 .first__desc {
@@ -260,7 +312,8 @@
   line-height: 1.8;
   width: 70%;
   padding-left: 17%;
-  margin-bottom: 10vh;
+  // margin-bottom: 10vh;
+  margin-bottom: 20vh;
   @include desctop {
     margin-bottom: 8vh;
     line-height: 1.6;
@@ -269,11 +322,25 @@
   @include note {
     font-size: rem(16px);
     margin-bottom: 10vh;
-
+    @include heightnote {
+      font-size: rem(26px);
+      margin-bottom: 32%;
+      width: 100%;
+    }
   }
   @include tablets {
     font-size: rem(16px);
     width: 96%;
     margin-bottom: 12%;
+    @include heighttablets {
+      margin-bottom: 32%;
+      width: 100%;
+    }
+  }
+  @include phones {
+    font-size: rem(16px);
+    margin-bottom: 50%;
+    line-height: 1;
+    width: 100%;
   }
 }

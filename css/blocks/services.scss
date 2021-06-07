@@ -2,54 +2,85 @@
   position: relative;
   overflow: hidden;
   color: $black;
-  min-height: rem(1044px);
+  // min-height: rem(1044px);
+  height: rem(1080px);
   padding-top: rem(20px);
-  // padding-bottom: rem(50px);
-  // border: 1px solid black;
   @include desctop {
     padding-top: rem(40px);
-  min-height: rem(800px);
+    height: 100vh;
+    padding-top: rem(0px);
+    min-height: rem(780px);
   }
   @include note {
-    padding-top: rem(58px);
-    min-height: rem(400px);
+    padding-top: rem(78px);
+    // min-height: rem(960px);
+    height: auto;
     padding-bottom: rem(10px);
-
+    @include heightnote {
+      padding-top: rem(60px);
+      // width: 100%;
+      // height: 100%;
+    }
+    @include tablets {
+      min-height: 100vh;
+      height: auto;
+    }
   }
   @include tablets {
-    padding-top: rem(8px);
+    padding-top: rem(60px);
     min-height: auto;
     padding-bottom: rem(4px);
 
   }
 }
+.parallax-services {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
 .services__container {
   height: 100%;
   display: flex;
   background: inherit;
+  @include note {
+    @include heightnote {
+      width: 92%;
+    }
+  }
 }
 .services__content {
   display: flex;
   z-index: $z-services-content;
   flex-direction: column;
   height: 100%;
-  justify-content: space-between;
+  // justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  background: inherit
+  background: inherit;
+  @include note {
+    justify-content: flex-start
+  }
 }
 .services__title {
   @include roboto(bold);
   font-size: rem(72px);
   text-transform: uppercase;
-  margin-bottom: rem(68px);
+  // margin-bottom: rem(68px);
+  margin-bottom: rem(120px);
   @include desctop {
     font-size: rem(66px);
     margin-bottom: rem(52px);
   }
   @include note {
     font-size: rem(48px);
-    margin-bottom: rem(20px);
+    margin-bottom: rem(60px);
+    @include heightnote {
+      font-size: rem(60px);
+      margin-bottom: rem(60px);
+    }
   }
 }
 .services__list {
@@ -57,18 +88,26 @@
   width: 92%;
   background: inherit;
   justify-content: space-around;
-
-  // margin-bottom: rem(66px);
-  margin-bottom: 11%;
+  // margin-bottom: 11%;
+  margin-bottom: rem(110px);
   @include desctop {
     width: 94%;
+    margin-bottom: rem(55px);
   }
   @include note {
+    justify-content: center;
     margin-bottom: rem(60px);
+    width: 100%;
+    @include heightnote {
+      margin-bottom: rem(80px);
+    }
   }
   @include tablets {
     flex-direction: column;
     align-items: center;
+    margin-bottom: rem(40px);
+    width: 96%;
+
   }
 }
 .services__item {
@@ -76,32 +115,35 @@
   flex-direction: column;
   align-items: center;
   width: 26%;
-  background: inherit;
+  // background: inherit;
+  background: rgba(#C4C4C4,.05);
   margin-right: rem(20px);
   transform: scale(1);
   transition: .8s;
   cursor: pointer;
-  backdrop-filter: blur(26px);
-
+  backdrop-filter: blur(15px);
   &:hover {
     transform: scale(1.1);
-  backdrop-filter: blur(30px);
-
+    backdrop-filter: blur(30px);
   }
   &:last-child {
     margin-right: 0;
   }
   @include desctop {
     width: 25%;
-
+    max-width: rem(250px);
   }
   @include note {
-    width: 30%;
-    margin-right: rem(5px);
-
+    width: 27%;
+    margin-right: 5%;
+    max-width: rem(200px);
+    @include  heightnote {
+      width: 29%;
+    }
   }
   @include tablets {
-    width: 60%;
+    max-width: none;
+    width: 85%;
     margin-right: 0;
     margin-bottom: rem(20px);
   }
@@ -111,26 +153,28 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  // opacity: 0.8;
   background: linear-gradient(154.49deg, rgba(255, 255, 255, 0.4) -14.99%, rgba(255, 255, 255, 0) 150.94%);
-  // background: linear-gradient(154.49deg, rgba(122, 102, 102, 0.1) -14.99%, rgba(255, 255, 255, 0) 150.94%);
   backdrop-filter: blur(18px);
   width: 100%;
   height: 100%;
-
   box-shadow: 0 25px 45px rgba(0,0,0,0.07);
-  border: 1px solid rgba(255,255,255,0.25);
-  border-right: 1px solid rgba(255,255,255,0.2);
-  border-bottom: 0px solid rgba(255,255,255,0.1);
-
   @include desctop {
     padding: 20% 5% 24%;
   }
   @include note {
-    padding: 10% 5% 14%;
+    padding: 18% 5% 16%;
+    @include heightnote {
+      padding: 20% 6%;
+    }
   }
   @include tablets {
-    padding: 8% 5% 14%;
+    padding: 8% 10% 10%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @include phones {
+    flex-direction: column;
+    text-align: center
   }
 }
 .services__name {
@@ -143,8 +187,15 @@
     margin-bottom: rem(40px);
   }
   @include note {
-    font-size: rem(16px);
-    margin-bottom: rem(20px);
+    font-size: rem(22px);
+    margin-bottom: rem(50px);
+    @include heightnote {
+      font-size: rem(20px);
+       margin-bottom: rem(40px);
+    }
+  }
+  @include tablets {
+    width: 100%;
   }
 }
 .services__pic {
@@ -153,7 +204,17 @@
     margin-bottom: rem(50px);
   }
   @include note {
-    margin-bottom: rem(15px);
+    margin-bottom: rem(45px);
+    @include heightnote {
+      margin-bottom: rem(45px);
+    }
+  }
+  @include tablets {
+    margin-bottom: 0;
+    margin-right: rem(20px);
+    @include heighttablets {
+      margin-right: rem(35px);
+    }
   }
 }
 .services__icon {
@@ -162,8 +223,16 @@
   height: rem(106px);
   fill: $black;
   @include note {
-    width: rem(66px);
-    height: rem(66px);
+    width: rem(96px);
+    height: rem(96px);
+    @include heightnote {
+      width: rem(96px);
+      height: rem(96px);
+    }
+  }
+  @include tablets {
+    width: rem(86px);
+    height: rem(86px);
   }
 }
 .services__desc {
@@ -171,16 +240,21 @@
   font-size: rem(18px);
   text-align: left;
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
   @include desctop {
     font-size: rem(16px);
   }
   @include note {
     font-size: rem(14px);
+    line-height: 1.8;
+
   }
 }
 .services__but {
   position: relative;
-  padding: rem(29px) rem(52px);
+  // padding: rem(29px) rem(52px);
+  padding: rem(31px) rem(51px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -198,6 +272,13 @@
   @include note {
     font-size: 20px;
     padding: rem(18px) rem(36px);
+    @include heightnote {
+      font-size: 36px;
+      padding: rem(22px) rem(38px);
+    }
+  }
+  @include tablets {
+    padding: rem(22px) rem(38px);
   }
   & span {
     position: relative;
@@ -212,12 +293,24 @@
     left: 0;
     top: 0;
     height: 100%;
-    background: url("../../img/bg/bg-mask.png");
+    background: url("../../img/bg/jupiter.png");
     background-size: cover;
     transform-origin: -10% left;
     transition: .6s;
     opacity: 0;
     z-index: 10;
+    @include desctop {
+      background-image: url("../../img/bg/jupiter_1300px.png");
+    }
+    @include note {
+      background-image: url("../../img/bg/jupiter_1024px.png");
+    }
+    @include tablets {
+      background-image: url("../../img/bg/jupiter_768px.png");
+    }
+    @include phones {
+      background-image: url("../../img/bg/jupiter_480px.png");
+    }
   }
   &:hover {
     & span {

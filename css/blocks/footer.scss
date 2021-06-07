@@ -4,17 +4,27 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 .footer__container {
   margin: 0 auto;
   width: 95%;
+  @include tablets {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 .footer__content {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   @include tablets {
     flex-direction: column;
+    height: 100%;
+    justify-content: center;
+
   }
 }
 .footer__left {
@@ -23,6 +33,7 @@
   position: relative;
   @include tablets {
     width: 100%;
+    margin-bottom: rem(50px);
   }
 }
 .footer__logo {
@@ -37,6 +48,9 @@
   }
   @include note {
     width: rem(150px);
+  }
+  @include tablets {
+    width: rem(200px);
   }
 }
 .footer__nav {
@@ -63,6 +77,9 @@
     transition: .4s 1s;
     transform: translate(0,160%);
     right: 0;
+  }
+  @include tablets {
+    margin-bottom: rem(50px);
   }
 }
 .footer__network {

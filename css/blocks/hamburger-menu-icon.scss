@@ -10,5 +10,9 @@
   @include note {
     width: rem(24px);
     height: rem(24px);
+    @include heightnote {
+      width: rem(40px);
+      height: rem(40px);
+    }
   }
 }

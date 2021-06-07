@@ -14,7 +14,6 @@
       bottom: -17%;
       left: 20%;
       z-index: $z-move-bounce-blur-1;
-      // @include keyframesBounBlur1(25%,-10%);
       @include desctop {
         filter: blur(rem(13px));
         width: rem(120px);
@@ -35,7 +34,6 @@
       bottom: 46%;
       left: 27%;
       z-index: $z-move-bounce-blur-2;
-      // @include keyframesBounBlur2(19%,58%);
       @include desctop {
         filter: blur(rem(20px));
         width: rem(200px);
@@ -58,7 +56,6 @@
       bottom: 10%;
       left: 52%;
       z-index: $z-move-bounce-blur-3;
-      // @include keyframesBounBlur3(19%,58%);
       @include desctop {
         filter: blur(rem(30px));
         width: rem(160px);
@@ -69,8 +66,6 @@
       @include tablets {
         width: rem(100px);
         height: rem(100px);
-        // bottom: 10%;
-        // left: 52%;
       }
     }
   }
@@ -81,7 +76,27 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background-image: url("./../../img/bg/bg-mask.png");
+      background-image: url("./../../img/bg/jupiter.png");
+    }
+    @include desctop {
+      &::after {
+        background-image: url("./../../img/bg/jupiter_1300px.png");
+      }
+    }
+    @include note {
+      &::after {
+        background-image: url("./../../img/bg/jupiter_1024px.png");
+      }
+    }
+    @include tablets {
+      &::after {
+        background-image: url("./../../img/bg/jupiter_768px.png");
+      }
+    }
+    @include phones {
+      &::after {
+        background-image: url("./../../img/bg/jupiter_480px.png");
+      }
     }
     &-1 {
       width: rem(42px);
@@ -89,15 +104,12 @@
       bottom: 8%;
       left: 88%;
       z-index: $z-move-bounce-img-1;
-      // @include keyframesBounImg1(95%,5%);
       &::after {
         background-position: 37% 73%;
         background-size: 242% 405%;
         -webkit-transform: rotate(185deg);
         -ms-transform: rotate(185deg);
         transform: rotate(34deg);
-        // background-position-x: 10%;
-        // background-position-y: 82%;
       }
       @include desctop {
         width: rem(22px);
@@ -110,6 +122,10 @@
         left: 97%;
         width: rem(40px);
         height: rem(40px);
+        @include desctop {
+          width: rem(30px);
+          height: rem(30px);
+        }
       }
     }
     &-2 {
@@ -118,7 +134,6 @@
       bottom: 84%;
       left: 79%;
       z-index: $z-move-bounce-img-2;
-      // @include keyframesBounImg2(70%,90%);
       &::after {
         background-position: 37% 73%;
         background-size: 242% 405%;
@@ -133,6 +148,10 @@
       @include note {
         width: rem(32px);
         height: rem(32px);
+        @include heightnote {
+          bottom: 73%;
+          left: 83%;
+        }
       }
       @include tablets {
         left: 78%;
@@ -144,27 +163,22 @@
       bottom: 36%;
       left: 60%;
       z-index: $z-move-bounce-img-3;
-      // @include keyframesBounImg3(55%,40%);
       &::after {
         background-position: 24% 73%;
         background-size: 198% 219%;
         transform: rotate(185deg);
-      }
-      &.animRun {
-        transform: rotate(-60deg);
-        // animation-duration: 20s;
-        // left: -30%;
-        // transition: .6s ease-out;
-
-        // &::after {
-        // // transform: rotate(90deg);
-        // }
       }
       @include desctop {
         bottom: 34%;
         left: 56%;
         width: rem(90px);
         height: rem(90px);
+      }
+      @include note {
+        @include heightnote {
+          bottom: 30%;
+          left: 44%;
+        }
       }
       @include tablets {
         width: rem(60px);
@@ -173,7 +187,9 @@
       &--services {
         width: rem(212px);
         height: rem(212px);
-        bottom: 61%;
+        // bottom: 61%;
+        // left: 75%;
+        bottom: 53%;
         left: 75%;
         background: linear-gradient(180deg, rgba(91, 36, 122, 0.5) 0%, rgba(27, 206, 223, 0.5) 100%);
         &::after {
@@ -192,7 +208,6 @@
           left: 90%;
         }
       }
-      
     }
     &-4 {
       width: rem(266px);
@@ -200,7 +215,6 @@
       bottom: 51%;
       left: 68%;
       z-index: $z-move-bounce-img-4;
-      // @include keyframesBounImg4(65%,55%);
       &::after {
         background-position: 51% 37%;
         background-size: 324% 193%;
@@ -212,6 +226,12 @@
         bottom: 51%;
         left: 68%;
       }
+      @include note {
+        @include heightnote {
+          bottom: 47%;
+          left: 68%;
+        }
+      }
       @include tablets {
         width: rem(100px);
         height: rem(100px);
@@ -221,8 +241,10 @@
       &--services {
         width: rem(348px);
         height: rem(348px);
+        // left: 64%;
+        // top: 60%;
         left: 64%;
-        top: 60%;
+        top: 64%;
         background: linear-gradient(180deg, rgba(91, 36, 122, 0.5) 0%, rgba(27, 206, 223, 0.5) 100%);
         &::after {
           display: none;
@@ -248,7 +270,6 @@
       left: 30%;
       opacity: .8;
       z-index: $z-move-bounce-img-5;
-      // @include keyframesBounImg5(25%,85%);
       &::after {
         background-size: 130% 122%;
         transform: rotate(160deg);
@@ -261,6 +282,12 @@
         bottom: 84%;
         left: 37%;
       }
+      @include note {
+        @include heightnote {
+          bottom: 82%;
+          left: 31%;
+        }
+      }
       @include tablets {
         width: rem(264px);
         height: rem(264px);
@@ -271,7 +298,8 @@
         width: rem(560px);
         height: rem(560px);
         left: 12%;
-        top: 20%;
+        // top: 20%;
+        top: 30%;
         background: linear-gradient(0deg, rgba(91, 36, 122, 0.5) 0%, rgba(27, 206, 223, 0.5) 100%);
         &::after {
           display: none;

@@ -2,8 +2,8 @@
   position: absolute;
   z-index: $z-header;
   left: 0;
-  // top: rem(20px);
-  top: 2vh;
+  // top: 2vh;
+  top: 6vh;
   width: 100%;
   color: $black;
   @include desctop {
@@ -11,9 +11,15 @@
   }
   @include note {
     top: 3%;
+    @include heightnote {
+      top: 6%;
+    }
   }
   @include tablets {
     top: 2%;
+    @include heighttablets {
+      top: 5%;
+    }
   }
 }
 .header__container {
@@ -48,6 +54,10 @@
   @include note {
     width: rem(150px);
     height: rem(40px);
+    @include heightnote {
+      width: rem(190px);
+      height: rem(56px);
+    }
   }
   @include tablets {
     width: rem(120px);

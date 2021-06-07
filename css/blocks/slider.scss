@@ -1,6 +1,5 @@
 .slider {
   display: flex;
-  // flex-direction: column;
   overflow: hidden;
   height: 100%;
   width: 100vw;
@@ -10,10 +9,8 @@
 .slider__list, .swiper-wrapper {
   position: absolute;
   transition: all linear .7s;
-  // left: 0;
   top: 0;
   height: 100%;
-  // width: 600vw;
   display: flex;
   transition-duration: .7s;
   background: transparent;
@@ -29,12 +26,11 @@
   justify-content: space-around;
   align-items: center;
   top: 56%;
-  // left: 50%;
   transform: translate(0%,-50%);
   height: 100%;
   width: 100%;
   font-size: rem(220px);
-  background: url("../../img/bg/bg-mask.png");
+  background: url("../../img/bg/jupiter.png");
   background-size: 126% 100%;
   background-position-y: 6%;
   background-position-x: -9%;
@@ -44,18 +40,25 @@
   text-align: center;
   opacity: .6;
   & span {
-  letter-spacing: -5px;
-
+    letter-spacing: -5px;
   }
   @include desctop {
+    background-image: url("../../img/bg/jupiter_1300px.png");
     font-size: rem(160px);
     width: 95%;
   }
   @include note {
+    background-image: url("../../img/bg/jupiter_1024px.png");
     font-size: rem(128px);
     width: 95%;
   }
   @include tablets {
+    background-image: url("../../img/bg/jupiter_768px.png");
+    font-size: rem(88px);
+    width: 95%;
+  }
+  @include phones {
+    background-image: url("../../img/bg/jupiter_480px.png");
     font-size: rem(88px);
     width: 95%;
   }

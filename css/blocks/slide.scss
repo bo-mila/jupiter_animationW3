@@ -7,34 +7,51 @@
   justify-content: center;
   height: 93%;
   background: inherit;
-  padding-top: rem(37px);
-  padding-bottom: rem(38px);
+  padding-top: rem(47px);
+  padding-bottom: rem(18px);
+  @include desctop {
+    padding-top: rem(18px);
+  }
 }
-
 .slide__container {
+  width: 56vw;
+  // width: 62%;
   max-width: 1078px;
-
-  width: 62%;
   flex-direction: column;
   align-items: center;
-  padding: rem(15px) rem(20px);
-  height: auto;
+  // padding: rem(15px) rem(20px);
+  padding: rem(10px) rem(10px);
+  // height: auto;
   transition: .6s;
   transform: scale(1);
   transform-origin: center center;
   box-shadow: none;
   @include desctop {
-    width: 62%;
+    width: 70%;
     padding: rem(10px) rem(16px);
   }
+  @include note {
+    padding: rem(10px) rem(10px);
+
+    width: 62%;
+    @include heightnote {
+      width: 84%;
+      padding: rem(35px) rem(20px);
+    }
+  }
   @include tablets {
-    width: 56%;
-    padding: rem(15px) rem(16px);
+    width: 70%;
+    padding: rem(10px) rem(10px);
+    @include heighttablets {
+      width: 81%;
+    }
+  }
+  @include phones {
+    width: 90%;
   }
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     box-shadow: 0 0 10px rgba(0,0,0,0.5); 
-    
   }
 }
 .slide__title {
@@ -43,7 +60,6 @@
   font-size: rem(72px);
   text-transform: uppercase;
   margin-bottom: rem(15px);
-  // margin-bottom: 10vh;
   @include desctop {
     font-size: rem(42px);
     margin-bottom: rem(10px);
@@ -58,33 +74,37 @@
   font-style: normal;
   font-size: rem(24px);
   line-height: 1.6;
-  letter-spacing: rem(24px);
+  letter-spacing: rem(22px);
   text-transform: uppercase;
-  margin-bottom: rem(39px);
-  // margin-bottom: 2vh;
+  // margin-bottom: rem(39px);
+  text-align: center;
+  margin-bottom: 5%;
   @include desctop {
     font-size: rem(16px);
     margin-bottom: rem(22px);
     letter-spacing: rem(14px);
-
   }
   @include tablets {
     font-size: rem(10px);
     margin-bottom: rem(12px);
     letter-spacing: rem(4px);
-
   }
 }
 .slide__img {
   display: flex;
   max-width: rem(1078px);
-  width: 85%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   position: relative;
   height: auto;
   transition: 1s;
   z-index: 50;
+  @include note {
+    @include heightnote {
+      width: 94%;
+    }
+  }
 }
 .slide__pic {
   height: 100%;
