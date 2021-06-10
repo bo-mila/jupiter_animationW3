@@ -7,4 +7,14 @@
     width: rem(28px);
     height: rem(28px);
   }
+  @include note {
+    width: rem(24px);
+    height: rem(24px);
+  }
+  @include phones {
+    @media screen and (min-height: 940px) {
+      width: rem(40px);
+      height: rem(40px);
+    }
+  }
 }

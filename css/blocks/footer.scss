@@ -1,37 +1,107 @@
 .footer {
-  position: absolute;
-  bottom: 0;
+  display: flex;
   width: 100%;
-  padding: rem(22px) 0;
-  background-color: $white;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.footer__container {
+  margin: 0 auto;
+  width: 95%;
+  @include tablets {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
 }
 .footer__content {
+  width: 100%;
   display: flex;
   align-items: center;
-  @include alegreya-sans(normal);
-  font-size: rem(21px);
-  line-height: 1;
-  width: 100%;
-  @include phones {
+  justify-content: space-around;
+  @include tablets {
     flex-direction: column;
-    align-items: center;
+    height: 100%;
+    justify-content: center;
+
   }
 }
 .footer__left {
-  flex: 1;
+  width: 44%;
+  flex-shrink: 1;
+  position: relative;
+  @include tablets {
+    width: 100%;
+    margin-bottom: rem(50px);
+    @media screen and (min-height: 580px) {
+      margin-bottom: rem(80px);
+    }
+  }
   @include phones {
-    margin-bottom: rem(20px);
+    margin-bottom: rem(50px);
   }
 }
-.footer__address {
-  margin-bottom: rem(10px);
-}
-.footer__right {
-  display: flex;
-  justify-content: flex-end;
-  width: 40%;
+.footer__logo {
+  position: absolute;
+  top: 0;
+  left: -150%;
+  transform: translate(-50%,-50%);
+  transition: .4s 1.8s;
+  width: rem(272px);
+  @include desctop {
+    width: rem(200px);
+  }
+  @include note {
+    width: rem(150px);
+  }
+  @include tablets {
+    width: rem(200px);
+    @media screen and (min-height: 540px) {
+      width: rem(280px);
+    }
+  }
   @include phones {
+    width: rem(200px);
+    @media screen and (min-height: 980px) {
+      width: rem(280px);
+    }
+  }
+}
+.footer__nav {
+  position: relative;
+  width: 100%;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: rem(2px);
+    background-color: $black;
+    transition: .4s 1s;
+    transform: translate(0,160%);
+    left: 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: rem(2px);
+    background-color: $black;
+    transition: .4s 1s;
+    transform: translate(0,160%);
+    right: 0;
+  }
+  @include tablets {
+    margin-bottom: rem(50px);
+  }
+}
+.footer__network {
+  width: 42%;
+  flex-shrink: 1;
+  position: relative;
+  @include tablets {
     width: 100%;
-    justify-content: center;
   }
 }

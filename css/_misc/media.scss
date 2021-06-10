@@ -1,8 +1,19 @@
 @function rem($px) {
   @return $px / 16px + 0rem;
 }
+
+@mixin fulldesctop {
+  @media screen and (max-width: 1800px) {
+    @content;
+  }
+}
 @mixin desctop {
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: 1320px) { //1100
+    @content;
+  }
+}
+@mixin note {
+  @media screen and (max-width: 1024px) { //1100
     @content;
   }
 }
@@ -17,3 +28,18 @@
     @content;
   }
 }
+@mixin ratio {
+  @media (max-aspect-ratio: 3/2) {
+    @content;
+  }
+}
+// @mixin heightnote {
+//   @media (min-height: 820px) {
+//     @content;
+//   }
+// }
+// @mixin heighttablets {
+//   @media (min-height: 500px) {
+//     @content;
+//   }
+// }

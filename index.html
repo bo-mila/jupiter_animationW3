@@ -5,87 +5,116 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jupiter</title>
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/main.css">
-
+  <link rel="shortcut icon" href="./img/icons/favicon.ico">
 </head>
 <body>
   <div class="wrapper">
-    <div class="maincontent">
-      <header class="header">
-        <div class="container header__container">
-          <div class="header__content">
-            <div class="header__left">
-              <label class="header__hamburger-menu hamburger-menu">
-                <input type="checkbox" class="hamburger-menu__input">
-                <div class="hamburger-menu__img">
-                  <svg class="hamburger-menu__icon" alt="Перейти на меню сайта">
-                    <use xlink:href="img/icons/sprite.svg#hamb"></use>
-                  </svg>
-                </div>
-              </label>
-              <img src="./img/content/logo.png" alt="Логотип сайта" class="header__logo">
-            </div>
-            <div class="header__right">
-              <ul class="header__language language">
-                <li class="language__item">
-                  <a href="" class="language__ukr">ukr</a>
-                </li>
-                <li class="language__item">
-                  <a href="" class="language__eng">eng</a>
-                </li>
-                <li class="language__item">
-                  <a href="" class="language__ru">ru</a>
-                </li>
-              </ul>
-            </div>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__content">
+          <div class="header__left">
+            <label class="header__hamburger-menu hamburger-menu">
+              <input type="checkbox" class="hamburger-menu__input">
+              <div class="hamburger-menu__img">
+                <svg class="hamburger-menu__icon" alt="Перейти на меню сайта">
+                  <use xlink:href="img/icons/sprite.svg#hamb"></use>
+                </svg>
+              </div>
+            </label>
+            <img src="./img/content/logo.png" alt="Логотип сайта" class="header__logo">
+          </div>
+          <div class="header__right">
+            <ul class="header__language language">
+              <li class="language__item">
+                <a href="" class="language__ukr">ukr</a>
+              </li>
+              <li class="language__item">
+                <a href="" class="language__eng">eng</a>
+              </li>
+              <li class="language__item">
+                <a href="" class="language__ru">ru</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </header>
+      </div>
+    </header>
+    <main class="maincontent">
       <section id="sectionFirst" class="section first">
-        <div class="first__bounces" aria-label="Бегающие шарики на фоне">
-          <div class="bounce bounce-blur bounce-blur-1"></div>
-          <div class="bounce bounce-blur bounce-blur-2"></div>
-          <div class="bounce bounce-blur bounce-blur-3"></div>
-          <div class="bounce bounce-img bounce-img-1"></div>
-          <div class="bounce bounce-img bounce-img-2"></div>
-          <div class="bounce bounce-img bounce-img-3"></div>
-          <div class="bounce bounce-img bounce-img-4"></div>
-          <div class="bounce bounce-img bounce-img-5"></div>
+        <div class="first__bounces parallax" data-speed="2" aria-label="Бегающие шарики на фоне">
+          <div class="bounce bounce-blur bounce-blur-1" data-speed="20" aria-label="Шарик-блюр 1"></div>
+          <div class="bounce bounce-blur bounce-blur-2" data-speed="6" aria-label="Шарик-блюр 2"></div>
+          <div class="bounce bounce-blur bounce-blur-3" data-speed="9" aria-label="Шарик-блюр 3"></div>
+          <div class="bounce bounce-img bounce-img-1" data-speed="12" aria-label="Шарик-картинка 1"></div>
+          <div class="bounce bounce-img bounce-img-2" data-speed="10" aria-label="Шарик-картинка 2"></div>
+          <div class="bounce bounce-img bounce-img-3" data-speed="10" aria-label="Шарик-картинка 3"></div>
+          <div class="bounce bounce-img bounce-img-4"  data-speed="2" aria-label="Шарик-картинка 4"></div>
+          <div class="bounce bounce-img bounce-img-5" data-speed="4" aria-label="Шарик-картинка 5"></div>
         </div>
         <div class="first__slider-first slider-first">
           <div class="slider-first__container">
             <ul class="slider-first__list">
-              <li class="slider-first__item w3-animate-opacity">
-                <div class="slide-first">подать заявку</div>
+              <li class="slider-first__item">
+                <div class="slide-first">
+                  <p>подать заявку</p>
+                  <svg class="arrow-down__icon" alt="Стрелка вниз">
+                    <use xlink:href="img/icons/sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
               </li>
-              <li class="slider-first__item w3-animate-opacity">
-                <div class="slide-first">подать2 заявку</div>
+              <li class="slider-first__item">
+                <div class="slide-first">
+                  <p>подать заявку 2</p>
+                  <svg class="arrow-down__icon" alt="Стрелка вниз">
+                    <use xlink:href="img/icons/sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
               </li>
-              <li class="slider-first__item w3-animate-opacity">
-                <div class="slide-first">подать3 заявку</div>
+              <li class="slider-first__item">
+                <div class="slide-first">
+                  <p>подать заявку 3</p>
+                  <svg class="arrow-down__icon" alt="Стрелка вниз">
+                    <use xlink:href="img/icons/sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
               </li>
-              <li class="slider-first__item w3-animate-opacity">
-                <div class="slide-first">пода ть4hjgj hgjhgfjhfjh tyryrfj заявку</div>
+              <li class="slider-first__item">
+                <div class="slide-first">
+                  <p>подать заявку 4</p>
+                  <svg class="arrow-down__icon" alt="Стрелка вниз">
+                    <use xlink:href="img/icons/sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
               </li>
-              <li class="slider-first__item w3-animate-opacity">
-                <div class="slide-first">подать 5заявку</div>
+              <li class="slider-first__item">
+                <div class="slide-first">
+                  <p>подать заявку 5</p>
+                  <svg class="arrow-down__icon" alt="Стрелка вниз">
+                    <use xlink:href="img/icons/sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
               </li>
-              <li class="slider-first__item w3-animate-opacity">
-                <div class="slide-first">подать 6заявку</div>
+              <li class="slider-first__item">
+                <div class="slide-first">
+                  <p>подать заявку 6</p>
+                  <svg class="arrow-down__icon" alt="Стрелка вниз">
+                    <use xlink:href="img/icons/sprite.svg#arrow-down"></use>
+                  </svg>
+                </div>
               </li>
             </ul>
           </div>
           <div class="slider-first__buttons">
             <button class="slider-first__button slider-first__button--prev">
-              <svg class="arrow-icon" alt="Пролистать слайдер назад">
+              <!-- <svg class="arrow-icon" alt="Пролистать слайдер назад">
                 <use xlink:href="img/icons/sprite.svg#arrow"></use>
-              </svg>
+              </svg> -->
             </button>
             <button class="slider-first__button slider-first__button--next">
-              <svg class="arrow-icon" alt="Пролистать слайдер вперед">
+              <!-- <svg class="arrow-icon" alt="Пролистать слайдер вперед">
                 <use xlink:href="img/icons/sprite.svg#arrow"></use>
-              </svg>
+              </svg> -->
             </button>
           </div>
         </div>
@@ -114,14 +143,17 @@
               </ul>
             </div>
             <div class="first__title title">
-              <h1><span>Jupiter</span> production</h1>
+              <h1><span>Jupiter</span><span>production</span></h1>
             </div>
             <div class="first__desc">
               <p>Помогаем бизнесу вырасти <br>за счёт Digital-инструментов</p>
             </div>
             <div class="first__feature feature">
+              <!-- <video id="myvideo">
+                <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="video/burger.mp4" controls  />
+              </video> -->
               <div class="feature__left">
-                <div>creating thinking care about big brands</div>
+                <div>creating thinking <br> care about big brands</div>
               </div>
               <div class="feature__right">
                 <span><l>C</l><l>r</l><l>e</l><l>a</l><l>t</l><l>i</l><l>v</l><l>e</l></span>
@@ -130,87 +162,137 @@
               </div>
             </div>
           </div>
-          <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <filter id="blur">
-              <feGaussianBlur stDeviation="6"></feGaussianBlur>
-            </filter>
-          </svg>
         </div>
       </section>
+      <!-- <section>
+        <div class="sec" style="width: 600px; height:50px;">
+          portfolio
+        </div>
+        <div class="sec2">
+          gradient
+        </div>
+      </section> -->
       <section id="sectionPortfolio" class="section portfolio">
+        <div class="slider__left-mobile"></div>
         <div class="slider__left"></div>
+        <div class="slider__right-mobile"></div>
         <div class="slider__right"></div>
+        <div class="slider__nav slider__nav-left" aria-label="Переход на слайд">
+        </div>
+        <div class="slider__nav slider__nav-right" aria-label="Переход на слайд">
+        </div>
         <div class="portfolio__content">
           <div class="portfolio__slider slider swiper-container mySwiper">
+           
             <ul class="slider__list swiper-wrapper">
               <li class="slider__item slide swiper-slide">
+                <div class="slider__back-mask slider__back-mask--portfolio">
+                  portfolio
+                  <!-- <span>p</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span> -->
+                </div>
                 <div class="slide__container container">
                   <h3 class="slide__title">ZYDEX UA</h3>
                   <div class="slide__description">
                     <p>Корпоративный сайт</p>
                   </div>
                   <div class="slide__img">
-                    <img src="./img/content/portfolio-zydex.png" alt="Пример из портфолио - сайт ZYDEX.UA" class="slide__pic">
-                    <!-- <div class="swiper-lazy-preloader"></div> -->
+                    <!-- <video id="myvideo">
+                      <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="./video/burger.mp4" controls  />
+                    </video> -->
+                    <iframe id="player" type="text/html" width="100%" height="100%"
+  src="http://www.youtube.com/embed/5M8ft-3vDC8?enablejsapi=1&origin=http://example.com"
+  frameborder="0" modestranding="0" autoplay="0" showinfo="0" rel="0"></iframe>
+                    <!-- <div class="player"></div> -->
+                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=o2DXt11SMNI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                    <!-- <img data-srcset="./img/content/zydex_480px.jpg 480w, ./img/content/zydex_768px.jpg 768w, ./img/content/zydex.jpg 1024w" 
+                      data-src="./img/content/zydex.jpg" 
+                      alt="Пример из портфолио - сайт ZYDEX.UA" class="slide__pic swiper-lazy"> -->
+                      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/h3EEhWecuoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                      <!-- <div class="swiper-lazy-preloader"></div> -->
                   </div>
                 </div>
               </li>
               <li class="slider__item slide swiper-slide">
+                <div class="slider__back-mask slider__back-mask--crative">
+                  <span>c</span><span>r</span><span>a</span><span>t</span><span>i</span><span>v</span><span>e</span>
+                </div>
                 <div class="slide__container container">
                   <h3 class="slide__title">carbag</h3>
                   <div class="slide__description">
                     <p>Landing page</p>
                   </div>
                   <div class="slide__img">
-                    <img data-src="./img/content/portfolio-carbag.png" alt="Пример из портфолио - сайт Carbag" class="slide__pic swiper-lazy">
+                    <img data-srcset=" ./img/content/carbag_480px.jpg 480w, ./img/content/carbag_768px.jpg 768w, ./img/content/carbag_1024px.jpg 1024w"
+                      data-src="./img/content/carbag.jpg"
+                      alt="Пример из портфолио - сайт Carbag" class="slide__pic swiper-lazy">
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
               </li>
               <li class="slider__item slide swiper-slide">
+                <div class="slider__back-mask slider__back-mask--marketing">
+                  <span>m</span><span>a</span><span>r</span><span>k</span><span>e</span><span>t</span><span>i</span><span>n</span><span>g</span>
+                </div>
                 <div class="slide__container container">
                   <h3 class="slide__title">SushiDoma</h3>
                   <div class="slide__description">
                     <p>Интенет-магазин</p>
                   </div>
                   <div class="slide__img">
-                    <img data-src="./img/content/portfolio-sushidoma.png" alt="Пример из портфолио - сайт SushiDoma" class="slide__pic swiper-lazy">
+                    <img data-srcset="./img/content/sushidoma_480px.jpg 480w, ./img/content/sushidoma_768px.jpg 768w, ./img/content/sushidoma_1024px.jpg 1024w"
+                      data-src="./img/content/sushidoma.jpg"
+                      alt="Пример из портфолио - сайт SushiDoma" class="slide__pic swiper-lazy">
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
               </li>
               <li class="slider__item slide swiper-slide">
+                <div class="slider__back-mask slider__back-mask--digital">
+                  <span>d</span><span>i</span><span>g</span><span>i</span><span>t</span><span>a</span><span>l</span>
+                </div>
                 <div class="slide__container container">
                   <h3 class="slide__title">VV Home</h3>
                   <div class="slide__description">
                     <p>Веб-сайт</p>
                   </div>
                   <div class="slide__img">
-                    <img data-src="./img/content/portfolio-vvhome.png" alt="Пример из портфолио - сайт VV Home" class="slide__pic swiper-lazy">
+                    <img data-srcset="./img/content/vvhome_480px.jpg 480w, ./img/content/vvhome_768px.jpg 768w, ./img/content/vvhome_1024px.jpg 1024w"
+                      data-src="./img/content/vvhome.jpg"
+                      alt="Пример из портфолио - сайт VV Home" class="slide__pic swiper-lazy">
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
               </li>
               <li class="slider__item slide swiper-slide">
+                <div class="slider__back-mask slider__back-mask--website">
+                  <span>w</span><span>e</span><span>b</span><span>-</span><span>s</span><span>i</span><span>t</span><span>e</span>
+                </div>
                 <div class="slide__container container">
                   <h3 class="slide__title">Dekolte</h3>
                   <div class="slide__description">
                     <p>Интернет-магазин</p>
                   </div>
                   <div class="slide__img">
-                    <img data-src="./img/content/portfolio-dekolte.png" alt="Пример из портфолио - сайт Dekolte" class="slide__pic swiper-lazy">
+                    <img data-srcset="./img/content/dekolte_480px.jpg 480w, ./img/content/dekolte_768px.jpg 768w, ./img/content/dekolte_1024px.jpg 1024w"
+                      data-src="./img/content/dekolte.jpg"
+                      alt="Пример из портфолио - сайт Dekolte" class="slide__pic swiper-lazy">
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
               </li>
               <li class="slider__item slide swiper-slide">
+                <div class="slider__back-mask slider__back-mask--modern">
+                  <span>m</span><span>o</span><span>d</span><span>e</span><span>r</span><span>n</span>
+                </div>
                 <div class="slide__container container">
                   <h3 class="slide__title">SIDERAL</h3>
                   <div class="slide__description">
                     <p>Интернет-портал</p>
                   </div>
                   <div class="slide__img">
-                    <img data-src="./img/content/portfolio-sideral.png" alt="Пример из портфолио - сайт SIDERAL" class="slide__pic swiper-lazy">
+                    <img data-srcset="./img/content/sideral_480px.jpg 480w, ./img/content/sideral_768px.jpg 768w, ./img/content/sideral_1024px.jpg 1024w"
+                    data-src="./img/content/sideral.jpg"
+                    alt="Пример из портфолио - сайт SIDERAL" class="slide__pic swiper-lazy">
                     <div class="swiper-lazy-preloader"></div>
                   </div>
                 </div>
@@ -218,17 +300,17 @@
             </ul>
             <div class="portfolio__display display">
               <ul class="display__list swiper-pag">
-                <li class="display__item  display__item--active" alt="Переход на слайд">
+                <li class="display__item  display__item--active" aria-label="Переход на слайд">
                 </li>
-                <li class="display__item"alt="Переход на слайд">
+                <li class="display__item" aria-label="Переход на слайд">
                 </li>
-                <li class="display__item"alt="Переход на слайд">
+                <li class="display__item" aria-label="Переход на слайд">
                 </li>
-                <li class="display__item"alt="Переход на слайд">
+                <li class="display__item" aria-label="Переход на слайд">
                 </li>
-                <li class="display__item"alt="Переход на слайд">
+                <li class="display__item" aria-label="Переход на слайд">
                 </li>
-                <li class="display__item"alt="Переход на слайд">
+                <li class="display__item" aria-label="Переход на слайд">
                 </li>
               </ul>
             </div>
@@ -236,126 +318,263 @@
         </div>
       </section>
       <section id="sectionServices" class="section services">
+        <div class="first__bounces parallax-services" aria-label="Бегающие шарики на фоне">
+          <div class="bounce bounce--services bounce-img bounce-img-3 bounce-img-3--services" data-speed="11" aria-label="Шарик-градиент 1"></div>
+          <div class="bounce bounce--services bounce-img bounce-img-4 bounce-img-4--services" data-speed="7" aria-label="Шарик-градиент 2"></div>
+          <div class="bounce bounce--services bounce-img bounce-img-5 bounce-img-5--services" data-speed="5" aria-label="Шарик-градиент 3"></div>
+        </div>
         <div class="container services__container">
           <div class="services__content">
             <h2 class="services__title">Услуги</h2>
             <ul class="services__list">
               <li class="services__item">
-                <h4 class="service__name">
-                  <span>ПРОДВИЖЕНИЕ</span>
-                </h4>
-                <div class="services__pic">
-                  <img src="./img/content/1.png" alt="Картинка Продвижение" class="services__icon">
-                </div>
-                <ul class="services__desc">
-                  <li>Стратегический маркетинг</li>
-                  <li>Контекстная реклама</li>
-                  <li>Таргетированная реклама</li>
-                  <li>Контент-маркетинг</li>
-                </ul>
+                <a class="services__ref" src="">
+                  <h4 class="services__name">
+                    <span>ПРОДВИЖЕНИЕ</span>
+                  </h4>
+                  <div class="services__pic">
+                    <svg class="services__icon" alt="Пролистать слайдер вперед">
+                      <use xlink:href="img/icons/sprite.svg#pie-chart"></use>
+                    </svg>
+                  </div>
+                  <ul class="services__desc">
+                    <li>Стратегический маркетинг</li>
+                    <li>Контекстная реклама</li>
+                    <li>Таргетированная реклама</li>
+                    <li>Контент-маркетинг</li>
+                  </ul>
+                </a>
               </li>
               <li class="services__item">
-                <h4 class="service__name">
-                  <span>разработка</span>
-                </h4>
-                <div class="services__pic">
-                  <img src="./img/content/2.png" alt="Картинка Разработка" class="services__icon">
-                </div>
-                <div class="services__desc">
-                  <li>Веб-сайт</li>
-                  <li>Интернет-магазин</li>
-                  <li>Корпоративный сайт</li>
-                  <li>Landing page</li>
-                </div>
+                <a class="services__ref" src="">
+                  <h4 class="services__name">
+                    <span>разработка</span>
+                  </h4>
+                  <div class="services__pic">
+                    <svg class="services__icon" alt="Пролистать слайдер вперед">
+                      <use xlink:href="img/icons/sprite.svg#web"></use>
+                    </svg>
+                  </div>
+                  <ul class="services__desc">
+                    <li>Веб-сайт</li>
+                    <li>Интернет-магазин</li>
+                    <li>Корпоративный сайт</li>
+                    <li>Landing page</li>
+                  </ul>
+                </a>
               </li>
               <li class="services__item">
-                <h4 class="service__name">
-                  <span>брендинг</span>
-                </h4>
-                <div class="services__pic">
-                  <img src="./img/content/3.png" alt="Картинка Брендинг" class="services__icon">
-                </div>
-                <div class="services__desc">
-                  <li>Позиционирование</li>
-                  <li>Фирменный стиль</li>
-                  <li>Айдентика</li>
-                  <li>Продвижение бренда</li>
-                </div>
+                <a class="services__ref" src="">
+                  <h4 class="services__name">
+                    <span>брендинг</span>
+                  </h4>
+                  <div class="services__pic">
+                    <svg class="services__icon" alt="Пролистать слайдер вперед">
+                      <use xlink:href="img/icons/sprite.svg#color"></use>
+                    </svg>
+                  </div>
+                  <ul class="services__desc">
+                    <li>Позиционирование</li>
+                    <li>Фирменный стиль</li>
+                    <li>Айдентика</li>
+                    <li>Продвижение бренда</li>
+                  </ul>
+                </a>
               </li>
             </ul>
+            <a src="#" aria-label="Ссылка ведет на сраницу заказа" class="services__but">
+              <span>хочу все</span>
+            </a>
           </div>
         </div>
       </section>
-      <section id="sectionWhy" class="section Why">
-        <div class="container why__container">
+      <section id="sectionWhy" class="section why">
+        <div class="why__container">
           <div class="why__content">
-            
+            <div class="why__slider swiper-container mySwiperWhy">
+              <ul class="why__list swiper-wrapper">
+                <li class="why__item swiper-slide why__item--first">
+                  <div class="why__title why__container-slider">почему мы?</div>
+                </li>
+                <li class="why__item swiper-slide">
+                  <div class="why__title why__container-slider">ориентированы<br>на результат</div>
+                </li>
+                <li class="why__item swiper-slide">
+                  <div class="why__title why__container-slider">Командная<br>работа<br>над проектом</div>
+                </li>
+                <li class="why__item swiper-slide">
+                  <div class="why__title why__container-slider">экономим ваше<br>время и деньги</div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
-      <section id="sectionContacts" class="section contacts">
-        
+      <section class=" reviews  _anim-items _anim-no-repeat">
+        <div class="container reviews__container">
+          <ul class="reviews__list">
+            <li class="reviews__item">
+              <div class="reviews__avatar reviews__avatar--av1">
+                <img srcset="./img/content/promotion_768px.jpg 768w, ./img/content/promotion_1024px.jpg 1024w, ./img/content/promotion_1300px.jpg 1320w"
+                src="./img/content/promotion.jpg"  
+                alt="Фотография продвижение" class="reviews__photo">
+                <div class="reviews__icon reviews__icon--left"></div>
+                <div class="icon icon--ellipse"></div> 
+              </div>
+              <div class="reviews__desc reviews__desc--desc1">
+                <p>Создаем живые сайты и продумываем  проект до мелочей. Полностью сопровождаем ваш бизнес и предоставляем полный функционал услуг: разработка сайта,  создание анимации и дизайна, реклама, фото и видео, добавление контента, поддержка.</p>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__avatar reviews__avatar--av2">
+                <img srcset="./img/content/team_768px.jpg 768w, ./img/content/team_1024px.jpg 1024w, ./img/content/team_1320px.jpg 1320w"
+                src="./img/content/team.jpg"
+                alt="Фотография команды" class="reviews__photo">
+                <div class="reviews__icon reviews__icon--center"></div>
+                <div class="icon icon--triangle"></div>
+              </div>
+              <div class="reviews__desc reviews__desc--desc2">
+                <p>Комплексный подход от разработки сайта до создания рекламы. Команда из 8 до 12 человек сконцентрирована на вашем бизнесе для WOW-эффекта. Отвечаем за каждый этап работы и придерживаемся дедлайнов. С нашей командой — вы получите результат.</p>
+              </div>
+            </li>
+            <li class="reviews__item">
+              <div class="reviews__avatar reviews__avatar--av3">
+                <img srcset="./img/content/plan_768px.jpg 768w, ./img/content/plan_1024px.jpg 1024w, ./img/content/plan_1320px.jpg 1320w"
+                src="./img/content/plan.jpg"
+                alt="Фотография план исполнения" class="reviews__photo">
+                <div class="reviews__icon reviews__icon--right"></div>
+                <div class="icon icon--vector icon--vector"></div>
+              </div>
+              <div class="reviews__desc reviews__desc--desc3">
+                <p>
+                  Изучаем особенности вашего бизнеса, составляем план работ и стратегию продвижения, учитываем пожелания клиента и предлагаем креативные идеи. Стоимость соответствует качеству работы и зависит от сроков и объема работы, ваших запросов и пожеланий.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="sectionContacts" class="section contacts _anim-no-repeat _anim-items">
+        <div class="contacts__slider">  <!-- section  --> 
+          <div class="contacts__rol rol1"> <!--  scroll  -->
+            <div>
+              <span class="s1" data-text1="связаться">связаться</span>-<span class="s2" data-text2="связаться">связаться</span>-<span class="s3" data-text3="связаться">связаться</span>-<span class="s4" data-text4="связаться">связаться</span>-<span class="s5" data-text5="связаться">связаться</span>-<span class="s6" data-text6="связаться">связаться</span>-
+            </div>
+            <div >
+              <span class="s1" data-text1="связаться">связаться</span>-<span class="s2" data-text2="связаться">связаться</span>-<span class="s3" data-text3="связаться">связаться</span>-<span class="s4" data-text4="связаться">связаться</span>-<span class="s5" data-text5="связаться">связаться</span>-<span class="s6" data-text6="связаться">связаться</span>-
+            </div>
+          </div>
+          <div class="contacts__rol rol1"> <!--  scroll  -->
+            <div>
+              <span class="s1" data-text1="связаться">связаться</span>-<span class="s2" data-text2="связаться">связаться</span>-<span class="s3" data-text3="связаться">связаться</span>-<span class="s4" data-text4="связаться">связаться</span>-<span class="s5" data-text5="связаться">связаться</span>-<span class="s6" data-text6="связаться">связаться</span>-
+            </div>
+            <div >
+              <span class="s1" data-text1="связаться">связаться</span>-<span class="s2" data-text2="связаться">связаться</span>-<span class="s3" data-text3="связаться">связаться</span>-<span class="s4" data-text4="связаться">связаться</span>-<span class="s5" data-text5="связаться">связаться</span>-<span class="s6" data-text6="связаться">связаться</span>-
+            </div>
+          </div>
+          <div class="contacts__rol rol1"> <!--  scroll  -->
+            <div>
+              <span class="s1" data-text1="связаться">связаться</span>-<span class="s2" data-text2="связаться">связаться</span>-<span class="s3" data-text3="связаться">связаться</span>-<span class="s4" data-text4="связаться">связаться</span>-<span class="s5" data-text5="связаться">связаться</span>-<span class="s6" data-text6="связаться">связаться</span>-
+            </div>
+            <div >
+              <span class="s1" data-text1="связаться">связаться</span>-<span class="s2" data-text2="связаться">связаться</span>-<span class="s3" data-text3="связаться">связаться</span>-<span class="s4" data-text4="связаться">связаться</span>-<span class="s5" data-text5="связаться">связаться</span>-<span class="s6" data-text6="связаться">связаться</span>-
+            </div>
+          </div>
+        </div>
         <footer class="footer">
-          <div class="footer__container container">
+          <div class="footer__container">
             <div class="footer__content">
               <div class="footer__left">
-                
+                <img src="./img/content/logo.png" alt="Логотип нашей компании" class="footer__logo">
               </div>
-              <div class="footer__center">
-
-              </div>
-              <div class="footer__right">
-                
+              <nav class="footer__nav nav nav--footer">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="#" class="nav__ref" data-text-nav-footer="главная">главная</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__ref" data-text-nav-footer="портфолио">портфолио</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__ref" data-text-nav-footer="о нас">о нас</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" data-text-nav-footer="отзывы" class="nav__ref">отзывы</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="./service.html" class="nav__ref" data-text-nav-footer="услуги">услуги</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="#" class="nav__ref" data-text-nav-footer="контакты">контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer__network network network--footer">
+                <ul class="network__list">
+                  <li class="network__item">
+                    <a href="#" class="network__ref">
+                      <svg class="network__icon" alt="Перейти на сайт Инстаграма">
+                        <use xlink:href="img/icons/sprite.svg#insta"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="network__item">
+                    <a href="#" class="network__ref">
+                      <svg class="network__icon" alt="Перейти на сайт Dribble">
+                        <use xlink:href="img/icons/sprite.svg#dribble"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="network__item">
+                    <a href="#" class="network__ref">
+                      <svg class="network__icon" alt="Перейти на сайт Behance">
+                        <use xlink:href="img/icons/sprite.svg#behance"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="network__item">
+                    <a href="#" class="network__ref">
+                      <svg class="network__icon" alt="Перейти на сайт Фейсбука">
+                        <use xlink:href="img/icons/sprite.svg#fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </footer>
       </section>
-    </div>
-    <!-- <ul class="fixed-menu">
-      <li class="fixed-menu__item"><a class="fixed-menu__link scrollToFirst" href="#"></a></li>
-      <li class="fixed-menu__item"><a class="fixed-menu__link scrollToWhy" href="#"></a></li>
-      <li class="fixed-menu__item"><a class="fixed-menu__link scrollToChocco" href="#"></a></li>
-      <li class="fixed-menu__item"><a class="fixed-menu__link scrollToTeam" href="#"></a></li>
-      <li class="fixed-menu__item"><a class="fixed-menu__link scrollToMenu" href="#"></a></li>
-      <li class="fixed-menu__item"><a class="fixed-menu__link scrollToReviews" href="#"></a></li>
-      <li class="fixed-menu__item"><a class="fixed-menu__link scrollToHow-work" href="#"></a></li>
-      <li class="fixed-menu__item"><a class="fixed-menu__link scrollToOrder" href="#"></a></li>
-      <li class="fixed-menu__item"><a class="fixed-menu__link scrollToContacts" href="#"></a></li>
-    </ul> -->
-    <!-- <div class="hamburger">
-      <div class="hamburger__container container">
-        <div class="hamburger__content">
-          <nav class="hamburger__nav">
-            <ul class="hamburger__list">
-              <li class="hamburger__item">
-                <a href="#" class="hamburger__ref" data-scroll-to="sectionWhy">О нас</a>
-              </li>
-              <li class="hamburger__item">
-                <a href="#" class="hamburger__ref" data-scroll-to="sectionChocco">Батончики</a>
-              </li>
-              <li class="hamburger__item">
-                <a href="#" class="hamburger__ref" data-scroll-to="sectionTeam">Команда</a>
-              </li>
-              <li class="hamburger__item">
-                <a href="#" class="hamburger__ref" data-scroll-to="sectionMenu">Меню</a>
-              </li>
-              <li class="hamburger__item">
-                <a href="#" class="hamburger__ref" data-scroll-to="sectionReviews">Отзывы</a>
-              </li>
-              <li class="hamburger__item">
-                <a href="#" class="hamburger__ref" data-scroll-to="sectionHow-work">Как мы работаем</a>
-              </li>
-              <li class="hamburger__item">
-                <a href="#" class="hamburger__ref" data-scroll-to="sectionContacts">Контакты</a>
-              </li>
-            </ul>
-          </nav>
+      <section class="hamburger">
+        <div class="hamburger__container container">
+          <div class="hamburger__content">
+            <div class="feature__left feature__left--hamburger">
+              <div>creating thinking <br> care about big brands</div>
+            </div>
+            <nav class="hamburger__nav nav nav--hamburger">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="#" data-scrollId="#sectionFirst" class="nav__ref" data-text-hamb="главная">главная</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" data-scrollId="#sectionPortfolio" class="nav__ref" data-text-hamb="портфолио">портфолио</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" data-scrollId="#sectionServices" class="nav__ref" data-text-hamb="наши услуги">наши услуги</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" data-scrollId="#sectionContacts" class="nav__ref" data-text-hamb="контакты">контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- <div class="bounce bounce-img bounce-img-1 bounce-img-1--hamburger" aria-label="Шарик-градиент"></div> -->
+          </div>
         </div>
-      </div>
-    </div> -->
+      </section>
+    </div>
   </div>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
   <script src="./js/main.js"></script>
 </body>
 </html>

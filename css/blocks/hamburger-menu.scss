@@ -16,25 +16,8 @@
 	&:hover {
 		opacity: 1;
 		transform: scale(1.2);
-
 	}
 }
 .hamburger-menu__input {
 	display: none;
-	// &:checked {
-	// 	& ~.hamburger-menu__bars {
-	// 		transform: rotate(45deg);
-	// 		transform-origin: center center;
-	// 		&::before {
-	// 			top: 0;
-	// 			transform: rotate(0deg);
-	// 			transform-origin: center center;
-	// 		}
-	// 		&::after {
-	// 			top: 0;
-	// 			transform: rotate(90deg);
-	// 			transform-origin: center center;
-	// 		}
-	// 	}
-	// }
 }

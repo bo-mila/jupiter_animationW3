@@ -21,14 +21,17 @@ $z-move-bounce-img-4: 7;
 $z-move-bounce-img-5: 8;
 $z-first-container: 20;
 $z-display: 40;
-$z-slider-first: 3;
-$z-slider-first-buttons: 3;
+$z-slider-first: 23;
+$z-slider-first-buttons: 25;
 $z-slide-container: 20;
-
-
+$z-services-content: 25;
+$z-slider: 10;
+$z-slider-back-mask: 15;
+$z-slider-list: 20;
+$z-hamburger: 49;
 
 @import "./_misc/normalize.scss";
-@import "./libs/w3.css";
+// @import "./libs/w3.css";
 @import "./_misc/media.scss";
 @import "./_misc/fonts.scss";
 @import "./_misc/layout.scss";
@@ -50,17 +53,23 @@ $z-slide-container: 20;
 @import "./blocks/slide.scss";
 @import "./blocks/slide-first.scss";
 @import "./blocks/swiper.scss";
+@import "./blocks/services.scss";
+@import "./blocks/why.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/network.scss";
+@import "./blocks/hamburger.scss";
+@import "./blocks/arrow-down-icon.scss";
+
+
+
+@import "./blocks/teamwork.scss";
 
 // @import "blocks/*.scss";
-// @import "./blocks/hamburger.scss";
-// @import "./blocks/fixed-menu.scss";
 // @import "./blocks/title.scss";
 // @import "./blocks/btn.scss";
-// @import "./blocks/why-desc.scss";
-// @import "./blocks/contain.scss";
-// @import "./blocks/boun-icon.scss";
-// @import "./blocks/close-icon.scss";
-// @import "./blocks/team.scss";
 // @import "./blocks/menu.scss";
 // @import "./blocks/reviews.scss";
 // @import "./blocks/review.scss";
@@ -73,9 +82,7 @@ $z-slide-container: 20;
 // @import "./blocks/check.scss";
 // @import "./blocks/contacts.scss";
 // @import "./blocks/map.scss";
-// @import "./blocks/footer.scss";
 // @import "./blocks/phone.scss";
-// @import "./blocks/network.scss";
 // @import "./blocks/vk.scss";
 // @import "./blocks/fb.scss";
 // @import "./blocks/inst.scss";
