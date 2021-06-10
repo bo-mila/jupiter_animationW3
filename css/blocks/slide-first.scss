@@ -7,5 +7,11 @@
   align-items: center;
   & p {
     margin-right: rem(16px);
+    @include tablets {
+      margin-right: rem(5px);
+    }
+    @include phones {
+      margin-right: rem(7px);
+    }
   }
 }

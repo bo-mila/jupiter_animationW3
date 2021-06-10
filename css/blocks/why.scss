@@ -15,24 +15,37 @@
   }
   @include note {
     min-height: rem(450px);
+    @media screen and (min-height: 400px) {
+      height: 100vh;
+    }
+    @media screen and (min-height: 560px) {
+      height: 80vh;
+    }
+    @media screen and (min-height: 620px) {
+      height: 70vh;
+    }
   }
   @include tablets {
     min-height: rem(250px);
     height: 100vh;
-    @include heighttablets {
-      height: 70vh;
+    @media screen and (min-height: 660px) {
+      height: 80vh;
     }
+    @media screen and (min-height: 800px) {
+      height: 60vh;
+    }
+    @media screen and (min-height: 1080px) {
+      height: 50vh;
+    }
+  }
+  @include phones {
+    height: 60vh;
   }
   
 }
 .why__container {
   height: 100%;
   display: flex;
-  @include note {
-    @include heightnote {
-      width: 100%;
-    }
-  }
 }
 .why__content {
   display: flex;
@@ -68,10 +81,46 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  background: inherit;
+  background: url("../../img/bg/jupiter.png");
+  background-size: cover;
+  @include desctop {
+    background-image: url("../../img/bg/jupiter_1300px.png");
+  }
+  @include note {
+    background-image: url("../../img/bg/jupiter_1024px.png");
+  }
+  @include tablets {
+    background-image: url("../../img/bg/jupiter_768px.png");
+  }
+  @include phones {
+    background-image: url("../../img/bg/jupiter_480px.png");
+  }
+  &--first {
+    background: inherit;
+    & .why__title {
+      background: url("../../img/bg/jupiter.png");
+      background-size: cover;
+      background-clip: text;
+      color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      @include desctop {
+        background-image: url("../../img/bg/jupiter_1300px.png");
+      }
+      @include note {
+        background-image: url("../../img/bg/jupiter_1024px.png");
+      }
+      @include tablets {
+        background-image: url("../../img/bg/jupiter_768px.png");
+      }
+      @include phones {
+        background-image: url("../../img/bg/jupiter_480px.png");
+      }
+    }
+  }
 }
 .why__title {
-  display: flex;
+  // display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -80,35 +129,32 @@
   transform: translate(-50%,-50%);
   text-transform: uppercase;
   text-align: center;
-  line-height: 1.4;
   white-space: initial;
-  background: url("../../img/bg/jupiter.png");
-  background-size: cover;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: $white;
   @include roboto(black);
+  line-height: 1.5;
   font-size: rem(100px);
   @include desctop {
     font-size: rem(90px);
-    background-image: url("../../img/bg/jupiter_1300px.png");
   }
   @include note {
-    background-image: url("../../img/bg/jupiter_1024px.png");
     font-size: rem(66px);
   }
   @include tablets {
-    background-image: url("../../img/bg/jupiter_768px.png");
-    width: 84%;
+    width: 100%;
     font-size: rem(52px);
   }
   @include phones {
-    background-image: url("../../img/bg/jupiter_480px.png");
+    width: 84%;
     font-size: rem(38px);
+    @media screen and (min-height: 880px) {
+      font-size: rem(52px);
+    }
   }
 }
 .why__container-slider {
   text-align: center;
-  width: 95%;
+  width: 100%;
   align-items: center;
   height: auto;
   @include note {

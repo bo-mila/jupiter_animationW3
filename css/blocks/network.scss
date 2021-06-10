@@ -53,5 +53,17 @@
   @include tablets {
     width: rem(30px);
     height: rem(30px);
+    @media screen and (min-height: 540px) {
+      width: rem(50px);
+      height: rem(50px);
+    }
+  }
+  @include phones {
+    width: rem(30px);
+    height: rem(30px);
+    @media screen and (min-height: 980px) {
+      width: rem(50px);
+      height: rem(50px);
+    }
   }
 }

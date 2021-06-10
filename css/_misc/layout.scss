@@ -62,11 +62,6 @@ html, body {
   @include desctop {
     max-width: 1220px;
   }
-  @include note {
-    @include heightnote {
-      width: 84%;
-    }
-  }
 }
 .section {
   position: relative;

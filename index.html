@@ -107,14 +107,14 @@
           </div>
           <div class="slider-first__buttons">
             <button class="slider-first__button slider-first__button--prev">
-              <svg class="arrow-icon" alt="Пролистать слайдер назад">
+              <!-- <svg class="arrow-icon" alt="Пролистать слайдер назад">
                 <use xlink:href="img/icons/sprite.svg#arrow"></use>
-              </svg>
+              </svg> -->
             </button>
             <button class="slider-first__button slider-first__button--next">
-              <svg class="arrow-icon" alt="Пролистать слайдер вперед">
+              <!-- <svg class="arrow-icon" alt="Пролистать слайдер вперед">
                 <use xlink:href="img/icons/sprite.svg#arrow"></use>
-              </svg>
+              </svg> -->
             </button>
           </div>
         </div>
@@ -149,6 +149,9 @@
               <p>Помогаем бизнесу вырасти <br>за счёт Digital-инструментов</p>
             </div>
             <div class="first__feature feature">
+              <!-- <video id="myvideo">
+                <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="video/burger.mp4" controls  />
+              </video> -->
               <div class="feature__left">
                 <div>creating thinking <br> care about big brands</div>
               </div>
@@ -161,15 +164,31 @@
           </div>
         </div>
       </section>
+      <!-- <section>
+        <div class="sec" style="width: 600px; height:50px;">
+          portfolio
+        </div>
+        <div class="sec2">
+          gradient
+        </div>
+      </section> -->
       <section id="sectionPortfolio" class="section portfolio">
+        <div class="slider__left-mobile"></div>
         <div class="slider__left"></div>
+        <div class="slider__right-mobile"></div>
         <div class="slider__right"></div>
+        <div class="slider__nav slider__nav-left" aria-label="Переход на слайд">
+        </div>
+        <div class="slider__nav slider__nav-right" aria-label="Переход на слайд">
+        </div>
         <div class="portfolio__content">
           <div class="portfolio__slider slider swiper-container mySwiper">
+           
             <ul class="slider__list swiper-wrapper">
               <li class="slider__item slide swiper-slide">
-                <div class="slider__back-mask">
-                  <span>p</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span>
+                <div class="slider__back-mask slider__back-mask--portfolio">
+                  portfolio
+                  <!-- <span>p</span><span>o</span><span>r</span><span>t</span><span>f</span><span>o</span><span>l</span><span>i</span><span>o</span> -->
                 </div>
                 <div class="slide__container container">
                   <h3 class="slide__title">ZYDEX UA</h3>
@@ -177,15 +196,24 @@
                     <p>Корпоративный сайт</p>
                   </div>
                   <div class="slide__img">
-                    <img data-srcset="./img/content/zydex_480px.jpg 480w, ./img/content/zydex_768px.jpg 768w, ./img/content/zydex.jpg 1024w" 
+                    <!-- <video id="myvideo">
+                      <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="./video/burger.mp4" controls  />
+                    </video> -->
+                    <iframe id="player" type="text/html" width="100%" height="100%"
+  src="http://www.youtube.com/embed/5M8ft-3vDC8?enablejsapi=1&origin=http://example.com"
+  frameborder="0" modestranding="0" autoplay="0" showinfo="0" rel="0"></iframe>
+                    <!-- <div class="player"></div> -->
+                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=o2DXt11SMNI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                    <!-- <img data-srcset="./img/content/zydex_480px.jpg 480w, ./img/content/zydex_768px.jpg 768w, ./img/content/zydex.jpg 1024w" 
                       data-src="./img/content/zydex.jpg" 
-                      alt="Пример из портфолио - сайт ZYDEX.UA" class="slide__pic swiper-lazy">
-                      <div class="swiper-lazy-preloader"></div>
+                      alt="Пример из портфолио - сайт ZYDEX.UA" class="slide__pic swiper-lazy"> -->
+                      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/h3EEhWecuoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                      <!-- <div class="swiper-lazy-preloader"></div> -->
                   </div>
                 </div>
               </li>
               <li class="slider__item slide swiper-slide">
-                <div class="slider__back-mask">
+                <div class="slider__back-mask slider__back-mask--crative">
                   <span>c</span><span>r</span><span>a</span><span>t</span><span>i</span><span>v</span><span>e</span>
                 </div>
                 <div class="slide__container container">
@@ -202,8 +230,8 @@
                 </div>
               </li>
               <li class="slider__item slide swiper-slide">
-                <div class="slider__back-mask">
-                  <span>d</span><span>i</span><span>g</span><span>i</span><span>t</span><span>a</span><span>l</span>
+                <div class="slider__back-mask slider__back-mask--marketing">
+                  <span>m</span><span>a</span><span>r</span><span>k</span><span>e</span><span>t</span><span>i</span><span>n</span><span>g</span>
                 </div>
                 <div class="slide__container container">
                   <h3 class="slide__title">SushiDoma</h3>
@@ -219,8 +247,8 @@
                 </div>
               </li>
               <li class="slider__item slide swiper-slide">
-                <div class="slider__back-mask">
-                  <span>w</span><span>e</span><span>b</span><span>-</span><span>s</span><span>i</span><span>t</span><span>e</span>
+                <div class="slider__back-mask slider__back-mask--digital">
+                  <span>d</span><span>i</span><span>g</span><span>i</span><span>t</span><span>a</span><span>l</span>
                 </div>
                 <div class="slide__container container">
                   <h3 class="slide__title">VV Home</h3>
@@ -236,8 +264,8 @@
                 </div>
               </li>
               <li class="slider__item slide swiper-slide">
-                <div class="slider__back-mask">
-                  <span>m</span><span>a</span><span>r</span><span>k</span><span>e</span><span>t</span><span>i</span><span>n</span><span>g</span>
+                <div class="slider__back-mask slider__back-mask--website">
+                  <span>w</span><span>e</span><span>b</span><span>-</span><span>s</span><span>i</span><span>t</span><span>e</span>
                 </div>
                 <div class="slide__container container">
                   <h3 class="slide__title">Dekolte</h3>
@@ -253,7 +281,7 @@
                 </div>
               </li>
               <li class="slider__item slide swiper-slide">
-                <div class="slider__back-mask">
+                <div class="slider__back-mask slider__back-mask--modern">
                   <span>m</span><span>o</span><span>d</span><span>e</span><span>r</span><span>n</span>
                 </div>
                 <div class="slide__container container">
@@ -361,21 +389,21 @@
         </div>
       </section>
       <section id="sectionWhy" class="section why">
-        <div class="container why__container">
+        <div class="why__container">
           <div class="why__content">
             <div class="why__slider swiper-container mySwiperWhy">
               <ul class="why__list swiper-wrapper">
-                <li class="why__item swiper-slide">
-                  <h2 class="why__title why__container-slider">почему мы?</h2>
+                <li class="why__item swiper-slide why__item--first">
+                  <div class="why__title why__container-slider">почему мы?</div>
                 </li>
                 <li class="why__item swiper-slide">
-                  <h2 class="why__title why__container-slider">ориентированы<br>на результат</h2>
+                  <div class="why__title why__container-slider">ориентированы<br>на результат</div>
                 </li>
                 <li class="why__item swiper-slide">
-                  <h2 class="why__title why__container-slider">Командная<br>работа<br>над проектом</h2>
+                  <div class="why__title why__container-slider">Командная<br>работа<br>над проектом</div>
                 </li>
                 <li class="why__item swiper-slide">
-                  <h2 class="why__title why__container-slider">экономим ваше<br>время и деньги</h2>
+                  <div class="why__title why__container-slider">экономим ваше<br>время и деньги</div>
                 </li>
               </ul>
             </div>
@@ -462,22 +490,22 @@
               <nav class="footer__nav nav nav--footer">
                 <ul class="nav__list">
                   <li class="nav__item">
-                    <a href="#" class="nav__ref">главная</a>
+                    <a href="#" class="nav__ref" data-text-nav-footer="главная">главная</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__ref">портфолио</a>
+                    <a href="#" class="nav__ref" data-text-nav-footer="портфолио">портфолио</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__ref">о нас</a>
+                    <a href="#" class="nav__ref" data-text-nav-footer="о нас">о нас</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__ref">отзывы</a>
+                    <a href="#" data-text-nav-footer="отзывы" class="nav__ref">отзывы</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__ref">услуги</a>
+                    <a href="./service.html" class="nav__ref" data-text-nav-footer="услуги">услуги</a>
                   </li>
                   <li class="nav__item">
-                    <a href="#" class="nav__ref">контакты</a>
+                    <a href="#" class="nav__ref" data-text-nav-footer="контакты">контакты</a>
                   </li>
                 </ul>
               </nav>
@@ -539,13 +567,14 @@
                 </li>
               </ul>
             </nav>
-            <div class="bounce bounce-img bounce-img-1 bounce-img-1--hamburger" aria-label="Шарик-градиент"></div>
+            <!-- <div class="bounce bounce-img bounce-img-1 bounce-img-1--hamburger" aria-label="Шарик-градиент"></div> -->
           </div>
         </div>
       </section>
     </div>
   </div>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
   <script src="./js/main.js"></script>
 </body>
 </html>

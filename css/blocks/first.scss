@@ -10,16 +10,6 @@
   @include desctop {
     height: 100vh;
   }
-  @include note {
-    @include heightnote {
-      justify-content: flex-end;
-    }
-  }
-  @include tablets {
-    @include heighttablets {
-      justify-content: flex-end;
-    }
-  }
 }
 .parallax {
   background-image: url("../../img/bg/jupiter.png");
@@ -53,28 +43,73 @@
   height: 17%;
   width: 45%;
   cursor: pointer;
-  
+  @media screen and (min-height: 700px) {
+    height: 15%;
+  }
+
+
+  @include desctop {
+    top: 54%;
+    height: 17%;
+  }
   @include note {
-    @include heightnote {
+    top: 50%;
+    width: 50%;
+    @media screen and (min-height: 460px) {
+      top: 58%;
+    }
+    @media screen and (min-height: 580px) {
+      height: 14%;
+    }
+    @media screen and (min-height: 840px) {
       top: 62%;
-      width: 58%;
-      height: 12%;
+    }
+    @media screen and (min-height: 1000px) {
+      top: 64%;
     }
   }
   @include tablets {
     top: 55%;
     height: 19%;
-    width: 38%;
-    @include heighttablets {
-      top: 62%;
-      width: 58%;
+    width: 48%;
+    @media screen and (min-height: 400px) {
+      top: 50%;
+    }
+    @media screen and (min-height: 440px) {
+      top: 55%;
+    }
+    @media screen and (min-height: 460px) {
+      height: 16%;
+    }
+    @media screen and (min-height: 520px) {
+      top: 58%;
+      height: 14%;
+    }
+    @media screen and (min-height: 580px) {
+      top: 60%;
       height: 12%;
+    }
+    @media screen and (min-height: 620px) {
+      top: 59%;
+      height: 14%;
+      width: 56%;
+    }
+    @media screen and (min-height: 700px) {
+      top: 63%;
+      height: 12%;
+      width: 66%;
+    }
+    @media screen and (min-height: 1120px) {
+      height: 10%;
     }
   }
   @include phones {
-    top: 64%;
-    width: 68%;
+    top: 62%;
+    width: 70%;
     height: 12%;
+    @media screen and (min-height: 940px) {
+      height: 10%;
+    }
   }
   &:hover {
     &::before {
@@ -94,17 +129,32 @@
   top: 50%;
   transform: translateY(-65%);
   @include desctop {
-    top: 55%;
+    top: 48%;
   }
   @include note {
-    top: 38%;
-    @include heightnote {
-      top: 18%;
-      display: none;
-    }
+    top: 44%;
   }
   @include tablets {
-    top: 44%;
+    top: 42%;
+    left: 2%;
+    margin-bottom: 39%;
+    @media screen and (min-height: 380px) {
+      top: 48%;
+    }
+    @media screen and (min-height: 460px) {
+      left: 1%
+    }
+  }
+  @include phones {
+    left: 3%;
+    top: 40%;
+    @media screen and (min-height: 740px) {
+      top: 30%;
+    }
+    @media screen and (min-height: 760px) {
+      top: 35%;
+    }
+    
   }
 }
 .fdisplay {
@@ -162,6 +212,37 @@
         width: rem(26px);
         height: rem(26px);
       }
+      @include note {
+        
+        @media screen and (min-height: 540px) {
+          width: rem(32px);
+          height: rem(32px);
+        }
+      }
+      @include tablets {
+        width: rem(20px);
+        height: rem(20px);
+        @media screen and (min-height: 380px) {
+          width: rem(26px);
+          height: rem(26px);
+        }
+        @media screen and (min-height: 460px) {
+          width: rem(32px);
+          height: rem(32px);
+        }
+        @media screen and (min-height: 1120px) {
+          width: rem(40px);
+          height: rem(40px);
+        }
+      }
+      @include phones {
+        width: rem(26px);
+        height: rem(26px);
+        @media screen and (min-height: 940px) {
+          width: rem(40px);
+          height: rem(40px);
+        }
+      }
     }
     @include desctop {
       margin-bottom: 15%;
@@ -174,12 +255,62 @@
       width: rem(28px);
       height: rem(28px);
       font-size: rem(26px);
+      @media screen and (min-height: 540px) {
+        width: rem(30px);
+        margin-bottom: 26%;
+        font-size: rem(30px);
+        height: rem(30px);
+      }
     }
     @include tablets {
-      margin-bottom: 59%;
+      margin-bottom: 39%;
       width: rem(18px);
       height: rem(18px);
       font-size: rem(20px);
+      @media screen and (min-height: 380px) {
+        width: rem(26px);
+        margin-bottom: 22%;
+        height: rem(26px);
+      }
+      @media screen and (min-height: 460px) {
+        width: rem(36px);
+        margin-bottom: 22%;
+        height: rem(36px);
+        font-size: rem(26px);
+      }
+      @media screen and (min-height: 620px) {
+        font-size: rem(36px);
+      }
+      @media screen and (min-height: 1120px) {
+        font-size: rem(42px);
+        height: rem(44px);
+        width: rem(44px);
+
+      }
+    }
+    @include phones {
+      font-size: rem(20px);
+      width: rem(20px);
+      height: rem(20px);
+      margin-bottom: 80%;
+      @media screen and (min-height: 740px) {
+        font-size: rem(24px);
+        margin-bottom: 60%;
+        width: rem(24px);
+        height: rem(24px);
+      }
+      @media screen and (min-height: 760px) {
+        font-size: rem(32px);
+        margin-bottom: 50%;
+        width: rem(32px);
+        height: rem(32px);
+      }
+      @media screen and (min-height: 940px) {
+        font-size: rem(40px);
+        margin-bottom: 30%;
+        width: rem(42px);
+        height: rem(42px);
+      }
     }
     &:last-child {
       margin-bottom: 0;
@@ -236,17 +367,14 @@
     padding-bottom: 1%;
   }
   @include note {
-    @include heightnote {
-      width: 72%;
-      padding-bottom: 6%;
-
+    @media screen and (min-height: 540px) {
+      width: 70%;
     }
   }
   @include tablets {
-    @include heighttablets {
-      width: 72%;
-      padding-bottom: 6%;
-
+    width: 57%;
+    @media screen and (min-height:620px) {
+      width: 80%;
     }
   }
   @include phones {
@@ -284,26 +412,49 @@
     }
     @include note {
       font-size: rem(48px);
-      @include heightnote {
-        font-size: rem(62px);
+      @media screen and (min-height: 540px) {
+        font-size: rem(56px);
       }
     }
     @include tablets {
+      font-size: rem(36px);
+      @media screen and (min-height: 400px) {
+        font-size: rem(46px);
+      }
+      @media screen and (min-height: 520px) {
+        font-size: rem(60px);
+      }
+    }
+    @include phones {
       font-size: rem(38px);
-      @include heighttablets {
-        font-size: rem(42px);
+      @media screen and (min-height: 760px) {
+        font-size: rem(48px);
+      }
+      @media screen and (min-height: 940px) {
+        font-size: rem(60px);
+      }
+      @media screen and (min-height: 1120px) {
+        font-size: rem(72px);
       }
     }
   }
   @include desctop {
     margin-bottom: 2vh;
   }
-  @include note {
-    margin-bottom: 4%;
-    @include heightnote {
-      margin-bottom: 5%;
+  @include tablets {
+    margin-bottom: 2%;
+    @media screen and (min-height: 460px) {
+      padding-left: 20%;
     }
   }
+  @include phones {
+    padding-left: 17%;
+    margin-bottom: 4%;
+    @media screen and (min-height: 940px) {
+      margin-bottom: 6%;
+    }
+  }
+
 }
 .first__desc {
   @include roboto(normal);
@@ -318,29 +469,84 @@
     margin-bottom: 8vh;
     line-height: 1.6;
     font-size: rem(20px);
+    @media screen and (min-height: 840px) {
+    font-size: rem(22px);
+    margin-bottom: 14vh;
+    }
   }
   @include note {
     font-size: rem(16px);
     margin-bottom: 10vh;
-    @include heightnote {
-      font-size: rem(26px);
-      margin-bottom: 32%;
-      width: 100%;
+    @media screen and (min-height: 540px) {
+      font-size: rem(18px);
+      margin-bottom: 14vh;
     }
   }
   @include tablets {
-    font-size: rem(16px);
+    font-size: rem(14px);
     width: 96%;
     margin-bottom: 12%;
-    @include heighttablets {
-      margin-bottom: 32%;
+    @media screen and (min-height: 380px) {
+      margin-bottom: 18%;
+    }
+    @media screen and (min-height: 400px) {
+      margin-bottom: 20%;
+    }
+    @media screen and (min-height: 460px) {
+      margin-bottom: 30%;
+      padding-left: 20%;
+    }
+    @media screen and (min-height: 520px) {
+      font-size: rem(16px);
       width: 100%;
+    }
+    @media screen and (min-height: 560px) {
+      margin-bottom: 35%;
+    }
+    @media screen and (min-height: 620px) {
+      font-size: rem(20px);
+      margin-bottom: 30%;
+    }
+    @media screen and (min-height: 640px) {
+      margin-bottom: 35%;
+    }
+    @media screen and (min-height: 760px) {
+      margin-bottom: 45%;
+    }
+    @media screen and (min-height: 940px) {
+      font-size: rem(24px);
+      margin-bottom: 65%;
+    }
+    @media screen and (min-height: 1120px) {
+      font-size: rem(28px);
+      margin-bottom: 70%;
     }
   }
   @include phones {
+    padding-left: 17%;
     font-size: rem(16px);
-    margin-bottom: 50%;
+    margin-bottom: 45%;
     line-height: 1;
     width: 100%;
+    @media screen and (min-height: 601px) {
+      margin-bottom: 55%;
+    }
+    @media screen and (min-height: 661px) {
+      margin-bottom: 65%;
+    }
+    @media screen and (min-height: 700px) {
+      font-size: rem(18px);
+      line-height: 1.2;
+    }
+    @media screen and (min-height: 760px) {
+      font-size: rem(21px);
+      line-height: 1.4;
+      margin-bottom: 70%;
+    }
+    @media screen and (min-height: 940px) {
+      font-size: rem(26px);
+      line-height: 1.6;
+      margin-bottom: 80%;
+    }
   }
 }

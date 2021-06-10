@@ -16,10 +16,6 @@
     padding: rem(28px) 0px rem(75px);
     @include note {
       padding: rem(20px) 0px rem(55px);
-      @include heightnote {
-        font-size: rem(20px);
-        padding: rem(18px) rem(25px) rem(55px);
-      }
     }
     & .nav__list {
       width: 50%;
@@ -27,11 +23,6 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-      }
-      @include note {
-        @include heightnote {
-          width: 70%;
-        }
       }
     }
     & .nav__item {
@@ -44,17 +35,63 @@
       }
     }
     & .nav__ref {
-      border-bottom: 1px solid transparent;
+      position: relative;
+      opacity: 1;
+      transition: opacity .6s;
+      color: $black;
+      &::after {
+        content: attr(data-text-nav-footer);
+        -webkit-text-stroke: 1px transparent;
+        position: absolute;
+        color: transparent;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../../img/bg/jupiter.png");
+        background-size: cover;
+        background-position: 0% 52%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        transition: opacity .6s;
+        z-index: 40;
+        @include desctop {
+          background-image: url("../../img/bg/jupiter_1300px.png");
+        }
+        @include note {
+          background-image: url("../../img/bg/jupiter_1024px.png");
+        }
+        @include tablets {
+          background-image: url("../../img/bg/jupiter_768px.png");
+        }
+        @include phones {
+          background-image: url("../../img/bg/jupiter_480px.png");
+        }
+      }
       &:hover {
-        border-bottom: 1px solid $black;
+        &::after {
+          opacity: 1;
+        }
       }
     }
     @include tablets {
       padding: rem(8px) 0px rem(35px);
-      font-size: rem(20px);
-    }
-    @include tablets {
       font-size: rem(16px);
+      @media screen and (min-height: 540px) {
+        font-size: rem(20px);
+      }
+    }
+    @include phones {
+      font-size: rem(16px);
+      @media screen and (min-height: 820px) {
+        font-size: rem(18px);
+      }
+      @media screen and (min-height: 980px) {
+        font-size: rem(24px);
+      }
     }
   }
   &--hamburger {
@@ -88,19 +125,22 @@
       @include tablets {
         font-size: rem(48px);
       }
-      &::before {
-        content: "";
-        top: 48%;
-        left: 0%;
-        transform: translate(-47%,-50%);
-        position: absolute;
-        width: rem(162px);
-        height: rem(6px);
-        background: linear-gradient(90deg, #FBE6E6 50%, $black 50%); 
-        opacity: 0;
-        transition: opacity .6s;
-        z-index: 2;
+      @include phones {
+        font-size: rem(38px);
       }
+      // &::before {
+      //   content: "";
+      //   top: 48%;
+      //   left: 0%;
+      //   transform: translate(-47%,-50%);
+      //   position: absolute;
+      //   width: rem(162px);
+      //   height: rem(6px);
+      //   background: linear-gradient(90deg, #FBE6E6 50%, $black 50%); 
+      //   opacity: 0;
+      //   transition: opacity .6s;
+      //   z-index: 2;
+      // }
       &::after {
         content: attr(data-text-hamb);
         -webkit-text-stroke: 3px transparent;
@@ -130,9 +170,9 @@
         }
       }
       &:hover {
-        &::before {
-          opacity: 1;
-        }
+        // &::before {
+        //   opacity: 1;
+        // }
         &::after {
           opacity: 1;
         }
@@ -153,5 +193,4 @@
   cursor: pointer;
   display: inline-flex;
   height: 100%;
-  transition: .4s;
 }

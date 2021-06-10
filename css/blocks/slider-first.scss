@@ -8,8 +8,8 @@
   text-transform: uppercase;
   z-index: $z-slider-first;
   // opacity: .8;
-  backdrop-filter: blur(3px);
-  background: linear-gradient(154.49deg, rgba(255, 255, 255, 0.3) -14.99%, rgba(255, 255, 255, 0) 150.94%);
+  backdrop-filter: blur(4px);
+  background: linear-gradient(154.49deg, rgba(255, 255, 255, 0.4) -14.99%, rgba(255, 255, 255, 0) 150.94%);
   
   // background: linear-gradient(154.49deg, rgba(255, 255, 255, 0.1) -14.99%, rgba(255, 255, 255, 0) 150.94%);
   box-shadow: 0 25px 45px rgba(0,0,0,0.05);
@@ -19,101 +19,97 @@
     backdrop-filter: blur(5px);
   }
   @include desctop {
-    font-size: rem(16px);
+    font-size: rem(18px);
     letter-spacing: rem(5px);
+    @media screen and (min-height: 680px) {
+      letter-spacing: rem(8px);
+      font-size: rem(22px);
+      }
   }
   @include note {
-    @include heightnote {
-      font-size: rem(26px);
+    font-size: rem(16px);
+    letter-spacing: rem(5px);
+    @media screen and (min-height: 580px) {
+    letter-spacing: rem(8px);
+    font-size: rem(18px);
     }
   }
   @include tablets {
     font-size: rem(14px);
     letter-spacing: rem(5px);
+    @media screen and (min-height: 540px) {
+      font-size: rem(16px);
+    }
+    @media screen and (min-height: 620px) {
+      font-size: rem(20px);
+    }
+    @media screen and (min-height: 1120px) {
+      font-size: rem(28px);
+    }
   }
-}
-.slider-first__buttons {
-  position: absolute;
-  display: flex;
-  bottom: 0;
-  left: 0;
-  transform: translateX(-50%);
-  align-items: center;
-  z-index: $z-slider-first-buttons;
-  cursor: pointer;
-  @include note {
-    @include heightnote {
-      width: rem(55px);
-      flex-direction: column;
-      transform: translateX(-100%);
-      height: 100%;
+  @include phones {
+    font-size: rem(14px);
+    letter-spacing: rem(4px);
+    @media screen and (min-height: 740px) {
+      font-size: rem(16px);
+    }
+    @media screen and (min-height: 940px) {
+      font-size: rem(22px);
     }
   }
 }
-.slider-first__button {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  width: rem(54px);
-  height: rem(54px);
-  background-color: transparent;
-  transition: opacity .6s;
-  &:hover {
-    background-color: $black;
-    & .arrow-icon {
-      fill: $white;
-    }
-  }
-  &--prev {
-    & .arrow-icon {
-      transform-origin: center;
-      transform: rotate(180deg);
-      transition: 0;
-      &:hover {
-        transform: scale(1.1) rotate(180deg);
+// .slider-first__buttons {
+//   position: absolute;
+//   display: flex;
+//   bottom: 0;
+//   left: 0;
+//   transform: translateX(-50%);
+//   align-items: center;
+//   z-index: $z-slider-first-buttons;
+//   cursor: pointer;
+// }
+// .slider-first__button {
+//   display: flex;
+//   position: relative;
+//   justify-content: center;
+//   align-items: center;
+//   width: rem(54px);
+//   height: rem(54px);
+//   background-color: transparent;
+//   transition: opacity .6s;
+//   &:hover {
+//     background-color: $black;
+//     & .arrow-icon {
+//       fill: $white;
+//     }
+//   }
+//   &--prev {
+//     & .arrow-icon {
+//       transform-origin: center;
+//       transform: rotate(180deg);
+//       transition: 0;
+//       &:hover {
+//         transform: scale(1.1) rotate(180deg);
 
-      }
-      @include note {
-        @include heightnote {
-          transform: rotate(-90deg);
-          &:hover {
-            transform: rotate(-90deg);
-          }
-        }
-      }
+//       }
      
-    }
-  }
-  &--next {
-    & .arrow-icon {
-      @include note {
-        @include heightnote {
-          transform: rotate(90deg);
-          &:hover {
-          transform: rotate(90deg);
-          }
-        }
-      }
+//     }
+//   }
+//   // &--next {
+//   //   & .arrow-icon {
 
-    }
-  }
-  @include desctop {
-    width: rem(40px);
-    height: rem(40px);
-  }
-  @include note {
-    @include heightnote {
-      width: 100%;
-      height: 50%;
-    }
-  }
-  @include tablets {
-    width: rem(30px);
-    height: rem(30px);
-  }
+//   //   }
+//   // }
+//   @include desctop {
+//     width: rem(40px);
+//     height: rem(40px);
+//   }
+//   @include tablets {
+//     width: rem(30px);
+//     height: rem(30px);
+//   }
   
-}
+// }
 .slider-first__container {
   display: flex;
   justify-content: center;

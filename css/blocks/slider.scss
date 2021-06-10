@@ -16,57 +16,145 @@
   background: transparent;
 }
 .slider__back-mask {
-  font-size: rem(380px);
+  font-size: 17vw;
+  // font-size: 10vw;
+  // letter-spacing: rem(20px);
   overflow: hidden;
   @include roboto(black);
   text-transform: uppercase;
   position: absolute;
-  display: flex;
-  justify-content: center;
-  justify-content: space-around;
-  align-items: center;
-  top: 56%;
+  // display: flex;
+  // justify-content: center;
+  // justify-content: space-around;
+  // align-items: center;
+  top: 83%;
   transform: translate(0%,-50%);
   height: 100%;
+  // width: 100%;
   width: 100%;
-  font-size: rem(220px);
+  // font-size: rem(220px);
   background: url("../../img/bg/jupiter.png");
   background-size: 126% 100%;
   background-position-y: 6%;
   background-position-x: -9%;
   background-repeat: no-repeat;
   background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  opacity: .6;
+  opacity: .4;
+  letter-spacing: 0 ;
+  &--crative {
+    letter-spacing: rem(35px);//crative
+    & span::nth-child(3) {margin-right: 99%;}
+
+  }
+  // &--marketing {
+  //   font-size: rem(330px); //marketing
+  // }
+  &--digital {
+    letter-spacing: rem(20px) ;//digital
+    & span {
+      &:nth-child(3) {
+        margin-right: rem(150px);
+      }
+    }
+  }
+  &--website {
+    letter-spacing: rem(20px);//website
+    // & span {
+    //   &:nth-child(3) {
+    //     margin-right: rem(60px);
+    //   }
+    // }
+  }
+  &--modern {
+    letter-spacing: rem(20px);//modern
+    & span {
+      &:nth-child(3) {
+        margin-right: rem(150px);
+      }
+    }
+  }
   & span {
-    letter-spacing: -5px;
+    // letter-spacing: -5px;
+    display: inline;
   }
   @include desctop {
     background-image: url("../../img/bg/jupiter_1300px.png");
-    font-size: rem(160px);
-    width: 95%;
+    // font-size: rem(160px);
+    // width: 95%;
+    top: 88%;
   }
   @include note {
     background-image: url("../../img/bg/jupiter_1024px.png");
-    font-size: rem(128px);
-    width: 95%;
+    // font-size: rem(128px);
+    // width: 100%;
   }
   @include tablets {
     background-image: url("../../img/bg/jupiter_768px.png");
-    font-size: rem(88px);
-    width: 95%;
+    // font-size: rem(88px);
+    // width: 95%;
   }
   @include phones {
+    top: 105%;
     background-image: url("../../img/bg/jupiter_480px.png");
-    font-size: rem(88px);
-    width: 95%;
-  }
-  & span {
-    display: flex;
-    flex-shrink: 1;
+    // font-size: rem(88px);
+    // width: 95%;
   }
 }
+.portfolio__icon {
+  display: block;
+  width: 1000px;
+  height: 100px;
+}
+// .slider__nav {
+//   position: absolute;
+//   width: rem(42px);
+//   height: rem(42px);
+//   top: 50%;
+//   transform: translate(0,-50%);
+//   // background-color: $white;
+//   border: rem(3px) solid $white;
+//   border-radius: 50%;
+//   z-index: 50;
+//   display: none;
+//   &::after {
+//     content: "";
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%,-50%);
+//     position: absolute;
+//     border-radius: 50%;
+//     border: 1px solid $black;
+//     width: rem(38px);
+//     height: rem(38px);
+//     @include phones {
+//       width: rem(36px);
+//       height: rem(36px);
+//     }
+//   }
+//   &-left {
+//     left: rem(40px);
+//   }
+//   &-right {
+//     right: rem(40px);
+//   }
+//   @include phones {
+//     width: rem(40px);
+//     height: rem(40px);
+//   }
+//   &:hover {
+//     transform: scale(1.1) translate(0,-50%);
+//     transform-origin: 0 0;
+//     transition: .6s;
+//   }
+//   @include note {
+//     display: block;
+//   }
+// }
 .slider__left {
   position: absolute;
   top: 0;
@@ -74,6 +162,22 @@
   width: 19%;
   height: 100%;
   z-index: 40;
+  display: block;
+  @include tablets {
+    display: none;
+  }
+  // &-mobile {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 19%;
+  //   height: 100%;
+  //   z-index: 40;
+  //   display: none;
+  //   @include note {
+  //     display: block;
+  //   }
+  // }
 }
 .slider__right {
   position: absolute;
@@ -82,4 +186,20 @@
   width: 19%;
   height: 100%;
   z-index: 40;
+  display: block;
+  @include tablets {
+    display: none;
+  }
+  // &-mobile {
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   width: 19%;
+  //   height: 100%;
+  //   z-index: 40;
+  //   display: none;
+  //   @include tablets {
+  //     display: block;
+  //   }
+  // }
 }

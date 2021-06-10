@@ -9,12 +9,28 @@
     padding-bottom: rem(20px);
     min-height: 100vh;
     height: auto;
+    @media screen and (min-height: 580px) {
+      min-height: 120vh;
+    }
+    @media screen and (min-height: 700px) {
+      min-height: 100vh;
+    }
+    @media screen and (min-height: 820px) {
+      min-height: 80vh;
+    }
   }
   @include note {
-    height: rem(600px);
+    min-height: 100vh;
     height: auto;
+    @media screen and (min-height: 780px) {
+      min-height: 90vh;
+    }
+    @media screen and (min-height: 840px) {
+      min-height: 80vh;
+    }
   }
   @include tablets {
+    min-height: 100vh;
     padding-top: rem(50px);
     // min-height: 600px;
     height: auto;
@@ -23,10 +39,40 @@
     align-items: flex-end;
     justify-content: flex-end;
     padding-bottom: rem(80px);
-
+    @media screen and (min-height: 540px) {
+      min-height: 120vh;
+    }
+    @media screen and (min-height: 680px) {
+      min-height: 100vh;
+    }
+    @media screen and (min-height: 800px) {
+      min-height: 90vh;
+    }
+    @media screen and (min-height: 860px) {
+      min-height: 80vh;
+    }
+    @media screen and (min-height: 900px) {
+      min-height: 60vh;
+    }
+    @media screen and (min-height: 900px) {
+      min-height: 55vh;
+    }
+    @media screen and (min-height: 1000px) {
+      min-height: 50vh;
+    }
+    @media screen and (min-height: 1040px) {
+      min-height: 40vh;
+    }
   }
   @include phones {
     min-height: 90vh;
+    @media screen and (min-height: 760px) {
+      min-height: 80vh;
+    }
+    @media screen and (min-height: 980px) {
+      min-height: 76vh;
+    }
+    
   }
   &._active {
     & .footer__logo {
@@ -56,6 +102,18 @@
   }
   @include tablets {
     margin-bottom: rem(70px);
+    @media screen and (min-height: 660px) {
+      margin-bottom: rem(100px);
+    }
+  }
+  @include phones {
+    margin-bottom: rem(70px);
+    @media screen and (min-height: 860px) {
+      margin-bottom: rem(90px);
+    }
+    @media screen and (min-height: 980px) {
+      margin-bottom: rem(120px);
+    }
   }
 }
 .contacts__rol {     // scroll
@@ -70,6 +128,8 @@
   }
   &:hover {
     & div {
+      // -webkit-text-stroke: 1px transparent;
+
       animation-play-state: paused;
       &:nth-child(2) {
         animation-play-state: paused;
@@ -87,9 +147,27 @@
     letter-spacing: rem(15px);
     @include desctop {
       font-size: rem(56px);
+      @media screen and (min-height: 720px) {
+        font-size: rem(60px);
+      }
     }
     @include tablets {
       font-size: rem(44px);
+      @media screen and (min-height: 540px) {
+        font-size: rem(52px);
+      }
+      @media screen and (min-height: 540px) {
+        font-size: rem(62px);
+      }
+    }
+    @include phones {
+      font-size: rem(44px);
+      @media screen and (min-height: 880px) {
+        font-size: rem(52px);
+      }
+      @media screen and (min-height: 940px) {
+        font-size: rem(58px);
+      }
     }
     &:nth-child(2) {
       animation: animate2 40s linear infinite;
@@ -103,8 +181,10 @@
         -webkit-text-stroke: 1px transparent;
         position: absolute;
         color: transparent;
-        top: -1px;
-        left: rem(-4px);
+        top: 6px;
+        left: 0;
+        // top: -1px;
+        // left: rem(-4px);
         background: url("../../img/bg/jupiter.png");
         background-size: cover;
         -webkit-background-clip: text;
@@ -124,6 +204,8 @@
         }
       }
       &:hover {
+    -webkit-text-stroke: 1px transparent;
+
         &::after {
           opacity: 1;
         }

@@ -8,6 +8,7 @@
   text-transform: none;
   height: rem(880px);
   min-height: rem(880px);
+  padding-top: rem(30px);
   &._active {
     & .reviews__avatar {
       transform: translate(0%,0%);
@@ -47,12 +48,32 @@
   @include desctop {
     min-height: rem(600px);
     height: 100vh;
+    @media screen and (min-height: 820px) {
+      height: 80vh;
+    }
   }
   @include note {
+    height: 100vh;
     min-height: rem(580px);
+    @media screen and (min-height: 680px) {
+      min-height: 70vh;
+    }
+    @media screen and (min-height: 700px) {
+      height: auto;
+      min-height: 65vh;
+    }
   }
   @include tablets {
     height: auto;
+    min-height: 100vh;
+    @media screen and (min-height: 1040px) {
+      min-height: 80vh;
+    }
+    @media screen and (min-height: 1280px) {
+      min-height: 70vh;
+    }
+  }
+  @include phones {
     min-height: 100vh;
   }
 }
@@ -95,6 +116,9 @@
     &:last-child {
       margin-bottom: 0;
     }
+    @media screen and (min-height: 860px) {
+      margin-bottom: rem(35px);
+    }
   }
 }
 .reviews__avatar {
@@ -130,6 +154,7 @@
     // width: rem(220px);
     // height: rem(240px);
     margin-bottom: rem(10px);
+    margin-right: 0;
   }
   &:hover {
     & .reviews__icon {
@@ -263,9 +288,16 @@
   @include roboto(normal);
   font-size: rem(21px);
   line-height: 1.6;
+  @media screen and (min-height: 660px) {
+    width: 78%;
+  }
   @include desctop {
     font-size: rem(18px);
     width: 90%;
+    @media screen and (min-height: 900px) {
+    font-size: rem(20px);
+    line-height: 1.6;
+    }
   }
   @include note {
     font-size: rem(16px);
@@ -277,9 +309,22 @@
     font-size: rem(18px);
     width: 88%;
     line-height: 1.2;
+    @media screen and (min-height: 520px) {
+      line-height: 1.4;
+    }
   }
   @include phones {
+    line-height: 1.2;
     width: 78%;
+    @media screen and (min-height: 760px) {
+      font-size: rem(20px);
+    }
+    @media screen and (min-height: 860px) {
+      font-size: rem(22px);
+    }
+    @media screen and (min-height: 980px) {
+      font-size: rem(28px);
+    }
   }
   opacity: 0;
   transform: translate(0,-120%);

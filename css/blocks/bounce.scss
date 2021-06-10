@@ -148,10 +148,6 @@
       @include note {
         width: rem(32px);
         height: rem(32px);
-        @include heightnote {
-          bottom: 73%;
-          left: 83%;
-        }
       }
       @include tablets {
         left: 78%;
@@ -173,12 +169,6 @@
         left: 56%;
         width: rem(90px);
         height: rem(90px);
-      }
-      @include note {
-        @include heightnote {
-          bottom: 30%;
-          left: 44%;
-        }
       }
       @include tablets {
         width: rem(60px);
@@ -225,12 +215,6 @@
         height: rem(170px);
         bottom: 51%;
         left: 68%;
-      }
-      @include note {
-        @include heightnote {
-          bottom: 47%;
-          left: 68%;
-        }
       }
       @include tablets {
         width: rem(100px);
@@ -281,12 +265,6 @@
         height: rem(394px);
         bottom: 84%;
         left: 37%;
-      }
-      @include note {
-        @include heightnote {
-          bottom: 82%;
-          left: 31%;
-        }
       }
       @include tablets {
         width: rem(264px);

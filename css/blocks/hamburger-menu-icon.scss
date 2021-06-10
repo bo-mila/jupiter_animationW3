@@ -10,7 +10,9 @@
   @include note {
     width: rem(24px);
     height: rem(24px);
-    @include heightnote {
+  }
+  @include phones {
+    @media screen and (min-height: 940px) {
       width: rem(40px);
       height: rem(40px);
     }

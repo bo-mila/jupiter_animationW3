@@ -4,6 +4,7 @@
   color: $black;
   height: 100vh;
   // height: rem(1080px);
+  // border: 1px solid black;
 }
 .portfolio__content {
   display: flex;
@@ -15,27 +16,55 @@
 .portfolio__display {
   display: flex;
   position: absolute;
-  bottom: 0%;
+  bottom: 1%;
   // bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
+  @media screen and (min-height: 680px) {
+    bottom: 4%;
+  }
+  @media screen and (min-height: 9200px) {
+    bottom: 7%;
+  }
+  @media screen and (min-height: 980px) {
+    bottom: 10%;
+  }
   @include desctop {
     bottom: 2%;
+    @media screen and (min-height: 720px) {
+      bottom: 5%;
+    }
   }
   @include note {
     bottom: 1%;
-    @include heightnote {
-      bottom: 7%;
+    @media screen and (min-height: 700px) {
+      bottom: 5%;
     }
   }
   @include tablets {
     bottom: 1%;
-    @include heighttablets {
-      bottom: 7%;
+    @media  screen and (min-height: 540px) {
+      bottom: 5%;
+      @media screen and (min-width: 650px) {
+        bottom: 1%;
+      }
+    }
+    @media screen and (min-height: 720px) {
+      bottom: 5%;
+    }
+    @media screen and (min-height: 740px) {
+      bottom: 12%;
+    }
+    @media screen and (min-height: 1100px) {
+      bottom: 22%;
     }
   }
   @include phones {
-    bottom: 10%;
+    // display: flex;
+    bottom: 12%;
+    @media  screen and (min-height: 601px) {
+      bottom: 20%;
+    }
   }
   & .display__list {
     display: flex;

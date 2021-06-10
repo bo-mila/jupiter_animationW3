@@ -33,13 +33,13 @@
     @content;
   }
 }
-@mixin heightnote {
-  @media (min-height: 820px) {
-    @content;
-  }
-}
-@mixin heighttablets {
-  @media (min-height: 500px) {
-    @content;
-  }
-}
+// @mixin heightnote {
+//   @media (min-height: 820px) {
+//     @content;
+//   }
+// }
+// @mixin heighttablets {
+//   @media (min-height: 500px) {
+//     @content;
+//   }
+// }

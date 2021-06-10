@@ -13,7 +13,15 @@
   }
   @include note {
     font-size: rem(14px);
-    @include heightnote {
+  }
+  @include tablets {
+    @media screen and (min-height: 1140px) {
+      font-size: rem(24px);
+    }
+  }
+  @include phones {
+    font-size: rem(14px);
+    @media screen and (min-height: 940px) {
       font-size: rem(24px);
     }
   }

@@ -43,19 +43,38 @@
       width: rem(26px);
       height: rem(26px);
     }
-    @include note {
-      @include heightnote {
+    @include tablets {
+      @media screen and (min-height: 660px) {
         width: rem(36px);
         height: rem(36px);
+      }
+    }
+    @include phones {
+      width: rem(26px);
+      height: rem(26px);
+      @media screen and (min-height: 820px) {
+        width: rem(34px);
+        height: rem(34px);
+      }
+      @media screen and (min-height: 980px) {
+        width: rem(44px);
+        height: rem(44px);
       }
     }
   }
   &:hover {
     &::before {
       opacity: 1;
+      @include note {
+        opacity: 0;
+      }
     }
     &::after {
-      transform: translate(-50%,-50%) scale(1.2);
+      // transform: translate(-50%,-50%) scale(1.2);
+      @include note {
+        transform: translate((-50%,-50%) scale(1));
+
+      }
     }
   }
   @include desctop {
@@ -63,10 +82,22 @@
     height: rem(40px);
     font-size: rem(30px);
   }
-  @include note {
-    @include heightnote {
+  @include tablets {
+    @media screen and (min-height: 660px) {
+      width: rem(46px);
+      height: rem(46px);
+    }
+  }
+  @include phones {
+    width: rem(40px);
+    height: rem(40px);
+    @media screen and (min-height: 820px) {
       width: rem(50px);
       height: rem(50px);
+    }
+    @media screen and (min-height: 980px) {
+      width: rem(60px);
+      height: rem(60px);
     }
   }
   &.swiper-pagination-bullet-active  {
