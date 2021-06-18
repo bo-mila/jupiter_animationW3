@@ -1,0 +1,291 @@
+.network {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  // &--footer {
+  //   // & .network__list {
+  //   //   width: 70%;
+  //   //   @include tablets {
+  //   //     width: 80%;
+  //   //   }
+  //   // }
+  //   // & .network__item {
+  //   //   width: 50%;
+  //   //   @include tablets {
+  //   //     width: 25%;
+  //   //   }
+  //   // }
+  // }
+  // &--footer-forma {
+  //   & .network__item {
+  //     width: 50%;
+  //     padding: 0 rem(8px);
+
+  //   }
+  //   & .network__icon {
+  //     width: rem(30px);
+  //     height: rem(30px);
+  //   }
+  // }
+  &--footer-first {
+    width: 42%;
+  }
+  &--footer-service {
+    width: 42%;
+  }
+  &--footer-forma {
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+      @media screen and (min-height: 300px) {
+        width: auto;
+      }
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      @media screen and (min-height: 300px) {
+        width: auto;
+      }
+    }
+    & .network__list {
+      @media screen and (min-width: 320px) and (max-width:480px) {
+        @media screen and (min-height: 300px) {
+          flex-direction: column;
+        }
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        @media screen and (min-height: 300px) {
+          flex-direction: column;
+        }
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        @media screen and (min-height: 300px) {
+          flex-direction: column;
+        }
+      }
+    }
+    & .network__icon {
+      @media screen and (min-width: 320px) and (max-width: 480px) {
+        @media screen and (min-height: 300px) {
+          width: rem(24px);
+          height: rem(24px);
+        }
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        @media screen and (min-height: 300px) {
+          width: rem(24px);
+          height: rem(24px);
+        }
+      }
+      @media screen and (min-width: 768px) and (max-width: 900px) {
+        @media screen and (min-height: 300px) {
+          width: rem(24px);
+          height: rem(24px);
+        }
+      }
+      @media screen and (min-width: 900px) and (max-width: 1024px) {
+        @media screen and (min-height: 400px) {
+          width: rem(26px);
+          height: rem(26px);
+        }
+      }
+      @media screen and (min-width: 1024px) and (max-width: 1320px) {
+        @media screen and (min-height: 400px) {
+          width: rem(30px);
+          height: rem(30px);
+        }
+      }
+      @media screen and (min-width: 1320px) and (max-width: 1500px) {
+        @media screen and (min-height: 500px) and (max-height: 600px) {
+          width: rem(30px);
+          height: rem(30px);
+        }
+        @media screen and (min-height: 600px) {
+          width: rem(36px);
+          height: rem(36px);
+        }
+      }
+      @media screen and (min-width: 1500px) and (max-width: 1700px) {
+        @media screen and (min-height: 600px) and (max-height: 700px) {
+          width: rem(30px);
+          height: rem(30px);
+        }
+        @media screen and (min-height: 900px) {
+          width: rem(36px);
+          height: rem(36px);
+        }
+      }
+      @media screen and (min-width: 1700px) and (max-width: 1840px) {
+        @media screen and (min-height: 600px) {
+          width: rem(30px);
+          height: rem(30px);
+        }
+      }
+    } 
+    & .network__item {
+      @media screen and (min-width: 320px) and (max-width: 480px) {
+        @media screen and (min-height: 300px) {
+          margin-bottom: rem(11px);
+          &:first-child {
+            margin-right: 0;
+          }
+        }
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        @media screen and (min-height: 300px) {
+          margin-bottom: rem(11px);
+          &:first-child {
+            margin-right: 0;
+          }
+        }
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        @media screen and (min-height: 300px) {
+          margin-bottom: rem(11px);
+          &:first-child {
+            margin-right: 0;
+          }
+        }
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        @media screen and (min-height: 400px) {
+          margin-bottom: rem(16px);
+        }
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+        @media screen and (min-height: 400px) {
+          margin-bottom: rem(20px);
+        }
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        @media screen and (min-height: 500px) and (max-height: 600px) {
+          margin-bottom: rem(20px);
+        }
+        @media screen and (min-height: 600px) {
+          margin-bottom: rem(20px);
+        }
+      }
+      @media screen and (min-width: 1500px) and (max-width: 1700px) {
+        @media screen and (min-height: 600px) and (max-height: 700px) {
+          margin-bottom: rem(20px);
+        }
+      }
+      @media screen and (min-width: 1701px) and (max-width: 1840px) {
+        @media screen and (min-height: 600px) {
+          margin-bottom: rem(20px);
+        }
+      }
+    } 
+    & .network__ref {
+      @media screen and (min-width: 320px) and (max-width: 480px) {
+        @media screen and (min-height: 300px) {
+          margin-right: rem(16px);
+        }
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        @media screen and (min-height: 300px) {
+          margin-right: rem(16px);
+        }
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        @media screen and (min-height: 300px) {
+          margin-right: rem(14px);
+        }
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        @media screen and (min-height: 400px) {
+          margin-right: rem(16px);
+        }
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+        @media screen and (min-height: 400px) {
+          margin-right: rem(20px);
+        }
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        @media screen and (min-height: 500px) and (max-height: 600px) {
+          margin-right: rem(20px);
+        }
+        @media screen and (min-height: 600px) {
+          margin-right: rem(22px);
+        }
+      }
+    }
+  }
+}
+.network__list {
+  // position: absolute;
+  // top: 0;
+  // left: 150%;
+  // transform: translate(-50%,-50%);
+  // transition: .4s 1.8s;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.network__item {
+  // text-align: center;
+  // line-height: 5;
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(38px);
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0;
+    margin-right: rem(42px);
+    justify-content: center;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  // @include note {
+  //   line-height: 4;
+  // }
+}
+.network__ref {
+  // display: block;
+  margin-right: rem(42px);
+  display: flex;
+  align-items: center;
+  &:hover {
+    & .network__icon {
+      transition: .4s ease-out .1s, .6s .2s;
+      transform: rotate(360deg) scale(1.3);
+    }
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.network__icon {
+  width: rem(44px);
+  height: rem(44px);
+  fill: $black;
+  transform: rotate(0deg) scale(1);
+  @include note {
+    width: rem(34px);
+    height: rem(34px);
+  }
+  @include tablets {
+    width: rem(30px);
+    height: rem(30px);
+    @media screen and (min-height: 540px) {
+      width: rem(50px);
+      height: rem(50px);
+    }
+  }
+  @include phones {
+    width: rem(30px);
+    height: rem(30px);
+    @media screen and (min-height: 980px) {
+      width: rem(50px);
+      height: rem(50px);
+    }
+  }
+}

@@ -1,0 +1,190 @@
+.why {
+  position: relative;
+  overflow: hidden;
+  color: $black;
+  // min-height: rem(650px);
+  height: rem(734px);
+  min-height: rem(734px);
+  @include roboto(black);
+  // font-size: rem(64px);
+  text-transform: uppercase;
+  @include desctop {
+    font-size: rem(50px);
+    height: rem(534px);
+    min-height: rem(500px);
+  }
+  @include note {
+    min-height: rem(450px);
+    @media screen and (min-height: 400px) {
+      height: 100vh;
+    }
+    @media screen and (min-height: 560px) {
+      height: 80vh;
+    }
+    @media screen and (min-height: 620px) {
+      height: 70vh;
+    }
+  }
+  @include tablets {
+    min-height: rem(250px);
+    height: 100vh;
+    @media screen and (min-height: 660px) {
+      height: 80vh;
+    }
+    @media screen and (min-height: 800px) {
+      height: 60vh;
+    }
+    @media screen and (min-height: 1080px) {
+      height: 50vh;
+    }
+  }
+  @include phones {
+    height: 60vh;
+  }
+  
+}
+.why__container {
+  height: 100%;
+  display: flex;
+}
+.why__content {
+  display: flex;
+  z-index: $z-services-content;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+}
+.why__slider {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.why__list {
+  align-items: center;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+}
+.why__item {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background: url("../../img/bg/jupiter.png");
+  background-size: cover;
+  background-size: 133% 166%;
+  background-position: 68% 51%;
+  @include desctop {
+    background-image: url("../../img/bg/jupiter_1300px.png");
+  }
+  @include note {
+    background-image: url("../../img/bg/jupiter_1024px.png");
+  }
+  @include tablets {
+    background-image: url("../../img/bg/jupiter_768px.png");
+  }
+  @include phones {
+    background-image: url("../../img/bg/jupiter_480px.png");
+  }
+  &--first {
+    background: inherit;
+    background-color: $white;
+    @include desctop {
+      background: inherit;
+    background-color: $white;
+    }
+    @include note {
+      background: inherit;
+    background-color: $white;
+    }
+    @include tablets {
+      background: inherit;
+    background-color: $white;
+    }
+    @include phones {
+      background: inherit;
+    background-color: $white;
+    }
+    & .why__title {
+      font-size: rem(100px);
+      @include roboto(black);
+      background: url("../../img/bg/jupiter.png");
+      background-position-x: 40%;
+      background-size: 71% 139%;;
+      background-position-y: 47%;
+      // background-position: round($number: 10);
+      // background-size: cover;
+      background-clip: text;
+      -moz-background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+      @include desctop {
+        background-image: url("../../img/bg/jupiter_1300px.png");
+      }
+      @include note {
+        background-image: url("../../img/bg/jupiter_1024px.png");
+      }
+      @include tablets {
+        background-image: url("../../img/bg/jupiter_768px.png");
+      }
+      @include phones {
+        background-image: url("../../img/bg/jupiter_480px.png");
+      }
+    }
+  }
+}
+.why__title {
+  // display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 92%;
+  justify-content: center;
+  transform: translate(-50%,-50%);
+  text-transform: uppercase;
+  text-align: center;
+  white-space: initial;
+  color: $white;
+  @include roboto(black);
+  line-height: 1.5;
+  font-size: rem(100px);
+  @include desctop {
+    font-size: rem(90px);
+  }
+  @include note {
+    font-size: rem(66px);
+  }
+  @include tablets {
+    width: 100%;
+    font-size: rem(52px);
+  }
+  @include phones {
+    width: 84%;
+    font-size: rem(38px);
+    @media screen and (min-height: 880px) {
+      font-size: rem(52px);
+    }
+  }
+}
+.why__container-slider {
+  text-align: center;
+  width: 100%;
+  align-items: center;
+  height: auto;
+  @include note {
+    width: 100%;
+
+  }
+}

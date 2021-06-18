@@ -1,0 +1,406 @@
+.carbag-main {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  color: $white;
+  background-image: url("../../img/bg/carbag-main.png");
+  background-size: center center;
+  @include desctop {
+    background-image: url("../../img/bg/carbag-main_1300px.png");
+  }
+  @include note {
+    background-image: url("../../img/bg/carbag-main_1024px.png");
+  }
+  @include tablets {
+    background-image: url("../../img/bg/carbag-main_768px.png");
+  }
+  @include phones {
+    background-image: url("../../img/bg/carbag-main_480px.png");
+  }
+}
+.carbag-main__content {
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+  position: relative;
+}
+.carbag-main__navigation {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  display: flex;
+  & span {
+    @include roboto(bold);
+    font-size: rem(21px);
+    text-transform: uppercase;
+    line-height: 1;
+    &:first-child {
+      margin-right: rem(37px);
+    }
+  }
+}
+.carbag-main__title {
+  position: absolute;
+  top: 45%;
+  left: 57%;
+  transform: translate(-50%,-50%);
+  & span {
+    @include roboto(black);
+    font-size: rem(250px);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+}
+.carbag-main__subtext {
+  position: absolute;
+  top: 66%;
+  left: 50%;
+  & p {
+    @include roboto(normal);
+    font-size: 24px;
+    line-height: 1;
+  }
+}
+.carbag-main__prev {
+  position: absolute;
+  top: 76%;
+  left: 50%;
+  & span {
+    @include roboto(bold);
+    font-size: rem(21px);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 173%;
+    transform: translateY(-50%);
+    width: rem(162px);
+    height: rem(6px);
+    background: linear-gradient(90deg, $black 50%, #FBE6E6 50%); 
+  }
+}
+.carbag-main__year {
+  position: absolute;
+  top: 76%;
+  left: 86%;
+  & span {
+    @include roboto(bold);
+    font-size: rem(21px);
+    line-height: 1;
+    text-transform: capitalize;
+  }
+}
+.carbag-tasks {
+  position: relative;
+  padding-top: rem(110px);
+  color: $black;
+}
+.carbag-tasks__container {
+  width: 81%;
+  margin: 0 auto
+}
+.carbag-tasks__content {
+  width: 100%;
+  position: relative;
+}
+.carbag-tasks__title {
+  & span {
+    @include roboto(bold);
+    font-size: rem(72px);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  margin-bottom: rem(41px);
+}
+.carbag-tasks__subtitle {
+  & p {
+    @include roboto(normal);
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  width: 56%;
+  margin-bottom: rem(121px);
+  position: relative;
+}
+.carbag-tasks__subtitle-circle {
+  position: absolute;
+  width: rem(32px);
+  height: rem(32px);
+  border-radius: 50%;
+  border: 3px solid currentColor;
+  top: 0;
+  left: rem(-65px);
+}
+.carbag-tasks__subtitle-galka {
+  width: rem(16px);
+  height: rem(21px);
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%,-50%);
+  fill: currentColor;
+  stroke-width: 2px;
+}
+.carbag-tasks__img {
+  width: 100%;
+  display: block;
+}
+.carbag-tasks__pic {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.carbag-content {
+  position: relative;
+  color: $black;
+  padding-top: rem(114px);
+}
+.carbag-content__container {
+  width: 81%;
+  margin: 0 auto;
+}
+.carbag-content__content {
+  width: 100%;
+  position: relative;
+}
+.carbag-content__title {
+  & span {
+    @include roboto(bold);
+    font-size: rem(72px);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  margin-bottom: rem(34px);
+  color: currentColor;
+}
+.carbag-content__subtitle {
+  & p {
+    @include roboto(normal);
+    font-size: rem(24px);
+    line-height: 1.8;
+  }
+  color: currentColor;
+  margin-bottom: rem(117px);
+  width: 60%;
+}
+.carbag-content__images {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  margin-bottom: rem(112px);
+}
+.carbag-content__images-col-left {
+  display: flex;
+  width: 63%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.carbag-content__img {
+  display: block;
+  width: 100%;
+  &--1 {
+    margin-bottom: rem(66px);
+  }
+  &--3 {
+    margin-bottom: 0;
+    height: 100%;
+  }
+}
+.carbag-content__pic {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  &--3 {
+    height: 100%;
+  }
+}
+.carbag-content__images-col-right {
+  width: 33%;
+}
+.carbag-content__subtitile-2 {
+  & p {
+    @include roboto(normal);
+    font-size: rem(24px);
+    line-height: 1.8;
+  }
+  color: currentColor;
+  margin-bottom: rem(117px);
+  width: 58%;
+}
+.carbag-content__image-collage {
+  width: 100%;
+  margin-bottom: rem(130px);
+}
+.carbag-content__pic-collage {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.carbag-func {
+  position: relative;
+  color: $black;
+  padding-top: rem(91px);
+}
+.carbag-func__container {
+  width: 81%;
+  margin: 0 auto;
+  margin-bottom: rem(117px);
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.carbag-func__content {
+  width: 100%;
+  position: relative;
+}
+.carbag-func__title {
+  & span {
+    @include roboto(bold);
+    font-size: rem(72px);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  margin-bottom: rem(34px);
+  color: currentColor;
+}
+.carbag-func__subtitle {
+  & p {
+    @include roboto(normal);
+    font-size: rem(24px);
+    line-height: 1.8;
+  }
+  color: currentColor;
+  width: 57%;
+}
+.carbag-func__img {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: rem(113px);
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($black, .4);
+    z-index: 2;
+  }
+  &:hover {
+    & .carbag-func__play {
+      transition: all .6s;
+      transform: translate(-50%,-50%) scale(1.2);
+    }
+  }
+}
+.carbag-func__pic {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.carbag-func__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(1);
+  border-radius: 50%;
+  border: 6px solid $white;
+  width: rem(192px);
+  height: rem(192px);
+  z-index: 3;
+  transition: all .6s;
+
+}
+.carbag-func__play-icon {
+  stroke: $white;
+  fill: transparent;
+  stroke-width: 6px;
+  display: block;
+  width: rem(75px);
+  height: rem(75px);
+  position: absolute;
+  top: 51%;
+  left: 56%;
+  transform: translate(-50%,-50%);
+}
+.carbag-func__subtitle-2 {
+  & p {
+    @include roboto(normal);
+    font-size: rem(24px);
+    line-height: 1.8;
+  }
+  color: currentColor;
+  width: 57%;
+}
+.carbag-adaptive {
+  position: relative;
+  color: $black;
+  padding-top: rem(78px);
+}
+.carbag-adaptive__container {
+  width: 81%;
+  margin: 0 auto;
+  margin-bottom: rem(100px);
+}
+.carbag-adaptive__content {
+  width: 100%;
+  position: relative;
+}
+.carbag-adaptive__title {
+  & span {
+    @include roboto(bold);
+    font-size: rem(72px);
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  color: currentColor;
+}
+.carbag-adaptive__images {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+}
+.carbag-adaptive__img-mac {
+  position: absolute;
+  display: block;
+  width: rem(926px);
+  height: rem(569px);
+  left: 1%;
+  top: 17%;
+}
+.carbag-adaptive__img-imac {
+  position: absolute;
+  display: block;
+  width: rem(724px);
+  height: rem(944px);
+  right: 0%;
+  top: 0%;
+}
+.carbag-adaptive__img-tabl {
+  position: absolute;
+  display: block;
+  width: rem(404px);
+  height: rem(285px);
+  left: 42%;
+  top: 12%;
+
+}
+.carbag-adaptive__pic-tabl-ram {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 125%;
+  object-fit: cover;
+  z-index: 2;
+}

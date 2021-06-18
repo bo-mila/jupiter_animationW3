@@ -1,0 +1,85 @@
+$black: #000;
+$white: #fff;
+$lilac: #b994fd;
+// $lilac: #9a62ff;
+// $lilac: #a37de8;
+$turquoise: #61cfe7;
+$bounce-yellow: #f8e48E;
+$bounce-turquoise: #90d0ef;
+$bounce-lilac: #9681CB;
+$grey: #c8c8c8;
+// @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap&subset=cyrillic-ext");
+
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+
+$z-header: 50;
+$z-bg-static-bounce: 0;
+$z-move-bounce-blur-1: 1;
+$z-move-bounce-blur-2: 2;
+$z-move-bounce-blur-3: 3;
+$z-move-bounce-img-1: 4;
+$z-move-bounce-img-2: 5;
+$z-move-bounce-img-3: 6;
+$z-move-bounce-img-4: 7;
+$z-move-bounce-img-5: 8;
+$z-first-container: 20;
+$z-display: 40;
+$z-slider-first: 23;
+$z-slider-first-buttons: 25;
+$z-slide-container: 20;
+$z-services-content: 25;
+$z-slider: 10;
+$z-slider-back-mask: 15;
+$z-slider-list: 20;
+$z-hamburger: 49;
+
+// @import "./_misc/normalize.scss";
+// // @import "./libs/w3.css";
+// @import "./_misc/media.scss";
+// @import "./_misc/fonts.scss";
+// @import "./_misc/layout.scss";
+// @import "./_misc/mixins.scss";
+// @import "./_misc/animate.scss";
+
+@import "./blocks/header.scss";
+@import "./blocks/hamburger-menu.scss";
+@import "./blocks/hamburger-menu-icon.scss";
+@import "./blocks/language.scss";
+@import "./blocks/first.scss";
+@import "./blocks/bounce.scss";
+@import "./blocks/feature.scss";
+@import "./blocks/display.scss";
+@import "./blocks/slider-first.scss";
+@import "./blocks/arrow-icon.scss";
+@import "./blocks/portfolio.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/slide.scss";
+@import "./blocks/slide-first.scss";
+@import "./blocks/swiper.scss";
+@import "./blocks/services.scss";
+@import "./blocks/why.scss";
+@import "./blocks/reviews.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/nav.scss";
+@import "./blocks/network.scss";
+@import "./blocks/hamburger.scss";
+@import "./blocks/arrow-down-icon.scss";
+
+
+
+@import "./blocks/service.scss";
+@import "./blocks/teamwork.scss";
+@import "./blocks/video.scss";
+@import "./blocks/service-package.scss";
+
+
+
+@import "./blocks/forma.scss";
+@import "./blocks/form.scss";
+
+
+@import "./blocks/carbag-main.scss";
+
+// @import "blocks/*.scss";

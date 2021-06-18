@@ -1,0 +1,23 @@
+.hamburger-menu {
+	display: flex;
+  align-items: center;
+	cursor: pointer;
+	position: relative;
+	align-items: center;
+}
+.hamburger-menu__img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transform: scale(1);
+	opacity: .7;
+	transition: .6s;
+	&:hover {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+}
+.hamburger-menu__input {
+	display: none;
+}
