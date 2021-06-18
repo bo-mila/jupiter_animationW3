@@ -102,7 +102,7 @@
       align-items: flex-start;
     }
     & .nav__item {
-      display: flex;
+      // display: flex;
       margin-bottom: 3%;
       &:last-child {
         margin-bottom: 0;
@@ -153,9 +153,13 @@
         background: url("../../img/bg/jupiter.png");
         background-size: cover;
         background-position: 0% 52%;
+        background-clip: text;
+        -moz-background-clip: text;
         -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
         opacity: 0;
-        transition: opacity .6s;
+        // transition: opacity .6s;
+        // z-index: 40;
         @include desctop {
           background-image: url("../../img/bg/jupiter_1300px.png");
         }
@@ -174,7 +178,8 @@
         //   opacity: 1;
         // }
         &::after {
-          opacity: 1;
+      // transition: opacity .6s;
+      opacity: 1;
         }
       }
     }

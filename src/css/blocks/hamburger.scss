@@ -1,0 +1,40 @@
+.hamburger {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  overflow: hidden;
+  z-index: $z-hamburger;
+  display: flex;
+  background-color: $white;
+  border-left: rem(5px) solid $black;
+  
+  transition: left .8s ease;
+  &--visible {
+    visibility: visible;
+    transition: left .8s ease;
+    left: 0;
+  }
+}
+.hamburger__container {
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+}
+.hamburger__content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+.hamburger__nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-direction: column;
+}

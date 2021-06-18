@@ -16,56 +16,63 @@
 .portfolio__display {
   display: flex;
   position: absolute;
-  bottom: 1%;
+  height: 10vh;
+  bottom: 0%;
   // bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
-  @media screen and (min-height: 680px) {
-    bottom: 4%;
-  }
-  @media screen and (min-height: 9200px) {
-    bottom: 7%;
-  }
-  @media screen and (min-height: 980px) {
-    bottom: 10%;
-  }
-  @include desctop {
-    bottom: 2%;
-    @media screen and (min-height: 720px) {
-      bottom: 5%;
-    }
-  }
-  @include note {
-    bottom: 1%;
-    @media screen and (min-height: 700px) {
-      bottom: 5%;
-    }
-  }
-  @include tablets {
-    bottom: 1%;
-    @media  screen and (min-height: 540px) {
-      bottom: 5%;
-      @media screen and (min-width: 650px) {
-        bottom: 1%;
-      }
-    }
-    @media screen and (min-height: 720px) {
-      bottom: 5%;
-    }
-    @media screen and (min-height: 740px) {
-      bottom: 12%;
-    }
-    @media screen and (min-height: 1100px) {
-      bottom: 22%;
-    }
-  }
-  @include phones {
-    // display: flex;
-    bottom: 12%;
-    @media  screen and (min-height: 601px) {
-      bottom: 20%;
-    }
-  }
+  // @media screen and (min-height: 680px) {
+  //   bottom: 2%;
+  // }
+  // @media screen and (min-height: 800px) {
+  //   bottom: 4%;
+  // }
+  // @media screen and (min-height: 9200px) {
+  //   bottom: 7%;
+  // }
+  // @media screen and (min-height: 980px) {
+  //   bottom: 10%;
+  // }
+  // @include desctop {
+  //   bottom: 2%;
+  //   @media screen and (min-height: 720px) {
+  //     bottom: 5%;
+  //   }
+  // }
+  // @include note {
+  //   bottom: 1%;
+  //   @media screen and (min-height: 700px) {
+  //     bottom: 5%;
+  //   }
+  //   @media screen and (min-height: 920px) {
+  //     bottom: 10%;
+  //   }
+  // }
+  // @include tablets {
+  //   bottom: 1%;
+  //   @media  screen and (min-height: 540px) {
+  //     bottom: 5%;
+  //     @media screen and (min-width: 650px) {
+  //       bottom: 1%;
+  //     }
+  //   }
+  //   @media screen and (min-height: 720px) {
+  //     bottom: 5%;
+  //   }
+  //   @media screen and (min-height: 740px) {
+  //     bottom: 10%;
+  //   }
+  //   @media screen and (min-height: 1100px) {
+  //     bottom: 22%;
+  //   }
+  // }
+  // @include phones {
+  //   // display: flex;
+  //   bottom: 6%;
+  //   @media  screen and (min-height: 601px) {
+  //     bottom: 20%;
+  //   }
+  // }
   & .display__list {
     display: flex;
     align-items: center;

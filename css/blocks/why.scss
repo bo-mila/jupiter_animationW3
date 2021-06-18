@@ -6,7 +6,7 @@
   height: rem(734px);
   min-height: rem(734px);
   @include roboto(black);
-  font-size: rem(70px);
+  // font-size: rem(64px);
   text-transform: uppercase;
   @include desctop {
     font-size: rem(50px);
@@ -83,6 +83,8 @@
   height: 100%;
   background: url("../../img/bg/jupiter.png");
   background-size: cover;
+  background-size: 133% 166%;
+  background-position: 68% 51%;
   @include desctop {
     background-image: url("../../img/bg/jupiter_1300px.png");
   }
@@ -98,8 +100,14 @@
   &--first {
     background: inherit;
     & .why__title {
+      font-size: rem(100px);
+      @include roboto(black);
       background: url("../../img/bg/jupiter.png");
-      background-size: cover;
+      background-position-x: 40%;
+      background-size: 71% 139%;;
+      background-position-y: 47%;
+      // background-position: round($number: 10);
+      // background-size: cover;
       background-clip: text;
       color: transparent;
       -webkit-background-clip: text;

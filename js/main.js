@@ -150,7 +150,7 @@ var swiper = new Swiper(".mySwiper", {
   //   delay: 700,
   //   disableOnInteraction: false,
   // },
-  speed: 2000,
+  speed: 1500,
   sumulateTouch: true,
   pagination: {
     el: ".swiper-pag",
@@ -174,7 +174,7 @@ const widthW = document.documentElement.clientWidth;
 if (widthW<1000) {
   swiper.params.speed = 600;
 } else {
-  swiper.params.speed = 2000;
+  swiper.params.speed = 1500;
 }
 window.addEventListener("resize", function (e) {
 const widthW = document.documentElement.clientWidth;
@@ -182,7 +182,7 @@ const widthW = document.documentElement.clientWidth;
   if (widthW<1000) {
       swiper.params.speed = 600;
     } else {
-      swiper.params.speed = 2000;
+      swiper.params.speed = 1500;
     }
 });
 
@@ -191,7 +191,7 @@ const sliderRight = document.querySelector(".slider__right");
 sliderRight.addEventListener("mouseenter", function (e) {
   // swiper.params.speed = 2000;
   swiper.params.autoplay.disableOnInteraction = false;
-  // swiper.params.autoplay.delay = 700;
+  swiper.params.autoplay.delay = 500;
   swiper.params.autoplay.reverseDirection = 0;
   swiper.autoplay.start();
 });
@@ -204,7 +204,7 @@ const sliderLeft = document.querySelector(".slider__left");
 sliderLeft.addEventListener("mouseenter", function (e) {
   // swiper.params.speed = 2000;
   swiper.params.autoplay.disableOnInteraction = false;
-  // swiper.params.autoplay.delay = 700;
+  swiper.params.autoplay.delay = 500;
   swiper.params.autoplay.reverseDirection = 1;
   swiper.autoplay.start();
 

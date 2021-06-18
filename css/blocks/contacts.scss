@@ -4,6 +4,7 @@
   padding-top: rem(100px);
   padding-bottom: rem(80px);
   min-height: rem(780px);
+  @include roboto(bold);
   @include desctop {
     padding-top: rem(20px);
     padding-bottom: rem(20px);
@@ -144,68 +145,96 @@
     text-transform: uppercase;
     animation: animate 40s linear infinite;
     animation-delay: -40s;
-    letter-spacing: rem(15px);
-    @include desctop {
-      font-size: rem(56px);
-      @media screen and (min-height: 720px) {
-        font-size: rem(60px);
-      }
-    }
-    @include tablets {
-      font-size: rem(44px);
-      @media screen and (min-height: 540px) {
-        font-size: rem(52px);
-      }
-      @media screen and (min-height: 540px) {
-        font-size: rem(62px);
-      }
-    }
-    @include phones {
-      font-size: rem(44px);
-      @media screen and (min-height: 880px) {
-        font-size: rem(52px);
-      }
-      @media screen and (min-height: 940px) {
-        font-size: rem(58px);
-      }
-    }
+
+
+    // letter-spacing: rem(15px);
+    // @include desctop {
+    //   font-size: rem(56px);
+    //   @media screen and (min-height: 720px) {
+    //     font-size: rem(60px);
+    //   }
+    // }
+    // @include tablets {
+    //   font-size: rem(44px);
+    //   @media screen and (min-height: 540px) {
+    //     font-size: rem(52px);
+    //   }
+    //   @media screen and (min-height: 540px) {
+    //     font-size: rem(62px);
+    //   }
+    // }
+    // @include phones {
+    //   font-size: rem(44px);
+    //   @media screen and (min-height: 880px) {
+    //     font-size: rem(52px);
+    //   }
+    //   @media screen and (min-height: 940px) {
+    //     font-size: rem(58px);
+    //   }
+    // }
     &:nth-child(2) {
       animation: animate2 40s linear infinite;
       animation-delay: -20s;
     }
-    -webkit-text-stroke: 1px $black;
+    // -webkit-text-stroke: 1px $black;
     & .s1, .s2, .s3, .s4, .s5, .s6 {
       cursor: pointer;
       position: relative;
+      transition: opacity .7s;
+      opacity: 1;
+      z-index: 50;
+      color: $white;
+      -webkit-text-stroke: 1px $black;
+
       &::after {
-        -webkit-text-stroke: 1px transparent;
         position: absolute;
         color: transparent;
-        top: 6px;
+        top: 50%;
         left: 0;
-        // top: -1px;
-        // left: rem(-4px);
+        transform: translateY(-50%);
         background: url("../../img/bg/jupiter.png");
         background-size: cover;
+        background-clip: text;
         -webkit-background-clip: text;
+        -moz-background-clip: text;
+        font-size: rem(64px);
         opacity: 0;
-        transition: opacity .6s;
+        z-index: 0;
+        // transition:  opacity .6s;
         @include desctop {
           background-image: url("../../img/bg/jupiter_1300px.png");
+          // font-size: rem(56px);
+          // @media screen and (min-height: 720px) {
+          //   font-size: rem(60px);
+          // }
         }
         @include note {
           background-image: url("../../img/bg/jupiter_1024px.png");
         }
         @include tablets {
           background-image: url("../../img/bg/jupiter_768px.png");
+          // font-size: rem(44px);
+          // @media screen and (min-height: 540px) {
+          //   font-size: rem(52px);
+          // }
+          // @media screen and (min-height: 540px) {
+          //   font-size: rem(62px);
+          // }
         }
         @include phones {
           background-image: url("../../img/bg/jupiter_480px.png");
+          // font-size: rem(44px);
+          // @media screen and (min-height: 880px) {
+          //   font-size: rem(52px);
+          // }
+          // @media screen and (min-height: 940px) {
+          //   font-size: rem(58px);
+          // }
         }
       }
       &:hover {
-    -webkit-text-stroke: 1px transparent;
-
+        -webkit-text-stroke: 1px transparent;
+        // opacity: 0;
         &::after {
           opacity: 1;
         }
@@ -280,17 +309,36 @@
 
 @keyframes animate3 {
   0% {
-    transform: translateX(75%);
+    transform: translateX(-125%);
   }
   100% {
-    transform: translateX(-125%);
+    transform: translateX(75%);
   }
 }
 @keyframes animate4 {
   0% {
-    transform: translateX(-25%);
-  }
-  100% {
     transform: translateX(-225%);
   }
+  100% {
+    transform: translateX(-25%);
+  }
 }
+
+/// для второй линии, чтоб двигалась в том же направлении что и 
+//остальные, но с задержкой
+// @keyframes animate3 {
+//   0% {
+//     transform: translateX(75%);
+//   }
+//   100% {
+//     transform: translateX(-125%);
+//   }
+// }
+// @keyframes animate4 {
+//   0% {
+//     transform: translateX(-25%);
+//   }
+//   100% {
+//     transform: translateX(-225%);
+//   }
+// }

@@ -1,0 +1,709 @@
+.slide {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // justify-content: flex-end;
+  height: 100%;
+  background: inherit;
+}
+.slide__container {
+  width: 54vw;
+  // height: 93%;
+  // width: 62%;
+  max-width: 1078px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  padding-top: rem(10px);
+  // padding: rem(10px) rem(10px);
+  // height: auto;
+  transition: .6s;
+  transform: scale(1);
+  transform-origin: center center;
+  box-shadow: none;
+  background-color: $white;
+  @media screen and (min-height: 620px) {
+      width: 50%;
+  }
+  @media screen and (min-height: 660px) {
+      width: 54%;
+  }
+  @media screen and (min-height: 700px) {
+      width: 58%;
+  }
+  @media screen and (min-height: 720px) {
+      width: 60%;
+  }
+  @media screen and (min-height: 740px) {
+      width: 62%;
+  }
+  @media screen and (min-height: 760px) {
+      width: 64%;
+  }
+  @media screen and (min-height: 780px) {
+      width: 66%;
+  }
+  @media screen and (min-height: 820px) {
+      width: 70%;
+  }
+  @media screen and (min-height: 860px) {
+      width: 72%;
+  }
+  @media screen and (min-height: 940px) {
+      width: 70%;
+  }
+  @media screen and (min-height: 980px) {
+      width: 69%;
+  }
+  @media screen and (min-height: 1100px) {
+      max-width: 80%;
+  }
+  @media screen and (min-height: 1100px) {
+      max-width: 80%;
+  }
+
+
+  @media screen and (min-width: 1500px) {
+    width: 44vw;
+    
+    @media screen and (min-height: 620px) {
+      width: 46%;
+    }
+    @media screen and (min-height: 660px) {
+      width: 48%;
+    }
+    @media screen and (min-height: 700px) {
+      width: 51%;
+    }
+    @media screen and (min-height: 720px) {
+      width: 52%;
+    }
+    @media screen and (min-height: 740px) {
+      width: 54%;
+    }
+    @media screen and (min-height: 760px) {
+      width: 56%;
+    }
+    @media screen and (min-height: 780px) {
+      width: 58%;
+    }
+    @media screen and (min-height: 820px) {
+      width: 62%;
+    }
+    @media screen and (min-height: 860px) {
+      width: 64%;
+    }
+    @media screen and (min-height: 1100px) {
+      max-width: 68%;
+    }
+  }
+
+
+  @media screen and (min-width: 1700px) {
+    width: 40vw;
+    @media screen and (min-height: 620px) {
+      width: 42vw;
+    }
+    @media screen and (min-height: 640px) {
+      width: 44vw;
+    }
+    @media screen and (min-height: 680px) {
+      width: 46vw;
+    }
+    @media screen and (min-height: 700px) {
+      width: 48vw;
+    }
+    @media screen and (min-height: 720px) {
+      width: 50vw;
+    }
+    @media screen and (min-height: 760px) {
+      width: 52%;
+    }
+    @media screen and (min-height: 780px) {
+      width: 52%;
+    }
+    @media screen and (min-height: 820px) {
+      width: 55%;
+    }
+    @media screen and (min-height: 860px) {
+      width: 60%;
+    }
+    @media screen and (min-height: 1100px) {
+      width: 57%;
+    }
+  }
+  // @media screen and (min-width: 2001px) {
+  //   @media screen and (min-height: 1080px) {
+  //     max-width: 42vw;
+  //   }
+  // }
+
+
+
+  @include desctop {
+    width: 60%;
+    padding: rem(10px) 0 0 0;
+    @media screen and (min-height: 540px) {
+      width: 66%;
+    }
+    @media screen and (min-height: 560px) {
+      width: 68%;
+    }
+    @media screen and (min-height: 580px) {
+      width: 70%;
+    }
+    @media screen and (min-height: 640px) {
+      width: 74%;
+    }
+    @media screen and (min-height: 680px) {
+      width: 80%;
+    }
+    @media screen and (min-height: 740px) {
+      width: 84%;
+    }
+    @media screen and (min-height: 780px) {
+      width: 88%;
+    }
+
+    @media screen and (min-width: 1100px) {
+      width: 54%;
+      @media screen and (min-height: 540px) {
+        width: 60%;
+      }
+      @media screen and (min-height: 560px) {
+        width: 64%;
+      }
+      @media screen and (min-height: 580px) {
+        width: 68%;
+      }
+      // @media screen and (min-height: 420px) {
+      //   width: 52%;
+      // }
+      @media screen and (min-height: 640px) {
+        width: 72%;
+      }
+      @media screen and (min-height: 680px) {
+        width: 74%;
+      }
+      @media screen and (min-height: 740px) {
+        width: 80%;
+      }
+      @media screen and (min-height: 780px) {
+        width: 82%;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      width: 50%;
+      // @media screen and (min-height: 420px) {
+      //   width: 52%;
+      // }
+      @media screen and (min-height: 540px) {
+        width: 54%;
+      }
+      @media screen and (min-height: 560px) {
+        width: 58%;
+      }
+      @media screen and (min-height: 580px) {
+        width: 60%;
+      }
+      @media screen and (min-height: 640px) {
+        width: 63%;
+      }
+      @media screen and (min-height: 680px) {
+        width: 68%;
+      }
+      @media screen and (min-height: 740px) {
+        width: 72%;
+      }
+      @media screen and (min-height: 780px) {
+        width: 76%;
+      }
+    }
+
+  }
+  @include note {
+    padding: rem(10px) 0 0 0;
+    width: 55%;
+    @media screen and (min-height: 420px) {
+      width: 60%;
+    }
+    @media screen and (min-height: 440px) {
+      width: 64%;
+    }
+    @media screen and (min-height: 480px) {
+      width: 70%;
+    }
+    @media screen and (min-height: 500px) {
+      width: 76%;
+    }
+    @media screen and (min-height: 520px) {
+      width: 80%;
+    }
+    @media screen and (min-height: 540px) {
+      width: 86%;
+    }
+    @media screen and (min-height: 620px) {
+      width: 90%;
+    }
+
+    @media screen and (min-width: 860px) {
+      width: 49%;
+      @media screen and (min-height: 420px) {
+        width: 52%;
+      }
+      @media screen and (min-height: 440px) {
+        width: 56%;
+      }
+      @media screen and (min-height: 480px) {
+        width: 64%;
+      }
+      @media screen and (min-height: 500px) {
+        width: 68%;
+      }
+      @media screen and (min-height: 520px) {
+        width: 72%;
+      }
+      @media screen and (min-height: 540px) {
+        width: 76%;
+      }
+      @media screen and (min-height: 620px) {
+        width: 84%;
+      }
+    }
+
+    @media screen and (min-width: 960px) {
+      width: 46%;
+      @media screen and (min-height: 420px) {
+        width: 50%;
+      }
+      @media screen and (min-height: 440px) {
+        width: 54%;
+      }
+      @media screen and (min-height: 480px) {
+        width: 60%;
+      }
+      @media screen and (min-height: 500px) {
+        width: 64%;
+      }
+      @media screen and (min-height: 520px) {
+        width: 68%;
+      }
+      @media screen and (min-height: 540px) {
+        width: 72%;
+      }
+      @media screen and (min-height: 620px) {
+        width: 80%;
+      }
+    }
+  }
+  @include tablets {
+    width: 79%;
+    @media screen and (min-height: 340px) {
+      width: 80%;
+    }
+    @media screen and (min-height: 360px) {
+      width: 96%;
+    }
+    @media screen and (min-height: 380px) {
+      width: 90%;
+    }
+    @media screen and (min-height: 420px) {
+      width: 92%;
+    }
+    @media screen and (min-height: 460px) {
+      width: 95%;
+    }
+
+
+    @media screen and (min-width: 560px) {
+      width: 60%;
+      @media screen and (min-height: 340px) {
+        width: 70%;
+      }
+      @media screen and (min-height: 360px) {
+        width: 82%;
+      }
+      @media screen and (min-height: 380px) {
+        width: 72%;
+      }
+      @media screen and (min-height: 420px) {
+        width: 78%;
+      }
+      @media screen and (min-height: 460px) {
+        width: 83%;
+      }
+      @media screen and (min-height: 480px) {
+        width: 89%;
+      }
+      @media screen and (min-height: 520px) {
+        width: 94%;
+      }
+    }
+
+    @media screen and (min-width: 660px) {
+      width: 58%;
+      @media screen and (min-height: 340px) {
+        width: 65%;
+      }
+      @media screen and (min-height: 360px) {
+        width: 68%;
+      }
+      @media screen and (min-height: 380px) {
+        width: 62%;
+      }
+      @media screen and (min-height: 420px) {
+        width: 67%;
+      }
+      @media screen and (min-height: 460px) {
+        width: 71%;
+      }
+      @media screen and (min-height: 480px) {
+        width: 76%;
+      }
+      @media screen and (min-height: 520px) {
+        width: 82%;
+      }
+      @media screen and (min-height: 580px) {
+        width: 92%;
+      }
+      @media screen and (min-height: 700px) {
+        width: 95%;
+      }
+    }
+
+  }
+  @include phones {
+    width: 100%;
+    @media screen and (min-width: 400px) {
+      width: 80%;
+      @media screen and (min-height: 560px) {
+        width: 90%;
+      }
+      @media screen and (min-height: 840px) {
+        width: 100%;
+      }
+      // @media screen and (min-height: 380px) {
+      //   width: 72%;
+      // }
+      // @media screen and (min-height: 420px) {
+      //   width: 78%;
+      // }
+      // @media screen and (min-height: 460px) {
+      //   width: 83%;
+      // }
+      // @media screen and (min-height: 480px) {
+      //   width: 89%;
+      // }
+      // @media screen and (min-height: 520px) {
+      //   width: 94%;
+      // }
+    }
+  }
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+  }
+}
+.slide__title {
+  @include roboto(black);
+  font-style: normal;
+  font-size: rem(72px);
+  text-transform: uppercase;
+  margin-bottom: rem(15px);
+  @media screen and (max-height: 800px) {
+    margin-bottom: rem(13px);
+    font-size: rem(52px);
+  }
+  @include desctop {
+    font-size: rem(42px);
+    margin-bottom: rem(10px);
+    @media screen and (min-height: 600px) {
+      margin-bottom: rem(14px);
+      font-size: rem(56px);
+    }
+  }
+  @include note {
+    margin-bottom: rem(7px);
+    font-size: rem(28px);
+    @media screen and (min-height: 380px) {
+      margin-bottom: rem(8px);
+      font-size: rem(46px);
+    }
+    @media screen and (min-height: 640px) {
+      margin-bottom: rem(18px);
+      font-size: rem(56px);
+    }
+  }
+  @include tablets {
+    font-size: rem(22px);
+    margin-bottom: rem(0px);
+    letter-spacing: rem(3px);
+    // position: absolute;
+    @media screen and (min-height: 380px) {
+      margin-bottom: rem(10px);
+      font-size: rem(32px);
+    }
+    @media screen and (min-height: 440px) {
+      margin-bottom: rem(14px);
+      font-size: rem(38px);
+    }
+    @media screen and (min-height: 520px) {
+      margin-bottom: rem(14px);
+      font-size: rem(42px);
+    }
+  }
+  @include phones {
+    font-size: rem(26px);
+    margin-bottom: rem(7px);
+    @media screen and (min-height: 661px) {
+      font-size: rem(28px);
+    }
+    @media screen and (min-height: 700px) {
+      font-size: rem(32px);
+    }
+    @media screen and (min-height: 740px) {
+      margin-bottom: rem(10px);
+      font-size: rem(36px);
+    }
+    @media screen and (min-height: 860px) {
+      margin-bottom: rem(22px);
+      font-size: rem(52px);
+    }
+  }
+}
+.slide__description {
+  @include roboto(normal);
+  font-style: normal;
+  font-size: rem(24px);
+  line-height: 1.6;
+  letter-spacing: rem(22px);
+  text-transform: uppercase;
+  // margin-bottom: rem(39px);
+  text-align: center;
+  margin-bottom: rem(20px);
+  @media screen and (max-height: 800px) {
+    font-size: rem(22px); 
+    letter-spacing: rem(18px);
+    margin-bottom: rem(15px);
+  }
+  @include desctop {
+    font-size: rem(16px);
+    margin-bottom: rem(22px);
+    letter-spacing: rem(14px);
+    @media screen and (min-height: 600px) {
+      font-size: rem(20px);
+    }
+  }
+  @include note {
+    margin-bottom: rem(12px);
+    letter-spacing: rem(8px);
+    font-size: rem(14px);
+    @media screen and (min-height: 460px) {
+      margin-bottom: rem(10px);
+    letter-spacing: rem(10px);
+    font-size: rem(18px);
+    }
+    @media screen and (min-height: 640px) {
+      margin-bottom: rem(14px);
+    letter-spacing: rem(12px);
+    font-size: rem(22px);
+    }
+  }
+  @include tablets {
+    font-size: rem(10px);
+    margin-bottom: rem(0px);
+    letter-spacing: rem(4px);
+    // position: absolute;
+    @media screen and (min-height: 380px) {
+      margin-bottom: rem(10px);
+      font-size: rem(18px);
+    }
+    @media screen and (min-height: 440px) {
+      margin-bottom: rem(12px);
+      font-size: rem(26px);
+      letter-spacing: rem(6px);
+
+    }
+    @media screen and (min-height: 520px) {
+      margin-bottom: rem(12px);
+      font-size: rem(30px);
+    }
+  }
+  @include phones {
+    letter-spacing: rem(4px);
+    margin-bottom: rem(6px);
+    font-size: rem(20px);
+    @media screen and (min-height: 661px) {
+      font-size: rem(22px);
+    }
+    @media screen and (min-height: 700px) {
+      font-size: rem(24px);
+    }
+    @media screen and (min-height: 740px) {
+      margin-bottom: rem(10px);
+    }
+    @media screen and (min-height: 860px) {
+      font-size: rem(30px);
+      margin-bottom: rem(20px);
+    }
+  }
+}
+.slide__img {
+  display: flex;
+  max-width: rem(1078px);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: auto;
+  transition: 1s;
+  z-index: 50;
+  height: 57vh;
+  // height: 50vh;
+  max-height: rem(528px);
+  @media screen and (min-height: 700px) {
+    height: 61vh;
+  }
+  @media screen and (min-height: 860px) {
+    height: 59vh;
+  }
+  @media screen and (min-height: 900px) {
+    height: 56vh;
+  }
+  @media screen and (min-height: 1000px) {
+    height: 51vh;
+  }
+  @media screen and (min-height: 1040px) {
+    height: 46vh;
+  }
+  @media screen and (min-height: 1100px) {
+    max-width: 100%;
+    min-height: 48vh;
+    @media screen and (min-width: 1700px) {
+      min-height: 59vh;
+    
+    }
+    @media screen and (min-height: 1200px) {
+      height: 46vh;
+    }
+  }
+  @media screen and (min-width: 1500px) {
+    @media screen and (min-height: 660px) {
+      height: 61vh;
+    }
+  }
+  @media screen and (min-width: 1700px) {
+    @media screen and (min-height: 600px) {
+      height: 59vh;
+    }
+    @media screen and (min-height: 700px) {
+      height: 61vh;
+    }
+    @media screen and (min-height: 1100px) {
+      min-height: 48vh;
+    }
+  }
+  @media screen and (min-width: 2001px) {
+    @media screen and (min-height: 980px) {
+      min-height: 61vh;
+    }
+    @media screen and (min-height: 1140px) {
+      min-height: 59vh;
+    }
+    @media screen and (min-height: 1220px) {
+      min-height: 58vh;
+    }
+    @media screen and (min-height: 1260px) {
+      min-height: 57vh;
+    }
+    @media screen and (min-height: 1300px) {
+      min-height: 56vh;
+    }
+    @media screen and (min-height: 1320px) {
+      min-height: 55vh;
+    }
+    @media screen and (min-height: 1340px) {
+      min-height: 54vh;
+    }
+    @media screen and (min-height: 1380px) {
+      min-height: 53vh;
+    }
+    @media screen and (min-height: 1400px) {
+      min-height: 52vh;
+    }
+  }
+
+
+  @include desctop {
+    height: 60vh;
+    @media screen and (min-height: 740px) {
+      height: 58vh;
+    }
+  }
+  @include note {
+    height: 59vh;
+    @media screen and (min-height: 800px) {
+      height: 56vh;
+    }
+    @media screen and (min-height: 860px) {
+      height: 54vh;
+    }
+    @media screen and (min-height: 920px) {
+      height: 46vh;
+    }
+    @media screen and (min-height: 1000px) {
+      max-height: rem(690px);
+    }
+  }
+  @include tablets {
+    height: 62vh;
+    @media screen and (min-height: 340px) {
+      height: 66vh;
+    }
+    @media screen and (min-height: 380px) {
+      height: 62vh;
+    }
+    @media screen and (min-height: 540px) {
+      max-height: rem(385px);
+    }
+  }
+  @include phones {
+    height: 40vh;
+    @media screen and (min-height: 660px) {
+      height: 38vh;
+    }
+    @media screen and (min-height: 720px) {
+      height: 36vh;
+    }
+    @media screen and (min-height: 780px) {
+      height: 32vh;
+    }
+    // @media screen and (min-height: 540px) {
+    //   max-height: rem(385px);
+    // }
+  }
+}
+.slide__pic {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+#myvideo {
+  width: 100%;
+  height: 100%;
+  // background-color: $black-bg;
+  // @include tablets {
+  //   width: 100%;
+  //   height: 70%;
+  // }
+  // @include phones {
+  //   width: 100%;
+  //   height: 70%;
+  // }
+}
