@@ -5,9 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Свяжитесь с нами</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/css/main.min.css">
   <link rel="shortcut icon" href="./img/icons/favicon.ico">
+  <script defer src="./js/hamburger.js"></script>
+  <script defer src="./js/header.js"></script>
+  <!-- <script defer src="./js/particles.js"></script>
+  <script defer src="./js/form.js"></script> -->
 </head>
 <body>
   <div class="wrapper">
@@ -18,11 +24,8 @@
             <label class="header__hamburger-menu hamburger-menu">
               <input type="checkbox" class="hamburger-menu__input">
               <div class="hamburger-menu__img">
-                <svg class="hamburger-menu__icon" viewBox="0 0 31 31" alt="Перейти на меню сайта">
-                  <circle cx="6.5" cy="6.5" r="6"/>
-                  <circle cx="6.5" cy="24.5" r="6"/>
-                  <circle cx="24.5" cy="6.5" r="6"/>
-                  <circle cx="24.5" cy="24.5" r="6"/>
+                <svg class="hamburger-menu__icon">
+                  <use xlink:href="img/icons/sprite.svg#hamb"></use>
                 </svg>
               </div>
             </label>
@@ -47,13 +50,14 @@
     <main class="maincontent">
       <section class="section forma _active">
         <div class="forma__content">
+          <!-- <div id="particles-planets-forma"></div> -->
           <div class="forma__col-left">
-            <div class="forma__bounces">
-              <div class="bounce bounce-0--forma" data-speed="12" aria-label="Шарик-картинка 1"></div>
-              <div class="bounce bounce-1--forma" data-speed="10" aria-label="Шарик-картинка 2"></div>
-              <div class="bounce bounce-2--forma" data-speed="10" aria-label="Шарик-картинка 3"></div>
-              <div class="bounce bounce-3--forma"  data-speed="2" aria-label="Шарик-картинка 4"></div>
-              <div class="bounce bounce-4--forma" data-speed="4" aria-label="Шарик-картинка 5"></div>
+            <div  class="forma__bounces">
+              <div class="bounce-forma-1" aria-label="Шарик-картинка 1"></div>
+              <div class="bounce-forma-2" aria-label="Шарик-картинка 2"></div>
+              <div class="bounce-forma-3" aria-label="Шарик-картинка 3"></div>
+              <div class="bounce-forma-4" aria-label="Шарик-картинка 4"></div>
+              <div class="bounce-forma-5" aria-label="Шарик-картинка 5"></div>
             </div>
             <div class="forma__title">
               <h2>
@@ -180,6 +184,7 @@
             </footer>
             <div class="forma__square"></div>
           </div>
+          
           <div class="forma__col-right">
             <div class="forma__col-right-container">
               <div class="forma__col-right-title">
@@ -209,7 +214,8 @@
                       <span>Ваше сообщение</span>
                     </h6>
                     <div class="label-wrap">
-                      <textarea wrap="off" cols="20" rows="1" name="comment" class="form__input form__input--textarea" required></textarea>
+                      <!-- wrap="off" -->
+                      <textarea  cols="20" rows="1" maxlength="720" name="comment" class="form__input--textarea" required></textarea>
                       <div class="form__block-btn">
                         <button type="submit" class="form__sub">отправить</button>
                       </div>
@@ -235,10 +241,37 @@
             </div>
 
           </div>
+          
+        </div>
+      </section>
+      <section class="hamburger">
+        <div class="hamburger__container container">
+          <div class="hamburger__content">
+            <div class="feature__left feature__left--hamburger">
+              <div>creating thinking <br> care about big brands</div>
+            </div>
+            <nav class="hamburger__nav nav nav--hamburger">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="./index.html" data-scrollId="#sectionFirst" class="nav__ref" data-text-hamb="главная">главная</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./index.html#sectionPortfolio" data-scrollId="#sectionPortfolio" class="nav__ref" data-text-hamb="портфолио">портфолио</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./service.html" data-scrollId="#sectionServices" class="nav__ref" data-text-hamb="наши услуги">наши услуги</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./forma.html" data-scrollId="#sectionContacts" class="nav__ref" data-text-hamb="контакты">контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- <div class="bounce bounce-img bounce-img-1 bounce-img-1--hamburger" aria-label="Шарик-градиент"></div> -->
+          </div>
         </div>
       </section>
     </main>
   </div>
-  <script src="./form.js"></script>
+
 </body>
 </html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushidoma</title>
+  <script defer src="./js/header.js"></script>
+  <script defer src="./js/hamburger.js"></script>
+  <script defer src="./js/animOnScroll.js"></script>
+  <script defer src="./js/sushi.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/css/main.min.css">
+  <link rel="shortcut icon" href="./img/icons/favicon.ico">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header header--sushi">
+      <div class="container header__container">
+        <div class="header__content">
+          <div class="header__left">
+            <label class="header__hamburger-menu hamburger-menu">
+              <input type="checkbox" class="hamburger-menu__input">
+              <div class="hamburger-menu__img">
+                <svg class="hamburger-menu__icon">
+                  <use xlink:href="img/icons/sprite.svg#hamb"></use>
+                </svg>
+              </div>
+            </label>
+            <img src="./img/content/logo.png" alt="Логотип сайта" class="header__logo">
+          </div>
+          <div class="header__right">
+            <ul class="header__language language">
+              <li class="language__item">
+                <a href="" class="language__ukr">ukr</a>
+              </li>
+              <li class="language__item">
+                <a href="" class="language__eng">eng</a>
+              </li>
+              <li class="language__item">
+                <a href="" class="language__ru">ru</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="maincontent">
+      <section class="section sushi-main _anim-items _anim-no-repeat">
+        <video id="sushi-video" loop muted autoplay preload="auto">
+                      <source src="./video/sushi.webm" type="video/webm"/>
+                      <source src="./video/sushi.mp4" type="video/mp4"/>
+                    </video>
+        <div class="sushi-main__content">
+          <div class="sushi-main__navigation">
+            <div class="sushi-main__uptext">
+              <span>Проект</span>
+            </div>
+            <div class="sushi-main__numb">
+              <span>03 | 05</span>
+            </div>
+          </div>
+          <h1 class="sushi-main__title">
+            <span>SushiDoma</span>
+          </h1>
+          <div class="sushi-main__subtext">
+            <p>Интернет-магазин товаров для суши</p>
+          </div>
+          <div class="sushi-main__prev">
+            <a href="javascript:history.back()">Назад</a>
+          </div>
+          <div class="sushi-main__year">
+            <span>2020</span>
+          </div>
+        </div>
+      </section>
+      <section class="sectin sushi-tasks ">
+        <div class="sushi-tasks__container">
+          <div class="sushi-tasks__content">
+            <h2 class="sushi-tasks__title _anim-items _anim-no-repeat">
+              <span>задачи</span>
+            </h2>
+            <div class="sushi-tasks__subtitle _anim-items _anim-no-repeat">
+              <p>Разработка интернет-магазина товаров для суши с нуля.<br>
+                От заказчика мы получили задание: создать не шаблонный дизайн и продвижения для интернет-магазина.</p>
+              <div class="sushi-tasks__subtitle-circle">
+                <svg class="sushi-tasks__subtitle-galka">
+                  <use xlink:href="img/icons/sprite.svg#galka"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="sushi-tasks__img _anim-items _anim-no-repeat">
+              <img data-srcset=" ./img/content/sushi-tasks_480px.jpg 480w, ./img/content/sushi-tasks_768px.jpg 768w, ./img/content/sushi-tasks_1024px.jpg 1024w, ./img/content/sushi-tasks_1320px.jpg 1320w"
+                src="./img/content/sushi-tasks.jpg"
+                alt="Представление sushi" class="sushi-tasks__pic">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section sushi-content">
+        <div class="sushi-content__container">
+          <div class="sushi-content__content">
+            <h3 class="sushi-content__title _anim-items _anim-no-repeat">
+              <span>контент</span>
+            </h3>
+            <div class="sushi-content__subtitle sushi-content__subtitle--1  _anim-items _anim-no-repeat">
+              <p>Для интернет-магазина товаров для суши на дому мы использовали живые и сочные фото товара. Так покупатель будет уверен в своем заказе. В каждой карточке товара - подробное описание и способы применения  этого продукта в разных рецептах.</p>
+            </div>
+            <div class="sushi-content__img sushi-content__img--1  _anim-items _anim-no-repeat">
+              <img data-srcset=" ./img/content/sushi-content_480px.jpg 480w, ./img/content/sushi-content_768px.jpg 768w, ./img/content/sushi-content_1024px.jpg 1024w, ./img/content/sushi-content_1320px.jpg 1320w"
+                src="./img/content/sushi-content.jpg"
+                alt="Контент sushi" class="sushi-content__pic">
+            </div>
+            <div class="sushi-content__subtitle sushi-content__subtitle--2 _anim-items _anim-no-repeat">
+              <p>Также для покупателя реализована возможность сравнить товары из одной категории сразу на сайте и добавить их в корзину. Это способствовало повышению лояльности покупателей и увеличению продаж на 5%.</p>
+            </div>
+            <div class="sushi-content__img sushi-content__img--2  _anim-items _anim-no-repeat">
+              <img data-srcset=" ./img/content/sushi-content2_480px.jpg 480w, ./img/content/sushi-content2_768px.jpg 768w, ./img/content/sushi-content2_1024px.jpg 1024w, ./img/content/sushi-content2_1320px.jpg 1320w"
+                src="./img/content/sushi-content2.jpg"
+                alt="Контент sushi" class="sushi-content__pic sushi-content__pic--2">
+            </div>
+            <div class="sushi-content__subtitle sushi-content__subtitle--3 _anim-items _anim-no-repeat">
+              <p>Для  продвижения интернет-магазина и увеличения среднего чека на сайте мы внедрили блок «Рецепты». 
+                В каждом рецепте подробно описаны ингредиенты и  способ приготовления блюда, который доступен даже новичкам.
+               </p>
+            </div>
+            <div class="sushi-content__img sushi-content__img--3  _anim-items _anim-no-repeat">
+              <img data-srcset=" ./img/content/sushi-content3_480px.jpg 480w, ./img/content/sushi-content3_768px.jpg 768w, ./img/content/sushi-content3_1024px.jpg 1024w, ./img/content/sushi-content3_1320px.jpg 1320w"
+                src="./img/content/sushi-content3.jpg"
+                alt="Контент sushi" class="sushi-content__pic sushi-content__pic--3">
+            </div>
+            <div class="sushi-content__subtitle sushi-content__subtitle--4 _anim-items _anim-no-repeat">
+              <p> Сразу на странице «Рецепты» можно добавить нужные ингредиенты в корзину и оформить заказ.
+              </p>
+            </div>
+            <div class="sushi-content__img sushi-content__img--4  _anim-items _anim-no-repeat">
+              <img data-srcset=" ./img/content/sushi-content4_480px.jpg 480w, ./img/content/sushi-content4_768px.jpg 768w, ./img/content/sushi-content4_1024px.jpg 1024w, ./img/content/sushi-content4_1320px.jpg 1320w"
+                src="./img/content/sushi-content4.jpg"
+                alt="Контент sushi" class="sushi-content__pic sushi-content__pic--4">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section sushi-func">
+        <div class="sushi-func__container">
+          <div class="sushi-func__content">
+            <h3 class="sushi-func__title  _anim-items _anim-no-repeat">
+              <span>Функционал</span>
+            </h3>
+            <div class="sushi-func__subtitle  _anim-items _anim-no-repeat">
+              <p>Для интернет-магазина команда Jupiter Production реализовала возможность отслеживания заказа, сравнение товаров на сайте и выбор товаров из одной категории для увеличения среднего чека.</p>
+              <p>Чтобы посетитель стал постоянным покупателем интернет-магазина на сайте представлены рецепты, скидки и готовые наборы для приготовления суши. Заказ осуществляется в три клика!
+                </p>
+            </div>
+            <div class="sushi-func__img  _anim-items _anim-no-repeat">
+              <img data-srcset=" ./img/content/sushi-func_480px.jpg 480w, ./img/content/sushi-func_768px.jpg 768w, ./img/content/sushi-func_1024px.jpg 1024w, ./img/content/sushi-func_1320px.jpg 1320w"
+                        src="./img/content/sushi-func.jpg"
+                        alt="Фотография вакансии sushi" class="sushi-func__pic">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section sushi-style ">
+        <div class="sushi-style__container">
+          <div class="sushi-style__content">
+            <h3 class="sushi-style__title _anim-items _anim-no-repeat">
+              <span>Фирменный стиль</span>
+            </h3>
+            <div class="sushi-style__subtitle _anim-items _anim-no-repeat">
+              <p>Для интернет-магазина SushiDoma командой Jupiter Production разработана собственная айдентика. Мы проанализировали конкурентов, целевую аудиторию; полностью погрузились в проект и предложиоли несколько решений для логотипа интернет-магазина.После реализации логотипа разработали визитки в фирменных цветах интернет-магазина.
+              </p>
+            </div>
+            <div class="sushi-style__images _anim-items _anim-no-repeat">
+              <div class="sushi-style__img">
+                <img src="./img/content/sushi-style.png"
+                        alt="Картинка большого логотипа" class="sushi-style__pic">
+              </div>
+              <div class="sushi-style2__img">
+                <img src="./img/content/sushi-style2.png"
+                        alt="Картинка маленького логотипа" class="sushi-style2__pic">
+              </div>
+              <div class="sushi-style3__img">
+                <img src="./img/content/sushi-style3.png"
+                        alt="Картинка фирменных визиток" class="sushi-style3__pic">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sushi-style__video _anim-items _anim-no-repeat">
+          <img data-srcset=" ./img/content/sushi-tasks_480px.jpg 480w, ./img/content/sushi-tasks_768px.jpg 768w, ./img/content/sushi-tasks_1024px.jpg 1024w, ./img/content/sushi-tasks_1320px.jpg 1320w"
+            src="./img/content/sushi-tasks.jpg"
+            alt="Контент sushi" class="sushi-style__video-pic">
+          <video id="sushi2-video" controls preload="metadata" >
+            <source src="./video/sushi2.webm" type="video/webm"/>
+            <source src="./video/sushi2.mp4" type="video/mp4"/>
+          </video>
+          <div class="sushi-style__play-wrapper">
+            <div class="sushi-style__play">
+              <svg class="sushi-style__play-icon">
+                <use xlink:href="img/icons/sprite.svg#play"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="sushi-style__rol _anim-items _anim-no-repeat">
+          <a href="./index.html#sectionPortfolio" class="sushi-style__prev">
+            <span>портфолио</span>
+          </a>
+          <div class="sushi-style__btn">
+            <a href="./forma.html" class="sushi-style__btn-ref">
+            <span>обсудить проект</span>
+            </a>
+          </div>
+          <a href="./vvhome.html" class="sushi-style__next">
+            <span>проект | vv home</span>
+          </a>
+        </div>
+      </section>
+      <section id="sectionContacts" class="section contacts contacts--sushi">
+        <div class="contacts__slider">  <!-- section  --> 
+          <a href="./forma.html" class="contacts__rol rol1"> <!--  scroll  -->
+            <div>
+              <span class="s1" data-text1="связаться">связаться</span>-<span class="s2" data-text2="связаться">связаться</span>-<span class="s3" data-text3="связаться">связаться</span>-<span class="s4" data-text4="связаться">связаться</span>-<span class="s5" data-text5="связаться">связаться</span>-<span class="s6" data-text6="связаться">связаться</span>-<span class="s1" data-text1="связаться">связаться</span>-
+            </div>
+            <div >
+              <span class="s1" data-text1="связаться">связаться</span>-<span class="s2" data-text2="связаться">связаться</span>-<span class="s3" data-text3="связаться">связаться</span>-<span class="s4" data-text4="связаться">связаться</span>-<span class="s5" data-text5="связаться">связаться</span>-<span class="s6" data-text6="связаться">связаться</span>-<span class="s1" data-text1="связаться">связаться</span>-
+            </div>
+          </a>
+          <a href="./forma.html"  class="contacts__rol rol1"> <!--  scroll  -->
+            <div>
+              <span class="s1" data-text1="связаться">связаться</span>-<span class="s2" data-text2="связаться">связаться</span>-<span class="s3" data-text3="связаться">связаться</span>-<span class="s4" data-text4="связаться">связаться</span>-<span class="s5" data-text5="связаться">связаться</span>-<span class="s6" data-text6="связаться">связаться</span>-<span class="s1" data-text1="связаться">связаться</span>-<span class="s1" data-text1="связаться">связаться</span>-<span class="s1" data-text1="связаться">связаться</span>-
+            </div>
+            <div >
+              <span class="s1" data-text1="связаться">связаться</span>-<span class="s2" data-text2="связаться">связаться</span>-<span class="s3" data-text3="связаться">связаться</span>-<span class="s4" data-text4="связаться">связаться</span>-<span class="s5" data-text5="связаться">связаться</span>-<span class="s6" data-text6="связаться">связаться</span>-<span class="s1" data-text1="связаться">связаться</span>-<span class="s1" data-text1="связаться">связаться</span>-<span class="s1" data-text1="связаться">связаться</span>-
+            </div>
+          </a>
+          <a href="./forma.html"  class="contacts__rol rol1"> <!--  scroll  -->
+            <div>
+              <span class="s1" data-text1="связаться">связаться</span>-<span class="s2" data-text2="связаться">связаться</span>-<span class="s3" data-text3="связаться">связаться</span>-<span class="s4" data-text4="связаться">связаться</span>-<span class="s5" data-text5="связаться">связаться</span>-<span class="s6" data-text6="связаться">связаться</span>-<span class="s1" data-text1="связаться">связаться</span>-
+            </div>
+            <div >
+              <span class="s1" data-text1="связаться">связаться</span>-<span class="s2" data-text2="связаться">связаться</span>-<span class="s3" data-text3="связаться">связаться</span>-<span class="s4" data-text4="связаться">связаться</span>-<span class="s5" data-text5="связаться">связаться</span>-<span class="s6" data-text6="связаться">связаться</span>-<span class="s1" data-text1="связаться">связаться</span>-
+            </div>
+          </a>
+        </div>
+        <footer class="footer">
+          <div class="footer__container">
+            <div class="footer__content">
+              <div class="footer__left">
+                <img src="./img/content/logo.png" alt="Логотип нашей компании" class="footer__logo">
+              </div>
+              <nav class="footer__nav nav nav--footer">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="./index.html" class="nav__ref" data-text-nav-footer="главная">главная</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="./index.html#sectionPortfolio" class="nav__ref" data-text-nav-footer="портфолио">портфолио</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="./index.html#sectionWhy" class="nav__ref" data-text-nav-footer="о нас">о нас</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="./index.html#sectionReviews" data-text-nav-footer="отзывы" class="nav__ref">отзывы</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="./service.html" class="nav__ref" data-text-nav-footer="услуги">услуги</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="./index.html#sectionContacts" class="nav__ref" data-text-nav-footer="контакты">контакты</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="footer__network network network--footer-first">
+                <ul class="network__list">
+                  <li class="network__item">
+                    <a href="https://www.instagram.com" target="_blank" class="network__ref">
+                      <svg class="network__icon" alt="Перейти на сайт Инстаграма">
+                        <use xlink:href="img/icons/sprite.svg#insta"></use>
+                      </svg>
+                    </a>
+                    <a href="https://dribbble.com" target="_blank" class="network__ref">
+                      <svg class="network__icon" alt="Перейти на сайт Dribble">
+                        <use xlink:href="img/icons/sprite.svg#dribble"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="network__item">
+                    <a href="https://www.behance.net"  class="network__ref">
+                      <svg class="network__icon" alt="Перейти на сайт Behance">
+                        <use xlink:href="img/icons/sprite.svg#behance"></use>
+                      </svg>
+                    </a>
+                    <a href="https://www.facebook.com" target="_blank" class="network__ref">
+                      <svg class="network__icon"  alt="Перейти на сайт Фейсбука">
+                        <use xlink:href="img/icons/sprite.svg#fb"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </section>
+      <section class="hamburger">
+        <div class="hamburger__container container">
+          <div class="hamburger__content">
+            <div class="feature__left feature__left--hamburger">
+              <div>creating thinking <br> care about big brands</div>
+            </div>
+            <nav class="hamburger__nav nav nav--hamburger">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a href="./index.html" data-scrollId="#sectionFirst" class="nav__ref" data-text-hamb="главная">главная</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./index.html#sectionPortfolio" data-scrollId="#sectionPortfolio" class="nav__ref" data-text-hamb="портфолио">портфолио</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./service.html" data-scrollId="#sectionServices" class="nav__ref" data-text-hamb="наши услуги">наши услуги</a>
+                </li>
+                <li class="nav__item">
+                  <a href="./forma.html" data-scrollId="#sectionContacts" class="nav__ref" data-text-hamb="контакты">контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <!-- <div class="bounce bounce-img bounce-img-1 bounce-img-1--hamburger" aria-label="Шарик-градиент"></div> -->
+          </div>
+        </div>
+      </section>
+  
+    </main>
+  </div>
+</body>
+</html>

@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   -webkit-font-smoothing: antialiased;
+  // overflow: hidden;
 }
 html {
   box-sizing: border-box;
@@ -100,4 +101,10 @@ table {
 }
 address {
   font-style: normal;
+}
+a {
+  outline: none;
+  &:link {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent;
+  }
 }

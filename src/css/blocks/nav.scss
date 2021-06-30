@@ -109,6 +109,7 @@
       }
     }
     & .nav__ref {
+     
       @include roboto(black);
       font-size: rem(100px);
       line-height: 1.2;
@@ -116,8 +117,17 @@
       opacity: 1;
       transition: opacity .6s;
       color: $black;
+      @media screen and (min-width: 1701px) and (max-width: 1840px) {
+        font-size: rem(80px);
+      }
+      @media screen and (min-width: 1501px) and (max-width: 1700px) {
+        font-size: rem(73px);
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        font-size: rem(68px);
+      }
       @include desctop {
-        font-size: rem(72px);
+        font-size: rem(64px);
       }
       @include note {
         font-size: rem(62px);
@@ -198,4 +208,9 @@
   cursor: pointer;
   display: inline-flex;
   height: 100%;
+  outline: none;
+  &:link {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent;
+background-color: $white;
+  }
 }

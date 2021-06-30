@@ -23,7 +23,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    opacity: 0;
+    // opacity: 0;
     transition: opacity .6s;
     transition: scale .6s;
   }
@@ -43,7 +43,20 @@
     @include desctop {
       width: rem(26px);
       height: rem(26px);
+      @media screen and (min-height: 501px) {
+        width: rem(36px);
+      height: rem(36px);
+      font-size: rem(30px);
+      }
     }
+    @include note {
+      @media screen and (min-height: 401px) {
+        width: rem(28px);
+      height: rem(28px);
+      font-size: rem(26px);
+      }
+    }
+
     @include tablets {
       @media screen and (min-height: 660px) {
         width: rem(36px);
@@ -63,26 +76,24 @@
       }
     }
   }
-  &:hover {
-    &::before {
-      opacity: 1;
-      @include note {
-        opacity: 0;
-      }
-    }
-    &::after {
-      // transform: translate(-50%,-50%) scale(1.2);
-      @include note {
-        transform: translate((-50%,-50%) scale(1));
-
-      }
-    }
-  }
+  
   @include desctop {
     width: rem(40px);
     height: rem(40px);
     font-size: rem(30px);
+    @media screen and (min-height: 501px) {
+      width: rem(46px);
+    height: rem(46px);
+    font-size: rem(36px);
+    }
   }
+  // @include note {
+  //   @media screen and (min-height: 401px) {
+  //     width: rem(46px);
+  //   height: rem(46px);
+  //   font-size: rem(36px);
+  //   }
+  // }
   @include tablets {
     @media screen and (min-height: 660px) {
       width: rem(46px);
@@ -101,12 +112,51 @@
       height: rem(60px);
     }
   }
-  &.swiper-pagination-bullet-active  {
-    &::before {
+  // &.swiper-pagination-bullet-active  {
+  //   &::before {
+  //     opacity: 1;
+  //   }
+  // }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.swiper-pagination-bullet {
+  &:before {
+    opacity: 0;
+  }
+  &-active {
+    &:before {
       opacity: 1;
     }
   }
-  &:last-child {
-    margin-bottom: 0;
+  // &:hover {
+  //   &::before {
+  //     opacity: 1;
+  //     // @include tablets {
+  //     //   opacity: 0;
+  //     // }
+  //   }
+  //   // &::after {
+  //   //   // transform: translate(-50%,-50%) scale(1.2);
+  //   //   @include note {
+  //   //     transform: translate((-50%,-50%) scale(1));
+
+  //   //   }
+  //   }
+  &:link {
+    &::before {
+      opacity: 0;
+      // @include tablets {
+      //   opacity: 0;
+      // }
+    }
+    // &::after {
+    //   // transform: translate(-50%,-50%) scale(1.2);
+    //   @include note {
+    //     transform: translate((-50%,-50%) scale(1));
+
+    //   }
+    // }
   }
 }

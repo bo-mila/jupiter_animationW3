@@ -1,0 +1,1813 @@
+.zydex-main {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  color: $black;
+  &._active {
+    & .zydex-main__title {
+      & span {
+        transform: scale(1);
+        opacity: 1;
+        transition: all 5s 1s ;
+
+      }
+    }
+  }
+}
+.zydex-main__content {
+  width: 100%;
+  height: 100%;
+  padding-top: 10%;
+  position: relative;
+}
+.zydex-main__navigation {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  display: flex;
+  & span {
+    @include roboto(bold);
+    font-size: rem(21px);
+    text-transform: uppercase;
+    line-height: 1;
+    &:first-child {
+      margin-right: rem(37px);
+    }
+    @media screen and(max-width: 768px) {
+      font-size: rem(13px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(14px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(20px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
+  }
+}
+.zydex-main__title {
+  position: absolute;
+  top: 44%;
+  // left: 31%;
+  right: 8%;
+  transform: translateY(-50%);
+  & span {
+    opacity: 0;
+    @include roboto(black);
+    font-size: rem(250px);
+    line-height: 1;
+    text-transform: uppercase;
+    // transform: scale(0);
+    // opacity: 0;
+    // transition: all 5s ;
+
+    @media screen and (max-width: 480px) {
+      font-size: rem(60px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: rem(80px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(100px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(120px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(160px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(200px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(300px);
+    }
+  }
+}
+.zydex-main__subtext {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  & p {
+    @include roboto(normal);
+    font-size: 24px;
+    line-height: 1.4;
+    @media screen and (max-width: 768px) {
+      font-size: rem(15px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(20px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(22px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
+  }
+  @media screen and (max-width: 790px) {
+    left: 45%;
+  }
+  @media screen and (max-width: 768px) {
+    left: 40%;
+  }
+  @media screen and (max-width: 600px) {
+    right: 5%;
+  }
+}
+.zydex-main__prev {
+  position: absolute;
+  top: 76%;
+  left: 50%;
+  z-index: 3;
+  & a {
+    outline: none;
+  &:link {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent;
+  }
+    @include roboto(bold);
+    font-size: rem(21px);
+    line-height: 1;
+    text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+      font-size: rem(13px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(14px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(20px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 173%;
+    transform: translateY(-50%);
+    width: rem(162px);
+    height: rem(6px);
+    background: linear-gradient(90deg, #d0d0d0 50%, $black 50%); 
+    @media screen and (max-width: 900px) {
+      width: rem(142px);
+      left: 163%;
+      height: rem(5px);
+
+    }
+    @media screen and (max-width: 768px) {
+      width: rem(122px);
+      height: rem(4px);
+      left: 152%;
+
+
+    }
+    @media screen and (max-width: 480px) {
+      width: rem(70px);
+      height: rem(3px);
+      left: 132%;
+    }
+  }
+  @media screen and (max-width: 790px) {
+    left: 45%;
+  }
+  @media screen and (max-width: 768px) {
+    left: 40%;
+  }
+  @media screen and (max-width: 600px) {
+    top: 86%;
+
+  }
+}
+.zydex-main__year {
+  position: absolute;
+  top: 76%;
+  left: 86%;
+  & span {
+    @include roboto(bold);
+    font-size: rem(21px);
+    line-height: 1;
+    text-transform: capitalize;
+    @media screen and (max-width: 768px) {
+      font-size: rem(13px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(14px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(20px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    top: 86%;
+
+  }
+}
+.zydex-about {
+  position: relative;
+  padding-top: rem(38px);
+  color: $black;
+  height: auto;
+  @media screen and  (max-width: 480px) {
+    padding-top: rem(20px);
+
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding-top: rem(22px);
+
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    padding-top: rem(26px);
+
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    padding-top: rem(30px);
+
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    padding-top: rem(34px);
+
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    padding-top: rem(38px);
+
+  }
+  
+}
+.zydex-tasks {
+  position: relative;
+  padding-top: rem(100px);
+  color: $black;
+  height: auto;
+  @media screen and  (max-width: 480px) {
+    padding-top: rem(50px);
+
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding-top: rem(60px);
+
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    padding-top: rem(66px);
+
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    padding-top: rem(70px);
+
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    padding-top: rem(80px);
+
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    padding-top: rem(90px);
+
+  }
+  
+}
+.zydex-about__container {
+  width: 81%;
+  margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+}
+.zydex-tasks__container {
+  width: 81%;
+  margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+}
+.zydex-about__content {
+  width: 100%;
+  position: relative;
+}
+.zydex-tasks__content {
+  width: 100%;
+  position: relative;
+}
+.zydex-about__title {
+  & span {
+    opacity: 0;
+    @include roboto(bold);
+    font-size: rem(72px);
+    line-height: 1;
+    text-transform: uppercase;
+    @media screen and (max-width: 480px) {
+      font-size: rem(39px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: rem(40px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(46px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(52px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(60px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(66px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(80px);
+    }
+  }
+  margin-bottom: rem(24px);
+  @media screen and  (max-width: 480px) {
+    margin-bottom: rem(16px);
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: rem(18px);
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    margin-bottom: rem(19px);
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    margin-bottom: rem(20px);
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    margin-bottom: rem(21px);
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    margin-bottom: rem(22px);
+  }
+  &._active {
+    & span {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
+}
+.zydex-tasks__title {
+  & span {
+    opacity: 0;
+    @include roboto(bold);
+    font-size: rem(72px);
+    line-height: 1;
+    text-transform: uppercase;
+    @media screen and (max-width: 480px) {
+      font-size: rem(39px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: rem(40px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(46px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(52px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(60px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(66px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(80px);
+    }
+  }
+  margin-bottom: rem(36px);
+  @media screen and  (max-width: 480px) {
+    margin-bottom: rem(10px);
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: rem(15px);
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    margin-bottom: rem(20px);
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    margin-bottom: rem(25px);
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    margin-bottom: rem(30px);
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    margin-bottom: rem(35px);
+  }
+  &._active {
+    & span {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
+}
+.zydex-about__subtitle {
+  & p {
+    opacity: 0;
+    @include roboto(normal);
+    font-size: 24px;
+    line-height: 1.9;
+    @media screen and (max-width: 768px) {
+      font-size: rem(15px);
+      line-height: 1.2;
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      line-height: 1.4;
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      line-height: 1.6;
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(20px);
+      line-height: 1.8;
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(22px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
+  }
+  width: 68%;
+  position: relative;
+  &._active {
+    & p {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
+}
+.zydex-tasks__subtitle {
+  & p {
+    opacity: 0;
+    @include roboto(normal);
+    font-size: 24px;
+    line-height: 1.8;
+    @media screen and (max-width: 768px) {
+      font-size: rem(15px);
+      line-height: 1.2;
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      line-height: 1.4;
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      line-height: 1.7;
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(20px);
+      line-height: 1.6;
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(22px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
+  }
+  width: 66%;
+  margin-bottom: rem(226px);
+  position: relative;
+  @media screen and (max-width: 768px) {
+  margin-bottom: rem(71px);
+  width: 80%;
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+  margin-bottom: rem(111px);
+  width: 78%;
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+  margin-bottom: rem(141px);
+  width: 76%;
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+  margin-bottom: rem(161px);
+  width: 74%;
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+  margin-bottom: rem(190px);
+  width: 72%;
+  }
+  &._active {
+    & p {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+    & .zydex-tasks__subtitle-circle {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+    & .zydex-tasks__subtitle-galka {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
+}
+.zydex-tasks__subtitle-circle {
+  opacity: 0;
+  position: absolute;
+  width: rem(32px);
+  height: rem(32px);
+  border-radius: 50%;
+  border: 3px solid currentColor;
+  top: 5px;
+  left: rem(-65px);
+  @media screen and  (max-width: 480px) {
+    left: rem(-15px);
+    transform: scale(.4);
+    transform-origin: 0 0;;
+    top: 2px;
+
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    left: rem(-20px);
+    transform: scale(.5);
+transform-origin: 0 0;;
+top: 2px;
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    left: rem(-35px);
+    transform: scale(.5);
+    transform-origin: 0 0;;
+    top: 2px;
+
+
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    left: rem(-40px);
+    transform: scale(.7);
+    transform-origin: 0 0;;
+    top: 0px;
+
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    left: rem(-45px);
+    transform: scale(.8);
+    transform-origin: 0 0;;
+    top: 1px;
+
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    left: rem(-52px);
+    transform-origin: 0 0;;
+    transform: scale(.9);
+    top: 3px;
+
+  }
+}
+.zydex-tasks__subtitle-galka {
+  opacity: 0;
+  width: rem(16px);
+  height: rem(21px);
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%,-50%);
+  fill: currentColor;
+  stroke-width: 2px;
+}
+.zydex-tasks__img {
+  width: 100%;
+  display: block;
+  &._active {
+    & .zydex-tasks__pic {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
+}
+.zydex-tasks__pic {
+  opacity: 0;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.zydex-content {
+  position: relative;
+  color: $black;
+  padding-top: rem(114px);
+  min-height: auto;
+  @media screen and  (max-width: 480px) {
+    padding-top: rem(44px);
+
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding-top: rem(54px);
+
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    padding-top: rem(64px);
+
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    padding-top: rem(74px);
+
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    padding-top: rem(84px);
+
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    padding-top: rem(94px);
+
+  }
+}
+.zydex-content__container {
+  width: 81%;
+  margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+}
+.zydex-content__content {
+  width: 100%;
+  position: relative;
+  height: auto;
+}
+.zydex-content__title {
+  & span {
+    opacity: 0;
+    @include roboto(bold);
+    font-size: rem(72px);
+    line-height: 1;
+    text-transform: uppercase;
+    @media screen and (max-width: 480px) {
+      font-size: rem(39px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: rem(40px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(46px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(52px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(60px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(68px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(80px);
+    }
+  }
+  margin-bottom: rem(36px);
+  color: currentColor;
+  @media screen and  (max-width: 480px) {
+    margin-bottom: rem(10px);
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: rem(12px);
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    margin-bottom: rem(18px);
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    margin-bottom: rem(20px);
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    margin-bottom: rem(26px);
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    margin-bottom: rem(30px);
+  }
+  &._active {
+    & span {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
+}
+.zydex-content__subtitle {
+  & p {
+    opacity: 0;
+    @include roboto(normal);
+    font-size: rem(24px);
+    line-height: 1.8;
+    @media screen and (max-width: 768px) {
+      font-size: rem(15px);
+      line-height: 1.1;
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      line-height: 1.1;
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      line-height: 1.2;
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(20px);
+      line-height: 1.4;
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(22px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
+    &:first-child {
+      margin-bottom: rem(35px);
+      @media screen and (max-width: 768px) {
+        margin-bottom: rem(26px);
+
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        margin-bottom: rem(26px);
+
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        margin-bottom: rem(28px);
+
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+        margin-bottom: rem(30px);
+
+      }
+      
+    }
+    
+  }
+  color: currentColor;
+  width: 62%;
+  margin-bottom: rem(117px);
+  @media screen and (max-width: 768px) {
+  margin-bottom: rem(27px);
+  width: 84%;
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+  margin-bottom: rem(37px);
+  width: 82%;
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+  margin-bottom: rem(57px);
+  width: 80%;
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+  margin-bottom: rem(77px);
+  width: 74%;
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+  margin-bottom: rem(97px);
+  width: 66%;
+  }
+  &._active {
+    & p {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
+}
+.zydex-content__img {
+  width: 100%;
+  overflow: hidden;
+  &._active {
+    & .zydex-content__pic {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
+}
+.zydex-content__pic {
+  opacity: 0;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.zydex-func {
+  position: relative;
+  color: $black;
+    height: auto;
+    padding-top: rem(91px);
+  @media screen and  (max-width: 480px) {
+    padding-top: rem(31px);
+    min-height: auto;
+
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding-top: rem(41px);
+    min-height: auto;
+
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    padding-top: rem(51px);
+    min-height: auto;
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    padding-top: rem(61px);
+
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    padding-top: rem(71px);
+
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    padding-top: rem(81px);
+
+  }
+}
+.zydex-func__container {
+  width: 81%;
+  margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+}
+.zydex-func__content {
+  width: 100%;
+  position: relative;
+}
+.zydex-func__title {
+  & span {
+    opacity: 0;
+    @include roboto(bold);
+    font-size: rem(72px);
+    line-height: 1;
+    text-transform: uppercase;
+    @media screen and (max-width: 480px) {
+      font-size: rem(39px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: rem(40px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(46px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(52px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(60px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(68px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(80px);
+    }
+  }
+  margin-bottom: rem(34px);
+  color: currentColor;
+  @media screen and  (max-width: 480px) {
+    margin-bottom: rem(10px);
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: rem(12px);
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    margin-bottom: rem(18px);
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    margin-bottom: rem(20px);
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    margin-bottom: rem(26px);
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    margin-bottom: rem(30px);
+  }
+  &._active {
+    & span {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
+}
+.zydex-func__subtitle {
+  & p {
+    opacity: 0;
+    @include roboto(normal);
+    font-size: rem(24px);
+    line-height: 1.8;
+    @media screen and (max-width: 768px) {
+      font-size: rem(15px);
+      line-height: 1.1;
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      line-height: 1.1;
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      line-height: 1.2;
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(20px);
+      line-height: 1.4;
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(22px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
+  }
+  color: currentColor;
+  margin-bottom: rem(117px);
+  width: 55%;
+  @media screen and (max-width: 768px) {
+  margin-bottom: rem(27px);
+  width: 83%;
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+  margin-bottom: rem(37px);
+  width: 81%;
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+  margin-bottom: rem(57px);
+  width: 79%;
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+  margin-bottom: rem(77px);
+  width: 73%;
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+  margin-bottom: rem(97px);
+  width: 65%;
+  }
+  &._active {
+    & p {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
+}
+.zydex-func__img {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: rem(131px);
+  @media screen and  (max-width: 480px) {
+    margin-bottom: rem(30px);
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: rem(36px);
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    margin-bottom: rem(46px);
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    margin-bottom: rem(62px);
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    margin-bottom: rem(86px);
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    margin-bottom: rem(107px);
+  }
+  &._active {
+    & .zydex-func__pic {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
+}
+.zydex-func2__img {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  &._active {
+    & .zydex-func2__pic {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
+}
+.zydex-func__pic {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  opacity: 0;
+}
+.zydex-func2__pic {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+.zydex-adaptive {
+  position: relative;
+  color: $black;
+    min-height: auto;
+    padding-top: rem(92px);
+  @media screen and  (max-width: 480px) {
+    padding-top: rem(28px);
+    min-height: auto;
+
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding-top: rem(38px);
+    min-height: auto;
+
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    padding-top: rem(48px);
+    min-height: auto;
+
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    padding-top: rem(58px);
+
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    padding-top: rem(66px);
+
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    padding-top: rem(78px);
+
+  }
+}
+.zydex-adaptive__container {
+  width: 81%;
+  margin: 0 auto;
+  margin-bottom: rem(57px);
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+  @media screen and  (max-width: 480px) {
+    margin-bottom: rem(20px);
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: rem(20px);
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    margin-bottom: rem(20px);
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    margin-bottom: rem(30px);
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    margin-bottom: rem(40px);
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    margin-bottom: rem(50px);
+  }
+}
+.zydex-adaptive__content {
+  width: 100%;
+  position: relative;
+}
+.zydex-adaptive__title {
+  & span {
+    opacity: 0;
+    @include roboto(bold);
+    font-size: rem(72px);
+    line-height: 1;
+    text-transform: uppercase;
+    @media screen and (max-width: 480px) {
+      font-size: rem(39px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: rem(40px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(46px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(52px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(60px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(68px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(80px);
+    }
+  }
+  margin-bottom: rem(34px);
+  @media screen and  (max-width: 480px) {
+    margin-bottom: rem(10px);
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: rem(12px);
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    margin-bottom: rem(18px);
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    margin-bottom: rem(20px);
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    margin-bottom: rem(26px);
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    margin-bottom: rem(30px);
+  }
+  color: currentColor;
+  &._active {
+    & span {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
+}
+.zydex-adaptive__subtitle {
+  & p {
+    opacity: 0;
+    @include roboto(normal);
+    font-size: rem(24px);
+    line-height: 1.8;
+    @media screen and (max-width: 768px) {
+      font-size: rem(15px);
+      line-height: 1.1;
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      line-height: 1.1;
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      line-height: 1.2;
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(20px);
+      line-height: 1.4;
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(22px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
+  }
+  color: currentColor;
+  width: 55%;
+  @media screen and (max-width: 768px) {
+  width: 83%;
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+  width: 81%;
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+  width: 79%;
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+  width: 73%;
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+  width: 65%;
+  }
+  &._active {
+    & p {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
+}
+.zydex-adaptive__images {
+  opacity: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  // min-height: 100vh;
+  min-height: rem(1080px);
+  margin-bottom: 1px;
+  @media screen and (max-width: 480px) {
+    min-height: rem(280px);
+    & .zydex-adaptive__img-smart {
+      top: 51%;
+    }
+    & .zydex-adaptive__img-phone {
+      top: 55%;
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    min-height: rem(360px);
+    & .zydex-adaptive__img-smart {
+      top: 51%;
+    }
+    & .zydex-adaptive__img-phone {
+      top: 55%;
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    min-height: rem(420px);
+    & .zydex-adaptive__img-smart {
+      top: 51%;
+    }
+    & .zydex-adaptive__img-phone {
+      top: 55%;
+    }
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    min-height: rem(480px);
+    & .zydex-adaptive__img-smart {
+      top: 51%;
+    }
+    & .zydex-adaptive__img-phone {
+      top: 55%;
+    }
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    min-height: rem(570px);
+    & .zydex-adaptive__img-smart {
+      top: 51%;
+    }
+    & .zydex-adaptive__img-phone {
+      top: 55%;
+    }
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    min-height: rem(720px);
+  }
+  @media screen and (min-width: 1501px) and (max-width: 1700px) {
+    min-height: rem(880px);
+  }
+  @media screen and (min-width: 1701px) and (max-width: 1900px) {
+    min-height: rem(1000px);
+  }
+  @media screen and (min-width: 2100px) {
+    margin-bottom: rem(80px);
+  }
+  @media screen and (min-width: 2300px) {
+    min-height: rem(1200px);
+  }
+  &._active {
+    opacity: 1;
+      transition: opacity .8s .3s;
+  }
+}
+.zydex-adaptive__img-mac {
+  position: absolute;
+  display: block;
+  width: 46%;
+  // width: rem(926px);
+  // height: rem(569px);
+  left: 1%;
+  top: 19%;
+}
+.zydex-adpative__pic-mac {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.zydex-adaptive__img-imac {
+  position: absolute;
+  display: block;
+  width: 38%;
+  // width: rem(724px);
+  // height: rem(944px);
+  right: 0%;
+  top: 0%;
+  // @media screen and (min-width: 2200px) {
+  //   width: rem(874px);
+  //   height: rem(1104px);
+  // }
+}
+.zydex-adpative__pic-imac {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.zydex-adaptive__img-tabl {
+  position: absolute;
+  display: block;
+  width: 21%;
+  // width: rem(404px);
+  // height: rem(285px);
+  left: 42%;
+  top: 13%;
+}
+.zydex-adpative__pic-tabl {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.zydex-adaptive__pic-tabl-ram {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 125%;
+  object-fit: cover;
+  z-index: 2;
+}
+.zydex-adaptive__img-smart {
+  position: absolute;
+  display: block;
+  width: 6%;
+  // width: rem(110px);
+  // height: rem(210px);
+  left: 46%;
+  top: 45%;
+  @media screen and (min-width: 2100px) {
+    top: 48%;
+  }
+  @media screen and (min-width: 2300px) {
+    top: 51%;
+  }
+  @media screen and (min-width: 2500px) {
+    top: 55%;
+  }
+}
+.zydex-adpative__pic-smart {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.zydex-adaptive__img-smart-ram {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 284%;
+  object-fit: cover;
+  z-index: 2;
+}
+.zydex-adaptive__img-phone {
+  position: absolute;
+  display: block;
+  width: 5%;
+  // width: rem(84px);
+  // height: rem(160px);
+  left: 55%;
+  top: 48%;
+  @media screen and (min-width: 2100px) {
+    top: 52%;
+  }
+  @media screen and (min-width: 2300px) {
+    top: 55%;
+  }
+  @media screen and (min-width: 2500px) {
+    top: 59%;
+  }
+}
+.zydex-adpative__pic-phone {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.zydex-adaptive__img-phone-ram {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 280%;
+  object-fit: cover;
+  z-index: 2;
+}
+.zydex-adaptive__rol {
+  opacity: 0;
+  display: flex;
+  padding-top: 6px;
+  width: 81%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 7;
+  background-color: $white;
+  padding-bottom: 6px;
+  @media screen and (max-width: 768px) {
+    width: 88%;
+  }
+  @media screen and (max-width: 480px) {
+    width: 92%;
+  }
+  &._active {
+    opacity: 1;
+      transition: opacity .8s .3s;
+  }
+}
+.zydex-adaptive__prev {
+  & span {
+    @include roboto(bold);
+    font-size: rem(21px);
+    line-height: 1;
+    text-transform: uppercase;
+    @media screen and  (max-width: 480px) {
+      font-size: rem(10px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: rem(12px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(14px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(20px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(28px);
+    }
+  }
+  color: currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: all ease 1s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 136%;
+    height: 219%;
+    // background-color: green;
+    // z-index: 5;
+    transform: translateX(-50%);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: rem(-18px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(180px);
+    height: rem(6px);
+    background: linear-gradient(90deg, #D0D0D0 50%, $black 50%); 
+    @media screen and (max-width: 1024px) {
+      height: rem(6px);
+      width: rem(160px);
+  
+      }
+      @media screen and (max-width: 900px) {
+      height: rem(5px);
+      width: rem(130px);
+      bottom: rem(-14px);
+  
+      }
+      @media screen and (max-width: 768px) {
+      height: rem(4px);
+      width: rem(100px);
+      bottom: rem(-12px);
+  
+      }
+      @media screen and (max-width: 480px) {
+      height: rem(3px);
+      width: rem(70px);
+      bottom: rem(-10px);
+  
+      }
+  }
+  &:hover {
+    transform: scale(1.2);
+    transition: all ease 1s;
+
+    &::after {
+      animation: animPrevNext 2s;
+    }
+  }
+}
+.zydex-adaptive__next {
+  & span {
+    @include roboto(bold);
+    font-size: rem(21px);
+    line-height: 1;
+    text-transform: uppercase;
+    @media screen and  (max-width: 480px) {
+      font-size: rem(10px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: rem(12px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(14px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(20px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(28px);
+    }
+  }
+  & a {
+    display: block;
+  }
+  color: currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: all ease 1s;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 107%;
+    height: 219%;
+    // background-color: green;
+    // z-index: 5;
+    transform: translateX(-50%);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: rem(-18px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(180px);
+    height: rem(6px);
+    background: linear-gradient(90deg, #D0D0D0 50%, $black 50%); 
+    @media screen and (max-width: 1024px) {
+      height: rem(6px);
+      width: rem(160px);
+
+      }
+      @media screen and (max-width: 900px) {
+      height: rem(5px);
+      width: rem(130px);
+    bottom: rem(-14px);
+
+      }
+      @media screen and (max-width: 768px) {
+      height: rem(4px);
+      width: rem(100px);
+    bottom: rem(-12px);
+
+      }
+      @media screen and (max-width: 480px) {
+      height: rem(3px);
+      width: rem(70px);
+    bottom: rem(-10px);
+
+      }
+  }
+  &:hover {
+    transform: scale(1.2);
+    transition: all ease 1s;
+
+    &::after {
+      animation: animPrevNext 2s;
+    }
+  }
+}
+.zydex-adaptive__btn {
+  text-align: center;
+  & a {
+    display: inline-flex;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../img/bg/jupiter.png");
+      @include desctop {
+        background-image: url("../../img/bg/jupiter_1300px.png");
+      }
+      @include note {
+        background-image: url("../../img/bg/jupiter_1024px.png");
+      }
+      @include tablets {
+        background-image: url("../../img/bg/jupiter_768px.png");
+      }
+      @include phones {
+        background-image: url("../../img/bg/jupiter_480px.png");
+      }
+      background-size: 162% 207%;
+      background-position: 95% 12%;
+      transition: opacity .8s;
+      opacity: 0;
+    }
+    
+    & span {
+      @include roboto(bold);
+      font-size: rem(64px);
+      line-height: 1;
+      text-transform: uppercase;
+      padding: rem(25px) rem(30px);
+      border: 1px solid $black;
+      // background-color: $white;
+      transition: color .8s border .6s;
+      color: currentColor;
+      z-index: 2;
+      @media screen and  (max-width: 480px) {
+        padding: rem(8px) rem(6px);
+        font-size: rem(10px);
+      }
+      @media screen and  (min-width: 480px) and (max-width: 768px) {
+        padding: rem(14px) rem(12px);
+        font-size: rem(15px);
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        padding: rem(20px) rem(18px);
+        font-size: rem(20px);
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        padding: rem(20px) rem(18px);
+        font-size: rem(28px);
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+        padding: rem(22px) rem(20px);
+        font-size: rem(34px);
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        font-size: rem(50px);
+      }
+      @media screen and (min-width: 1501px) and (max-width: 1700px) {
+        font-size: rem(54px);
+      }
+      @media screen and (min-width: 2200px) {
+        font-size: rem(70px);
+      }
+    }
+    &:hover {
+      & span {
+        transition: color .8s border .6s;
+        color: $white;
+        border: 1px solid transparent;
+      }
+      &::before {
+        opacity: 1;
+        transition: opacity .8s;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// canvas {
+//   display: block;
+//   // vertical-align: bottom;
+// }
+
+// /* ---- particles.js container ---- */
+
+// #particles-js {
+//   position: absolute;
+//   width: 100%;
+//   height: 100%;
+//   background-color: #b61924;
+//   background-image: url("");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: 50% 50%;
+// }
+
+// /* ---- stats.js ---- */
+
+// .count-particles{
+//   background: #000022;
+//   position: absolute;
+//   top: 48px;
+//   left: 0;
+//   width: 80px;
+//   color: #13E8E9;
+//   font-size: .8em;
+//   text-align: left;
+//   text-indent: 4px;
+//   line-height: 14px;
+//   padding-bottom: 2px;
+//   font-family: Helvetica, Arial, sans-serif;
+//   font-weight: bold;
+// }
+
+// .js-count-particles{
+//   font-size: 1.1em;
+// }
+
+// #stats,
+// .count-particles{
+//   // -webkit-user-select: none;
+//   user-select: none;
+// }
+
+// #stats{
+//   border-radius: 3px 3px 0 0;
+//   overflow: hidden;
+// }
+
+// .count-particles{
+//   border-radius: 0 0 3px 3px;
+// }

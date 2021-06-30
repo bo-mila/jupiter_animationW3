@@ -7,6 +7,12 @@
   color: $black;
   // min-height: 100vh;
   height: rem(1080px);
+  @media screen and (min-width: 1501px) and (max-width: 1700px) {
+      height: 100vh;
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      height: 100vh;
+  }
   @include desctop {
     height: 100vh;
   }
@@ -17,10 +23,14 @@
   background-position: center center;
   background-repeat: no-repeat;
   position: absolute;
-  width: 110%;
-  height: 110%;
-  top: -5%;
-  left: -5%;
+  // width: 110%;
+  // height: 110%;
+  // top: -5%;
+  // left: -5%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
   @include desctop {
     background-image: url("../../img/bg/jupiter_1300px.png");
   }
@@ -43,11 +53,13 @@
   height: 17%;
   width: 45%;
   cursor: pointer;
+  
+
+@media screen and (min-width: 1321px) {
   @media screen and (min-height: 700px) {
     height: 15%;
   }
-
-
+}
   @include desctop {
     top: 54%;
     height: 17%;
@@ -73,7 +85,8 @@
     height: 19%;
     width: 48%;
     @media screen and (min-height: 400px) {
-      top: 50%;
+      top: 54%;
+      height: 14%;
     }
     @media screen and (min-height: 440px) {
       top: 55%;
@@ -104,7 +117,7 @@
     }
   }
   @include phones {
-    top: 62%;
+    top: 63%;
     width: 70%;
     height: 12%;
     @media screen and (min-height: 940px) {
@@ -117,37 +130,112 @@
     }
   }
 }
-.first__container {
-  height: 100%;
-  display: flex;
-  z-index: 10;
-}
 .first__display {
   position: absolute;
-  left: 0;
+  left: 4%;
   // top: 40%;
-  top: 50%;
+  top: 54%;
   transform: translateY(-65%);
-  @include desctop {
-    top: 48%;
+  @media screen and (min-width: 2200px) {
+    top: 46%;
+    left: 3%;
   }
-  @include note {
-    top: 44%;
-  }
-  @include tablets {
-    top: 42%;
-    left: 2%;
-    margin-bottom: 39%;
-    @media screen and (min-height: 380px) {
-      top: 48%;
+  @media screen and (min-width: 1501px) and (max-width: 1700px) {
+    @media screen and (max-height: 800px) {
+      left: 3%;
+      top: 44%;
     }
-    @media screen and (min-height: 460px) {
-      left: 1%
+    @media screen and (min-height: 801px) and (max-height: 1000px) {
+      top: 50%;
+      left: 3%;
+    }
+    @media screen and (min-height: 1001px) {
+      left: 3%;
     }
   }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    @media screen and (max-height: 700px) {
+      left:2.5%;
+      top: 45%;
+    }
+    @media screen and (min-height: 701px) and (max-height: 1000px) {
+      left: 3%;
+    }
+    // @media screen and (min-height: 1001px) {
+    //   left: 3%;
+    // }
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    @media screen and (max-height: 500px) {// 400-500
+      left:2.5%;
+      top: 47%;
+    }
+    @media screen and (min-height: 501px) and (max-height: 900px) {
+      top: 47%;
+      left: 3%;
+    }
+    // @media screen and (min-height: 1001px) {
+    //   left: 3%;
+    // }
+  }
+  // @include desctop {
+  //   top: 48%;
+  // }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    @media screen and (max-height: 400px) {// 300-400
+      left: 58%;
+      top: 44%;
+    }
+    @media screen and (min-height: 401px) and (max-height: 600px) {
+      top: 47%;
+      left: 3%;
+    }
+    // @media screen and (min-height: 1001px) {
+    //   left: 3%;
+    // }
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    @media screen and (max-height: 400px) {// 300-400
+      left: 58%;
+      top: 44%;
+    }
+    @media screen and (min-height: 401px) and (max-height: 600px) {
+      top: 47%;
+      left: 3%;
+    }
+    @media screen and (min-height: 601px) {
+      top: 47%;
+      left: 3%;
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    @media screen and (max-height: 400px) {// 300-400
+      left: 64%;
+      top: 50%;
+    }
+    @media screen and (min-height: 401px) and (max-height: 600px) {
+      top: 47%;
+      left: 2%;
+    }
+    @media screen and (min-height: 601px) {
+      top: 50%;
+      left: 2%;
+    }
+  }
+  // @include tablets {
+  //   top: 42%;
+  //   left: 2%;
+  //   margin-bottom: 39%;
+  //   @media screen and (min-height: 380px) {
+  //     top: 48%;
+  //   }
+  //   @media screen and (min-height: 460px) {
+  //     left: 1%
+  //   }
+  // }
   @include phones {
     left: 3%;
-    top: 40%;
+    top: 49%;
     @media screen and (min-height: 740px) {
       top: 30%;
     }
@@ -165,8 +253,32 @@
   text-transform: uppercase;
   color: $black;
   z-index: $z-display;
-  @include desctop {
-    font-size: rem(38px);
+  @media screen and (min-width: 1501px) and (max-width: 1700px) {
+    @media screen and (max-height: 800px) {
+      font-size: rem(38px);
+    }
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    @media screen and (max-height: 700px) { //500-700
+      font-size: rem(36px);
+    }
+    @media screen and (min-height: 701px) and (max-height: 1000px) { //500-700
+      font-size: rem(42px);
+    }
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    @media screen and (max-height: 500px) { //400-500
+      font-size: rem(30px);
+    }
+    @media screen and (min-height: 501px) and (max-height: 900px) { //500-700
+      font-size: rem(36px);
+    }
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+      font-size: rem(30px);
+
+    }
   }
 }
 .fdisplay__list {
@@ -208,17 +320,44 @@
       transform: translate(-50%,-50%) scale(1);
       opacity: 1;
       transition: .6s;
+      @media screen and (min-width: 2200px) {
+        width: rem(53px);
+      height: rem(53px);
+      }
       @include desctop {
         width: rem(26px);
         height: rem(26px);
-      }
-      @include note {
-        
-        @media screen and (min-height: 540px) {
+        @media screen and (min-height: 501px) {
           width: rem(32px);
           height: rem(32px);
         }
+        @media screen and (min-height: 901px) {
+          width: rem(42px);
+          height: rem(42px);
+        }
       }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+          width: rem(26px);
+          height: rem(26px);
+        }
+        
+      }
+      // @media screen and (min-width: 769px) and (max-width: 900px) {
+      //   @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+      //     width: rem(40px);
+      //     height: rem(40px);
+      //   }
+        
+      // }
+      // @include note {
+      //   width: rem(24px);
+      //   height: rem(24px);
+      //   @media screen and (min-height: 400px) {
+      //     width: rem(32px);
+      //     height: rem(32px);
+      //   }
+      // }
       @include tablets {
         width: rem(20px);
         height: rem(20px);
@@ -244,55 +383,132 @@
         }
       }
     }
-    @include desctop {
-      margin-bottom: 15%;
-      width: rem(35px);
-      height: rem(35px);
-      font-size: rem(30px);
+    @media screen and (min-width: 2200px) {
+      width: rem(63px);
+    margin-bottom: 32%;
+    height: rem(63px);
     }
-    @include note {
-      margin-bottom: 12%;
-      width: rem(28px);
-      height: rem(28px);
-      font-size: rem(26px);
-      @media screen and (min-height: 540px) {
-        width: rem(30px);
-        margin-bottom: 26%;
-        font-size: rem(30px);
-        height: rem(30px);
+    @media screen and (min-width: 1501px) and (max-width: 1700px) {
+      @media screen and (max-height: 800px) {
+        margin-bottom: 15%;
+        width: rem(35px);
+        height: rem(35px);
+        // font-size: rem(30px);
+      }
+      @media screen and (min-height: 801px) and (max-height: 1000px) {
+        margin-bottom: 15%;
+
       }
     }
-    @include tablets {
-      margin-bottom: 39%;
-      width: rem(18px);
-      height: rem(18px);
-      font-size: rem(20px);
-      @media screen and (min-height: 380px) {
-        width: rem(26px);
-        margin-bottom: 22%;
-        height: rem(26px);
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      @media screen and (max-height: 700px) { //500--700
+        margin-bottom: 16%;
+        width: rem(33px);
+        height: rem(33px);
+        // font-size: rem(30px);
       }
-      @media screen and (min-height: 460px) {
-        width: rem(36px);
-        margin-bottom: 22%;
-        height: rem(36px);
-        font-size: rem(26px);
+      @media screen and (min-height: 701px) and (max-height: 1000px) { //500-700
+        margin-bottom: 5%;
+
       }
-      @media screen and (min-height: 620px) {
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      @media screen and (max-height: 500px) { //400-500
+        margin-bottom: 0%;
+        width: rem(32px);
+        height: rem(32px);
+        font-size: rem(28px);
+      }
+      @media screen and (min-height: 501px) and (max-height: 900px) { //500-700
+        width: rem(42px);
+        height: rem(42px);
+        margin-bottom: 2%;
         font-size: rem(36px);
       }
-      @media screen and (min-height: 1120px) {
-        font-size: rem(42px);
-        height: rem(44px);
-        width: rem(44px);
-
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      @media screen and (max-height: 400px) { //300-400
+        margin-bottom: 0%;
+        width: rem(32px);
+        height: rem(32px);
+        font-size: rem(32px);
+        display: flex;
+        align-items: center;
+        margin-right: 10%;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+        width: rem(32px);
+        height: rem(32px);
+        margin-bottom: 0%;
+        font-size: rem(26px);
+      }
+      @media screen and (min-height: 601px) { //500-700
+        width: rem(32px);
+        height: rem(32px);
+        margin-bottom: 60%;
+        font-size: rem(32px);
+      }
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      @media screen and (max-height: 400px) { //300-400
+        margin-bottom: 0%;
+        width: rem(32px);
+        height: rem(32px);
+        font-size: rem(32px);
+        display: flex;
+        align-items: center;
+        margin-right: 10%;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+        width: rem(30px);
+        height: rem(30px);
+        margin-bottom: 16%;
+        font-size: rem(26px);
+      }
+      @media screen and (min-height: 601px) { //500-700
+        width: rem(38px);
+        height: rem(38px);
+        margin-bottom: 30%;
+        font-size: rem(32px);
+      }
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      @media screen and (max-height: 400px) { //300-400
+        margin-bottom: 0%;
+        width: rem(26px);
+        height: rem(26px);
+        font-size: rem(26px);
+        display: flex;
+        align-items: center;
+        margin-right: 2%;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+      @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+        width: rem(30px);
+        height: rem(30px);
+        margin-bottom: 16%;
+        font-size: rem(26px);
+      }
+      @media screen and (min-height: 601px) { //500-700
+        width: rem(38px);
+        height: rem(38px);
+        margin-bottom: 30%;
+        font-size: rem(32px);
       }
     }
     @include phones {
       font-size: rem(20px);
       width: rem(20px);
       height: rem(20px);
-      margin-bottom: 80%;
+      margin-bottom: 48%;
       @media screen and (min-height: 740px) {
         font-size: rem(24px);
         margin-bottom: 60%;
@@ -352,79 +568,160 @@
     transform: scale(0);
     opacity: 0;
   }
-}
-.first__content {
-  display: flex;
-  z-index: $z-first-container;
-  flex-direction: column;
-  height: 100%;
-  justify-content: flex-end;
-  width: 57%;
-  // padding-bottom: 2vh;
-  padding-bottom: 4vh;
-  line-height: 1;
-  @include desctop {
-    padding-bottom: 1%;
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    @media screen and (max-height: 400px) { //300-400
+      display: flex;
+      align-items: center;
+    }
+    // @media screen and (min-height: 501px) and (max-height: 900px) { //500-700
+    //   font-size: rem(36px);
+    // }
   }
-  @include note {
-    @media screen and (min-height: 540px) {
-      width: 70%;
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    @media screen and (max-height: 400px) { //300-400
+      display: flex;
+      align-items: center;
+    }
+    @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+      font-size: rem(36px);
     }
   }
-  @include tablets {
-    width: 57%;
-    @media screen and (min-height:620px) {
-      width: 80%;
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    @media screen and (max-height: 400px) { //300-400
+      display: flex;
+      align-items: center;
     }
-  }
-  @include phones {
-    width: 90%;
+    // @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+    //   font-size: rem(36px);
+    // }
   }
 }
 .first__title {
-  padding-left: 17%;
-  margin-bottom: 4%;
-  position: relative;
-  width: 96%;
+  position: absolute;
+  left: 13%;
+  top: 34%;
+                  // padding-left: 17%;
+                  // margin-bottom: 4%;
+                  // position: relative;
+  width: auto;
+  z-index: 3;
   & h1 {
     @include roboto(bold);
     font-size: rem(80px);
     text-transform: uppercase;
-    display: flex;
     line-height:  1.2;
     display: flex;
     flex-wrap: wrap;
-    & span:nth-child(2) {
+    flex-direction: column;
+    width: auto;
+    & div {
+      width: 100%;
       position: relative;
-      &:after {
-        content: "";
-        top: -50%;
-        left: 67%;
-        transform: translateY(50%);
-        position: absolute;
-        width: 33%;
-        height: rem(5px);
-        background-image: linear-gradient(90deg, $white 50%, $black 50%); 
+      display: flex;
+      align-items: center;
+      &:nth-child(1) {
+        & span {
+          margin-right: rem(25px);
+        }
+        &:after {
+          content: "";
+          // top: 50%;
+          // left: 105%;
+          // transform: translateY(-50%);
+          position: relative;
+          // width: 33%;
+          flex-grow: 1;
+          height: rem(5px);
+          background-image: linear-gradient(90deg, $white 50%, $black 50%); 
+        }
+    }
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: 5vw;
+    }
+    @media screen and (min-width: 1501px) and (max-width: 1700px) {
+      @media screen and (max-height: 600px) {
+        font-size: rem(70px);
       }
     }
-    @include desctop {
-      font-size: rem(62px);
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      @media screen and (max-height: 700px) {
+        font-size: rem(66px);   
+      }
+      @media screen and (min-height: 701px) and (max-height: 1000px) {
+        font-size: rem(76px);   
+
+      }
     }
-    @include note {
-      font-size: rem(48px);
-      @media screen and (min-height: 540px) {
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      @media screen and (max-height: 500px) { //400-500
+        font-size: rem(62px);   
+      }
+      @media screen and (min-height: 501px) and (max-height: 900px) {
+        font-size: rem(63px);   
+
+      }
+    }
+   
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      @media screen and (max-height: 400px) { //300-400
+        line-height:  1.1;
+        font-size: rem(46px);   
+      }
+      @media screen and (min-height: 401px) and (max-height: 600px) {
+        font-size: rem(62px);   
+        line-height:  1;
+
+      }
+      @media screen and (min-height: 601px) {
+        font-size: rem(72px);   
+      }
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      @media screen and (max-height: 400px) { //300-400
+        line-height:  1.1;
+        font-size: rem(46px);   
+      }
+      @media screen and (min-height: 401px) and (max-height: 600px) {
         font-size: rem(56px);
       }
-    }
-    @include tablets {
-      font-size: rem(36px);
-      @media screen and (min-height: 400px) {
-        font-size: rem(46px);
+      // @media screen and (min-height: 401px) and (max-height: 600px) {
+      //   font-size: rem(62px);   
+      //   line-height:  1;
+
+      // }
+      @media screen and (min-height: 601px) {
+        font-size: rem(72px);   
       }
-      @media screen and (min-height: 520px) {
-        font-size: rem(60px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      @media screen and (max-height: 400px) { //300-400
+        font-size: rem(45px);  
+      }
+      @media screen and (min-height: 401px) and (max-height: 600px) {
+        font-size: rem(50px);
+      }
+      // @media screen and (min-height: 401px) and (max-height: 600px) {
+      //   font-size: rem(62px);   
+      //   line-height:  1;
+
+      // }
+      @media screen and (min-height: 601px) {
+        font-size: rem(52px);   
       }
     }
+    // @include note {
+    //   font-size: rem(48px);
+    //   @media screen and (min-height: 540px) {
+    //     font-size: rem(56px);
+    //   }
+    // }
+    // @include tablets {
+    //   @media screen and (max-height: 400px) { //300-400
+    //     font-size: rem(45px);
+    //   }
+      
+    // }
     @include phones {
       font-size: rem(38px);
       @media screen and (min-height: 760px) {
@@ -438,115 +735,292 @@
       }
     }
   }
-  @include desctop {
-    margin-bottom: 2vh;
+  @media screen and (min-width: 2200px) {
+    top: 26%;
+    left: 8vw;
   }
-  @include tablets {
-    margin-bottom: 2%;
-    @media screen and (min-height: 460px) {
-      padding-left: 20%;
+  @media screen and (min-width: 1501px) and (max-width: 1700px) {
+    @media screen and (max-height: 800px) {
+      top: 23%;
+      
+    }
+    @media screen and (min-height: 801px) and (max-height: 1000px) {
+      top: 32%;
+      
     }
   }
-  @include phones {
-    padding-left: 17%;
-    margin-bottom: 4%;
-    @media screen and (min-height: 940px) {
-      margin-bottom: 6%;
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    @media screen and (max-height: 700px) {  //500-700
+      top: 17%;
+      
+    }
+    @media screen and (min-height: 701px) and (max-height: 1000px) {
+      top: 31%;
+      
     }
   }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    @media screen and (max-height: 500px) {  //400-500
+      top: 17%;
+      
+    }
+    @media screen and (min-height: 501px) and (max-height: 800px) {
+      top: 24%;
+      
+    }
+    @media screen and (min-height: 901px)  {
+      top: 30%;
+      
+    }
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    @media screen and (max-height: 400px) {  //300-400
+      top: 17%;
+      
+    }
+    @media screen and (min-height: 401px) and (max-height: 600px) {
+      top: 18%;
+      left: 10%;
+      
+    }
+    @media screen and (min-height: 601px)  {
+      top: 26%;
+      left: 12%;
+      
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    @media screen and (max-height: 400px) {  //300-400
+      top: 17%;
+      left: 9%;
+    }
+    @media screen and (min-height: 401px) and (max-height: 600px) {
+      top: 18%;
+      left: 10%;
+      
+    }
+    @media screen and (min-height: 601px)  {
+      top: 24%;
+      left: 10%;
+      
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    @media screen and (max-height: 400px) {  //300-400
+      top: 20%;
+      left: 5%;
+    }
+    @media screen and (min-height: 401px) and (max-height: 600px) {
+      top: 22%;
+      left: 10%;
+      
+    }
+    @media screen and (min-height: 601px)  {
+      top: 30%;
+    }
+  }
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    @media screen and (max-height: 400px) {  //300-400
+      top: 24%;
+      left: 12%;
+    }
+    @media screen and (min-height: 401px) and (max-height: 600px) {
+      top: 30%;
+      left: 12%;
+      
+    }
+    @media screen and (min-height: 601px)  {
+      top: 30%;
+    }
+  }
+  // @include tablets {
+  //   margin-bottom: 2%;
+  //   @media screen and (min-height: 460px) {
+  //     padding-left: 20%;
+  //   }
+  // }
+  // @include phones {
+  //   padding-left: 17%;
+  //   margin-bottom: 4%;
+  //   @media screen and (min-height: 940px) {
+  //     margin-bottom: 6%;
+  //   }
+  // }
 
 }
 .first__desc {
+  position: absolute;
+  top: 57%;
+  left: 13%;
+  z-index: 3;
   @include roboto(normal);
   font-style: normal;
   font-size: rem(24px);
   line-height: 1.8;
-  width: 70%;
-  padding-left: 17%;
+  width: 19%;
+  // padding-left: 17%;
   // margin-bottom: 10vh;
-  margin-bottom: 20vh;
-  @include desctop {
-    margin-bottom: 8vh;
-    line-height: 1.6;
-    font-size: rem(20px);
-    @media screen and (min-height: 840px) {
-    font-size: rem(22px);
-    margin-bottom: 14vh;
+  // margin-bottom: 20vh;
+  @media screen and (min-width: 2200px) {
+    font-size: 1.6vw;
+    width: 27%;
+    top: 55vh;
+  line-height: 1.6;
+  left: 8vw;
+  }
+  @media screen and (min-width: 1501px) and (max-width: 1700px) {
+    @media screen and (max-height: 800px) {
+      top: 55%;
+      font-size: rem(22px);
+      line-height: 1.6;
+      width: 22%;
+    }
+    @media screen and (min-height: 801px) and (max-height: 1000px) {
+      top: 56%;
+      width: 22%;
+    }
+    @media screen and (min-height: 1001px) {
+      width: 22%;
     }
   }
-  @include note {
-    font-size: rem(16px);
-    margin-bottom: 10vh;
-    @media screen and (min-height: 540px) {
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    @media screen and (max-height: 700px) { //500-700
+      top: 50%;
+      font-size: rem(22px);
+      line-height: 1.4;
+      width: 24%;
+    }
+    @media screen and (min-height: 701px) and (max-height: 1000px) {
+      font-size: rem(22px);
+      width: 24%;
+    }
+    @media screen and (min-height: 1001px) {
+      width: 25%;
+    }
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    @media screen and (max-height: 500px) {  //400-500
+      line-height: 1.6;
+      top: 54%;
+      width: 26%;
+      font-size: rem(19px);
+    }
+    @media screen and (min-height: 501px) and (max-height: 900px) {
+      top: 53%;
+      line-height: 1.6;
+      font-size: rem(21px);
+      width: 28%;
+      
+    }
+    @media screen and (min-height: 901px) {
+      width: 32%;
+      
+    }
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    @media screen and (max-height: 400px) {  //300-400
+      line-height: 1.3;
+      top: 51%;
+      width: 28%;
+      font-size: rem(17px);
+    }
+    @media screen and (min-height: 401px) and (max-height: 600px) {
+      top: 51%;
+      line-height: 1.3;
+      font-size: rem(19px);
+      width: 29%;
+      left: 10%;
+      
+    }
+    @media screen and (min-height: 601px) {
+      font-size: rem(22px);
+      width: 33%;
+      line-height: 1.6;
+      left: 12%;
+      top: 54%;
+      
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    @media screen and (max-height: 400px) {  //300-400
+      line-height: 1.3;
+      top: 51%;
+      width: 30%;
+      font-size: rem(17px);
+      left: 9%;
+    }
+    @media screen and (min-height: 401px) and (max-height: 600px) {
+      top: 51%;
+      line-height: 1.3;
       font-size: rem(18px);
-      margin-bottom: 14vh;
+      width: 32%;
+      left: 10%;
+      
+    }
+    @media screen and (min-height: 601px) {
+      font-size: rem(20px);
+      width: 35%;
+      line-height: 1.6;
+      left: 10%;
+      top: 53%;
+      
     }
   }
-  @include tablets {
-    font-size: rem(14px);
-    width: 96%;
-    margin-bottom: 12%;
-    @media screen and (min-height: 380px) {
-      margin-bottom: 18%;
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    @media screen and (max-height: 400px) {  //300-400
+      line-height: 1.3;
+      top: 53%;
+      width: 39%;
+      font-size: rem(15px);
+      left: 5%;
     }
-    @media screen and (min-height: 400px) {
-      margin-bottom: 20%;
+    @media screen and (min-height: 401px) and (max-height: 600px) {
+      top: 50%;
+      line-height: 1.3;
+      font-size: rem(15px);
+      width: 39%;
+      left: 10%;
+      
     }
-    @media screen and (min-height: 460px) {
-      margin-bottom: 30%;
-      padding-left: 20%;
-    }
-    @media screen and (min-height: 520px) {
-      font-size: rem(16px);
-      width: 100%;
-    }
-    @media screen and (min-height: 560px) {
-      margin-bottom: 35%;
-    }
-    @media screen and (min-height: 620px) {
-      font-size: rem(20px);
-      margin-bottom: 30%;
-    }
-    @media screen and (min-height: 640px) {
-      margin-bottom: 35%;
-    }
-    @media screen and (min-height: 760px) {
-      margin-bottom: 45%;
-    }
-    @media screen and (min-height: 940px) {
-      font-size: rem(24px);
-      margin-bottom: 65%;
-    }
-    @media screen and (min-height: 1120px) {
-      font-size: rem(28px);
-      margin-bottom: 70%;
+    @media screen and (min-height: 601px) {
+      font-size: rem(19px);
+      width: 50%;
+      line-height: 1.6;
+      left: 12%;
+      top: 50%;
+      
     }
   }
   @include phones {
-    padding-left: 17%;
-    font-size: rem(16px);
-    margin-bottom: 45%;
-    line-height: 1;
-    width: 100%;
-    @media screen and (min-height: 601px) {
-      margin-bottom: 55%;
-    }
-    @media screen and (min-height: 661px) {
-      margin-bottom: 65%;
-    }
+    // padding-left: 17%;
+      top: 50%;
+      font-size: rem(14px);
+    // margin-bottom: 45%;
+      width: 60%;
+      line-height: 1.2;
+    // width: 100%;
+    // @media screen and (min-height: 601px) {
+    //   margin-bottom: 55%;
+    // }
+    // @media screen and (min-height: 661px) {
+    //   margin-bottom: 65%;
+    // }
     @media screen and (min-height: 700px) {
-      font-size: rem(18px);
+      font-size: rem(14px);
       line-height: 1.2;
     }
     @media screen and (min-height: 760px) {
-      font-size: rem(21px);
+      font-size: rem(16px);
       line-height: 1.4;
-      margin-bottom: 70%;
+      // margin-bottom: 70%;
     }
     @media screen and (min-height: 940px) {
-      font-size: rem(26px);
+      font-size: rem(18px);
       line-height: 1.6;
-      margin-bottom: 80%;
+      // margin-bottom: 80%;
     }
+  }
+  @media screen and (max-width: 320px) {
+    font-size: rem(10px);
   }
 }

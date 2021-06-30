@@ -5,10 +5,433 @@
   padding-bottom: rem(80px);
   min-height: rem(780px);
   @include roboto(bold);
+  &--carbag {
+    background-color: $white;
+    padding-top: rem(250px);
+    & .contacts__rol {
+      & div {
+        @media screen and  (max-width: 480px) {
+          font-size: rem(32px);
+        }
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+          font-size: rem(36px);
+        }
+        @media screen and (min-width: 769px) and (max-width: 900px) {
+          font-size: rem(44px);
+        }
+        @media screen and (min-width: 901px) and (max-width: 1024px) {
+          font-size: rem(48px);
+        }
+        @media screen and (min-width: 1025px) and (max-width: 1320px) {
+          font-size: rem(52px);
+        }
+        @media screen and (min-width: 1321px) and (max-width: 1500px) {
+          font-size: rem(56px);
+        }
+        & .s1, .s2, .s3, .s4, .s5, .s6 {
+          &:after {
+            @media screen and  (max-width: 480px) {
+              font-size: rem(32px);
+            }
+            @media screen and (min-width: 481px) and (max-width: 768px) {
+              font-size: rem(36px);
+            }
+            @media screen and (min-width: 769px) and (max-width: 900px) {
+              font-size: rem(44px);
+            }
+            @media screen and (min-width: 901px) and (max-width: 1024px) {
+              font-size: rem(48px);
+            }
+            @media screen and (min-width: 1025px) and (max-width: 1320px) {
+              font-size: rem(52px);
+            }
+            @media screen and (min-width: 1321px) and (max-width: 1500px) {
+              font-size: rem(56px);
+            }
+          }
+        }
+      }
+     
+      @media screen and  (max-width: 480px) {
+        margin-bottom: rem(15px);
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        margin-bottom: rem(20px);
+
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        margin-bottom: rem(26px);
+
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        margin-bottom: rem(32px);
+
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+        margin-bottom: rem(36px);
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        margin-bottom: rem(40px);
+      }
+    }
+  }
+  &--zydex {
+    background-color: $white;
+
+    padding-top: rem(250px);
+    & .contacts__rol {
+      & div {
+        @media screen and  (max-width: 480px) {
+          font-size: rem(32px);
+        }
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+          font-size: rem(36px);
+        }
+        @media screen and (min-width: 769px) and (max-width: 900px) {
+          font-size: rem(44px);
+        }
+        @media screen and (min-width: 901px) and (max-width: 1024px) {
+          font-size: rem(48px);
+        }
+        @media screen and (min-width: 1025px) and (max-width: 1320px) {
+          font-size: rem(52px);
+        }
+        @media screen and (min-width: 1321px) and (max-width: 1500px) {
+          font-size: rem(56px);
+        }
+        & .s1, .s2, .s3, .s4, .s5, .s6 {
+          &:after {
+            @media screen and  (max-width: 480px) {
+              font-size: rem(32px);
+            }
+            @media screen and (min-width: 481px) and (max-width: 768px) {
+              font-size: rem(36px);
+            }
+            @media screen and (min-width: 769px) and (max-width: 900px) {
+              font-size: rem(44px);
+            }
+            @media screen and (min-width: 901px) and (max-width: 1024px) {
+              font-size: rem(48px);
+            }
+            @media screen and (min-width: 1025px) and (max-width: 1320px) {
+              font-size: rem(52px);
+            }
+            @media screen and (min-width: 1321px) and (max-width: 1500px) {
+              font-size: rem(56px);
+            }
+          }
+        }
+      }
+     
+      @media screen and  (max-width: 480px) {
+        margin-bottom: rem(15px);
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        margin-bottom: rem(20px);
+
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        margin-bottom: rem(26px);
+
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        margin-bottom: rem(32px);
+
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+        margin-bottom: rem(36px);
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        margin-bottom: rem(40px);
+      }
+    }
+  }
+  &--sushi {
+    background-color: $white;
+    padding-top: rem(250px);
+    & .contacts__rol {
+      & div {
+        @media screen and  (max-width: 480px) {
+          font-size: rem(32px);
+        }
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+          font-size: rem(36px);
+        }
+        @media screen and (min-width: 769px) and (max-width: 900px) {
+          font-size: rem(44px);
+        }
+        @media screen and (min-width: 901px) and (max-width: 1024px) {
+          font-size: rem(48px);
+        }
+        @media screen and (min-width: 1025px) and (max-width: 1320px) {
+          font-size: rem(52px);
+        }
+        @media screen and (min-width: 1321px) and (max-width: 1500px) {
+          font-size: rem(56px);
+        }
+        & .s1, .s2, .s3, .s4, .s5, .s6 {
+          &:after {
+            @media screen and  (max-width: 480px) {
+              font-size: rem(32px);
+            }
+            @media screen and (min-width: 481px) and (max-width: 768px) {
+              font-size: rem(36px);
+            }
+            @media screen and (min-width: 769px) and (max-width: 900px) {
+              font-size: rem(44px);
+            }
+            @media screen and (min-width: 901px) and (max-width: 1024px) {
+              font-size: rem(48px);
+            }
+            @media screen and (min-width: 1025px) and (max-width: 1320px) {
+              font-size: rem(52px);
+            }
+            @media screen and (min-width: 1321px) and (max-width: 1500px) {
+              font-size: rem(56px);
+            }
+          }
+        }
+      }
+     
+      @media screen and  (max-width: 480px) {
+        margin-bottom: rem(15px);
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        margin-bottom: rem(20px);
+
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        margin-bottom: rem(26px);
+
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        margin-bottom: rem(32px);
+
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+        margin-bottom: rem(36px);
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        margin-bottom: rem(40px);
+      }
+    }
+  }
+  &--vvhome {
+    background-color: $white;
+    padding-top: rem(250px);
+    & .contacts__rol {
+      & div {
+        @media screen and  (max-width: 480px) {
+          font-size: rem(32px);
+        }
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+          font-size: rem(36px);
+        }
+        @media screen and (min-width: 769px) and (max-width: 900px) {
+          font-size: rem(44px);
+        }
+        @media screen and (min-width: 901px) and (max-width: 1024px) {
+          font-size: rem(48px);
+        }
+        @media screen and (min-width: 1025px) and (max-width: 1320px) {
+          font-size: rem(52px);
+        }
+        @media screen and (min-width: 1321px) and (max-width: 1500px) {
+          font-size: rem(56px);
+        }
+        & .s1, .s2, .s3, .s4, .s5, .s6 {
+          &:after {
+            @media screen and  (max-width: 480px) {
+              font-size: rem(32px);
+            }
+            @media screen and (min-width: 481px) and (max-width: 768px) {
+              font-size: rem(36px);
+            }
+            @media screen and (min-width: 769px) and (max-width: 900px) {
+              font-size: rem(44px);
+            }
+            @media screen and (min-width: 901px) and (max-width: 1024px) {
+              font-size: rem(48px);
+            }
+            @media screen and (min-width: 1025px) and (max-width: 1320px) {
+              font-size: rem(52px);
+            }
+            @media screen and (min-width: 1321px) and (max-width: 1500px) {
+              font-size: rem(56px);
+            }
+          }
+        }
+      }
+     
+      @media screen and  (max-width: 480px) {
+        margin-bottom: rem(15px);
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        margin-bottom: rem(20px);
+
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        margin-bottom: rem(26px);
+
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        margin-bottom: rem(32px);
+
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+        margin-bottom: rem(36px);
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        margin-bottom: rem(40px);
+      }
+    }
+  }
+  &--dekolte {
+    background-color: $white;
+    padding-top: rem(250px);
+    & .contacts__rol {
+      & div {
+        @media screen and  (max-width: 480px) {
+          font-size: rem(32px);
+        }
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+          font-size: rem(36px);
+        }
+        @media screen and (min-width: 769px) and (max-width: 900px) {
+          font-size: rem(44px);
+        }
+        @media screen and (min-width: 901px) and (max-width: 1024px) {
+          font-size: rem(48px);
+        }
+        @media screen and (min-width: 1025px) and (max-width: 1320px) {
+          font-size: rem(52px);
+        }
+        @media screen and (min-width: 1321px) and (max-width: 1500px) {
+          font-size: rem(56px);
+        }
+        & .s1, .s2, .s3, .s4, .s5, .s6 {
+          &:after {
+            @media screen and  (max-width: 480px) {
+              font-size: rem(32px);
+            }
+            @media screen and (min-width: 481px) and (max-width: 768px) {
+              font-size: rem(36px);
+            }
+            @media screen and (min-width: 769px) and (max-width: 900px) {
+              font-size: rem(44px);
+            }
+            @media screen and (min-width: 901px) and (max-width: 1024px) {
+              font-size: rem(48px);
+            }
+            @media screen and (min-width: 1025px) and (max-width: 1320px) {
+              font-size: rem(52px);
+            }
+            @media screen and (min-width: 1321px) and (max-width: 1500px) {
+              font-size: rem(56px);
+            }
+          }
+        }
+      }
+     
+      @media screen and  (max-width: 480px) {
+        margin-bottom: rem(15px);
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        margin-bottom: rem(20px);
+
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        margin-bottom: rem(26px);
+
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        margin-bottom: rem(32px);
+
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+        margin-bottom: rem(36px);
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        margin-bottom: rem(40px);
+      }
+    }
+  }
+  &--sideral {
+    background-color: $white;
+    padding-top: rem(250px);
+    & .contacts__rol {
+      & div {
+        @media screen and  (max-width: 480px) {
+          font-size: rem(32px);
+        }
+        @media screen and (min-width: 481px) and (max-width: 768px) {
+          font-size: rem(36px);
+        }
+        @media screen and (min-width: 769px) and (max-width: 900px) {
+          font-size: rem(44px);
+        }
+        @media screen and (min-width: 901px) and (max-width: 1024px) {
+          font-size: rem(48px);
+        }
+        @media screen and (min-width: 1025px) and (max-width: 1320px) {
+          font-size: rem(52px);
+        }
+        @media screen and (min-width: 1321px) and (max-width: 1500px) {
+          font-size: rem(56px);
+        }
+        & .s1, .s2, .s3, .s4, .s5, .s6 {
+          &:after {
+            @media screen and  (max-width: 480px) {
+              font-size: rem(32px);
+            }
+            @media screen and (min-width: 481px) and (max-width: 768px) {
+              font-size: rem(36px);
+            }
+            @media screen and (min-width: 769px) and (max-width: 900px) {
+              font-size: rem(44px);
+            }
+            @media screen and (min-width: 901px) and (max-width: 1024px) {
+              font-size: rem(48px);
+            }
+            @media screen and (min-width: 1025px) and (max-width: 1320px) {
+              font-size: rem(52px);
+            }
+            @media screen and (min-width: 1321px) and (max-width: 1500px) {
+              font-size: rem(56px);
+            }
+          }
+        }
+      }
+     
+      @media screen and  (max-width: 480px) {
+        margin-bottom: rem(15px);
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        margin-bottom: rem(20px);
+
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        margin-bottom: rem(26px);
+
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        margin-bottom: rem(32px);
+
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+        margin-bottom: rem(36px);
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        margin-bottom: rem(40px);
+      }
+    }
+  }
   @include desctop {
     padding-top: rem(20px);
     padding-bottom: rem(20px);
     min-height: 100vh;
+    padding-top: rem(60px);
+
     height: auto;
     @media screen and (min-height: 580px) {
       min-height: 120vh;
@@ -23,6 +446,8 @@
   @include note {
     min-height: 100vh;
     height: auto;
+    padding-top: rem(30px);
+
     @media screen and (min-height: 780px) {
       min-height: 90vh;
     }
@@ -31,7 +456,8 @@
     }
   }
   @include tablets {
-    min-height: 100vh;
+    // min-height: 100vh;
+    min-height: auto;
     padding-top: rem(50px);
     // min-height: 600px;
     height: auto;
@@ -40,39 +466,40 @@
     align-items: flex-end;
     justify-content: flex-end;
     padding-bottom: rem(80px);
-    @media screen and (min-height: 540px) {
-      min-height: 120vh;
-    }
-    @media screen and (min-height: 680px) {
-      min-height: 100vh;
-    }
-    @media screen and (min-height: 800px) {
-      min-height: 90vh;
-    }
-    @media screen and (min-height: 860px) {
-      min-height: 80vh;
-    }
-    @media screen and (min-height: 900px) {
-      min-height: 60vh;
-    }
-    @media screen and (min-height: 900px) {
-      min-height: 55vh;
-    }
-    @media screen and (min-height: 1000px) {
-      min-height: 50vh;
-    }
-    @media screen and (min-height: 1040px) {
-      min-height: 40vh;
-    }
+    // @media screen and (min-height: 540px) {
+    //   min-height: 120vh;
+    // }
+    // @media screen and (min-height: 680px) {
+    //   min-height: 100vh;
+    // }
+    // @media screen and (min-height: 800px) {
+    //   min-height: 90vh;
+    // }
+    // @media screen and (min-height: 860px) {
+    //   min-height: 80vh;
+    // }
+    // @media screen and (min-height: 900px) {
+    //   min-height: 60vh;
+    // }
+    // @media screen and (min-height: 900px) {
+    //   min-height: 55vh;
+    // }
+    // @media screen and (min-height: 1000px) {
+    //   min-height: 50vh;
+    // }
+    // @media screen and (min-height: 1040px) {
+    //   min-height: 40vh;
+    // }
   }
   @include phones {
-    min-height: 90vh;
-    @media screen and (min-height: 760px) {
-      min-height: 80vh;
-    }
-    @media screen and (min-height: 980px) {
-      min-height: 76vh;
-    }
+    // min-height: 90vh;
+    min-height: auto;
+    // @media screen and (min-height: 760px) {
+    //   min-height: 80vh;
+    // }
+    // @media screen and (min-height: 980px) {
+    //   min-height: 76vh;
+    // }
     
   }
   &._active {
@@ -146,32 +573,6 @@
     animation: animate 40s linear infinite;
     animation-delay: -40s;
 
-
-    // letter-spacing: rem(15px);
-    // @include desctop {
-    //   font-size: rem(56px);
-    //   @media screen and (min-height: 720px) {
-    //     font-size: rem(60px);
-    //   }
-    // }
-    // @include tablets {
-    //   font-size: rem(44px);
-    //   @media screen and (min-height: 540px) {
-    //     font-size: rem(52px);
-    //   }
-    //   @media screen and (min-height: 540px) {
-    //     font-size: rem(62px);
-    //   }
-    // }
-    // @include phones {
-    //   font-size: rem(44px);
-    //   @media screen and (min-height: 880px) {
-    //     font-size: rem(52px);
-    //   }
-    //   @media screen and (min-height: 940px) {
-    //     font-size: rem(58px);
-    //   }
-    // }
     &:nth-child(2) {
       animation: animate2 40s linear infinite;
       animation-delay: -20s;

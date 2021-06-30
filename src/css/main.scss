@@ -8,10 +8,7 @@ $bounce-yellow: #f8e48E;
 $bounce-turquoise: #90d0ef;
 $bounce-lilac: #9681CB;
 $grey: #c8c8c8;
-// @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap&subset=cyrillic-ext");
-
 // @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
-
 
 $z-header: 50;
 $z-bg-static-bounce: 0;
@@ -37,7 +34,7 @@ $z-hamburger: 49;
 // @import "./_misc/normalize.scss";
 // // @import "./libs/w3.css";
 // @import "./_misc/media.scss";
-// @import "./_misc/fonts.scss";
+@import "./_misc/fonts.scss";
 // @import "./_misc/layout.scss";
 // @import "./_misc/mixins.scss";
 // @import "./_misc/animate.scss";
@@ -81,5 +78,25 @@ $z-hamburger: 49;
 
 
 @import "./blocks/carbag-main.scss";
+
+
+@import "./blocks/zydex.scss";
+
+
+@import "./blocks/sushi.scss";
+
+
+@import "./blocks/vvhome.scss";
+
+
+@import "./blocks/dekolte.scss";
+
+
+@import "./blocks/sideral.scss";
+
+
+
+@import "./blocks/particles.scss";
+@import "./blocks/canvas.scss";
 
 // @import "blocks/*.scss";

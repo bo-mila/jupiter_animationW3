@@ -4,20 +4,52 @@
   width: 100%;
   height: 100vh;
   color: $white;
-  background-image: url("../../img/bg/carbag-main.png");
-  background-size: center center;
-  @include desctop {
-    background-image: url("../../img/bg/carbag-main_1300px.png");
+  // background-image: url("../../img/bg/carbag-main.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #12161F;
+  // @include desctop {
+  //   background-image: url("../../img/bg/carbag-main_1320px.png");
+  // }
+  // @include note {
+  //   background-image: url("../../img/bg/carbag-main_1024px.png");
+  // }
+  // @include tablets {
+  //   background-image: url("../../img/bg/carbag-main_768px.png");
+  // }
+  // @include phones {
+  //   background-image: url("../../img/bg/carbag-main_480px.png");
+  // }
+  // @media screen and (max-width: 768px) {
+  //   background-position: 53% 20%;
+  // }
+  &._active {
+    & .carbag-main__title {
+      & span {
+        transform: scale(1);
+        opacity: 1;
+        transition: all 5s 1s ;
+
+      }
+    }
   }
-  @include note {
-    background-image: url("../../img/bg/carbag-main_1024px.png");
-  }
-  @include tablets {
-    background-image: url("../../img/bg/carbag-main_768px.png");
-  }
-  @include phones {
-    background-image: url("../../img/bg/carbag-main_480px.png");
-  }
+}
+#carbag2-video {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#carbag-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .carbag-main__content {
   width: 100%;
@@ -38,6 +70,24 @@
     &:first-child {
       margin-right: rem(37px);
     }
+    @media screen and(max-width: 768px) {
+      font-size: rem(13px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(14px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(20px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
   }
 }
 .carbag-main__title {
@@ -50,6 +100,31 @@
     font-size: rem(250px);
     line-height: 1;
     text-transform: uppercase;
+    transform: scale(0);
+    opacity: 0;
+    transition: all 5s ;
+
+    @media screen and (max-width: 480px) {
+      font-size: rem(60px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: rem(80px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(100px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(120px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(160px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(200px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(300px);
+    }
   }
 }
 .carbag-main__subtext {
@@ -60,17 +135,57 @@
     @include roboto(normal);
     font-size: 24px;
     line-height: 1;
+    @media screen and (max-width: 768px) {
+      font-size: rem(15px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(20px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(22px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    left: 40%;
   }
 }
 .carbag-main__prev {
   position: absolute;
   top: 76%;
   left: 50%;
-  & span {
+  & a {
+    outline: none;
+  &:link {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent;
+  }
     @include roboto(bold);
     font-size: rem(21px);
     line-height: 1;
     text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+      font-size: rem(13px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(14px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(20px);
+    }
   }
   &::after {
     position: absolute;
@@ -80,7 +195,28 @@
     transform: translateY(-50%);
     width: rem(162px);
     height: rem(6px);
-    background: linear-gradient(90deg, $black 50%, #FBE6E6 50%); 
+    background: linear-gradient(90deg, $white 50%, $black 50%); 
+    @media screen and (max-width: 900px) {
+      width: rem(142px);
+      left: 163%;
+      height: rem(5px);
+
+    }
+    @media screen and (max-width: 768px) {
+      width: rem(122px);
+      height: rem(4px);
+      left: 152%;
+
+
+    }
+    @media screen and (max-width: 480px) {
+      width: rem(70px);
+      height: rem(3px);
+      left: 132%;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    left: 40%;
   }
 }
 .carbag-main__year {
@@ -92,16 +228,68 @@
     font-size: rem(21px);
     line-height: 1;
     text-transform: capitalize;
+    @media screen and (max-width: 768px) {
+      font-size: rem(13px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(14px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(20px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
   }
 }
 .carbag-tasks {
   position: relative;
   padding-top: rem(110px);
   color: $black;
+  background-color: $white;
+  padding-bottom: 6px;
+  margin-bottom: -6px;
+  @media screen and  (max-width: 480px) {
+    padding-top: rem(50px);
+
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding-top: rem(60px);
+
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    padding-top: rem(70px);
+
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    padding-top: rem(80px);
+
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    padding-top: rem(90px);
+
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    padding-top: rem(100px);
+
+  }
+ 
 }
 .carbag-tasks__container {
   width: 81%;
-  margin: 0 auto
+  margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
 }
 .carbag-tasks__content {
   width: 100%;
@@ -109,33 +297,186 @@
 }
 .carbag-tasks__title {
   & span {
+    opacity: 0;
     @include roboto(bold);
     font-size: rem(72px);
     line-height: 1;
     text-transform: uppercase;
+    @media screen and (max-width: 480px) {
+      font-size: rem(39px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: rem(40px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(46px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(52px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(60px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(66px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(80px);
+    }
   }
   margin-bottom: rem(41px);
+  @media screen and  (max-width: 480px) {
+    margin-bottom: rem(10px);
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: rem(15px);
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    margin-bottom: rem(20px);
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    margin-bottom: rem(25px);
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    margin-bottom: rem(30px);
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    margin-bottom: rem(35px);
+  }
+  &._active {
+    & span {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
 }
 .carbag-tasks__subtitle {
   & p {
+    opacity: 0;
     @include roboto(normal);
     font-size: 24px;
     line-height: 1.3;
+    @media screen and (max-width: 768px) {
+      font-size: rem(15px);
+      line-height: 1.1;
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      line-height: 1.1;
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      line-height: 1.1;
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(20px);
+      line-height: 1.1;
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(22px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
   }
   width: 56%;
   margin-bottom: rem(121px);
   position: relative;
+  @media screen and (max-width: 768px) {
+  margin-bottom: rem(21px);
+  width: 80%;
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+  margin-bottom: rem(41px);
+  width: 78%;
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+  margin-bottom: rem(61px);
+  width: 76%;
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+  margin-bottom: rem(81px);
+  width: 70%;
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+  margin-bottom: rem(101px);
+  width: 62%;
+  }
+  &._active {
+    & p {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+    & .carbag-tasks__subtitle-circle {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+    & .carbag-tasks__subtitle-galka {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
 }
 .carbag-tasks__subtitle-circle {
+  opacity: 0;
   position: absolute;
   width: rem(32px);
   height: rem(32px);
   border-radius: 50%;
   border: 3px solid currentColor;
-  top: 0;
+  top: 5px;
   left: rem(-65px);
+  @media screen and  (max-width: 480px) {
+    left: rem(-15px);
+    transform: scale(.4);
+    transform-origin: 0 0;;
+    top: 2px;
+
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    left: rem(-20px);
+    transform: scale(.5);
+transform-origin: 0 0;;
+top: 2px;
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    left: rem(-35px);
+    transform: scale(.5);
+    transform-origin: 0 0;;
+    top: 2px;
+
+
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    left: rem(-40px);
+    transform: scale(.7);
+    transform-origin: 0 0;;
+    top: 0px;
+
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    left: rem(-45px);
+    transform: scale(.8);
+    transform-origin: 0 0;;
+    top: 1px;
+
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    left: rem(-52px);
+    transform-origin: 0 0;;
+    transform: scale(.9);
+    top: 3px;
+
+  }
 }
 .carbag-tasks__subtitle-galka {
+  opacity: 0;
   width: rem(16px);
   height: rem(21px);
   position: absolute;
@@ -148,51 +489,219 @@
 .carbag-tasks__img {
   width: 100%;
   display: block;
+  &._active {
+    & .carbag-tasks__pic {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
 }
 .carbag-tasks__pic {
   display: block;
   width: 100%;
   object-fit: cover;
+  opacity: 0;
 }
 .carbag-content {
   position: relative;
+  background-color: $white;
   color: $black;
   padding-top: rem(114px);
+  padding-bottom: 6px;
+  margin-bottom: -6px;
+  @media screen and  (max-width: 480px) {
+    padding-top: rem(44px);
+
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding-top: rem(54px);
+
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    padding-top: rem(64px);
+
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    padding-top: rem(74px);
+
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    padding-top: rem(84px);
+
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    padding-top: rem(94px);
+
+  }
 }
 .carbag-content__container {
   width: 81%;
   margin: 0 auto;
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
 }
 .carbag-content__content {
   width: 100%;
   position: relative;
+ 
 }
 .carbag-content__title {
   & span {
+    opacity: 0;
     @include roboto(bold);
     font-size: rem(72px);
     line-height: 1;
     text-transform: uppercase;
+    @media screen and (max-width: 480px) {
+      font-size: rem(39px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: rem(40px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(46px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(52px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(60px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(68px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(80px);
+    }
   }
   margin-bottom: rem(34px);
   color: currentColor;
+  @media screen and  (max-width: 480px) {
+    margin-bottom: rem(10px);
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: rem(12px);
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    margin-bottom: rem(18px);
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    margin-bottom: rem(20px);
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    margin-bottom: rem(26px);
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    margin-bottom: rem(30px);
+  }
+  &._active {
+    & span {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+     
+  }
 }
 .carbag-content__subtitle {
   & p {
+    opacity: 0;
     @include roboto(normal);
     font-size: rem(24px);
     line-height: 1.8;
+    @media screen and (max-width: 768px) {
+      font-size: rem(15px);
+      line-height: 1.1;
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      line-height: 1.1;
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      line-height: 1.2;
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(20px);
+      line-height: 1.4;
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(22px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
   }
   color: currentColor;
   margin-bottom: rem(117px);
   width: 60%;
+  @media screen and (max-width: 768px) {
+  margin-bottom: rem(27px);
+  width: 84%;
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+  margin-bottom: rem(37px);
+  width: 82%;
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+  margin-bottom: rem(57px);
+  width: 80%;
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+  margin-bottom: rem(77px);
+  width: 74%;
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+  margin-bottom: rem(97px);
+  width: 66%;
+  }
+  &._active {
+    & p {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+     
+  }
 }
 .carbag-content__images {
+  opacity: 0;
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   width: 100%;
   margin-bottom: rem(112px);
+  @media screen and  (max-width: 480px) {
+    margin-bottom: rem(20px);
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: rem(26px);
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    margin-bottom: rem(36px);
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    margin-bottom: rem(52px);
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    margin-bottom: rem(72px);
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    margin-bottom: rem(92px);
+  }
+  &._active {
+    opacity: 1;
+      transition: opacity .8s .3s;
+     
+  }
 }
 .carbag-content__images-col-left {
   display: flex;
@@ -205,6 +714,27 @@
   width: 100%;
   &--1 {
     margin-bottom: rem(66px);
+    @media screen and  (max-width: 480px) {
+      margin-bottom: rem(20px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      margin-bottom: rem(30px);
+
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      margin-bottom: rem(36px);
+
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      margin-bottom: rem(42px);
+
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      margin-bottom: rem(56px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      margin-bottom: rem(60px);
+    }
   }
   &--3 {
     margin-bottom: 0;
@@ -224,27 +754,155 @@
 }
 .carbag-content__subtitile-2 {
   & p {
+    opacity: 0;
     @include roboto(normal);
     font-size: rem(24px);
     line-height: 1.8;
+    @media screen and  (max-width: 768px) {
+      font-size: rem(15px);
+      line-height: 1.1;
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      line-height: 1.1;
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      line-height: 1.2;
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(20px);
+      line-height: 1.4;
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(22px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
   }
   color: currentColor;
   margin-bottom: rem(117px);
   width: 58%;
+  @media screen and (max-width: 768px) {
+  margin-bottom: rem(27px);
+  width: 82%;
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+  margin-bottom: rem(37px);
+  width: 80%;
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+  margin-bottom: rem(57px);
+  width: 78%;
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+  margin-bottom: rem(77px);
+  width: 72%;
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+  margin-bottom: rem(97px);
+  width: 64%;
+  }
+  &._active {
+    & p {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
 }
 .carbag-content__image-collage {
+  // transition: opacity 8s .5s;
+
   width: 100%;
   margin-bottom: rem(130px);
+  @media screen and  (max-width: 480px) {
+    margin-bottom: rem(20px);
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: rem(30px);
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    margin-bottom: rem(56px);
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    margin-bottom: rem(72px);
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    margin-bottom: rem(96px);
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    margin-bottom: rem(110px);
+  }
+  &._active {
+    & .carbag-content__pic-collage {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
 }
 .carbag-content__pic-collage {
   display: block;
   width: 100%;
   object-fit: cover;
+  opacity: 0;
+}
+.carbag-content__image-mobiles {
+  width: 100%;
+  &._active {
+    & .carbag-content__pic-mobiles {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
+}
+.carbag-content__pic-mobiles {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  opacity: 0;
 }
 .carbag-func {
   position: relative;
   color: $black;
+    min-height: auto;
+  background-color: $white;
   padding-top: rem(91px);
+  padding-bottom: 6px;
+  margin-bottom: -6px;
+  @media screen and  (max-width: 480px) {
+    padding-top: rem(31px);
+    min-height: auto;
+
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding-top: rem(41px);
+    min-height: auto;
+
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    padding-top: rem(51px);
+    min-height: auto;
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    padding-top: rem(61px);
+
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    padding-top: rem(71px);
+
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    padding-top: rem(81px);
+
+  }
+  
 }
 .carbag-func__container {
   width: 81%;
@@ -253,6 +911,30 @@
   &:last-child {
     margin-bottom: 0;
   }
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+  @media screen and  (max-width: 480px) {
+    margin-bottom: rem(20px);
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: rem(30px);
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    margin-bottom: rem(36px);
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    margin-bottom: rem(52px);
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    margin-bottom: rem(76px);
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    margin-bottom: rem(97px);
+  }
 }
 .carbag-func__content {
   width: 100%;
@@ -260,45 +942,150 @@
 }
 .carbag-func__title {
   & span {
+    opacity: 0;
     @include roboto(bold);
     font-size: rem(72px);
     line-height: 1;
     text-transform: uppercase;
+    @media screen and (max-width: 480px) {
+      font-size: rem(39px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: rem(40px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(46px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(52px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(60px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(68px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(80px);
+    }
   }
   margin-bottom: rem(34px);
   color: currentColor;
+  @media screen and  (max-width: 480px) {
+    margin-bottom: rem(10px);
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: rem(12px);
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    margin-bottom: rem(18px);
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    margin-bottom: rem(20px);
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    margin-bottom: rem(26px);
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    margin-bottom: rem(30px);
+  }
+  &._active {
+    & span {
+      transition: opacity .8s .3s;
+      opacity: 1;
+    }
+  }
 }
 .carbag-func__subtitle {
   & p {
+    opacity: 0;
     @include roboto(normal);
     font-size: rem(24px);
     line-height: 1.8;
+    @media screen and (max-width: 768px) {
+      font-size: rem(15px);
+      line-height: 1.1;
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      line-height: 1.1;
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      line-height: 1.2;
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(20px);
+      line-height: 1.4;
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(22px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
   }
   color: currentColor;
   width: 57%;
+  @media screen and (max-width: 768px) {
+    width: 83%;
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    width: 81%;
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    width: 79%;
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    width: 73%;
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    width: 65%;
+  }
+  &._active {
+    & p {
+      transition: opacity .8s .3s;
+      opacity: 1;
+    }
+  }
 }
 .carbag-func__img {
+  opacity: 0;
   display: block;
   width: 100%;
   overflow: hidden;
   position: relative;
   margin-bottom: rem(113px);
   cursor: pointer;
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba($black, .4);
-    z-index: 2;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+ 
+  @media screen and  (max-width: 480px) {
+    margin-bottom: rem(20px);
   }
-  &:hover {
-    & .carbag-func__play {
-      transition: all .6s;
-      transform: translate(-50%,-50%) scale(1.2);
-    }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: rem(30px);
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    margin-bottom: rem(36px);
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    margin-bottom: rem(52px);
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    margin-bottom: rem(76px);
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    margin-bottom: rem(97px);
+  }
+  &._active {
+    transition: opacity .8s .3s;
+      opacity: 1;
   }
 }
 .carbag-func__pic {
@@ -307,18 +1094,56 @@
   display: block;
   object-fit: cover;
 }
+.carbag-func__play-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($black, .5);
+  z-index: 2;
+  &:hover {
+    & .carbag-func__play {
+      transition: all .6s;
+      transform: translate(-50%,-50%) scale(1.2);
+    }
+  }
+}
 .carbag-func__play {
   position: absolute;
-  top: 50%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%,-50%) scale(1);
   border-radius: 50%;
-  border: 6px solid $white;
+  border: 7px solid $white;
   width: rem(192px);
   height: rem(192px);
   z-index: 3;
   transition: all .6s;
+  @media screen and  (max-width: 480px) {
+    width: rem(82px);
+  height: rem(82px);
+  border: 4px solid $white;
 
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    width: rem(122px);
+  height: rem(122px);
+  border: 6px solid $white;
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    width: rem(152px);
+  height: rem(152px);
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    width: rem(172px);
+  height: rem(172px);
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    width: rem(182px);
+  height: rem(182px);
+  }
 }
 .carbag-func__play-icon {
   stroke: $white;
@@ -329,27 +1154,149 @@
   height: rem(75px);
   position: absolute;
   top: 51%;
-  left: 56%;
+  left: 57%;
   transform: translate(-50%,-50%);
+  @media screen and  (max-width: 480px) {
+    width: rem(40px);
+  height: rem(40px);
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    width: rem(56px);
+  height: rem(56px);
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    width: rem(60px);
+  height: rem(60px);
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    width: rem(64px);
+  height: rem(64px);
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    width: rem(72px);
+  height: rem(72px);
+  }
 }
 .carbag-func__subtitle-2 {
   & p {
+    opacity: 0;
     @include roboto(normal);
     font-size: rem(24px);
     line-height: 1.8;
+    @media screen and (max-width: 768px) {
+      font-size: rem(15px);
+      line-height: 1.1;
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      line-height: 1.1;
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      line-height: 1.2;
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(20px);
+      line-height: 1.4;
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(22px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
   }
   color: currentColor;
   width: 57%;
+  @media screen and (max-width: 768px) {
+    width: 83%;
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    width: 81%;
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    width: 79%;
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    width: 73%;
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    width: 65%;
+  }
+  &._active {
+    & p {
+      transition: opacity .8s .3s;
+      opacity: 1;
+    }
+  }
 }
 .carbag-adaptive {
   position: relative;
   color: $black;
-  padding-top: rem(78px);
+    min-height: auto;
+    padding-top: rem(82px);
+  background-color: $white;
+  margin-bottom: -6px;
+  @media screen and  (max-width: 480px) {
+    padding-top: rem(28px);
+    min-height: auto;
+
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    padding-top: rem(38px);
+    min-height: auto;
+
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    padding-top: rem(48px);
+    min-height: auto;
+
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    padding-top: rem(58px);
+
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    padding-top: rem(66px);
+
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    padding-top: rem(70px);
+
+  }
+  
 }
 .carbag-adaptive__container {
   width: 81%;
   margin: 0 auto;
-  margin-bottom: rem(100px);
+  margin-bottom: rem(10px);
+  @media screen and (max-width: 768px) {
+    width: 90%;
+  }
+  // @media screen and  (max-width: 480px) {
+  //   margin-bottom: rem(40px);
+  // }
+  // @media screen and (min-width: 481px) and (max-width: 768px) {
+  //   margin-bottom: rem(50px);
+
+  // }
+  // @media screen and (min-width: 769px) and (max-width: 900px) {
+  //   margin-bottom: rem(60px);
+
+  // }
+  // @media screen and (min-width: 901px) and (max-width: 1024px) {
+  //   margin-bottom: rem(70px);
+
+  // }
+  // @media screen and (min-width: 1025px) and (max-width: 1320px) {
+  //   margin-bottom: rem(80px);
+  // }
+  // @media screen and (min-width: 1321px) and (max-width: 1500px) {
+  //   margin-bottom: rem(90px);
+  // }
 }
 .carbag-adaptive__content {
   width: 100%;
@@ -357,43 +1304,237 @@
 }
 .carbag-adaptive__title {
   & span {
+    opacity: 0;
     @include roboto(bold);
     font-size: rem(72px);
     line-height: 1;
     text-transform: uppercase;
+    @media screen and (max-width: 480px) {
+      font-size: rem(39px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: rem(40px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(46px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(52px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(60px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(68px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(80px);
+    }
+  }
+  margin-bottom: rem(34px);
+  @media screen and  (max-width: 480px) {
+    margin-bottom: rem(10px);
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    margin-bottom: rem(12px);
+
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    margin-bottom: rem(18px);
+
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    margin-bottom: rem(20px);
+
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    margin-bottom: rem(26px);
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    margin-bottom: rem(30px);
   }
   color: currentColor;
+  &._active {
+    & span {
+      transition: opacity .8s .3s;
+      opacity: 1;
+    }
+  }
+}
+.carbag-adaptive__subtitle {
+  & p {
+    opacity: 0;
+    @include roboto(normal);
+    font-size: rem(24px);
+    line-height: 1.8;
+    @media screen and (max-width: 768px) {
+      font-size: rem(15px);
+      line-height: 1.1;
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      line-height: 1.1;
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      line-height: 1.2;
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(20px);
+      line-height: 1.4;
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(22px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(30px);
+    }
+  }
+  color: currentColor;
+  width: 55%;
+  @media screen and (max-width: 768px) {
+  width: 83%;
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+  width: 81%;
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+  width: 79%;
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+  width: 73%;
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+  width: 65%;
+  }
+  &._active {
+    & p {
+      opacity: 1;
+      transition: opacity .8s .3s;
+    }
+  }
 }
 .carbag-adaptive__images {
+  opacity: 0;
   width: 100%;
   position: relative;
   overflow: hidden;
-  height: 100vh;
+  // min-height: 100vh;
+  min-height: rem(1080px);
+  margin-bottom: 1px;
+  @media screen and (max-width: 480px) {
+    min-height: rem(280px);
+    & .carbag-adaptive__img-smart {
+      top: 51%;
+    }
+    & .carbag-adaptive__img-phone {
+      top: 55%;
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    min-height: rem(360px);
+    & .carbag-adaptive__img-smart {
+      top: 51%;
+    }
+    & .carbag-adaptive__img-phone {
+      top: 55%;
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 900px) {
+    min-height: rem(420px);
+    & .carbag-adaptive__img-smart {
+      top: 51%;
+    }
+    & .carbag-adaptive__img-phone {
+      top: 55%;
+    }
+  }
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    min-height: rem(500px);
+    & .carbag-adaptive__img-smart {
+      top: 51%;
+    }
+    & .carbag-adaptive__img-phone {
+      top: 55%;
+    }
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    min-height: rem(600px);
+    & .carbag-adaptive__img-smart {
+      top: 51%;
+    }
+    & .carbag-adaptive__img-phone {
+      top: 55%;
+    }
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    min-height: rem(750px);
+  }
+  @media screen and (min-width: 1501px) and (max-width: 1700px) {
+    min-height: rem(880px);
+  }
+  @media screen and (min-width: 1701px) and (max-width: 1900px) {
+    min-height: rem(1000px);
+  }
+  @media screen and (min-width: 2100px) {
+    margin-bottom: rem(80px);
+  }
+  @media screen and (min-width: 2300px) {
+    min-height: rem(1200px);
+  }
+  &._active {
+    transition: opacity .8s .3s;
+      opacity: 1;
+  }
 }
 .carbag-adaptive__img-mac {
   position: absolute;
   display: block;
-  width: rem(926px);
-  height: rem(569px);
+  width: 46%;
+  // width: rem(926px);
+  // height: rem(569px);
   left: 1%;
-  top: 17%;
+  top: 19%;
+}
+.carbag-adpative__pic-mac {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .carbag-adaptive__img-imac {
   position: absolute;
   display: block;
-  width: rem(724px);
-  height: rem(944px);
+  width: 38%;
+  // width: rem(724px);
+  // height: rem(944px);
   right: 0%;
   top: 0%;
+  // @media screen and (min-width: 2200px) {
+  //   width: rem(874px);
+  //   height: rem(1104px);
+  // }
+}
+.carbag-adpative__pic-imac {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .carbag-adaptive__img-tabl {
   position: absolute;
   display: block;
-  width: rem(404px);
-  height: rem(285px);
+  width: 21%;
+  // width: rem(404px);
+  // height: rem(285px);
   left: 42%;
-  top: 12%;
-
+  top: 13%;
+}
+.carbag-adpative__pic-tabl {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .carbag-adaptive__pic-tabl-ram {
   position: absolute;
@@ -403,4 +1544,379 @@
   width: 125%;
   object-fit: cover;
   z-index: 2;
+}
+.carbag-adaptive__img-smart {
+  position: absolute;
+  display: block;
+  width: 6%;
+  // width: rem(110px);
+  // height: rem(210px);
+  left: 46%;
+  top: 45%;
+  @media screen and (min-width: 2100px) {
+    top: 48%;
+  }
+  @media screen and (min-width: 2300px) {
+    top: 51%;
+  }
+  @media screen and (min-width: 2500px) {
+    top: 55%;
+  }
+}
+.carbag-adpative__pic-smart {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carbag-adaptive__img-smart-ram {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 284%;
+  object-fit: cover;
+  z-index: 2;
+}
+.carbag-adaptive__img-phone {
+  position: absolute;
+  display: block;
+  width: 5%;
+  // width: rem(84px);
+  // height: rem(160px);
+  left: 55%;
+  top: 48%;
+  @media screen and (min-width: 2100px) {
+    top: 52%;
+  }
+  @media screen and (min-width: 2300px) {
+    top: 55%;
+  }
+  @media screen and (min-width: 2500px) {
+    top: 59%;
+  }
+}
+.carbag-adpative__pic-phone {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carbag-adaptive__img-phone-ram {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 280%;
+  object-fit: cover;
+  z-index: 2;
+}
+.carbag-adaptive__rol {
+  opacity: 0;
+  display: flex;
+  width: 81%;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 7;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  @media screen and (max-width: 768px) {
+    width: 88%;
+  }
+  @media screen and (max-width: 480px) {
+    width: 92%;
+  }
+  &._active {
+    transition: opacity .8s .3s;
+      opacity: 1;
+  }
+}
+.carbag-adaptive__prev {
+  & span {
+    @include roboto(bold);
+    font-size: rem(21px);
+    line-height: 1;
+    text-transform: uppercase;
+    @media screen and  (max-width: 480px) {
+      font-size: rem(10px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: rem(12px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(14px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(20px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(28px);
+    }
+  }
+  & a {
+    outline: none;
+  &:link {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent;
+  }
+    display: block;
+  }
+  color: currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  transition: all ease 1s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 136%;
+    height: 219%;
+    // background-color: green;
+    // z-index: 5;
+    transform: translateX(-50%);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: rem(-18px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(180px);
+    height: rem(6px);
+    opacity: 1;
+    background: linear-gradient(90deg, #D0D0D0 50%, $black 50%); 
+    @media screen and (max-width: 1024px) {
+    height: rem(6px);
+    width: rem(160px);
+
+    }
+    @media screen and (max-width: 900px) {
+    height: rem(5px);
+    width: rem(130px);
+    bottom: rem(-14px);
+
+    }
+    @media screen and (max-width: 768px) {
+    height: rem(4px);
+    width: rem(100px);
+    bottom: rem(-12px);
+
+    }
+    @media screen and (max-width: 480px) {
+    height: rem(3px);
+    width: rem(70px);
+    bottom: rem(-10px);
+
+    }
+  }
+  &:hover {
+    transform: scale(1.2);
+    transition: all ease 1s;
+
+    &::after {
+      animation: animPrevNext 2s;
+    }
+  }
+}
+.carbag-adaptive__next {
+  & span {
+    @include roboto(bold);
+    font-size: rem(21px);
+    line-height: 1;
+    text-transform: uppercase;
+    @media screen and  (max-width: 480px) {
+      font-size: rem(10px);
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      font-size: rem(12px);
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      font-size: rem(14px);
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      font-size: rem(16px);
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      font-size: rem(18px);
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      font-size: rem(20px);
+    }
+    @media screen and (min-width: 2200px) {
+      font-size: rem(28px);
+    }
+  }
+  // & a {
+  //   display: block;
+  //   z-index: 5;
+  // }
+  color: currentColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 107%;
+    height: 219%;
+    // background-color: green;
+    // z-index: 5;
+    transform: translateX(-50%);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: rem(-18px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: rem(180px);
+    height: rem(6px);
+    background: linear-gradient(90deg, #D0D0D0 50%, $black 50%); 
+    @media screen and (max-width: 1024px) {
+      height: rem(6px);
+      width: rem(160px);
+
+      }
+      @media screen and (max-width: 900px) {
+      height: rem(5px);
+      width: rem(130px);
+    bottom: rem(-14px);
+
+      }
+      @media screen and (max-width: 768px) {
+      height: rem(4px);
+      width: rem(100px);
+    bottom: rem(-12px);
+
+      }
+      @media screen and (max-width: 480px) {
+      height: rem(3px);
+      width: rem(70px);
+    bottom: rem(-10px);
+
+      }
+  }
+  &:hover {
+    transform: scale(1.2);
+    transition: all ease 1s;
+
+    &::after {
+      animation: animPrevNext 2s;
+    }
+  }
+}
+.carbag-adaptive__btn {
+  text-align: center;
+  & a {
+    outline: none;
+  &:link {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent;
+  }
+    display: inline-flex;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../img/bg/jupiter.png");
+      @include desctop {
+        background-image: url("../../img/bg/jupiter_1300px.png");
+      }
+      @include note {
+        background-image: url("../../img/bg/jupiter_1024px.png");
+      }
+      @include tablets {
+        background-image: url("../../img/bg/jupiter_768px.png");
+      }
+      @include phones {
+        background-image: url("../../img/bg/jupiter_480px.png");
+      }
+      background-size: 162% 207%;
+      background-position: 95% 12%;
+      transition: opacity .8s;
+      opacity: 0;
+    }
+    
+    & span {
+      @include roboto(bold);
+      font-size: rem(64px);
+      line-height: 1;
+      text-transform: uppercase;
+      padding: rem(25px) rem(30px);
+      border: 1px solid $black;
+      // background-color: $white;
+      transition: color .8s border .6s;
+      color: currentColor;
+      z-index: 2;
+      @media screen and  (max-width: 480px) {
+        padding: rem(8px) rem(6px);
+        font-size: rem(10px);
+      }
+      @media screen and  (min-width: 480px) and (max-width: 768px) {
+        padding: rem(14px) rem(12px);
+        font-size: rem(15px);
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        padding: rem(20px) rem(18px);
+        font-size: rem(20px);
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        padding: rem(20px) rem(18px);
+        font-size: rem(28px);
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+        padding: rem(22px) rem(20px);
+        font-size: rem(34px);
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        font-size: rem(50px);
+      }
+      @media screen and (min-width: 1501px) and (max-width: 1700px) {
+        font-size: rem(54px);
+      }
+      @media screen and (min-width: 2200px) {
+        font-size: rem(70px);
+      }
+    }
+    &:hover {
+      & span {
+        transition: color .8s border .6s;
+        color: $white;
+        border: 1px solid transparent;
+      }
+      &::before {
+        opacity: 1;
+        transition: opacity .8s;
+      }
+    }
+  }
+}
+
+@keyframes animPrevNext {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

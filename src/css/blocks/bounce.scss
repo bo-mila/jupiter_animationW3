@@ -103,6 +103,7 @@
       height: rem(42px);
       bottom: 8%;
       left: 88%;
+      transition: all 0.6s ease .2s;
       z-index: $z-move-bounce-img-1;
       &::after {
         background-position: 37% 73%;
@@ -131,8 +132,9 @@
     &-2 {
       width: rem(67px);
       height: rem(67px);
-      bottom: 84%;
+      bottom: 89%;
       left: 79%;
+      transition: all 0.6s ease .2s;
       z-index: $z-move-bounce-img-2;
       &::after {
         background-position: 37% 73%;
@@ -157,11 +159,12 @@
       width: rem(120px);
       height: rem(120px);
       bottom: 36%;
-      left: 60%;
-      z-index: $z-move-bounce-img-3;
+      left: 56%;
+      transition: all 0.6s ease .2s;
+      z-index: $z-move-bounce-img-3+10;
       &::after {
         background-position: 24% 73%;
-        background-size: 198% 219%;
+        background-size: 198% 208%;
         transform: rotate(185deg);
       }
       @include desctop {
@@ -205,6 +208,7 @@
       bottom: 51%;
       left: 68%;
       z-index: $z-move-bounce-img-4;
+      transition: all 0.6s ease .2s;
       &::after {
         background-position: 51% 37%;
         background-size: 324% 193%;
@@ -228,7 +232,7 @@
         // left: 64%;
         // top: 60%;
         left: 64%;
-        top: 64%;
+        top: 62%;
         background: linear-gradient(180deg, rgba(91, 36, 122, 0.5) 0%, rgba(27, 206, 223, 0.5) 100%);
         &::after {
           display: none;
@@ -238,15 +242,18 @@
     &-5 {
       width: rem(594px);
       height: rem(594px);
-      bottom: 78%;
-      left: 30%;
-      opacity: .8;
+      bottom: 80%;
+      left: 38%;
+      opacity: .7;
+  
+      transition: all 0.6s ease .2s;
       z-index: $z-move-bounce-img-5;
+      // @include keyframesBounImg5(30%,78%);
       &::after {
-        background-size: 130% 122%;
-        transform: rotate(160deg);
-        background-position-x: 59%;
-        background-position-y: 114%;
+        background-size: 173% 126%;
+        transform: rotate(178deg);
+        background-position-x: 56%;
+        background-position-y: 79%;
       }
       @include desctop {
         width: rem(394px);
@@ -287,6 +294,9 @@
   }
 }
 
+.first__bounces {
+  z-index: 2;
+}
 
 
 
@@ -298,6 +308,38 @@
       left: 22%;
       top: 89%;
       background: linear-gradient(180deg, rgba(91, 36, 122, 0.5) -2%, rgba(27, 206, 223, 0.5) 100%);
+      @media screen and (min-width: 1501px) and (max-width: 1700px) {
+        width: rem(91px);
+        height: rem(91px);
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        width: rem(76px);
+        height: rem(76px);
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+        width: rem(66px);
+        height: rem(66px);
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        width: rem(60px);
+        height: rem(60px);
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        width: rem(50px);
+        height: rem(50px);
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        width: rem(30px);
+        height: rem(30px);
+      }
+      @media screen and (min-width: 400px) and (max-width: 480px) {
+        width: rem(20px);
+        height: rem(20px);
+      }
+      @media screen and (max-width: 400px) {
+        width: rem(10px);
+        height: rem(10px);
+      }
     }
   }
   &-1 {
@@ -307,6 +349,38 @@
       left: 10%;
       top: 62%;
       background: linear-gradient(180deg, rgba(91, 36, 122, 0.5) -2%, rgba(27, 206, 223, 0.5) 100%);
+      @media screen and (min-width: 1501px) and (max-width: 1700px) {
+        width: rem(190px);
+        height: rem(190px);
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        width: rem(150px);
+        height: rem(150px);
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+        width: rem(120px);
+        height: rem(120px);
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        width: rem(110px);
+        height: rem(110px);
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        width: rem(90px);
+        height: rem(90px);
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        width: rem(60px);
+        height: rem(60px);
+      }
+      @media screen and (min-width: 400px) and (max-width: 480px) {
+        width: rem(50px);
+        height: rem(50px);
+      }
+      @media screen and (max-width: 400px) {
+        width: rem(40px);
+        height: rem(40px);
+      }
     }
   }
   &-2 {
@@ -316,6 +390,38 @@
       left: 31%;
       top: 72%;
       background: linear-gradient(180deg, rgba(91, 36, 122, 0.5) -2%, rgba(27, 206, 223, 0.5) 100%);
+      @media screen and (min-width: 1501px) and (max-width: 1700px) {
+        width: rem(241px);
+        height: rem(241px);
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        width: rem(200px);
+        height: rem(200px);
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+        width: rem(180px);
+        height: rem(180px);
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        width: rem(160px);
+        height: rem(160px);
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        width: rem(140px);
+        height: rem(140px);
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        width: rem(110px);
+        height: rem(110px);
+      }
+      @media screen and (min-width: 400px) and (max-width: 480px) {
+        width: rem(80px);
+        height: rem(80px);
+      }
+      @media screen and (max-width: 400px) {
+        width: rem(60px);
+        height: rem(60px);
+      }
     }
   }
   &-3 {
@@ -325,6 +431,38 @@
       left: 62%;
       top: 39%;
       background: linear-gradient(180deg, rgba(91, 36, 122, 0.5) 0%, rgba(27, 206, 223, 0.5) 100%);
+      @media screen and (min-width: 1501px) and (max-width: 1700px) {
+        width: rem(300px);
+        height: rem(300px);
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        width: rem(260px);
+        height: rem(260px);
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+        width: rem(220px);
+        height: rem(220px);
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        width: rem(200px);
+        height: rem(200px);
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        width: rem(180px);
+        height: rem(180px);
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        width: rem(140px);
+        height: rem(140px);
+      }
+      @media screen and (min-width: 400px) and (max-width: 480px) {
+        width: rem(110px);
+        height: rem(110px);
+      }
+      @media screen and (max-width: 400px) {
+        width: rem(80px);
+        height: rem(80px);
+      }
     }
   }
   &-4 {
@@ -332,9 +470,41 @@
       width: rem(420px);
       height: rem(420px);
       left: 59%;
-      top: 83%;
+      top: 80%;
       background: linear-gradient(180deg, rgba(91, 36, 122, 0.5) 0%, rgba(27, 206, 223, 0.5) 100%);
-      // opacity: .6;
+      @media screen and (min-width: 1501px) and (max-width: 1700px) {
+        width: rem(380px);
+        height: rem(380px);
+      }
+      // opacity: .6
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        width: rem(340px);
+        height: rem(340px);
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+        width: rem(310px);
+        height: rem(310px);
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        width: rem(280px);
+        height: rem(280px);
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        width: rem(250px);
+        height: rem(250px);
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        width: rem(220px);
+        height: rem(220px);
+      }
+      @media screen and (min-width: 400px) and (max-width: 480px) {
+        width: rem(200px);
+        height: rem(200px);
+      }
+      @media screen and (max-width: 400px) {
+        width: rem(160px);
+        height: rem(160px);
+      }
     }
   }
   &-5 {
@@ -344,6 +514,38 @@
       left: 11%;
       top: 22%;
       background: linear-gradient(326deg, rgba(91, 36, 122, 0.5) 10%, rgba(27, 206, 223, 0.5) 100%);
+      @media screen and (min-width: 1501px) and (max-width: 1700px) {
+        width: rem(550px);
+        height: rem(550px);
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        width: rem(510px);
+        height: rem(510px);
+      }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+        width: rem(480px);
+        height: rem(480px);
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        width: rem(460px);
+        height: rem(460px);
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        width: rem(420px);
+        height: rem(420px);
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        width: rem(390px);
+        height: rem(390px);
+      }
+      @media screen and (min-width: 400px) and (max-width: 480px) {
+        width: rem(360px);
+        height: rem(360px);
+      }
+      @media screen and (max-width: 400px) {
+        width: rem(310px);
+        height: rem(310px);
+      }
       // opacity: .6;
     }
   }

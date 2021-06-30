@@ -6,6 +6,25 @@
   top: 6vh;
   width: 100%;
   color: $black;
+  @media screen and (min-width: 2200px) {
+    .header__logo {
+      width: rem(280px);
+      height: rem(76px);
+      cursor: pointer;
+    }
+  }
+  &--first {
+    @media screen and (min-width: 1501px) and (max-width: 1700px) {
+      @media screen and (max-height: 800px) { //600-800
+        top: 3vh;
+      }
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      @media screen and (max-height: 700px) {  // 500-700
+        top: 3vh;
+      }
+    }
+  }
   &--service {
     & .header__container {
       @media screen and (min-width: 2300px) {
@@ -28,18 +47,30 @@
   @include phones {
     top: 2%;
   }
+  &._fixed {
+    position: fixed;
+  }
   &--forma {
     & .header__container {
       min-width: 97%;
     }
-    @media screen and (min-height: 700px) and (max-height:900px) {
+    
+    @media screen  and (max-height:900px) {
       top: 3vh;
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      & .header__container {
+        width: 98%;
+      }
+      @media screen and (max-height: 600px) {
+        top: 2vh
+      }
     }
     @media screen and (min-width: 1321px) and (max-width: 1500px) {
       & .header__container {
         width: 98%;
       }
-      @media screen and (min-height: 500px) and (max-height: 700px) {
+      @media screen and (max-height: 700px) {
         top: 2vh
       }
     }
@@ -76,12 +107,68 @@
       // -webkit-filter: invert(100%);
     }
   }
+  &--sushi {
+    & .header__container {
+      min-width: 95%;
+    }
+    color: $white;
+    .hamburger-menu__icon {
+      stroke: $white;
+      stroke-width: 2px;
+    }
+    & .header__logo {
+      filter:  brightness(0) invert(1);
+      // mix-blend-mode: lighten;
+      // filter: invert(100%);
+      // -webkit-filter: invert(100%);
+    }
+  }
+  &--vvhome {
+    & .header__container {
+      min-width: 95%;
+    }
+    color: $white;
+    .hamburger-menu__icon {
+      stroke: $white;
+      stroke-width: 2px;
+    }
+    & .header__logo {
+      filter:  brightness(0) invert(1);
+      // mix-blend-mode: lighten;
+      // filter: invert(100%);
+      // -webkit-filter: invert(100%);
+    }
+  }
+  &--dekolte {
+    & .header__container {
+      min-width: 95%;
+    }
+    color: $white;
+    .hamburger-menu__icon {
+      stroke: $white;
+      stroke-width: 2px;
+    }
+    & .header__logo {
+      filter:  brightness(0) invert(1);
+      // mix-blend-mode: lighten;
+      // filter: invert(100%);
+      // -webkit-filter: invert(100%);
+    }
+  }
+  &--zydex {
+    & .header__container {
+      min-width: 95%;
+    }
+  }
+  @media screen and (max-height: 320px) {
+    display: none;
+  }
 }
 .header__container {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  min-width: 95%;
 }
 .header__content {
   width: 100%;
@@ -107,6 +194,7 @@
 .header__logo {
   width: rem(212px);
   height: rem(61px);
+  cursor: pointer;
   @include desctop {
     width: rem(170px);
     height: rem(45px);
