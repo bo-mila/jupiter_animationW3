@@ -120,7 +120,9 @@
       font-size: rem(100px);
       @include roboto(black);
       background: url("../../img/bg/jupiter.png");
+      background-repeat: no-repeat;
       background-position-x: 40%;
+      // background-size: 89% 139%;;
       background-size: 71% 139%;;
       background-position-y: 47%;
       // background-position: round($number: 10);
@@ -137,10 +139,29 @@
         background-image: url("../../img/bg/jupiter_1024px.png");
       }
       @include tablets {
-        background-image: url("../../img/bg/jupiter_768px.png");
+      background-size: 89% 139%;;
+      background-image: url("../../img/bg/jupiter_768px.png");
       }
       @include phones {
-        background-image: url("../../img/bg/jupiter_480px.png");
+      background-size: 89% 139%;;
+      background-image: url("../../img/bg/jupiter_480px.png");
+      }
+      @include desctop {
+        font-size: rem(90px);
+      }
+      @include note {
+        font-size: rem(66px);
+      }
+      @include tablets {
+        width: 100%;
+        font-size: rem(52px);
+      }
+      @include phones {
+        width: 100%;
+        font-size: rem(38px);
+        @media screen and (min-height: 880px) {
+          font-size: rem(52px);
+        }
       }
     }
   }

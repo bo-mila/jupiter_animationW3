@@ -1,5 +1,23 @@
 .feature {
   display: flex;
+  position: absolute;
+  bottom: 3%;
+  left: 4%;
+  z-index: 3;
+  @media screen and (min-width: 1501px) and (max-width: 1700px) {
+    @media screen and (max-height: 600px) {
+      bottom: 2%;
+    }
+  }
+  @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    bottom: 2%;
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    bottom: 1%;
+  }
+  @media screen and (max-width: 1024px) {
+    bottom: 0.2%;
+  }
 }
 .feature__left {
   @include roboto(normal);
@@ -15,26 +33,99 @@
     display: block;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
-    transform-origin: 50% 52%;
+    transform-origin: 50% 49%;
     position: absolute;
     white-space: normal;
-    @include desctop {
-      height: 115%;
-      transform-origin: 50% 41%;
-      margin-right: rem(80px);
+    @media screen and (min-width: 2200px) {
+      height: 145%;
+
+    transform-origin: 50% 31%;
     }
-    @include tablets {
+    @media screen and (min-width: 1501px) and (max-width: 1700px) {
+      @media screen and (max-height: 600px) {
+      transform-origin: 50% 38%;
       height: 115%;
+      }
+      @media screen and (min-height: 601px) {
+     height: 103%;
+        
+      }
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+  font-size: rem(10px);
+     
+      @media screen and (max-height: 700px) { //500-700
       transform-origin: 50% 42%;
+      height: 115%;
+      }
     }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+  font-size: rem(10px);
+      
+      @media screen and (max-height: 500px) { //400-400
+      transform-origin: 50% 42%;
+      height: 115%;
+      }
+      @media screen and (min-height: 501px) and (max-height: 900px) { //500-700
+        height: 115%;
+        transform-origin: 50% 41%;
+        margin-right: rem(80px);
+      }
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+  font-size: rem(10px);
+      
+      @media screen and (max-height: 400px) { //300-400
+        transform-origin: 50% 28%;
+        height: 163%;
+      }
+      @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+        height: 130%;
+    transform-origin: 50% 36%;
+      }
+      @media screen and (min-height: 601px) { //500-700
+        height: 131%;
+    transform-origin: 50% 36%;
+      }
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      @media screen and (max-height: 400px) { //300-400
+        transform-origin: 50% 28%;
+        height: 162%;
+      }
+      @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+        height: 136%;
+        transform-origin: 50% 35%;
+      }
+      @media screen and (min-height: 601px) { //500-700
+        height: 152%;
+    transform-origin: 50% 31%;
+      }
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      @media screen and (max-height: 400px) { //300-400
+        height: 115%;
+        transform-origin: 50% 42%;
+      }
+      @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+        height: 115%;
+        transform-origin: 50% 41%;
+      }
+      @media screen and (min-height: 601px) { //500-700
+        height: 115%;
+        transform-origin: 50% 41%;
+      }
+    }
+    
     @include phones {
-      height: 105%;
-      @media screen and (min-height: 760px) {
-        height: 125%;
+      transform-origin: 50% 33%;
+      height: 126%;
+      @media screen and (min-height: 760px) and (max-height: 939px) {
+        height: 128%;
 
       }
       @media screen and (min-height: 940px) {
-        height: 95%;
+        height: 135%;
 
       }
     }
@@ -44,40 +135,201 @@
     margin-right: rem(202px);
     & div {
       transform-origin: 50% 55%;
-    }
-    @include desctop {
-      & div {
-        transform-origin: 50% 41%;
+      @media screen and (min-width: 2200px) {
+        height: 145%;
+  
+      transform-origin: 50% 31%;
       }
-    }
-    @include tablets {
-      & div {
+      @media screen and (min-width: 1501px) and (max-width: 1700px) {
+       
+
+        @media screen and (max-height: 600px) {
+        transform-origin: 50% 38%;
+        height: 115%;
+        }
+        @media screen and (min-height: 601px) {
+          height: 103%;
+       transform-origin: 50% 46%;
+        }
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+    
+       
+        @media screen and (max-height: 700px) { //500-700
         transform-origin: 50% 42%;
+        height: 115%;
+        }
+        @media screen and (min-height: 701px) {
+          font-size: rem(10px);
+    transform-origin: 50% 56%;
+        }
       }
+      @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    font-size: rem(10px);
+        
+        @media screen and (max-height: 500px) { //400-400
+        transform-origin: 50% 42%;
+        height: 115%;
+        }
+        @media screen and (min-height: 501px) and (max-height: 900px) { //500-700
+          height: 115%;
+          transform-origin: 50% 41%;
+          margin-right: rem(80px);
+        }
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+    font-size: rem(10px);
+        
+        @media screen and (max-height: 400px) { //300-400
+          transform-origin: 50% 28%;
+          height: 163%;
+        }
+        @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+          height: 130%;
+      transform-origin: 50% 36%;
+        }
+        @media screen and (min-height: 601px) { //500-700
+          height: 131%;
+      transform-origin: 50% 36%;
+        }
+      }
+      @media screen and (min-width: 769px) and (max-width: 900px) {
+        @media screen and (max-height: 400px) { //300-400
+          transform-origin: 50% 28%;
+          height: 162%;
+        }
+        @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+          height: 136%;
+          transform-origin: 50% 35%;
+        }
+        @media screen and (min-height: 601px) { //500-700
+          height: 152%;
+      transform-origin: 50% 31%;
+        }
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        @media screen and (max-height: 400px) { //300-400
+          height: 115%;
+          transform-origin: 50% 42%;
+        }
+        @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+          height: 115%;
+          transform-origin: 50% 41%;
+        }
+        @media screen and (min-height: 601px) { //500-700
+          height: 115%;
+          transform-origin: 50% 41%;
+        }
+      }
+      
+      @include phones {
+        transform-origin: 50% 33%;
+        // height: 126%;
+        @media screen and (min-height: 760px) and (max-height: 939px) {
+          height: 128%;
+  
+        }
+        @media screen and (min-height: 940px) {
+          height: 135%;
+  
+        }
+      }
+  
+    }
+    // @include desctop {
+    //   & div {
+    //     transform-origin: 50% 41%;
+    //   }
+    // }
+    // @include tablets {
+    //   & div {
+    //     transform-origin: 50% 42%;
+    //   }
+    // }
+  }
+  @media screen and (min-width: 2200px) {
+    font-size: rem(18px);
+  }
+  @media screen and (min-width: 1025px) and (max-width: 1320px) {
+    margin-right: rem(78px);
+    @media screen and (max-height: 500px) { //400-400
+      font-size: rem(10px);
+
+    }
+    @media screen and (min-height: 501px) and (max-height: 900px) { //500-700
+      font-size: rem(11px);
+
     }
   }
-  @include desctop {
-    margin-right: rem(78px);
-  }
-  @include note {
-    font-size: rem(10px);
-    margin-right: rem(80px);
-  }
-  @include tablets {
-    font-size: rem(8px);
-    margin-right: rem(38px);
-    @media screen and (min-height: 520px) {
-      margin-right: rem(80px);
+  
+  @media screen and (min-width: 901px) and (max-width: 1024px) {
+    @media screen and (max-height: 400px) { //300-400
+      font-size: rem(9px);
+      margin-right: rem(78px);
+
+    }
+    @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+      font-size: rem(10px);
+      margin-right: rem(66px);
+
+    }
+    @media screen and (min-height: 601px) { //500-700
       font-size: rem(12px);
+      margin-right: rem(64px);
+
+    }
   }
-    @media screen and (min-height: 1140px) {
-      margin-right: rem(100px);
-      font-size: rem(16px);
+  @media screen and (min-width: 769px) and (max-width: 901px) {
+    @media screen and (max-height: 400px) { //300-400
+      font-size: rem(9px);
+      margin-right: rem(52px);
+
+    }
+    @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+      font-size: rem(10px);
+      margin-right: rem(50px);
+
+    }
+    @media screen and (min-height: 601px) { //500-700
+      font-size: rem(12px);
+      margin-right: rem(60px);
+
+    }
   }
-  }
-  @include phones {
-    font-size: rem(8px);
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    @media screen and (max-height: 400px) { //300-400
+      font-size: rem(8px);
     margin-right: rem(38px);
+    }
+    @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+      font-size: rem(10px);
+      margin-right: rem(46px);
+
+    }
+    @media screen and (min-height: 601px) { //500-700
+      font-size: rem(12px);
+      margin-right: rem(60px);
+
+    }
+  }
+  // @include tablets {
+  //   font-size: rem(8px);
+  //   margin-right: rem(38px);
+  //   @media screen and (min-height: 520px) {
+  //     margin-right: rem(80px);
+  //     font-size: rem(12px);
+  // }
+  //   @media screen and (min-height: 1140px) {
+  //     margin-right: rem(100px);
+  //     font-size: rem(16px);
+  // }
+  // }
+  @include phones {
+    
+    @media screen and (max-height: 759px) {
+      font-size: rem(8px);
+    margin-right: rem(38px);
+    }
     @media screen and (min-height: 760px) {
         margin-right: rem(60px);
         font-size: rem(14px);
@@ -91,84 +343,174 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
   & span {
-    // line-height: 2.8;
     line-height: 3.6;
-    // letter-spacing: rem(62px);
-    letter-spacing: rem(58px);
-    @media screen and (min-height: 700px) {
-      letter-spacing: rem(62px);
-    }
-    @media screen and (min-height: 740px) {
-      letter-spacing: rem(68px);
-    }
-    @media screen and (min-height: 760px) {
-      line-height: 3.8;
-      letter-spacing: rem(72px);
-    }
-    @media screen and (min-height: 840px) {
-      line-height: 3.8;
-      letter-spacing: rem(76px);
-    }
+    // letter-spacing: rem(58px);
     & l {
       cursor: pointer;
       transition: .6s;
-    }
-    @include desctop {
-      line-height: 2.6;
-      letter-spacing: rem(50px);
-      font-size: rem(16px);
-      @media screen and (min-height: 840px) {
-        letter-spacing: rem(52px);
-        font-size: rem(20px);
+      display: inline-block;
+      width: 5vw;
+      @media screen and (max-width: 320px) {
+        width: 9vw;
+      }
+      @media screen and (min-width: 321px) and (max-width: 480px) {
+        width: 8vw;
+
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        width: 7.2vw;
+
+      }
+      @media screen and (min-width: 769px) and (max-width: 901px) {
+        width: 7vw;
+
+      }
+      @media screen and (min-width: 901px) and (max-width: 1024px) {
+        width: 6.4vw;
+
+      }
+      @media screen and (min-width: 1024px) and (max-width: 1320px) {
+        width: 5.8vw;
+
+      }
+      @media screen and (min-width: 1321px) and (max-width: 1500px) {
+        width: 5.2vw;
+
+      }
+      @media screen and (min-width: 1501px) and (max-width: 1700px) {
+        width: 5vw;
+
+      }
+      @media screen and (min-width: 1701px) and (max-width: 1840px) {
+        width: 5vw;
+
       }
     }
-    @include note {
-      font-size: rem(14px);
-      letter-spacing: rem(36px);
-      @media screen and (min-height: 580px) {
-        letter-spacing: rem(38px);
-        font-size: rem(18px);
+    @media screen and (min-width: 2200px) {
+      line-height: 2.6;
+    // letter-spacing: rem(98px);
+    font-size: rem(26px);
+    }
+    @media screen and (min-width: 1501px) and (max-width: 1700px) {
+      font-size: rem(16px);
+    line-height: 3;
+     
+      @media screen and (max-height: 600px) {
+        font-size: rem(15px);
+        // line-height: 3;
+      }
+    }
+    @media screen and (min-width: 1321px) and (max-width: 1500px) {
+      @media screen and (max-height: 700px) { //500-700
+        font-size: rem(16px);
+        line-height: 2.6;
+      }
+      @media screen and (min-height: 701px) and (max-height: 1000px) { //500-700
+        font-size: rem(17px);
+        line-height: 3;
+      }
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1320px) {
+      @media screen and (max-height: 500px) { //400-500
+        line-height: 2.6;
+      // letter-spacing: rem(46px);
+      font-size: rem(13px);
+      }
+      @media screen and (min-height: 501px) and (max-height: 900px) { //500-700
+        font-size: rem(14px);
+      // letter-spacing: rem(48px);
+      line-height: 2.8;
+      }
+    }
+    @media screen and (min-width: 901px) and (max-width: 1024px) {
+      @media screen and (max-height: 400px) { //300-400
+        line-height: 2.3;
+        // letter-spacing: rem(37px);
+        font-size: rem(12px);
+      }
+      @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+        font-size: rem(13px);
+      // letter-spacing: rem(40px);
+      line-height: 2.7;
+      }
+      @media screen and (min-height: 601px)  { //500-700
+        font-size: rem(13px);
+      // letter-spacing: rem(40px);
+      line-height: 2.7;
+      }
+    }
+    @media screen and (min-width: 769px) and (max-width: 900px) {
+      @media screen and (max-height: 400px) { //300-400
+        line-height: 2.3;
+        // letter-spacing: rem(37px);
+        font-size: rem(11px);
+      }
+      @media screen and (min-height: 401px) and (max-height: 600px) { //500-700
+        font-size: rem(12px);
+      // letter-spacing: rem(40px);
+      line-height: 2.7;
+      }
+      @media screen and (min-height: 601px)  { //500-700
+        font-size: rem(13px);
+      // letter-spacing: rem(40px);
+      line-height: 2.7;
+      }
+    }
+    @media screen and (min-width: 481px) and (max-width: 768px) {
+      @media screen and (max-height: 400px) { //300-400
+        line-height: 2;
+        // letter-spacing: rem(37px);
+        font-size: rem(14px);
+      }
+      @media screen and (min-height: 401px) and (max-height: 700px) { //300-400
+        line-height: 2.2;
+        // letter-spacing: rem(37px);
+        font-size: rem(14px);
       }
     }
     @include tablets {
       font-size: rem(11px);
-      letter-spacing: rem(26px);
+        line-height: 3;
+        // letter-spacing: rem(26px);
       @media screen and (min-height: 400px) {
-        letter-spacing: rem(30px);
+        // letter-spacing: rem(30px);
         font-size: rem(14px);
       }
       @media screen and (min-height: 460px) {
-        letter-spacing: rem(30px);
+        // letter-spacing: rem(30px);
         font-size: rem(16px);
       }
       @media screen and (min-height: 520px) {
-        letter-spacing: rem(30px);
-        font-size: rem(20px);
+        // letter-spacing: rem(30px);
+        font-size: rem(18px);
       }
       @media screen and (min-height: 760px) {
-        letter-spacing: rem(35px);
-        font-size: rem(22px);
+        // letter-spacing: rem(35px);
+        font-size: rem(19px);
       }
       @media screen and (min-height: 1140px) {
-        letter-spacing: rem(40px);
-        font-size: rem(28px);
+        // letter-spacing: rem(40px);
+        font-size: rem(22px);
       }
     }
     @include phones {
-      font-size: rem(14px);
-      letter-spacing: rem(26px);
+      font-size: rem(13px);
+        line-height: 2.2;
+        // letter-spacing: rem(26px);
       @media screen and (min-height: 740px) {
         font-size: rem(16px);
       }
       @media screen and (min-height: 760px) {
         font-size: rem(20px);
-        letter-spacing: rem(30px);
+        // letter-spacing: rem(30px);
       }
       @media screen and (min-height: 940px) {
         font-size: rem(24px);
-        letter-spacing: rem(36px);
+        // letter-spacing: rem(36px);
       }
     }
   }
+  
 }

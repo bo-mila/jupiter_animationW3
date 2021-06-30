@@ -2,4 +2,8 @@
   width: rem(14px);
   height: rem(14px);
   fill: $black;
+  @media screen and (min-width: 2200px) {
+    width: rem(24px);
+  height: rem(24px);
+  }
 }

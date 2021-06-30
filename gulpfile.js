@@ -25,11 +25,13 @@ const style = [
   `${SRC_PATH}/css/_misc/fonts.scss`,
   `${SRC_PATH}/css/_misc/mixins.scss`,
   `${SRC_PATH}/css/_misc/layout.scss`,
+  `${SRC_PATH}/css/_misc/animate.scss`,
   `${SRC_PATH}/css/main.scss`
 ];
 
 const libs = [
   // ...JS_LIBS,
+  // "!src/js/particles.js",
   "src/js/**/*.js"
 ];
 
@@ -42,6 +44,17 @@ task( 'clean', () => {
 task('copy:html', () => {
   return src(`${SRC_PATH}/*.html`)
     .pipe(dest(DIST_PATH))
+    .pipe(reload({stream: true}));
+});
+
+task('copy:json', () => {
+  return src(`${SRC_PATH}/assets/*.json`)
+    .pipe(dest(`${DIST_PATH}/assets`))
+    .pipe(reload({stream: true}));
+});
+task('copy:imgPlanets', () => {
+  return src(`${SRC_PATH}/assets/*.png`)
+    .pipe(dest(`${DIST_PATH}/assets`))
     .pipe(reload({stream: true}));
 });
 
@@ -62,6 +75,11 @@ task('copy:video', () => {
     .pipe(dest(`${DIST_PATH}/video`))
     .pipe(reload({stream: true}));
 });
+// task('copy:fonts', () => {
+//   return src(`${SRC_PATH}/fonts/**/*`)
+//     .pipe(dest(`${DIST_PATH}/fonts`))
+//     .pipe(reload({stream: true}));
+// });
 
 task('styles', () => {
   return src(style)
@@ -88,9 +106,33 @@ task('script', () => {
   })))
   .pipe(gulpif(env === "prod", uglify()))
   .pipe(gulpif(env === "dev", sourcemaps.write()))
-  .pipe(dest(DIST_PATH))
+  .pipe(dest(`${DIST_PATH}/js`))
   .pipe(reload({stream: true}));
 });
+task('script:particles', () => {
+  return src(`${SRC_PATH}/particles.js`)
+  // .pipe(gulpif(env === "dev", sourcemaps.init()))
+  // .pipe(concat("main.min.js", {newLine: ";"}))
+  // .pipe(gulpif(env === "prod", babel({
+  //   presets: ['@babel/env']
+  // })))
+  .pipe(gulpif(env === "prod", uglify()))
+  // .pipe(gulpif(env === "dev", sourcemaps.write()))
+  .pipe(dest(`${DIST_PATH}/js`))
+  .pipe(reload({stream: true}));
+});
+// task('script:particlesplanets', () => {
+//   return src(`${SRC_PATH}/particles-planets.js`)
+//   // .pipe(gulpif(env === "dev", sourcemaps.init()))
+//   // .pipe(concat("main.min.js", {newLine: ";"}))
+//   // .pipe(gulpif(env === "prod", babel({
+//   //   presets: ['@babel/env']
+//   // })))
+//   .pipe(gulpif(env === "prod", uglify()))
+//   // .pipe(gulpif(env === "dev", sourcemaps.write()))
+//   .pipe(dest(`${DIST_PATH}/js`))
+//   .pipe(reload({stream: true}));
+// });
 
 task('server', () => {
   browserSync.init({
@@ -105,9 +147,11 @@ task('watch', () => {
   watch(`${SRC_PATH}/css/**/*.scss`, series('styles'));
   watch(`${SRC_PATH}/*.html`, series('copy:html'));
   watch(`${SRC_PATH}/js/*.js`, series('script'));
+  // watch(`${SRC_PATH}/js/*.js`, series('script:particles'));
+  watch(`${SRC_PATH}/assets/*.json`, series('copy:json'));
 });
 
-task('default', series('clean', parallel('copy:html', 'copy:img', 'copy:video', 'styles', 'script'),
+task('default', series('clean', parallel('copy:html',  'copy:img', 'copy:json', 'copy:video', 'styles', 'script', 'script:particles',  'copy:imgPlanets'),
   parallel('watch', 'server')));
 
-task('build', series('clean', parallel('copy:html', 'copy:img', 'copy:video', 'styles', 'script')));
+task('build', series('clean', parallel('copy:html',  'copy:img', 'copy:json', 'copy:video', 'styles', 'script', 'script:particles',  'copy:imgPlanets')));

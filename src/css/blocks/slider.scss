@@ -23,14 +23,9 @@
   @include roboto(black);
   text-transform: uppercase;
   position: absolute;
-  // display: flex;
-  // justify-content: center;
-  // justify-content: space-around;
-  // align-items: center;
-  top: 53%;
-  transform: translateY(-50%);
-  // height: 100%;
-  // width: 100%;
+  bottom: 25%;
+  // top: 53%;
+  // transform: translateY(-50%);
   width: 100%;
   // font-size: rem(220px);
   background: url("../../img/bg/jupiter.png");
@@ -46,6 +41,7 @@
   text-align: center;
   opacity: .4;
   letter-spacing: 0 ;
+  
   &--portfolio {
     letter-spacing: 1vw;//crative
     & span {
@@ -151,6 +147,10 @@
 //     width: 16vw;
 //   }
 // }
+._firefox {
+  top: 40%;
+transform: translateY(0%);
+}
 .portfolio__icon {
   display: block;
   width: 1000px;

@@ -1,3 +1,10 @@
 .swiper-slide {
   background: transparent;
 }
+.swiper-pagination-bullet {
+  outline: none;
+  &:link {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent;
+background-color: $white;
+  }
+}
