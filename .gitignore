@@ -6,3 +6,4 @@ gulpfile.js
 gulp.config.js
 package-lock.json
 package.json
+.vscode/ftp-sync.json
