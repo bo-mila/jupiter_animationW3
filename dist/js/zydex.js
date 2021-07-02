@@ -1,4 +1,1 @@
-particlesJS.load('particles-js', 'assets/particles-zydex-main.json', function() {
-  console.log('callback - particles.js config loaded');
-});
-//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJ6eWRleC5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJwYXJ0aWNsZXNKUy5sb2FkKCdwYXJ0aWNsZXMtanMnLCAnYXNzZXRzL3BhcnRpY2xlcy16eWRleC1tYWluLmpzb24nLCBmdW5jdGlvbigpIHtcclxuICBjb25zb2xlLmxvZygnY2FsbGJhY2sgLSBwYXJ0aWNsZXMuanMgY29uZmlnIGxvYWRlZCcpO1xyXG59KTsiXSwiZmlsZSI6Inp5ZGV4LmpzIn0=
+"use strict";particlesJS.load("particles-js","assets/particles-zydex-main.json",function(){console.log("callback - particles.js config loaded")});
