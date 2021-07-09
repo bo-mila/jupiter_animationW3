@@ -579,30 +579,55 @@
   background-size: contain;
   position: absolute;
   top: -30%;
-  left: 35%;
+  left: 33%;
+  @media screen and (max-height: 900px) {
+    top: -48%;
+  }
+  @include desctop {
+    width: rem(364px);
+    height: rem(364px);
+    left: 26%;
+    @media screen and (min-height: 901px) {
+      top: -22%;
+    }
+    @media screen and (max-height: 900px) {
+      top: -23%;
+    }
+  }
+  @include note {
+    width: rem(244px);
+    height: rem(244px);
+    left: 32%;
+    @media screen and (min-height: 701px) {
+      top: -17%;
+    }
+    @media screen and (max-height: 700px) {
+      top: -23%;
+    }
+  }
 }
-.bounce-forma-2 {
-  width: rem(208px);
-  height: rem(208px);
-  background-image: url("../../assets/image2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 18%;
-    left: 7%;
-}
-.bounce-forma-3 {
-  width: rem(85px);
-  height: rem(85px);
-  background-image: url("../../assets/image2.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  top: 55%;
-    left: 44%;
-}
+// .bounce-forma-2 {
+//   width: rem(208px);
+//   height: rem(208px);
+//   background-image: url("../../assets/image2.png");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   position: absolute;
+//   top: 18%;
+//     left: 7%;
+// }
+// .bounce-forma-3 {
+//   width: rem(85px);
+//   height: rem(85px);
+//   background-image: url("../../assets/image2.png");
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   position: absolute;
+//   top: 55%;
+//     left: 44%;
+// }
 .forma__title {
   & h2 {
     @include roboto(black);

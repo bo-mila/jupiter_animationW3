@@ -121,6 +121,18 @@ task('script:particles', () => {
   .pipe(dest(`${DIST_PATH}/js`))
   .pipe(reload({stream: true}));
 });
+task('script:particlesForma', () => {
+  return src(`${SRC_PATH}/particles-forma.js`)
+  // .pipe(gulpif(env === "dev", sourcemaps.init()))
+  // .pipe(concat("main.min.js", {newLine: ";"}))
+  // .pipe(gulpif(env === "prod", babel({
+  //   presets: ['@babel/env']
+  // })))
+  .pipe(gulpif(env === "prod", uglify()))
+  // .pipe(gulpif(env === "dev", sourcemaps.write()))
+  .pipe(dest(`${DIST_PATH}/js`))
+  .pipe(reload({stream: true}));
+});
 // task('script:particlesplanets', () => {
 //   return src(`${SRC_PATH}/particles-planets.js`)
 //   // .pipe(gulpif(env === "dev", sourcemaps.init()))
@@ -151,7 +163,7 @@ task('watch', () => {
   watch(`${SRC_PATH}/assets/*.json`, series('copy:json'));
 });
 
-task('default', series('clean', parallel('copy:html',  'copy:img', 'copy:json', 'copy:video', 'styles', 'script', 'script:particles',  'copy:imgPlanets'),
+task('default', series('clean', parallel('copy:html',  'copy:img', 'copy:json', 'copy:video', 'styles', 'script', 'script:particles', 'script:particlesForma',  'copy:imgPlanets'),
   parallel('watch', 'server')));
 
-task('build', series('clean', parallel('copy:html',  'copy:img', 'copy:json', 'copy:video', 'styles', 'script', 'script:particles',  'copy:imgPlanets')));
+task('build', series('clean', parallel('copy:html',  'copy:img', 'copy:json', 'copy:video', 'styles', 'script', 'script:particles', 'script:particlesForma', 'copy:imgPlanets')));

@@ -46,9 +46,9 @@ particlesJS('particles-planets-forma',
   {
     "particles": {
       "number": {
-        "value": 5,
+        "value": 1,
         "density": {
-          "enable": true,
+          "enable": false,
           "value_area": 100
         }
       },
@@ -56,7 +56,8 @@ particlesJS('particles-planets-forma',
         "value": "#ffffff"
       },
       "shape": {
-        "type":  ["image", "image2-forma", "image3-forma", "image4-forma", "image5-forma" ],
+        "type":  "image",
+        "type2":  ["image2", "image3", "image4", "image5" ],
         "stroke": {
           "width": 0,
           "color": "#000000"
@@ -65,7 +66,7 @@ particlesJS('particles-planets-forma',
           "nb_sides": 4
         },
         "image": {
-          "src": "assets/image2.png"
+          "src": "assets/image1.png"
           // "width": 250,
           // "height": 250
         }
@@ -99,11 +100,11 @@ particlesJS('particles-planets-forma',
       },
       "move": {
         "enable": true,
-        "speed": 8,
+        "speed": 0,
         "direction": "none",
-        "random": true,
-        "straight": false,
-        "out_mode": "out",
+        "random": false,
+        "straight": true,
+        "out_mode": "bounce",
         "bounce": false,
         "attract": {
           "enable": false,
@@ -140,8 +141,8 @@ particlesJS('particles-planets-forma',
           "speed": 3
         },
         "repulse": {
-          "distance": 150.94405594405595,
-          "duration": 0.4
+          "distance": 225.94405594405595,
+          "duration": 0.5
         },
         "push": {
           "particles_nb": 4
@@ -154,5 +155,3 @@ particlesJS('particles-planets-forma',
     "retina_detect": true
   }
 );
-
-
